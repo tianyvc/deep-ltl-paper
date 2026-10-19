@@ -1,0 +1,53 @@
+# 分层GNN的配置
+hierarchical_gnn:
+  # 模型架构
+  architecture:
+    hidden_dim: 128
+    num_layers: 4
+    num_heads: 8
+    dropout: 0.1
+    virtual_nodes: true
+    subgraph_edges: true
+    semantic_edges: true
+    feature_augmentation: true
+    
+  # 训练参数
+  training:
+    batch_size: 32
+    num_epochs: 200
+    learning_rate: 0.0003
+    weight_decay: 0.01
+    warmup_epochs: 20
+    lr_scheduler:
+      type: "cosine"
+      T_max: 200
+      eta_min: 1e-6
+      
+  # 课程学习
+  curriculum:
+    initial_complexity: 0.3
+    final_complexity: 1.0
+    increase_threshold: 0.8
+    
+  # 损失权重
+  loss_weights:
+    task: 1.0
+    contrastive: 0.1
+    structure: 0.05
+    
+  # 图处理
+  graph_processing:
+    subgraph_size: 3
+    subgraph_overlap: 1
+    similarity_threshold: 0.7
+    virtual_node_num: 2
+    
+  # 评估
+  evaluation:
+    eval_frequency: 5
+    save_checkpoints: true
+    checkpoint_frequency: 10
+    visualization:
+      attention_maps: true
+      graph_structure: true
+      feature_importance: true
