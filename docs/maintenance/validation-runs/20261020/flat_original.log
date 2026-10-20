@@ -1,0 +1,22 @@
+AdroitHandRelocateDense-v1, AdroitHandHammerDense-v1, AdroitHandDoorDense-v1 environment's reward functions were updated in v1.2.1 without an environment version update. Therefore, use gymnasium-robotics==1.2.0 for v1 reproducibility or use v2 in gymnasium-robotics>=1.4.3. See https://github.com/Farama-Foundation/Gymnasium-Robotics/pull/220 for more details
+AdroitHandRelocateDense-v1, AdroitHandHammerDense-v1, AdroitHandDoorDense-v1 environment's reward functions were updated in v1.2.1 without an environment version update. Therefore, use gymnasium-robotics==1.2.0 for v1 reproducibility or use v2 in gymnasium-robotics>=1.4.3. See https://github.com/Farama-Foundation/Gymnasium-Robotics/pull/220 for more details
+/home/dell/anaconda3/envs/wty_LTL/lib/python3.10/site-packages/numpy/core/fromnumeric.py:3432: RuntimeWarning: Mean of empty slice.
+  return _methods._mean(a, axis=axis, dtype=dtype,
+/home/dell/anaconda3/envs/wty_LTL/lib/python3.10/site-packages/numpy/core/_methods.py:190: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+[32mCurriculum stage: 0[39m
+Using seeds: [100]
+Environments loaded.
+Number of assignments: 13
+Observation shape: (2,)
+Num LTLNet params: 7664
+LTL embedding dim: 32
+Set network embedding size: 16
+GNN input dim: 32
+GNN edge features: ENABLED (dim=6)
+GNN node state features: ENABLED (dim=4)
+ExperimentConfig(name='runtime_audit_20261020', env='FlatWorld-v0', num_steps=64, seed=1, save_dir='experiments', log_interval=1, save_interval=2, eval_interval=200000, num_procs=1, device='cpu', ltl_sampler=None)
+Num parameters: 205500
+rμ: 0.00 | rσ: 0.00 | sμ: 0.00 | sσ: 0.00 | Pμ: 0.00 | Pσ: 0.00 | Vμ: 0.00 | Vσ: 0.00 | num_steps: 32 | entropy: 2.17 | value: -0.29 | policy_loss: -0.00 | value_loss: 0.02 | grad_norm: 0.31 | arps: nan | adr: nan | sps: 124.90 | remaining: 0:00:00
+rμ: 0.00 | rσ: 0.00 | sμ: 0.00 | sσ: 0.00 | Pμ: 0.00 | Pσ: 0.00 | Vμ: 0.00 | Vσ: 0.00 | num_steps: 64 | entropy: 2.17 | value: -0.12 | policy_loss: -0.06 | value_loss: 0.02 | grad_norm: 0.33 | arps: nan | adr: nan | sps: 144.97 | remaining: 0:00:00
+Training took 0:00:00.

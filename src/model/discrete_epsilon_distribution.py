@@ -32,6 +32,7 @@ class DiscreteEpsilonDistribution(Distribution):
     def log_prob(self, value):
         mask = value == LDBASequence.EPSILON
         assert sum(mask) <= sum(self.epsilon_mask), "More epsilon transitions than allowed."
+        value = value.clone()
         value[mask] = self.epsilon_category
         dist = self.create_normalized_distribution()
         return dist.log_prob(value)

@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/home/dell/workspace/Tianyvc/deep-ltl-paper/.maintenance/land_final_matrix.py", line 12, in run
+    try:main()
+  File "/home/dell/workspace/Tianyvc/deep-ltl-paper/src/train/train_paper.py", line 337, in main
+    evaluate(args, env, model, task_manifest, status_path, steps)
+  File "/home/dell/workspace/Tianyvc/deep-ltl-paper/src/train/train_paper.py", line 234, in evaluate
+    raise ValueError('Requested evaluation tasks must be unique members of the selected saved split')
+ValueError: Requested evaluation tasks must be unique members of the selected saved split

@@ -59,17 +59,27 @@ class LDBA:
         return state <= self.num_states
 
     def is_finite_specification(self) -> bool:
-        """
-        Checks if the LDBA represents a finite specification.
-        Note: this is not an exhaustive check, but a sufficient heuristic for LDBAs constructed by rabinizer.
+        """Conservative accepting-sink criterion for finite-witness termination.
+
+        A singleton accepting SCC alone is insufficient: GF a can have both
+        accepting and nonaccepting self-loops. Every outgoing transition must
+        remain in the sink and accept, so later labels cannot revoke success.
+        This is not a complete decision procedure for co-safe LTL.
         """
         if not self.state_to_scc:
             self.compute_sccs()
-        accepting_sccs = [scc for scc in self.state_to_scc.values() if scc.accepting]
-        if len(accepting_sccs) > 1:
+        accepting_sccs = {id(scc): scc for scc in self.state_to_scc.values() if scc.accepting}.values()
+        accepting_sccs = list(accepting_sccs)
+        if not accepting_sccs:
             return False
-        scc = accepting_sccs[0]
-        return scc.bottom and len(scc.states) == 1
+        for scc in accepting_sccs:
+            if not scc.bottom or len(scc.states) != 1:
+                return False
+            state = next(iter(scc.states))
+            edges = self.state_to_transitions[state]
+            if not edges or any(edge.is_epsilon() or edge.target != state or not edge.accepting for edge in edges):
+                return False
+        return True
 
     def add_transition(self, source: int, target: int, label: Optional[str], accepting: bool) -> 'LDBATransition':
         if source < 0 or source >= self.num_states:

@@ -1,0 +1,30 @@
+[32mCurriculum stage: 0[39m
+Using seeds: [100]
+Environments loaded.
+Number of assignments: 5
+Observation shape: (80,)
+Num LTLNet params: 7536
+LTL embedding dim: 32
+Set network embedding size: 16
+GNN input dim: 32
+GNN edge features: ENABLED (dim=6)
+GNN node state features: ENABLED (dim=4)
+ExperimentConfig(name='runtime_zone_20261020', env='PointLtl2-v0', num_steps=64, seed=1, save_dir='experiments', log_interval=1, save_interval=2, eval_interval=200000, num_procs=1, device='cpu', ltl_sampler=None)
+Num parameters: 229495
+AdroitHandRelocateDense-v1, AdroitHandHammerDense-v1, AdroitHandDoorDense-v1 environment's reward functions were updated in v1.2.1 without an environment version update. Therefore, use gymnasium-robotics==1.2.0 for v1 reproducibility or use v2 in gymnasium-robotics>=1.4.3. See https://github.com/Farama-Foundation/Gymnasium-Robotics/pull/220 for more details
+AdroitHandRelocateDense-v1, AdroitHandHammerDense-v1, AdroitHandDoorDense-v1 environment's reward functions were updated in v1.2.1 without an environment version update. Therefore, use gymnasium-robotics==1.2.0 for v1 reproducibility or use v2 in gymnasium-robotics>=1.4.3. See https://github.com/Farama-Foundation/Gymnasium-Robotics/pull/220 for more details
+Traceback (most recent call last):
+  File "/home/dell/workspace/Tianyvc/deep-ltl-paper/src/train/train_ppo.py", line 254, in <module>
+    main()
+  File "/home/dell/workspace/Tianyvc/deep-ltl-paper/src/train/train_ppo.py", line 248, in main
+    trainer.train(log_csv=args.log_csv, log_wandb=args.log_wandb)
+  File "/home/dell/workspace/Tianyvc/deep-ltl-paper/src/train/train_ppo.py", line 129, in train
+    curriculum.update_task_success(logs['avg_goal_success'], verbose=True)
+  File "/home/dell/workspace/Tianyvc/deep-ltl-paper/src/sequence/samplers/curriculum.py", line 119, in update_task_success
+    if aggr(list(task_success.values())) >= self.current_stage.threshold:
+  File "<__array_function__ internals>", line 180, in amin
+  File "/home/dell/anaconda3/envs/wty_LTL/lib/python3.10/site-packages/numpy/core/fromnumeric.py", line 2918, in amin
+    return _wrapreduction(a, np.minimum, 'min', axis, None, out,
+  File "/home/dell/anaconda3/envs/wty_LTL/lib/python3.10/site-packages/numpy/core/fromnumeric.py", line 86, in _wrapreduction
+    return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+ValueError: zero-size array to reduction operation minimum which has no identity

@@ -1,0 +1,15 @@
+[32mResuming training from existing run.[39m
+[32mCurriculum stage: 0[39m
+Using seeds: [100]
+Environments loaded.
+Strictly loaded model from checkpoint.
+Loaded optimizer from existing run.
+ExperimentConfig(name='deepltl_reference_20261020', env='FlatWorld-v0', num_steps=48, seed=1, save_dir='experiments', log_interval=1, save_interval=1, eval_interval=200000, num_procs=1, device='cpu', ltl_sampler=None)
+Num parameters: 27451
+rμ: 0.00 | rσ: 0.00 | sμ: 0.00 | sσ: 0.00 | Pμ: 0.00 | Pσ: 0.00 | Vμ: 0.00 | Vσ: 0.00 | num_steps: 48 | entropy: 2.20 | value: -0.02 | policy_loss: -0.00 | value_loss: 0.00 | grad_norm: 0.00 | arps: nan | adr: nan | sps: 74.26 | remaining: 0:00:00
+Saved training status
+Training took 0:00:00.
+AdroitHandRelocateDense-v1, AdroitHandHammerDense-v1, AdroitHandDoorDense-v1 environment's reward functions were updated in v1.2.1 without an environment version update. Therefore, use gymnasium-robotics==1.2.0 for v1 reproducibility or use v2 in gymnasium-robotics>=1.4.3. See https://github.com/Farama-Foundation/Gymnasium-Robotics/pull/220 for more details
+AdroitHandRelocateDense-v1, AdroitHandHammerDense-v1, AdroitHandDoorDense-v1 environment's reward functions were updated in v1.2.1 without an environment version update. Therefore, use gymnasium-robotics==1.2.0 for v1 reproducibility or use v2 in gymnasium-robotics>=1.4.3. See https://github.com/Farama-Foundation/Gymnasium-Robotics/pull/220 for more details
+/home/dell/workspace/Tianyvc/deep-ltl-paper/src/utils/model_store/model_store.py:45: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  return torch.load(f'{self.path}/status.pth', map_location=map_location)

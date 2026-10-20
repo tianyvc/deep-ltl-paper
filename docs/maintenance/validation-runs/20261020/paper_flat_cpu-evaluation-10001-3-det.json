@@ -1,0 +1,40 @@
+{
+  "episodes": [
+    {
+      "episode": 0,
+      "seed": 10001,
+      "steps": 16,
+      "reward": 0.0,
+      "discounted_return": 0.0,
+      "success": false,
+      "violation": false,
+      "accepting_visits": 0
+    },
+    {
+      "episode": 1,
+      "seed": 10002,
+      "steps": 16,
+      "reward": 0.0,
+      "discounted_return": 0.0,
+      "success": false,
+      "violation": false,
+      "accepting_visits": 0
+    },
+    {
+      "episode": 2,
+      "seed": 10003,
+      "steps": 1,
+      "reward": 0.0,
+      "discounted_return": 0.0,
+      "success": false,
+      "violation": false,
+      "accepting_visits": 0
+    }
+  ],
+  "checkpoint_sha256": "29976f30643e75680c5e180dd0b7d67c80fd8651b384599a96914c58db78bde1",
+  "protocol": "hiltl-product-v1",
+  "finite": true,
+  "deterministic": true,
+  "success_rate": 0.0,
+  "mean_accepting_visits": 0.0
+}

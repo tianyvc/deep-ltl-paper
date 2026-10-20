@@ -1,0 +1,22 @@
+Looking in indexes: https://pypi.tuna.tsinghua.edu.cn/simple
+Obtaining file:///home/dell/workspace/Tianyvc/deep-ltl-paper/src/envs/zones/safety-gymnasium
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Getting requirements to build editable: started
+  Getting requirements to build editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: safety-gymnasium
+  Building editable for safety-gymnasium (pyproject.toml): started
+  Building editable for safety-gymnasium (pyproject.toml): finished with status 'done'
+  Created wheel for safety-gymnasium: filename=safety_gymnasium-1.2.0-0.editable-py3-none-any.whl size=14139 sha256=5443c9054350ffb6adfce0b25748716072bf87884670fdf03d5bb9daa295157d
+  Stored in directory: /tmp/pip-ephem-wheel-cache-3vzgtx65/wheels/f8/37/1f/f77896fc05fa44e7ffa1c3d30f36789a44fda658f0ecefbabb
+Successfully built safety-gymnasium
+Installing collected packages: safety-gymnasium
+  Attempting uninstall: safety-gymnasium
+    Found existing installation: safety-gymnasium 1.0.0
+    Uninstalling safety-gymnasium-1.0.0:
+      Successfully uninstalled safety-gymnasium-1.0.0
+Successfully installed safety-gymnasium-1.2.0

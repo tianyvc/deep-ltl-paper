@@ -1,0 +1,9 @@
+{
+  "python": "/home/dell/anaconda3/envs/wty_LTL/bin/python",
+  "documentation_missing_links": [],
+  "final_semantic_checks_passed": true,
+  "infinite_evaluation_finite_flag": false,
+  "git_diff_check_exit": 0,
+  "git_diff_check_output": "",
+  "all_background_tests_finished": true
+}

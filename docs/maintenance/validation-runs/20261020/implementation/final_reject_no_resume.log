@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/home/dell/workspace/Tianyvc/deep-ltl-paper/.maintenance/land_final_matrix.py", line 12, in run
+    try:main()
+  File "/home/dell/workspace/Tianyvc/deep-ltl-paper/src/train/train_paper.py", line 321, in main
+    raise FileExistsError('Existing run; use --resume or a new output directory')
+FileExistsError: Existing run; use --resume or a new output directory

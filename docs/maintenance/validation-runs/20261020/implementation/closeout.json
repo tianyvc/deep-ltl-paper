@@ -1,0 +1,191 @@
+[
+  {
+    "name": "test_paper_hiltl",
+    "command": [
+      "/home/dell/anaconda3/envs/wty_LTL/bin/python",
+      "tests/test_paper_hiltl.py"
+    ],
+    "exit_code": 0,
+    "expected": 0,
+    "passed": true
+  },
+  {
+    "name": "test_paper_protocol",
+    "command": [
+      "/home/dell/anaconda3/envs/wty_LTL/bin/python",
+      "tests/test_paper_protocol.py"
+    ],
+    "exit_code": 0,
+    "expected": 0,
+    "passed": true
+  },
+  {
+    "name": "statistics-seven",
+    "command": [
+      "/home/dell/anaconda3/envs/wty_LTL/bin/python",
+      "scripts/summarize_paper_runs.py",
+      "experiments/implementation_20261020/final_baseline/evaluation-held_out-10001-2-det.json",
+      "experiments/implementation_20261020/final_hv_only/evaluation-held_out-10001-2-det.json",
+      "experiments/implementation_20261020/final_msgnn_only/evaluation-held_out-10001-2-det.json",
+      "experiments/implementation_20261020/final_hv_track/evaluation-held_out-10001-2-det.json",
+      "experiments/implementation_20261020/final_msgnn_track/evaluation-held_out-10001-2-det.json",
+      "experiments/implementation_20261020/final_full_no_options/evaluation-held_out-10001-2-det.json",
+      "experiments/implementation_20261020/final_full_all/evaluation-held_out-10001-2-det.json",
+      "--seeds",
+      "1",
+      "--episodes",
+      "2",
+      "--output",
+      "docs/maintenance/validation-runs/20261020/implementation/statistics-seven.json"
+    ],
+    "exit_code": 0,
+    "expected": 0,
+    "passed": true
+  },
+  {
+    "name": "statistics-two-seeds",
+    "command": [
+      "/home/dell/anaconda3/envs/wty_LTL/bin/python",
+      "scripts/summarize_paper_runs.py",
+      "experiments/implementation_20261020/final_hv_track/evaluation-held_out-10001-2-det.json",
+      "experiments/implementation_20261020/final_hvtrack_seed2/evaluation-held_out-10001-2-det.json",
+      "--seeds",
+      "1",
+      "2",
+      "--episodes",
+      "2",
+      "--output",
+      "docs/maintenance/validation-runs/20261020/implementation/statistics-two-seeds.json"
+    ],
+    "exit_code": 0,
+    "expected": 0,
+    "passed": true
+  },
+  {
+    "name": "statistics-reject-duplicate",
+    "command": [
+      "/home/dell/anaconda3/envs/wty_LTL/bin/python",
+      "scripts/summarize_paper_runs.py",
+      "experiments/implementation_20261020/final_hv_track/evaluation-held_out-10001-2-det.json",
+      "experiments/implementation_20261020/final_hv_track/evaluation-held_out-10001-2-det.json",
+      "--seeds",
+      "1",
+      "--episodes",
+      "2",
+      "--output",
+      "docs/maintenance/validation-runs/20261020/implementation/rejected-duplicate.json"
+    ],
+    "exit_code": 1,
+    "expected": 1,
+    "passed": true
+  },
+  {
+    "name": "statistics-reject-missing",
+    "command": [
+      "/home/dell/anaconda3/envs/wty_LTL/bin/python",
+      "scripts/summarize_paper_runs.py",
+      "experiments/implementation_20261020/final_hv_track/evaluation-held_out-10001-2-det.json",
+      "--seeds",
+      "1",
+      "2",
+      "--episodes",
+      "2",
+      "--output",
+      "docs/maintenance/validation-runs/20261020/implementation/rejected-missing.json"
+    ],
+    "exit_code": 1,
+    "expected": 1,
+    "passed": true
+  },
+  {
+    "name": "statistics-reject-episodes",
+    "command": [
+      "/home/dell/anaconda3/envs/wty_LTL/bin/python",
+      "scripts/summarize_paper_runs.py",
+      "experiments/implementation_20261020/final_hv_track/evaluation-held_out-10001-2-det.json",
+      "--seeds",
+      "1",
+      "--episodes",
+      "500",
+      "--output",
+      "docs/maintenance/validation-runs/20261020/implementation/rejected-episodes.json"
+    ],
+    "exit_code": 1,
+    "expected": 1,
+    "passed": true
+  },
+  {
+    "name": "independent-resume-baseline",
+    "command": [
+      "/home/dell/anaconda3/envs/wty_LTL/bin/python",
+      "src/train/train_paper.py",
+      "--env",
+      "FlatWorld-v0",
+      "--task-set",
+      "configurations/flatworld_tasks.json",
+      "--configuration",
+      "baseline",
+      "--steps",
+      "32",
+      "--rollout-steps",
+      "8",
+      "--max-episode-steps",
+      "8",
+      "--option-max-steps",
+      "2",
+      "--batch-size",
+      "8",
+      "--epochs",
+      "1",
+      "--output",
+      "experiments/implementation_20261020/final_baseline",
+      "--resume"
+    ],
+    "exit_code": 0,
+    "expected": 0,
+    "passed": true
+  },
+  {
+    "name": "independent-resume-full_all",
+    "command": [
+      "/home/dell/anaconda3/envs/wty_LTL/bin/python",
+      "src/train/train_paper.py",
+      "--env",
+      "FlatWorld-v0",
+      "--task-set",
+      "configurations/flatworld_tasks.json",
+      "--configuration",
+      "full_all",
+      "--steps",
+      "32",
+      "--rollout-steps",
+      "8",
+      "--max-episode-steps",
+      "8",
+      "--option-max-steps",
+      "2",
+      "--batch-size",
+      "8",
+      "--epochs",
+      "1",
+      "--output",
+      "experiments/implementation_20261020/final_full_all",
+      "--resume"
+    ],
+    "exit_code": 0,
+    "expected": 0,
+    "passed": true
+  },
+  {
+    "name": "syntax",
+    "files": 141,
+    "errors": [],
+    "passed": true
+  },
+  {
+    "name": "protected",
+    "files": 148,
+    "passed": true,
+    "changed": []
+  }
+]

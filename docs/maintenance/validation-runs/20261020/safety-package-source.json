@@ -1,0 +1,14 @@
+{
+  "command": [
+    "/home/dell/anaconda3/envs/wty_LTL/bin/python",
+    "-m",
+    "pip",
+    "install",
+    "--no-deps",
+    "--force-reinstall",
+    "-e",
+    "src/envs/zones/safety-gymnasium"
+  ],
+  "exit_code": 0,
+  "output": "/home/dell/workspace/Tianyvc/deep-ltl-paper/src/envs/zones/safety-gymnasium/safety_gymnasium/__init__.py\n['PointLtl2-v0.fixed', 'SafetyPointLtl2.fixedVision-v0', 'PointLtl2Debug-v0', 'PointLtl2.fixedDebug-v0', 'SafetyPointLtl2Vision-v0', 'PointLtl2-v0']\nAdroitHandRelocateDense-v1, AdroitHandHammerDense-v1, AdroitHandDoorDense-v1 environment's reward functions were updated in v1.2.1 without an environment version update. Therefore, use gymnasium-robotics==1.2.0 for v1 reproducibility or use v2 in gymnasium-robotics>=1.4.3. See https://github.com/Farama-Foundation/Gymnasium-Robotics/pull/220 for more details\nAdroitHandRelocateDense-v1, AdroitHandHammerDense-v1, AdroitHandDoorDense-v1 environment's reward functions were updated in v1.2.1 without an environment version update. Therefore, use gymnasium-robotics==1.2.0 for v1 reproducibility or use v2 in gymnasium-robotics>=1.4.3. See https://github.com/Farama-Foundation/Gymnasium-Robotics/pull/220 for more details\n"
+}

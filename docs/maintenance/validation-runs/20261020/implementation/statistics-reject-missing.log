@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/home/dell/workspace/Tianyvc/deep-ltl-paper/scripts/summarize_paper_runs.py", line 101, in <module>
+    main()
+  File "/home/dell/workspace/Tianyvc/deep-ltl-paper/scripts/summarize_paper_runs.py", line 92, in main
+    result = aggregate(args.evaluations, args.seeds, args.episodes)
+  File "/home/dell/workspace/Tianyvc/deep-ltl-paper/scripts/summarize_paper_runs.py", line 49, in aggregate
+    raise ValueError(f'Missing or unexpected independent training seeds for {key[-2:]}: {sorted(seeds)}')
+ValueError: Missing or unexpected independent training seeds for ('G F blue & G F yellow', 'hv_track'): [1]

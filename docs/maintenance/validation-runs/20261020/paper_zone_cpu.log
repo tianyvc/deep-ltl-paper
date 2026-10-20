@@ -1,0 +1,14 @@
+AdroitHandRelocateDense-v1, AdroitHandHammerDense-v1, AdroitHandDoorDense-v1 environment's reward functions were updated in v1.2.1 without an environment version update. Therefore, use gymnasium-robotics==1.2.0 for v1 reproducibility or use v2 in gymnasium-robotics>=1.4.3. See https://github.com/Farama-Foundation/Gymnasium-Robotics/pull/220 for more details
+AdroitHandRelocateDense-v1, AdroitHandHammerDense-v1, AdroitHandDoorDense-v1 environment's reward functions were updated in v1.2.1 without an environment version update. Therefore, use gymnasium-robotics==1.2.0 for v1 reproducibility or use v2 in gymnasium-robotics>=1.4.3. See https://github.com/Farama-Foundation/Gymnasium-Robotics/pull/220 for more details
+Traceback (most recent call last):
+  File "/home/dell/workspace/Tianyvc/deep-ltl-paper/src/train/train_paper.py", line 235, in <module>
+    main()
+  File "/home/dell/workspace/Tianyvc/deep-ltl-paper/src/train/train_paper.py", line 142, in main
+    env = ProductEpisode(make_env(args.env, FixedSampler.partial(args.formula), max_steps=args.max_episode_steps))
+  File "/home/dell/workspace/Tianyvc/deep-ltl-paper/src/envs/env_utils.py", line 30, in make_env
+    env = make_safety_gym_env(name, render_mode)
+  File "/home/dell/workspace/Tianyvc/deep-ltl-paper/src/envs/env_utils.py", line 63, in make_safety_gym_env
+    env = safety_gymnasium.make(name, render_mode=render_mode)
+  File "/home/dell/anaconda3/envs/wty_LTL/lib/python3.10/site-packages/safety_gymnasium/utils/registration.py", line 91, in make
+    assert id in safe_registry, f'Environment {id} is not registered in safety-gymnasium.'
+AssertionError: Environment PointLtl2-v0 is not registered in safety-gymnasium.

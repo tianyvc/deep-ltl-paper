@@ -1,0 +1,128 @@
+{
+  "episodes": [
+    {
+      "formula": "G F blue & G F yellow",
+      "split": "held_out",
+      "episode": 0,
+      "seed": 10001,
+      "finite": false,
+      "steps": 8,
+      "reward": 0.0,
+      "discounted_return": 0.0,
+      "success": false,
+      "violation": false,
+      "accepting_visits": 0,
+      "option_decisions": 4
+    },
+    {
+      "formula": "G F blue & G F yellow",
+      "split": "held_out",
+      "episode": 1,
+      "seed": 10002,
+      "finite": false,
+      "steps": 1,
+      "reward": 0.0,
+      "discounted_return": 0.0,
+      "success": false,
+      "violation": false,
+      "accepting_visits": 0,
+      "option_decisions": 1
+    },
+    {
+      "formula": "F (blue & F (green & F yellow))",
+      "split": "held_out",
+      "episode": 0,
+      "seed": 10001,
+      "finite": true,
+      "steps": 8,
+      "reward": 0.0,
+      "discounted_return": 0.0,
+      "success": false,
+      "violation": false,
+      "accepting_visits": 0,
+      "option_decisions": 4
+    },
+    {
+      "formula": "F (blue & F (green & F yellow))",
+      "split": "held_out",
+      "episode": 1,
+      "seed": 10002,
+      "finite": true,
+      "steps": 8,
+      "reward": 0.0,
+      "discounted_return": 0.0,
+      "success": false,
+      "violation": false,
+      "accepting_visits": 0,
+      "option_decisions": 4
+    },
+    {
+      "formula": "(!blue U green) & F yellow",
+      "split": "held_out",
+      "episode": 0,
+      "seed": 10001,
+      "finite": true,
+      "steps": 4,
+      "reward": -1.0,
+      "discounted_return": -0.9940120577812195,
+      "success": false,
+      "violation": true,
+      "accepting_visits": 0,
+      "option_decisions": 2
+    },
+    {
+      "formula": "(!blue U green) & F yellow",
+      "split": "held_out",
+      "episode": 1,
+      "seed": 10002,
+      "finite": true,
+      "steps": 8,
+      "reward": 0.0,
+      "discounted_return": 0.0,
+      "success": false,
+      "violation": false,
+      "accepting_visits": 0,
+      "option_decisions": 4
+    }
+  ],
+  "per_formula": {
+    "G F blue & G F yellow": {
+      "finite": false,
+      "success_rate": null,
+      "mean_accepting_visits": 0.0,
+      "mean_steps": 4.5,
+      "mean_reward": 0.0,
+      "mean_discounted_return": 0.0
+    },
+    "F (blue & F (green & F yellow))": {
+      "finite": true,
+      "success_rate": 0.0,
+      "mean_accepting_visits": 0.0,
+      "mean_steps": 8.0,
+      "mean_reward": 0.0,
+      "mean_discounted_return": 0.0
+    },
+    "(!blue U green) & F yellow": {
+      "finite": true,
+      "success_rate": 0.0,
+      "mean_accepting_visits": 0.0,
+      "mean_steps": 6.0,
+      "mean_reward": -0.5,
+      "mean_discounted_return": -0.49700602889060974
+    }
+  },
+  "split": "held_out",
+  "checkpoint_sha256": "ab9ed0b4810093e1baa0218061699ca3be3f3f712a7341ce5e709b95f41fef4d",
+  "protocol": "hiltl-product-v2",
+  "task_manifest_sha256": "cb922501236bb65ab72658aade3bf6eb06563834c0f46a06bcca7c079c958370",
+  "checkpoint_steps": 16,
+  "environment": "FlatWorld-v0",
+  "configuration": "full_all",
+  "training_seed": 1,
+  "gate": "fixed",
+  "horizon": 8,
+  "discount": 0.998,
+  "deterministic": true,
+  "weights_unchanged": true,
+  "zero_shot": true
+}

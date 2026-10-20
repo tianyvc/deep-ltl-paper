@@ -1,0 +1,162 @@
+Looking in indexes: https://pypi.tuna.tsinghua.edu.cn/simple
+Collecting torch==2.5.1
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/2a/ef/834af4a885b31a0b32fff2d80e1e40f771e1566ea8ded55347502440786a/torch-2.5.1-cp310-cp310-manylinux1_x86_64.whl (906.4 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 906.4/906.4 MB 32.3 MB/s  0:00:22
+Collecting torch-geometric==2.6.1
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/03/9f/157e913626c1acfb3b19ce000b1a6e4e4fb177c0bc0ea0c67ca5bd714b5a/torch_geometric-2.6.1-py3-none-any.whl (1.1 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.1/1.1 MB 69.5 MB/s  0:00:00
+Collecting gymnasium==0.28.1
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/60/82/3762ef4555791a729ae554e13c011efe5e8347d7eba9ea5ed245a8d1b234/gymnasium-0.28.1-py3-none-any.whl (925 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 925.5/925.5 kB 35.5 MB/s  0:00:00
+Collecting mujoco==2.3.3
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/6d/27/90cc9b4f88c5b797417e1fbeacb7590cd85f7e464a8ab79f60c885708e39/mujoco-2.3.3-2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (4.3 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.3/4.3 MB 43.0 MB/s  0:00:00
+Collecting numpy==1.26.4
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/4b/d7/ecf66c1cd12dc28b4040b15ab4d17b773b87fa9d29ca16125de01adb36cd/numpy-1.26.4-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (18.2 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 18.2/18.2 MB 47.9 MB/s  0:00:00
+Collecting colorama==0.4.6
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/d1/d6/3965ed04c63042e047cb6a3e6ed1a63a35087b6a609aa3a15ed8ac56c221/colorama-0.4.6-py2.py3-none-any.whl (25 kB)
+Requirement already satisfied: matplotlib==3.8.3 in /home/dell/anaconda3/envs/wty_LTL/lib/python3.10/site-packages (3.8.3)
+Collecting pandas==2.2.1
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/19/df/8d789d96a9e338cf28cb7978fa93ef5da53137624b7ef032f30748421c2b/pandas-2.2.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (13.0 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 13.0/13.0 MB 57.7 MB/s  0:00:00
+Collecting simple_parsing==0.1.5
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/b0/12/c657047c11a47e1c3e51bdc26bd6f2661a268fd0384bd8ed56b227530486/simple_parsing-0.1.5-py3-none-any.whl (113 kB)
+Collecting sympy==1.13.1
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/b2/fe/81695a1aa331a842b582453b605175f419fe8540355886031328089d840a/sympy-1.13.1-py3-none-any.whl (6.2 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.2/6.2 MB 60.5 MB/s  0:00:00
+Requirement already satisfied: tqdm==4.66.2 in /home/dell/anaconda3/envs/wty_LTL/lib/python3.10/site-packages (4.66.2)
+Requirement already satisfied: wandb==0.17.7 in /home/dell/anaconda3/envs/wty_LTL/lib/python3.10/site-packages (0.17.7)
+Requirement already satisfied: joblib==1.3.2 in /home/dell/anaconda3/envs/wty_LTL/lib/python3.10/site-packages (1.3.2)
+Collecting seaborn==0.13.2
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/83/11/00d3c3dfc25ad54e731d91449895a79e4bf2384dc3ac01809010ba88f6d5/seaborn-0.13.2-py3-none-any.whl (294 kB)
+Requirement already satisfied: glfw in /home/dell/anaconda3/envs/wty_LTL/lib/python3.10/site-packages (2.10.0)
+Collecting pygame
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/11/b3/de6ed93ae483cf3bac8f950a955e83f7ffe59651fd804d100fff65d66d6c/pygame-2.6.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (14.0 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 14.0/14.0 MB 56.9 MB/s  0:00:00
+Collecting networkx
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/b9/54/dd730b32ea14ea797530a4479b2ed46a6fb250f682a9cfb997e968bf0261/networkx-3.4.2-py3-none-any.whl (1.7 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.7/1.7 MB 52.6 MB/s  0:00:00
+Collecting scipy
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/8e/6d/41991e503e51fc1134502694c5fa7a1671501a17ffa12716a4a9151af3df/scipy-1.15.3-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (37.7 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 37.7/37.7 MB 49.2 MB/s  0:00:00
+Requirement already satisfied: xmltodict in /home/dell/anaconda3/envs/wty_LTL/lib/python3.10/site-packages (1.0.2)
+Collecting gymnasium-robotics==1.2.2
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/65/fb/bf0d6778797776b88dc344843a4c6f4447ef5891249143655dc78ef618c8/gymnasium_robotics-1.2.2-py3-none-any.whl (26.1 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 26.1/26.1 MB 52.2 MB/s  0:00:00
+Collecting filelock (from torch==2.5.1)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/ee/86/032133892a5de43b5a98200b01aadcad68cc255e274a762f08b8a76d2912/filelock-4.1.0-py3-none-any.whl (133 kB)
+Requirement already satisfied: typing-extensions>=4.8.0 in /home/dell/anaconda3/envs/wty_LTL/lib/python3.10/site-packages (from torch==2.5.1) (4.15.0)
+Requirement already satisfied: jinja2 in /home/dell/anaconda3/envs/wty_LTL/lib/python3.10/site-packages (from torch==2.5.1) (3.1.6)
+Requirement already satisfied: fsspec in /home/dell/anaconda3/envs/wty_LTL/lib/python3.10/site-packages (from torch==2.5.1) (2026.3.0)
+Collecting nvidia-cuda-nvrtc-cu12==12.4.127 (from torch==2.5.1)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/2c/14/91ae57cd4db3f9ef7aa99f4019cfa8d54cb4caa7e00975df6467e9725a9f/nvidia_cuda_nvrtc_cu12-12.4.127-py3-none-manylinux2014_x86_64.whl (24.6 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 24.6/24.6 MB 54.5 MB/s  0:00:00
+Collecting nvidia-cuda-runtime-cu12==12.4.127 (from torch==2.5.1)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/ea/27/1795d86fe88ef397885f2e580ac37628ed058a92ed2c39dc8eac3adf0619/nvidia_cuda_runtime_cu12-12.4.127-py3-none-manylinux2014_x86_64.whl (883 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 883.7/883.7 kB 55.8 MB/s  0:00:00
+Collecting nvidia-cuda-cupti-cu12==12.4.127 (from torch==2.5.1)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/67/42/f4f60238e8194a3106d06a058d494b18e006c10bb2b915655bd9f6ea4cb1/nvidia_cuda_cupti_cu12-12.4.127-py3-none-manylinux2014_x86_64.whl (13.8 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 13.8/13.8 MB 49.2 MB/s  0:00:00
+Collecting nvidia-cudnn-cu12==9.1.0.70 (from torch==2.5.1)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/9f/fd/713452cd72343f682b1c7b9321e23829f00b842ceaedcda96e742ea0b0b3/nvidia_cudnn_cu12-9.1.0.70-py3-none-manylinux2014_x86_64.whl (664.8 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 664.8/664.8 MB 33.4 MB/s  0:00:15
+Collecting nvidia-cublas-cu12==12.4.5.8 (from torch==2.5.1)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/ae/71/1c91302526c45ab494c23f61c7a84aa568b8c1f9d196efa5993957faf906/nvidia_cublas_cu12-12.4.5.8-py3-none-manylinux2014_x86_64.whl (363.4 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 363.4/363.4 MB 49.8 MB/s  0:00:07
+Collecting nvidia-cufft-cu12==11.2.1.3 (from torch==2.5.1)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/27/94/3266821f65b92b3138631e9c8e7fe1fb513804ac934485a8d05776e1dd43/nvidia_cufft_cu12-11.2.1.3-py3-none-manylinux2014_x86_64.whl (211.5 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 211.5/211.5 MB 56.1 MB/s  0:00:03
+Collecting nvidia-curand-cu12==10.3.5.147 (from torch==2.5.1)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/8a/6d/44ad094874c6f1b9c654f8ed939590bdc408349f137f9b98a3a23ccec411/nvidia_curand_cu12-10.3.5.147-py3-none-manylinux2014_x86_64.whl (56.3 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 56.3/56.3 MB 48.8 MB/s  0:00:01
+Collecting nvidia-cusolver-cu12==11.6.1.9 (from torch==2.5.1)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/3a/e1/5b9089a4b2a4790dfdea8b3a006052cfecff58139d5a4e34cb1a51df8d6f/nvidia_cusolver_cu12-11.6.1.9-py3-none-manylinux2014_x86_64.whl (127.9 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 127.9/127.9 MB 45.5 MB/s  0:00:02
+Collecting nvidia-cusparse-cu12==12.3.1.170 (from torch==2.5.1)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/db/f7/97a9ea26ed4bbbfc2d470994b8b4f338ef663be97b8f677519ac195e113d/nvidia_cusparse_cu12-12.3.1.170-py3-none-manylinux2014_x86_64.whl (207.5 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 207.5/207.5 MB 55.4 MB/s  0:00:03
+Collecting nvidia-nccl-cu12==2.21.5 (from torch==2.5.1)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/df/99/12cd266d6233f47d00daf3a72739872bdc10267d0383508b0b9c84a18bb6/nvidia_nccl_cu12-2.21.5-py3-none-manylinux2014_x86_64.whl (188.7 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 188.7/188.7 MB 55.3 MB/s  0:00:03
+Collecting nvidia-nvtx-cu12==12.4.127 (from torch==2.5.1)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/87/20/199b8713428322a2f22b722c62b8cc278cc53dffa9705d744484b5035ee9/nvidia_nvtx_cu12-12.4.127-py3-none-manylinux2014_x86_64.whl (99 kB)
+Collecting nvidia-nvjitlink-cu12==12.4.127 (from torch==2.5.1)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/ff/ff/847841bacfbefc97a00036e0fce5a0f086b640756dc38caea5e1bb002655/nvidia_nvjitlink_cu12-12.4.127-py3-none-manylinux2014_x86_64.whl (21.1 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 21.1/21.1 MB 49.1 MB/s  0:00:00
+Collecting triton==3.1.0 (from torch==2.5.1)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/98/29/69aa56dc0b2eb2602b553881e34243475ea2afd9699be042316842788ff5/triton-3.1.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (209.5 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 209.5/209.5 MB 53.3 MB/s  0:00:03
+Requirement already satisfied: aiohttp in /home/dell/anaconda3/envs/wty_LTL/lib/python3.10/site-packages (from torch-geometric==2.6.1) (3.13.2)
+Requirement already satisfied: psutil>=5.8.0 in /home/dell/anaconda3/envs/wty_LTL/lib/python3.10/site-packages (from torch-geometric==2.6.1) (7.1.3)
+Collecting pyparsing (from torch-geometric==2.6.1)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/38/bb/d215ee7c73b61497b28a5503f9f53523f294fcc936762b7caf90e0c1c2b5/pyparsing-3.3.3-py3-none-any.whl (126 kB)
+Collecting requests (from torch-geometric==2.6.1)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/a0/f4/c67b0b3f1b9245e8d266f0f112c500d50e5b4e83cb6f3b71b6528104182a/requests-2.34.2-py3-none-any.whl (73 kB)
+Collecting jax-jumpy>=1.0.0 (from gymnasium==0.28.1)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/73/23/338caee543d80584916da20f018aeb017764509d964fd347b97f41f97baa/jax_jumpy-1.0.0-py3-none-any.whl (20 kB)
+Requirement already satisfied: cloudpickle>=1.2.0 in /home/dell/anaconda3/envs/wty_LTL/lib/python3.10/site-packages (from gymnasium==0.28.1) (3.1.2)
+Collecting farama-notifications>=0.0.1 (from gymnasium==0.28.1)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/7c/f0/21f81892e4ed10f4ec3ef2e7cf8635fb76e7c0907c55d0da66be50094760/farama_notifications-0.0.6-py3-none-any.whl (2.9 kB)
+Collecting absl-py (from mujoco==2.3.3)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/b3/7d/01e62f59e4166af1be6238d9f2b7f3453630c51b8044b412d05b5606532a/absl_py-2.5.1-py3-none-any.whl (137 kB)
+Collecting pyopengl (from mujoco==2.3.3)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/de/e4/1ba6f44e491c4eece978685230dde56b14d51a0365bc1b774ddaa94d14cd/pyopengl-3.1.10-py3-none-any.whl (3.2 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.2/3.2 MB 64.4 MB/s  0:00:00
+Requirement already satisfied: contourpy>=1.0.1 in /home/dell/anaconda3/envs/wty_LTL/lib/python3.10/site-packages (from matplotlib==3.8.3) (1.3.2)
+Requirement already satisfied: cycler>=0.10 in /home/dell/anaconda3/envs/wty_LTL/lib/python3.10/site-packages (from matplotlib==3.8.3) (0.12.1)
+Requirement already satisfied: fonttools>=4.22.0 in /home/dell/anaconda3/envs/wty_LTL/lib/python3.10/site-packages (from matplotlib==3.8.3) (4.61.0)
+Requirement already satisfied: kiwisolver>=1.3.1 in /home/dell/anaconda3/envs/wty_LTL/lib/python3.10/site-packages (from matplotlib==3.8.3) (1.4.9)
+Requirement already satisfied: packaging>=20.0 in /home/dell/anaconda3/envs/wty_LTL/lib/python3.10/site-packages (from matplotlib==3.8.3) (25.0)
+Collecting pillow>=8 (from matplotlib==3.8.3)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/4e/89/36f4cd76cf4baf05c50ababb976249153f18c959171c7f6ba09a6f217260/pillow-12.3.0-cp310-cp310-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (6.9 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.9/6.9 MB 61.5 MB/s  0:00:00
+Collecting python-dateutil>=2.7 (from matplotlib==3.8.3)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/ec/57/56b9bcc3c9c6a792fcbaf139543cee77261f3651ca9da0c93f5c1221264b/python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+Requirement already satisfied: pytz>=2020.1 in /home/dell/anaconda3/envs/wty_LTL/lib/python3.10/site-packages (from pandas==2.2.1) (2025.2)
+Collecting tzdata>=2022.7 (from pandas==2.2.1)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/94/21/1e5995a1c920cce14e4bffae20c665ec10e7ed03ab25e006cd741092b718/tzdata-2026.5-py2.py3-none-any.whl (347 kB)
+Collecting docstring-parser~=0.15 (from simple_parsing==0.1.5)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/a7/5f/ed01f9a3cdffbd5a008556fc7b2a08ddb1cc6ace7effa7340604b1d16699/docstring_parser-0.18.0-py3-none-any.whl (22 kB)
+Collecting mpmath<1.4,>=1.1.0 (from sympy==1.13.1)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/43/e3/7d92a15f894aa0c9c4b49b8ee9ac9850d6e63b03c9c32c0367a13ae62209/mpmath-1.3.0-py3-none-any.whl (536 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 536.2/536.2 kB 34.9 MB/s  0:00:00
+Requirement already satisfied: click!=8.0.0,>=7.1 in /home/dell/anaconda3/envs/wty_LTL/lib/python3.10/site-packages (from wandb==0.17.7) (8.3.1)
+Collecting docker-pycreds>=0.4.0 (from wandb==0.17.7)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/f5/e8/f6bd1eee09314e7e6dee49cbe2c5e22314ccdb38db16c9fc72d2fa80d054/docker_pycreds-0.4.0-py2.py3-none-any.whl (9.0 kB)
+Collecting gitpython!=3.1.29,>=1.0.0 (from wandb==0.17.7)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/6b/50/2a923c4dc02522ff9567f07c67ed1deca6d5fa9474f4708168b8088dfa37/gitpython-3.2.1-py3-none-any.whl (231 kB)
+Requirement already satisfied: platformdirs in /home/dell/anaconda3/envs/wty_LTL/lib/python3.10/site-packages (from wandb==0.17.7) (4.5.1)
+Requirement already satisfied: protobuf!=4.21.0,<6,>=3.19.0 in /home/dell/anaconda3/envs/wty_LTL/lib/python3.10/site-packages (from wandb==0.17.7) (5.29.5)
+Requirement already satisfied: pyyaml in /home/dell/anaconda3/envs/wty_LTL/lib/python3.10/site-packages (from wandb==0.17.7) (6.0.3)
+Requirement already satisfied: sentry-sdk>=1.0.0 in /home/dell/anaconda3/envs/wty_LTL/lib/python3.10/site-packages (from wandb==0.17.7) (2.47.0)
+Requirement already satisfied: setproctitle in /home/dell/anaconda3/envs/wty_LTL/lib/python3.10/site-packages (from wandb==0.17.7) (1.3.7)
+Requirement already satisfied: setuptools in /home/dell/anaconda3/envs/wty_LTL/lib/python3.10/site-packages (from wandb==0.17.7) (80.9.0)
+INFO: pip is looking at multiple versions of gymnasium-robotics to determine which version is compatible with other requirements. This could take a while.
+Collecting matplotlib==3.8.3
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/c1/f2/325897d6c498278b0f8b460d44b516f5db865ddb4ba9018e9fe58a3e4633/matplotlib-3.8.3-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (11.6 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 11.6/11.6 MB 56.6 MB/s  0:00:00
+Collecting joblib==1.3.2
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/10/40/d551139c85db202f1f384ba8bcf96aca2f329440a844f924c8a0040b6d02/joblib-1.3.2-py3-none-any.whl (302 kB)
+Collecting tqdm==4.66.2
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/2a/14/e75e52d521442e2fcc9f1df3c5e456aead034203d4797867980de558ab34/tqdm-4.66.2-py3-none-any.whl (78 kB)
+ERROR: Cannot install gymnasium-robotics==1.2.2, gymnasium==0.28.1, matplotlib==3.8.3, mujoco==2.3.3, numpy==1.26.4, pandas==2.2.1, seaborn==0.13.2 and torch-geometric==2.6.1 because these package versions have conflicting dependencies.
+
+The conflict is caused by:
+    The user requested numpy==1.26.4
+    torch-geometric 2.6.1 depends on numpy
+    gymnasium 0.28.1 depends on numpy>=1.21.0
+    mujoco 2.3.3 depends on numpy
+    matplotlib 3.8.3 depends on numpy<2 and >=1.21
+    pandas 2.2.1 depends on numpy<2 and >=1.22.4; python_version < "3.11"
+    seaborn 0.13.2 depends on numpy!=1.24.0 and >=1.20
+    gymnasium-robotics 1.2.2 depends on numpy<1.24.0 and >=1.21.0
+
+Additionally, some packages in these conflicts have no matching distributions available for your environment:
+    numpy
+
+To fix this you could try to:
+1. loosen the range of package versions you've specified
+2. remove package versions to allow pip to attempt to solve the dependency conflict
+
+ERROR: ResolutionImpossible: for help visit https://pip.pypa.io/en/latest/topics/dependency-resolution/#dealing-with-dependency-conflicts

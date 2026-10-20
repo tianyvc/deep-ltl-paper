@@ -1,0 +1,11 @@
+{
+  "files": 2213,
+  "total_bytes": 134832264,
+  "large_files": [
+    {
+      "path": "src/envs/zones/safety-gymnasium/safety_gymnasium/assets/meshes/racing_track.obj",
+      "bytes": 57529789
+    }
+  ],
+  "credential_pattern_paths": []
+}

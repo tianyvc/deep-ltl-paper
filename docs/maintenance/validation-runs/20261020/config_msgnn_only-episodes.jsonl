@@ -1,0 +1,3 @@
+{"update": 1, "steps": 8, "rewards": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "success": false, "violation": false, "accepting_visits": 0}
+{"update": 1, "steps": 12, "rewards": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0], "success": true, "violation": false, "accepting_visits": 1}
+{"update": 2, "steps": 16, "rewards": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "success": false, "violation": false, "accepting_visits": 0}

@@ -47,7 +47,11 @@ def simulate(env, gamma, exp, seed, num_episodes, formula, finite, render, deter
     model_store = ModelStore(env_name, exp, seed)
     training_status = model_store.load_training_status(map_location=device)
     model_store.load_vocab()
-    model = build_model(env, training_status, config)
+    if training_status.get('architecture', 'sequence_gnn') == 'deepltl':
+        from model.deepltl_reference import DeepLTLSequenceModel
+        model = DeepLTLSequenceModel(env, config)
+    else:
+        model = build_model(env, training_status, config)
 
     # 加载训练好的参数（新版 build_model 默认不再自动 load_state_dict）
     if isinstance(training_status, dict) and 'model_state' in training_status:
@@ -72,6 +76,8 @@ def simulate(env, gamma, exp, seed, num_episodes, formula, finite, render, deter
         else:
             model.load_state_dict(state_dict)
 
+    model.to(device)
+    model.eval()
     props = set(env.get_propositions())
     search = ExhaustiveSearch(model, props, num_loops=2)
     agent = Agent(model, search=search, propositions=props, verbose=render)

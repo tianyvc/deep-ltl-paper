@@ -1,0 +1,21 @@
+AdroitHandRelocateDense-v1, AdroitHandHammerDense-v1, AdroitHandDoorDense-v1 environment's reward functions were updated in v1.2.1 without an environment version update. Therefore, use gymnasium-robotics==1.2.0 for v1 reproducibility or use v2 in gymnasium-robotics>=1.4.3. See https://github.com/Farama-Foundation/Gymnasium-Robotics/pull/220 for more details
+AdroitHandRelocateDense-v1, AdroitHandHammerDense-v1, AdroitHandDoorDense-v1 environment's reward functions were updated in v1.2.1 without an environment version update. Therefore, use gymnasium-robotics==1.2.0 for v1 reproducibility or use v2 in gymnasium-robotics>=1.4.3. See https://github.com/Farama-Foundation/Gymnasium-Robotics/pull/220 for more details
+usage: train_ppo.py [-h] --model_config
+                    {PointLtl2-v0,LetterEnv-v0,FlatWorld-v0,FlatWorld-big-8-v0,FlatWorld-big-12-v0,FlatWorld-big-16-v0,FlatWorld-big-20-v0}
+                    --curriculum
+                    {PointLtl2-v0,LetterEnv-v0,FlatWorld-v0,FlatWorld-big-v0}
+                    [--log_csv | --no-log_csv] [--log_wandb | --no-log_wandb]
+                    [--save | --no-save] [--enable_hierarchical_value]
+                    [--enable_multiscale_gnn] [--enable_automaton_tracking]
+                    [--enable_options] [--ltl_formula str]
+                    [--lambda_short float] [--lambda_mid float]
+                    [--lambda_long float] --name str --env str --num_steps int
+                    [--seed int] [--save_dir str] [--log_interval int]
+                    [--save_interval int] [--eval_interval int]
+                    [--num_procs int] [--device str] [--ltl_sampler [str]]
+                    [--epochs int] [--batch_size int]
+                    [--steps_per_process int] [--discount float] [--lr float]
+                    [--gae_lambda float] [--entropy_coef float]
+                    [--value_loss_coef float] [--max_grad_norm float]
+                    [--optim_eps float] [--clip_eps float]
+train_ppo.py: error: the following arguments are required: --num_steps

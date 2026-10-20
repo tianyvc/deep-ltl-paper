@@ -110,6 +110,10 @@ class Curriculum:
         return self.current_stage.sample(propositions)
 
     def update_task_success(self, task_success: dict[LDBASequence, float], verbose=False) -> None:
+        # A rollout may finish before any episode/task has completed.
+        # No evidence means no curriculum transition or sampling update.
+        if not task_success or self.finished:
+            return
         if self.current_stage.threshold is None:
             return
         self.num_updates += 1

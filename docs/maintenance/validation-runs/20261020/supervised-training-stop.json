@@ -1,0 +1,61 @@
+{
+  "events": [
+    {
+      "command": [
+        "start",
+        "--job-dir",
+        "experiments/runtime_validation_20261020/job_training_stop",
+        "--",
+        "src/train/train_paper.py",
+        "--env",
+        "FlatWorld-v0",
+        "--formula",
+        "F blue",
+        "--configuration",
+        "hv_track",
+        "--device",
+        "cpu",
+        "--steps",
+        "1000000",
+        "--rollout-steps",
+        "16",
+        "--max-episode-steps",
+        "16",
+        "--epochs",
+        "1",
+        "--batch-size",
+        "16",
+        "--output",
+        "experiments/runtime_validation_20261020/supervised_training"
+      ],
+      "exit_code": 0,
+      "output": "{\"job_dir\": \"/home/dell/workspace/Tianyvc/deep-ltl-paper/experiments/runtime_validation_20261020/job_training_stop\", \"supervisor_pid\": 2062313, \"log\": \"/home/dell/workspace/Tianyvc/deep-ltl-paper/experiments/runtime_validation_20261020/job_training_stop/output.log\"}\n"
+    },
+    {
+      "command": [
+        "stop",
+        "--job-dir",
+        "experiments/runtime_validation_20261020/job_training_stop"
+      ],
+      "exit_code": 0,
+      "output": "Stop requested; wait for the current episode/update and check status again.\n"
+    },
+    {
+      "command": [
+        "status",
+        "--job-dir",
+        "experiments/runtime_validation_20261020/job_training_stop"
+      ],
+      "exit_code": 0,
+      "output": "{\n  \"state\": \"interrupted\",\n  \"pid\": 2062313,\n  \"identity\": \"1165229753\",\n  \"started\": \"2026-10-20T07:34:09.074058+00:00\",\n  \"child_pid\": 2062314,\n  \"heartbeat\": \"2026-10-20T07:34:29.105066+00:00\",\n  \"exit_code\": 0,\n  \"ended\": \"2026-10-20T07:34:31.107151+00:00\",\n  \"supervisor_alive\": false,\n  \"job_dir\": \"/home/dell/workspace/Tianyvc/deep-ltl-paper/experiments/runtime_validation_20261020/job_training_stop\"\n}\n"
+    }
+  ],
+  "progress": {
+    "state": "interrupted",
+    "steps": 32,
+    "updates": 2,
+    "target_steps": 1000000,
+    "pid": 2062314
+  },
+  "passed": true
+}

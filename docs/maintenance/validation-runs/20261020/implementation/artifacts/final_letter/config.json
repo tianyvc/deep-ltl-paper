@@ -1,0 +1,252 @@
+{
+  "env": "LetterEnv-v0",
+  "formula": null,
+  "task_set": "configurations/letter_tasks.json",
+  "eval_formula": [],
+  "eval_split": null,
+  "gate": "fixed",
+  "option_max_steps": 2,
+  "configuration": "full_all",
+  "output": "experiments/implementation_20261020/final_letter",
+  "steps": 16,
+  "rollout_steps": 8,
+  "max_episode_steps": 8,
+  "epochs": 1,
+  "batch_size": 8,
+  "seed": 1,
+  "device": "cpu",
+  "gamma": 0.998,
+  "lr": 0.0003,
+  "resume": false,
+  "evaluate": 0,
+  "eval_seed": 10001,
+  "deterministic": true,
+  "protocol": "hiltl-product-v2",
+  "implementation_sha256": "0756fd985052126d5aacb86017e0e5b9821e089cd9d8e98dfc6de2843d412c5a",
+  "task_manifest": {
+    "train": [
+      "F a & F b",
+      "F c",
+      "F (a & F b)"
+    ],
+    "held_out": [
+      "G F a & G F c",
+      "F (a & F (b & F c))",
+      "(!a U b) & F c"
+    ],
+    "automata": [
+      {
+        "split": "train",
+        "formula": "F a & F b",
+        "raw_sha256": "939853f16de062a59ae4be903cc11866b390eb52900664b1b12de4275bbf8e7d",
+        "pruned_sha256": "e4dd5b123f9e68e13dbee3c6cc5e6281ceb604f1da6d9b15f873962d8aa0bc3e",
+        "states": 4,
+        "edges": 8,
+        "finite": true
+      },
+      {
+        "split": "train",
+        "formula": "F c",
+        "raw_sha256": "bfda4c541eee887dface1db07432ad72aa64beaa08d185a69d14706090485146",
+        "pruned_sha256": "a23eea90fa9cb0c0d6b192a8e7f744392a360ac118f7cb27e4b4467481e5c833",
+        "states": 2,
+        "edges": 3,
+        "finite": true
+      },
+      {
+        "split": "train",
+        "formula": "F (a & F b)",
+        "raw_sha256": "f82fe94da1a1cc2180bbb1de1e29d3dab9f1da849431469a9dd522d8f5a7f5f4",
+        "pruned_sha256": "8d278087401ce59d0378dede9f0af5584a972156f904b94e73c9d82b36a9f34c",
+        "states": 3,
+        "edges": 5,
+        "finite": true
+      },
+      {
+        "split": "held_out",
+        "formula": "G F a & G F c",
+        "raw_sha256": "6a81b3e2c06d29c1a25689a0a54f2d2b0946a1cbb2445ffddbfbf1948dbe1e81",
+        "pruned_sha256": "7ef63c0533890397d08c4c5e910997b4de71d4153dbd5bb24333ce7a3bf612f1",
+        "states": 2,
+        "edges": 4,
+        "finite": false
+      },
+      {
+        "split": "held_out",
+        "formula": "F (a & F (b & F c))",
+        "raw_sha256": "024bbda301205695a9c09b2f9e00541e95b9b4565f5d58409117f47e667d7e62",
+        "pruned_sha256": "600f527f0a84b57211319d962810dea8b52db8cd180c251a3fc374b1ab361168",
+        "states": 4,
+        "edges": 7,
+        "finite": true
+      },
+      {
+        "split": "held_out",
+        "formula": "(!a U b) & F c",
+        "raw_sha256": "39a653439ee062e3da238f95a92d1755456b5d2f139987f9352c2b883315b847",
+        "pruned_sha256": "359e201a1c063bdc54d70169638ce5537388b3b4d287aeb0e4ef6ba3f5f00589",
+        "states": 5,
+        "edges": 11,
+        "finite": true
+      }
+    ],
+    "sha256": "d170d4dcc4981a597959528540c95a181bd7c7007dac71004eb3c66640557493"
+  },
+  "propositions": [
+    "a",
+    "b",
+    "c",
+    "d",
+    "e",
+    "f",
+    "g",
+    "h",
+    "i",
+    "j",
+    "k",
+    "l"
+  ],
+  "automaton_states": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "automaton_edges": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      2,
+      2
+    ],
+    [
+      2,
+      1
+    ],
+    [
+      3,
+      3
+    ],
+    [
+      3,
+      1
+    ]
+  ],
+  "automaton_node_features": [
+    [
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    [
+      1.0,
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0,
+      0.5
+    ],
+    [
+      0.0,
+      1.0,
+      0.0,
+      0.5
+    ]
+  ],
+  "automaton_edge_features": [
+    [
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    [
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.5
+    ],
+    [
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.5
+    ],
+    [
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.5
+    ],
+    [
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.5
+    ],
+    [
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0
+    ]
+  ],
+  "protocol_notes": [
+    "Complete finite-horizon episodes per PPO batch; time limit is the defined horizon, with zero bootstrap.",
+    "Long head is a discounted MC return proxy, not a calibrated satisfaction probability.",
+    "Track enables history; product q is always observed for correct reward and task state.",
+    "SCC bit denotes a cyclic SCC; accepting nodes are targets of accepting transitions.",
+    "No artificial skip edges: shortest-hop progress decreases by at most one.",
+    "Guard GRU conditions edge messages on propositions; graph semantic feature dimensions remain 4/6.",
+    "full_all uses target-edge options, topology/timeout termination, intrinsic PPO and extrinsic SMDP PPO.",
+    "Task-set held_out formulas are never sampled for training. Structural overlap is rejected, without claiming language-equivalence checking.",
+    "Architecture and operational choices are explicit, not evidence for the historical paper performance numbers."
+  ]
+}

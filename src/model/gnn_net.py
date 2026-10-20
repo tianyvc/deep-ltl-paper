@@ -2,6 +2,7 @@ import torch
 import torch.nn as nn
 import torch_geometric.nn as gnn
 from torch_geometric.data import Data
+from torch_geometric.utils import softmax
 try:
     from torch_scatter import scatter_add
 except Exception:  # pragma: no cover
@@ -17,7 +18,7 @@ except Exception:  # pragma: no cover
 
 class SimpleGlobalAttention(nn.Module):
     """自定义全局注意力池化，避免 PyG 版本差异导致的接口不兼容。
-    公式与 GlobalAttention 等价：score = gate_nn(x); 输出为 sum(score * x) 按 batch 聚合。
+    公式与 GlobalAttention 等价：score = softmax(gate_nn(x)); 输出为 sum(score * x) 按图聚合。
     """
     def __init__(self, gate_nn: nn.Module):
         super().__init__()
@@ -25,7 +26,7 @@ class SimpleGlobalAttention(nn.Module):
 
     def forward(self, x: torch.Tensor, batch: torch.Tensor):
         # gate_nn 内部已包含非线性，输出形状 (N,1)
-        scores = self.gate_nn(x)  # (N,1)
+        scores = softmax(self.gate_nn(x), batch)
         weighted = x * scores  # 广播 (N, feat)
         return scatter_add(weighted, batch, dim=0)
 

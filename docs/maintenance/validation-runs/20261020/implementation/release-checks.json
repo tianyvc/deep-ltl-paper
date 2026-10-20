@@ -1,0 +1,18 @@
+{
+  "checks": [
+    {
+      "name": "diff-check",
+      "exit_code": 0
+    },
+    {
+      "name": "diff-stat",
+      "exit_code": 0
+    },
+    {
+      "name": "status",
+      "exit_code": 0
+    }
+  ],
+  "broken_links": [],
+  "source_files": 141
+}

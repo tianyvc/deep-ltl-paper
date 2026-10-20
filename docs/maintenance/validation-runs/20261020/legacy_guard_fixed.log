@@ -1,0 +1,10 @@
+AdroitHandRelocateDense-v1, AdroitHandHammerDense-v1, AdroitHandDoorDense-v1 environment's reward functions were updated in v1.2.1 without an environment version update. Therefore, use gymnasium-robotics==1.2.0 for v1 reproducibility or use v2 in gymnasium-robotics>=1.4.3. See https://github.com/Farama-Foundation/Gymnasium-Robotics/pull/220 for more details
+AdroitHandRelocateDense-v1, AdroitHandHammerDense-v1, AdroitHandDoorDense-v1 environment's reward functions were updated in v1.2.1 without an environment version update. Therefore, use gymnasium-robotics==1.2.0 for v1 reproducibility or use v2 in gymnasium-robotics>=1.4.3. See https://github.com/Farama-Foundation/Gymnasium-Robotics/pull/220 for more details
+Traceback (most recent call last):
+  File "/home/dell/workspace/Tianyvc/deep-ltl-paper/src/train/train_ppo.py", line 254, in <module>
+    main()
+  File "/home/dell/workspace/Tianyvc/deep-ltl-paper/src/train/train_ppo.py", line 248, in main
+    trainer.train(log_csv=args.log_csv, log_wandb=args.log_wandb)
+  File "/home/dell/workspace/Tianyvc/deep-ltl-paper/src/train/train_ppo.py", line 44, in train
+    raise NotImplementedError(
+NotImplementedError: Legacy enhancement switches do not implement the paper training contract. Use src/train/train_paper.py for the explicitly scoped fixed-formula protocol; Options/full_all and original-baseline comparisons remain unverified.

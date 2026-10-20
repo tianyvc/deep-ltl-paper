@@ -1,0 +1,78 @@
+[
+  {
+    "name": "test_gnn_embedding_quick",
+    "command": [
+      "/home/dell/anaconda3/envs/wty_LTL/bin/python",
+      "tests/test_gnn_embedding_quick.py"
+    ],
+    "exit_code": 0,
+    "output": "embedding shape: torch.Size([4, 72])\nAdroitHandRelocateDense-v1, AdroitHandHammerDense-v1, AdroitHandDoorDense-v1 environment's reward functions were updated in v1.2.1 without an environment version update. Therefore, use gymnasium-robotics==1.2.0 for v1 reproducibility or use v2 in gymnasium-robotics>=1.4.3. See https://github.com/Farama-Foundation/Gymnasium-Robotics/pull/220 for more details\nAdroitHandRelocateDense-v1, AdroitHandHammerDense-v1, AdroitHandDoorDense-v1 environment's reward functions were updated in v1.2.1 without an environment version update. Therefore, use gymnasium-robotics==1.2.0 for v1 reproducibility or use v2 in gymnasium-robotics>=1.4.3. See https://github.com/Farama-Foundation/Gymnasium-Robotics/pull/220 for more details\n"
+  },
+  {
+    "name": "test_gnn_fix",
+    "command": [
+      "/home/dell/anaconda3/envs/wty_LTL/bin/python",
+      "tests/test_gnn_fix.py"
+    ],
+    "exit_code": 0,
+    "output": "============================================================\nGNN \u4ee3\u7801\u6d4b\u8bd5\n============================================================\n\u6d4b\u8bd5 GNN \u521d\u59cb\u5316...\n\u2713 GNN (\u65e0\u8fb9\u7279\u5f81) \u521d\u59cb\u5316\u6210\u529f\n  - Input dim: 128\n  - Hidden dim: 64\n  - Output dim: 64\n  - Use edge attr: False\n\n\u6d4b\u8bd5 GNN \u524d\u5411\u4f20\u64ad...\n\u2713 \u524d\u5411\u4f20\u64ad\u6210\u529f\uff08\u65e0\u8fb9\u7279\u5f81\uff09\n  - \u8f93\u5165\u5f62\u72b6: torch.Size([10, 128])\n  - \u8f93\u51fa\u5f62\u72b6: torch.Size([2, 64])\n  - \u671f\u671b\u8f93\u51fa\u5f62\u72b6: (2, 64)\n  \u2713 \u8f93\u51fa\u5f62\u72b6\u6b63\u786e\n\n\u6d4b\u8bd5\u7b80\u5355\u5e8f\u5217\u7684\u56fe\u6784\u5efa...\n\u2713 \u56fe\u6784\u5efa\u6210\u529f\n  - \u8282\u70b9\u6570: 8\n  - \u8282\u70b9\u7279\u5f81\u7ef4\u5ea6: 128\n  - \u8fb9\u6570: 12\n  - Batch\u5206\u914d: tensor([0, 0, 0, 0, 0, 1, 1, 1])\n\u2713 GNN\u5904\u7406\u6210\u529f\n  - \u8f93\u51fa\u5f62\u72b6: torch.Size([2, 64])\n  - \u671f\u671b\u5f62\u72b6: (2, 64)\n\n============================================================\n\u2713 \u6240\u6709\u6d4b\u8bd5\u901a\u8fc7!\n============================================================\n"
+  },
+  {
+    "name": "background-start",
+    "command": [
+      "/home/dell/anaconda3/envs/wty_LTL/bin/python",
+      "scripts/long_task.py",
+      "start",
+      "--job-dir",
+      "experiments/implementation_20261020/final_background",
+      "--",
+      "src/train/train_paper.py",
+      "--env",
+      "FlatWorld-v0",
+      "--task-set",
+      "configurations/flatworld_tasks.json",
+      "--configuration",
+      "full_all",
+      "--steps",
+      "1000000",
+      "--rollout-steps",
+      "8",
+      "--max-episode-steps",
+      "8",
+      "--option-max-steps",
+      "2",
+      "--batch-size",
+      "8",
+      "--epochs",
+      "1",
+      "--output",
+      "experiments/implementation_20261020/final_background_model"
+    ],
+    "exit_code": 0,
+    "output": "{\"job_dir\": \"/home/dell/workspace/Tianyvc/deep-ltl-paper/experiments/implementation_20261020/final_background\", \"supervisor_pid\": 2382241, \"log\": \"/home/dell/workspace/Tianyvc/deep-ltl-paper/experiments/implementation_20261020/final_background/output.log\"}\n"
+  },
+  {
+    "name": "background-stop",
+    "command": [
+      "/home/dell/anaconda3/envs/wty_LTL/bin/python",
+      "scripts/long_task.py",
+      "stop",
+      "--job-dir",
+      "experiments/implementation_20261020/final_background"
+    ],
+    "exit_code": 0,
+    "output": "Stop requested; wait for the current episode/update and check status again.\n"
+  },
+  {
+    "name": "background-final-status",
+    "command": [
+      "/home/dell/anaconda3/envs/wty_LTL/bin/python",
+      "scripts/long_task.py",
+      "status",
+      "--job-dir",
+      "experiments/implementation_20261020/final_background"
+    ],
+    "exit_code": 0,
+    "output": "{\n  \"state\": \"interrupted\",\n  \"pid\": 2382241,\n  \"identity\": \"1165841911\",\n  \"started\": \"2026-10-20T09:16:10.657472+00:00\",\n  \"child_pid\": 2382244,\n  \"heartbeat\": \"2026-10-20T09:16:44.710068+00:00\",\n  \"exit_code\": 0,\n  \"ended\": \"2026-10-20T09:16:46.712156+00:00\",\n  \"supervisor_alive\": false,\n  \"job_dir\": \"/home/dell/workspace/Tianyvc/deep-ltl-paper/experiments/implementation_20261020/final_background\"\n}\n"
+  }
+]

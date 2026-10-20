@@ -1,0 +1,858 @@
+{
+  "TLT": [
+    {
+      "line": 1,
+      "text": "\\documentclass[journal]{IEEEtran}"
+    },
+    {
+      "line": 64,
+      "text": "\\section{Introduction}"
+    },
+    {
+      "line": 75,
+      "text": "\\caption{\\textbf{Two Core Limitations.} (a) Semantic transition types (forward, skip, epsilon, backward). (b) Lack explicit guidance, causing flattening in standard GNNs. (c) Static global embeddings ignore multi-scale temporal structure, leading to myopia. HiLTL addresses both via SE-GNN semantics and hierarchical value.}"
+    },
+    {
+      "line": 76,
+      "text": "\\label{fig:limitations}"
+    },
+    {
+      "line": 81,
+      "text": "\\section{Related Work}"
+    },
+    {
+      "line": 82,
+      "text": "\\label{sec:related}"
+    },
+    {
+      "line": 90,
+      "text": "\\subsection{Comparative Positioning}"
+    },
+    {
+      "line": 101,
+      "text": "\\caption{Complete HiLTL System. Four components: (1) LTL-to-LDBA product generating $q_t$ and observations; (2) SE-GNN with edge-conditioned attention over semantic features; (3) Dual-pathway value with multi-scale short-term and automaton-driven long-term; (4) Dynamic fusion via $\\beta(q)$ producing final Q-values.}"
+    },
+    {
+      "line": 102,
+      "text": "\\label{fig:architecture}"
+    },
+    {
+      "line": 105,
+      "text": "\\section{Preliminary}"
+    },
+    {
+      "line": 106,
+      "text": "\\label{sec:problem}"
+    },
+    {
+      "line": 108,
+      "text": "\\subsection{Problem Formulation}"
+    },
+    {
+      "line": 113,
+      "text": "\\label{eq:opt_policy}"
+    },
+    {
+      "line": 119,
+      "text": "\\label{eq:value_func}"
+    },
+    {
+      "line": 125,
+      "text": "\\subsection{Multi-Temporal Scales in LDBA}"
+    },
+    {
+      "line": 130,
+      "text": "\\label{eq:transition_types}"
+    },
+    {
+      "line": 134,
+      "text": "\\subsection{Hierarchical Value Decomposition Theory}"
+    },
+    {
+      "line": 139,
+      "text": "\\label{eq:decomposition}"
+    },
+    {
+      "line": 155,
+      "text": "\\caption{Fusion overview: The diagram illustrates the dual-pathway value decomposition strategy: \\textbf{(1) Short-term pathway} (top) uses Multi-Scale SE-GNN to extract hierarchical embeddings from three GATv2 layers, capturing immediate sub-goals (Layer 1), mid-term planning (Layer 2), and global structure (Layer 3); \\textbf{(2) Long-term pathway} (bottom) leverages Automaton Tracking to compute acceptance proximity and transition history. The dynamic fusion weight $\\beta(q)$ (Eq.~\\ref{eq:beta_definition}) adaptively balances both pathways based on distance to acceptance states. Final V-value: $V(s,q) = (1-\\beta(q)) V_{\\text{short}} + \\beta(q) V_{\\text{long}}$.}"
+    },
+    {
+      "line": 156,
+      "text": "\\label{fig:fusion_overview}"
+    },
+    {
+      "line": 159,
+      "text": "\\section{Methodology}"
+    },
+    {
+      "line": 160,
+      "text": "\\label{sec:method}"
+    },
+    {
+      "line": 162,
+      "text": "\\subsection{Overview of Proposed Approach}"
+    },
+    {
+      "line": 171,
+      "text": "\\caption{LDBA with HiLTL Enhancements for Formula $(\\neg \\text{blue} \\mathrel{U} \\text{green}) \\land F \\text{yellow}$. The automaton structure shows how our three core innovations are integrated: \\textbf{(1) SE-GNN Enhancement} adds 6-dimensional edge features (transition types: forward/skip/epsilon/trap, semantic distance) and 4-dimensional node features (accepting status, SCC membership, distance to acceptance); \\textbf{(2) Multi-Scale GNN} extracts hierarchical embeddings through 3 layers (Layer 0: local 1-hop neighborhoods for short-term decisions, Layer 1: 2-hop mid-range patterns, Layer 2: global topology for long-term planning); \\textbf{(3) Hierarchical Value} computes $V_{\\text{short}}(s)$ from environment state and $V_{\\text{long}}(q)$ from automaton state, with dynamic fusion weight $\\beta(q)$ that increases as the agent approaches accepting states. Edge categories distinguish transition types: forward chains (solid), skip edges (dashed), self-loops (solid), and trap transitions (dash-dot). The accepting state $q_{acc}$ forms an SCC, while trap state $q_{trap}$ represents formula violation.}"
+    },
+    {
+      "line": 172,
+      "text": "\\label{fig:automaton_enhanced}"
+    },
+    {
+      "line": 175,
+      "text": "\\subsection{Semantically-Enhanced Graph Neural Networks}"
+    },
+    {
+      "line": 177,
+      "text": "\\subsubsection{Graph Structure of Automaton}"
+    },
+    {
+      "line": 181,
+      "text": "\\label{eq:node_features}"
+    },
+    {
+      "line": 188,
+      "text": "\\label{eq:edge_features}"
+    },
+    {
+      "line": 195,
+      "text": "\\subsubsection{Semantically-Conditioned GATv2 Mechanism}"
+    },
+    {
+      "line": 199,
+      "text": "\\label{eq:gat_standard}"
+    },
+    {
+      "line": 205,
+      "text": "\\label{eq:gat_semantic}"
+    },
+    {
+      "line": 211,
+      "text": "\\subsubsection{SE-GNN Architecture Details}"
+    },
+    {
+      "line": 220,
+      "text": "\\subsection{MSGNN for Short-Term Features}"
+    },
+    {
+      "line": 226,
+      "text": "\\label{eq:multiscale_readout}"
+    },
+    {
+      "line": 230,
+      "text": "\\label{eq:readout}"
+    },
+    {
+      "line": 240,
+      "text": "\\label{eq:short_value_comp}"
+    },
+    {
+      "line": 244,
+      "text": "\\subsection{Automaton Tracking for Long-Term Features}"
+    },
+    {
+      "line": 258,
+      "text": "\\caption{Evaluation Configuration Matrix}"
+    },
+    {
+      "line": 259,
+      "text": "\\label{tab:configurations}"
+    },
+    {
+      "line": 275,
+      "text": "\\subsection{Dynamic Fusion with Adaptive Weighting}"
+    },
+    {
+      "line": 280,
+      "text": "\\label{eq:beta_definition}"
+    },
+    {
+      "line": 286,
+      "text": "\\section{Experiments}"
+    },
+    {
+      "line": 287,
+      "text": "\\label{sec:experiments}"
+    },
+    {
+      "line": 289,
+      "text": "\\subsection{Experimental Setup}"
+    },
+    {
+      "line": 299,
+      "text": "\\caption{Task Evaluation Set}"
+    },
+    {
+      "line": 300,
+      "text": "\\label{tab:tasks}"
+    },
+    {
+      "line": 330,
+      "text": "\\caption{HV-Related Configuration Performance}"
+    },
+    {
+      "line": 331,
+      "text": "\\label{tab:hv_comparison}"
+    },
+    {
+      "line": 344,
+      "text": "\\subsection{Overall Performance}"
+    },
+    {
+      "line": 354,
+      "text": "  \\caption{ZoneEnv visualization examples under two typical LTL objectives, shown as two rows spanning both columns. Top: $G\\,F$ blue $\\wedge\\, G\\,F$ yellow-repeatedly visit blue and yellow regions, exhibiting back-and-forth movements across mixed color blocks. Bottom: $F\\,G$ green-reach the green region and maintain residence, stabilizing near the specified area.}"
+    },
+    {
+      "line": 355,
+      "text": "  \\label{fig:zoneenv_vis}"
+    },
+    {
+      "line": 368,
+      "text": "\\subsection{External Baseline Completeness Analysis}"
+    },
+    {
+      "line": 376,
+      "text": "\\caption{Baseline Completeness Matrix in This Study}"
+    },
+    {
+      "line": 377,
+      "text": "\\label{tab:baseline_completeness}"
+    },
+    {
+      "line": 393,
+      "text": "\\caption{Performance Improvement Analysis Across Configurations and Task Difficulties. \\textbf{Left:} success-rate gains of representative variants over baseline, with hv\\_only at +4.5\\%, msgnn\\_only at +2.3\\%, and hv\\_track at +6.4\\% (strongest on hard tasks). \\textbf{Right:} improvements grouped by LDBA size: easy tasks (0--10 states) gain 1.2\\%, medium tasks (11--15) gain 2.9\\%, and hard tasks (16+) retain +4.3\\% for hv\\_track.}"
+    },
+    {
+      "line": 394,
+      "text": "\\label{fig:performance}"
+    },
+    {
+      "line": 397,
+      "text": "\\subsection{Cross-Environment Generalization}"
+    },
+    {
+      "line": 405,
+      "text": "\\caption{Cross-Environment Success Rate Comparison (Finite-horizon)}"
+    },
+    {
+      "line": 406,
+      "text": "\\label{tab:cross_env}"
+    },
+    {
+      "line": 418,
+      "text": "\\subsection{Infinite-Horizon Evaluation}"
+    },
+    {
+      "line": 426,
+      "text": "\\caption{Infinite-Horizon Comparison}"
+    },
+    {
+      "line": 427,
+      "text": "\\label{tab:infinite_horizon}"
+    },
+    {
+      "line": 447,
+      "text": "\\subsection{Impact of Task Difficulty on Hierarchical Value Networks}"
+    },
+    {
+      "line": 459,
+      "text": "\\caption{HV Improvements with 95\\% Confidence Intervals (500 evaluation episodes)}"
+    },
+    {
+      "line": 460,
+      "text": "\\label{tab:hv_significance}"
+    },
+    {
+      "line": 472,
+      "text": "\\subsection{Hierarchical Value Effectiveness}"
+    },
+    {
+      "line": 479,
+      "text": "\\caption{Fusion dynamics across training horizons. The trajectory of $\\beta(q)$ starts near 0.15, remains balanced around 0.4 at mid-range proximity, and approaches 0.8 near acceptance, illustrating the gradual handoff from $V_{\\text{short}}$ to $V_{\\text{long}}$ and enabling adaptive credit assignment.}"
+    },
+    {
+      "line": 480,
+      "text": "\\label{fig:fusion_weight}"
+    },
+    {
+      "line": 485,
+      "text": "\\caption{Summary of Component Contributions (quantitative details in referenced tables)}"
+    },
+    {
+      "line": 486,
+      "text": "\\label{tab:key_findings}"
+    },
+    {
+      "line": 501,
+      "text": "\\caption{Complete Performance Matrix on PointLtl2-v0 (500 episodes per seed, mean over seeds 1--5)}"
+    },
+    {
+      "line": 502,
+      "text": "\\label{tab:overall_performance}"
+    },
+    {
+      "line": 519,
+      "text": "\\subsection{Extended Ablation and Robustness Analyses}"
+    },
+    {
+      "line": 520,
+      "text": "\\label{sec:extended_ablation}"
+    },
+    {
+      "line": 521,
+      "text": "\\subsubsection{Impact of Task Difficulty on HV}"
+    },
+    {
+      "line": 527,
+      "text": "\\caption{HV Effect by Task Difficulty}"
+    },
+    {
+      "line": 528,
+      "text": "\\label{tab:difficulty_impact}"
+    },
+    {
+      "line": 541,
+      "text": "\\subsubsection{Performance Metrics Details}"
+    },
+    {
+      "line": 547,
+      "text": "\\caption{HV Impact on Average Steps and Rewards}"
+    },
+    {
+      "line": 548,
+      "text": "\\label{tab:hv-steps-rewards}"
+    },
+    {
+      "line": 560,
+      "text": "\\subsubsection{Component Ablation Study}"
+    },
+    {
+      "line": 561,
+      "text": "\\label{app:ablation}"
+    },
+    {
+      "line": 567,
+      "text": "\\caption{Ablation Study (based on hv\\_track)}"
+    },
+    {
+      "line": 568,
+      "text": "\\label{tab:ablation}"
+    },
+    {
+      "line": 585,
+      "text": "\\subsubsection{Zero-Shot Generalization to Unseen Formulas}"
+    },
+    {
+      "line": 586,
+      "text": "\\label{app:generalization}"
+    },
+    {
+      "line": 597,
+      "text": "\\caption{Zero-Shot Generalization Performance}"
+    },
+    {
+      "line": 598,
+      "text": "\\label{tab:zero_shot_gen}"
+    },
+    {
+      "line": 611,
+      "text": "\\section{Conclusion}"
+    },
+    {
+      "line": 612,
+      "text": "\\label{sec:conclusion}"
+    },
+    {
+      "line": 626,
+      "text": "% do not use \\section anymore after \\appendix, only \\section*"
+    },
+    {
+      "line": 630,
+      "text": "% then use \\section to start each appendix"
+    },
+    {
+      "line": 631,
+      "text": "% you must declare a \\section before using any"
+    },
+    {
+      "line": 632,
+      "text": "% \\subsection or using \\label (\\appendices by itself"
+    },
+    {
+      "line": 639,
+      "text": "\\section{Algorithm Specifications}"
+    },
+    {
+      "line": 640,
+      "text": "\\label{app:algorithms}"
+    },
+    {
+      "line": 644,
+      "text": "\\subsection{SE-GNN: Semantically-Enhanced Graph Construction}"
+    },
+    {
+      "line": 649,
+      "text": "\\caption{SE-GNN Graph Construction}"
+    },
+    {
+      "line": 650,
+      "text": "\\label{alg:segnn}"
+    },
+    {
+      "line": 691,
+      "text": "\\subsection{Hierarchical Value Decomposition with Dynamic Fusion}"
+    },
+    {
+      "line": 696,
+      "text": "\\caption{Hierarchical Value Estimation}"
+    },
+    {
+      "line": 697,
+      "text": "\\label{alg:hv}"
+    },
+    {
+      "line": 728,
+      "text": "\\subsection{Complete Training Procedure}"
+    },
+    {
+      "line": 733,
+      "text": "\\caption{HiLTL Training with Multi-Scale RL}"
+    },
+    {
+      "line": 734,
+      "text": "\\label{alg:training}"
+    },
+    {
+      "line": 791,
+      "text": "\\section{Future Directions for MSGNN}"
+    },
+    {
+      "line": 792,
+      "text": "\\label{app:future_directions}"
+    },
+    {
+      "line": 796,
+      "text": "\\subsection{Direction 1: Increase Automaton Scale}"
+    },
+    {
+      "line": 807,
+      "text": "\\subsection{Direction 2: Systematic Hyperparameter Optimization}"
+    },
+    {
+      "line": 819,
+      "text": "\\subsection{Direction 3: Enhanced Semantic Features}"
+    },
+    {
+      "line": 831,
+      "text": "\\subsection{Direction 4: Hierarchical Multi-Scale Co-Design with HV}"
+    },
+    {
+      "line": 842,
+      "text": "\\section*{Acknowledgment}"
+    }
+  ],
+  "TLT__Copy_": [
+    {
+      "line": 1,
+      "text": "\\documentclass[conference]{IEEEtran}"
+    },
+    {
+      "line": 46,
+      "text": "\\section{Introduction}"
+    },
+    {
+      "line": 55,
+      "text": "\\caption{\\textbf{Two Core Limitations.} (a) Semantic transition types (forward, skip, epsilon, backward). (b) Lack explicit guidance, causing flattening in standard GNNs. (c) Static global embeddings ignore multi-scale temporal structure, leading to myopia. HiLTL addresses both via SE-GNN semantics and hierarchical value.}"
+    },
+    {
+      "line": 56,
+      "text": "\\label{fig:limitations}"
+    },
+    {
+      "line": 61,
+      "text": "\\section{Related Work}"
+    },
+    {
+      "line": 62,
+      "text": "\\label{sec:related}"
+    },
+    {
+      "line": 70,
+      "text": "\\subsection{Comparative Positioning}"
+    },
+    {
+      "line": 77,
+      "text": "\\caption{Complete HiLTL System. Four components: (1) LTL-to-LDBA product generating $q_t$ and observations; (2) SE-GNN with edge-conditioned attention over semantic features; (3) Dual-pathway value with multi-scale short-term and automaton-driven long-term; (4) Dynamic fusion via $\\beta(q)$ producing final Q-values.}"
+    },
+    {
+      "line": 78,
+      "text": "\\label{fig:architecture}"
+    },
+    {
+      "line": 81,
+      "text": "\\section{Preliminary}"
+    },
+    {
+      "line": 82,
+      "text": "\\label{sec:problem}"
+    },
+    {
+      "line": 84,
+      "text": "\\subsection{Problem Formulation}"
+    },
+    {
+      "line": 89,
+      "text": "\\label{eq:opt_policy}"
+    },
+    {
+      "line": 95,
+      "text": "\\label{eq:value_func}"
+    },
+    {
+      "line": 100,
+      "text": "\\subsection{Multi-Temporal Scales in LDBA}"
+    },
+    {
+      "line": 105,
+      "text": "\\label{eq:transition_types}"
+    },
+    {
+      "line": 109,
+      "text": "\\subsection{Hierarchical Value Decomposition Theory}"
+    },
+    {
+      "line": 114,
+      "text": "\\label{eq:decomposition}"
+    },
+    {
+      "line": 129,
+      "text": "\\caption{Fusion overview: The diagram illustrates the dual-pathway value decomposition strategy: \\textbf{(1) Short-term pathway} (top) uses Multi-Scale SE-GNN to extract hierarchical embeddings from three GATv2 layers, capturing immediate sub-goals (Layer 1), mid-term planning (Layer 2), and global structure (Layer 3); \\textbf{(2) Long-term pathway} (bottom) leverages Automaton Tracking to compute acceptance proximity and transition history. The dynamic fusion weight $\\beta(q)$ (Eq.~\\ref{eq:beta_definition}) adaptively balances both pathways based on distance to acceptance states. Final V-value: $V(s,q) = (1-\\beta(q)) V_{\\text{short}} + \\beta(q) V_{\\text{long}}$.}"
+    },
+    {
+      "line": 130,
+      "text": "\\label{fig:fusion_overview}"
+    },
+    {
+      "line": 133,
+      "text": "\\section{Methodology}"
+    },
+    {
+      "line": 134,
+      "text": "\\label{sec:method}"
+    },
+    {
+      "line": 136,
+      "text": "\\subsection{Overview of Proposed Approach}"
+    },
+    {
+      "line": 145,
+      "text": "\\caption{LDBA with HiLTL Enhancements for Formula $(\\neg \\text{blue} \\mathrel{U} \\text{green}) \\land F \\text{yellow}$. The automaton structure shows how our three core innovations are integrated: \\textbf{(1) SE-GNN Enhancement} adds 6-dimensional edge features (transition type, accepting target, normalized distance) and 4-dimensional node features (accepting status, SCC membership, initial-state marker, distance to acceptance); \\textbf{(2) Multi-Scale GNN} extracts hierarchical embeddings through 3 layers; \\textbf{(3) Hierarchical Value} computes $V_{\\text{short}}(s,q)$ and $V_{\\text{long}}(q)$ with fusion weight $\\beta(q)$. Edge categories distinguish forward chains, skip edges, recurrent/self loops, and trap-related transitions.}"
+    },
+    {
+      "line": 146,
+      "text": "\\label{fig:automaton_enhanced}"
+    },
+    {
+      "line": 149,
+      "text": "\\subsection{Semantically-Enhanced Graph Neural Networks}"
+    },
+    {
+      "line": 151,
+      "text": "\\subsubsection{Graph Structure of Automaton}"
+    },
+    {
+      "line": 155,
+      "text": "\\label{eq:node_features}"
+    },
+    {
+      "line": 160,
+      "text": "\\label{eq:edge_features}"
+    },
+    {
+      "line": 165,
+      "text": "\\subsubsection{Semantically-Conditioned GATv2 Mechanism}"
+    },
+    {
+      "line": 169,
+      "text": "\\label{eq:gat_standard}"
+    },
+    {
+      "line": 175,
+      "text": "\\label{eq:gat_semantic}"
+    },
+    {
+      "line": 181,
+      "text": "\\subsubsection{SE-GNN Architecture Details}"
+    },
+    {
+      "line": 187,
+      "text": "\\label{eq:segnn_update}"
+    },
+    {
+      "line": 191,
+      "text": "\\subsection{MSGNN for Short-Term Features}"
+    },
+    {
+      "line": 197,
+      "text": "\\label{eq:multiscale_readout}"
+    },
+    {
+      "line": 201,
+      "text": "\\label{eq:readout}"
+    },
+    {
+      "line": 207,
+      "text": "\\label{eq:z_short}"
+    },
+    {
+      "line": 212,
+      "text": "\\label{eq:short_value_comp}"
+    },
+    {
+      "line": 217,
+      "text": "\\subsection{Automaton Tracking for Long-Term Features}"
+    },
+    {
+      "line": 224,
+      "text": "\\label{eq:long_value_comp}"
+    },
+    {
+      "line": 230,
+      "text": "\\caption{Evaluation Configuration Matrix. HV denotes hierarchical value decomposition, MSGNN denotes multi-scale GNN features, Track denotes automaton tracking, and Opt denotes the optional option-level policy module.}"
+    },
+    {
+      "line": 231,
+      "text": "\\label{tab:configurations}"
+    },
+    {
+      "line": 247,
+      "text": "\\subsection{Dynamic Fusion with Adaptive Weighting}"
+    },
+    {
+      "line": 252,
+      "text": "\\label{eq:beta_definition}"
+    },
+    {
+      "line": 256,
+      "text": "\\section{Experiments}"
+    },
+    {
+      "line": 257,
+      "text": "\\label{sec:experiments}"
+    },
+    {
+      "line": 259,
+      "text": "\\subsection{Experimental Setup}"
+    },
+    {
+      "line": 267,
+      "text": "\\caption{Task Evaluation Set}"
+    },
+    {
+      "line": 268,
+      "text": "\\label{tab:tasks}"
+    },
+    {
+      "line": 296,
+      "text": "\\caption{HV-Related Configuration Performance}"
+    },
+    {
+      "line": 297,
+      "text": "\\label{tab:hv_comparison}"
+    },
+    {
+      "line": 310,
+      "text": "\\subsection{Overall Performance}"
+    },
+    {
+      "line": 320,
+      "text": "  \\caption{ZoneEnv visualization examples under two typical LTL objectives, shown as two rows spanning both columns. Top: $G\\,F$ blue $\\wedge\\, G\\,F$ yellow, where the agent repeatedly visits blue and yellow regions. Bottom: $F\\,G$ green, where the agent reaches the green region and then remains there.}"
+    },
+    {
+      "line": 321,
+      "text": "  \\label{fig:zoneenv_vis}"
+    },
+    {
+      "line": 326,
+      "text": "\\subsection{External Baseline Completeness Analysis}"
+    },
+    {
+      "line": 332,
+      "text": "\\caption{Baseline Completeness Matrix in This Study}"
+    },
+    {
+      "line": 333,
+      "text": "\\label{tab:baseline_completeness}"
+    },
+    {
+      "line": 349,
+      "text": "\\caption{Performance Improvement Analysis Across Configurations and Task Difficulties. \\textbf{Left:} success-rate gains of representative variants over baseline, with hv\\_only at +4.5\\%, msgnn\\_only at +2.3\\%, and hv\\_track at +6.4\\% (strongest on hard tasks). \\textbf{Right:} improvements grouped by LDBA size: easy tasks (0--10 states) gain 1.2\\%, medium tasks (11--15) gain 2.9\\%, and hard tasks (16+) retain +4.3\\% for hv\\_track.}"
+    },
+    {
+      "line": 350,
+      "text": "\\label{fig:performance}"
+    },
+    {
+      "line": 353,
+      "text": "\\subsection{Cross-Environment Generalization}"
+    },
+    {
+      "line": 359,
+      "text": "\\caption{Cross-Environment Success Rate Comparison (Finite-horizon)}"
+    },
+    {
+      "line": 360,
+      "text": "\\label{tab:cross_env}"
+    },
+    {
+      "line": 372,
+      "text": "\\subsection{Infinite-Horizon Evaluation}"
+    },
+    {
+      "line": 378,
+      "text": "\\caption{Infinite-Horizon Comparison}"
+    },
+    {
+      "line": 379,
+      "text": "\\label{tab:infinite_horizon}"
+    },
+    {
+      "line": 399,
+      "text": "\\subsection{Impact of Task Difficulty on Hierarchical Value Networks}"
+    },
+    {
+      "line": 405,
+      "text": "\\caption{HV Improvements with 95\\% Confidence Intervals (500 evaluation episodes)}"
+    },
+    {
+      "line": 406,
+      "text": "\\label{tab:hv_significance}"
+    },
+    {
+      "line": 418,
+      "text": "\\subsection{Hierarchical Value Effectiveness}"
+    },
+    {
+      "line": 425,
+      "text": "\\caption{Fusion dynamics across training horizons. The trajectory of $\\beta(q)$ starts near 0.15, remains balanced around 0.4 at mid-range proximity, and approaches 0.8 near acceptance, illustrating the gradual handoff from $V_{\\text{short}}$ to $V_{\\text{long}}$ and enabling adaptive credit assignment.}"
+    },
+    {
+      "line": 426,
+      "text": "\\label{fig:fusion_weight}"
+    },
+    {
+      "line": 431,
+      "text": "\\caption{Summary of Component Contributions (quantitative details in referenced tables)}"
+    },
+    {
+      "line": 432,
+      "text": "\\label{tab:key_findings}"
+    },
+    {
+      "line": 447,
+      "text": "\\caption{Complete Performance Matrix on PointLtl2-v0 (500 episodes per seed, mean over seeds 1--5)}"
+    },
+    {
+      "line": 448,
+      "text": "\\label{tab:overall_performance}"
+    },
+    {
+      "line": 465,
+      "text": "\\subsection{Extended Ablation and Robustness Analyses}"
+    },
+    {
+      "line": 466,
+      "text": "\\label{sec:extended_ablation}"
+    },
+    {
+      "line": 467,
+      "text": "\\subsubsection{Impact of Task Difficulty on HV}"
+    },
+    {
+      "line": 473,
+      "text": "\\caption{HV Effect by Task Difficulty}"
+    },
+    {
+      "line": 474,
+      "text": "\\label{tab:difficulty_impact}"
+    },
+    {
+      "line": 487,
+      "text": "\\subsubsection{Performance Metrics Details}"
+    },
+    {
+      "line": 493,
+      "text": "\\caption{HV Impact on Average Steps and Rewards}"
+    },
+    {
+      "line": 494,
+      "text": "\\label{tab:hv-steps-rewards}"
+    },
+    {
+      "line": 506,
+      "text": "\\subsubsection{Component Ablation Study}"
+    },
+    {
+      "line": 507,
+      "text": "\\label{app:ablation}"
+    },
+    {
+      "line": 513,
+      "text": "\\caption{Ablation Study (based on hv\\_track)}"
+    },
+    {
+      "line": 514,
+      "text": "\\label{tab:ablation}"
+    },
+    {
+      "line": 527,
+      "text": "\\subsubsection{Zero-Shot Generalization to Unseen Formulas}"
+    },
+    {
+      "line": 528,
+      "text": "\\label{app:generalization}"
+    },
+    {
+      "line": 538,
+      "text": "\\caption{Zero-Shot Generalization Performance}"
+    },
+    {
+      "line": 539,
+      "text": "\\label{tab:zero_shot_gen}"
+    },
+    {
+      "line": 552,
+      "text": "\\section{Conclusion}"
+    },
+    {
+      "line": 553,
+      "text": "\\label{sec:conclusion}"
+    },
+    {
+      "line": 559,
+      "text": "\\section{Algorithm Specifications}"
+    },
+    {
+      "line": 560,
+      "text": "\\label{app:algorithms}"
+    },
+    {
+      "line": 571,
+      "text": "\\section{Future Directions for MSGNN}"
+    },
+    {
+      "line": 572,
+      "text": "\\label{app:future_directions}"
+    },
+    {
+      "line": 576,
+      "text": "\\section{Complexity Note}"
+    },
+    {
+      "line": 577,
+      "text": "\\label{app:complexity}"
+    }
+  ]
+}

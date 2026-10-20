@@ -39,7 +39,16 @@ class Trainer:
         self.model_store = ModelStore.from_config(args)
 
     def train(self, log_csv: bool = True, log_wandb: bool = False):
+        if any([self.args.enable_hierarchical_value, self.args.enable_multiscale_gnn,
+                self.args.enable_automaton_tracking, self.args.enable_options]):
+            raise NotImplementedError(
+                'Legacy enhancement switches do not implement the paper training contract. '
+                'Use src/train/train_paper.py for the explicitly scoped fixed-formula protocol; '
+                'Options/full_all and original-baseline comparisons remain unverified.')
         training_status, resuming = self.get_training_status()
+        saved_architecture = training_status.get('architecture', 'sequence_gnn')
+        if resuming and saved_architecture != self.args.architecture:
+            raise ValueError('Checkpoint architecture mismatch; use a different experiment name')
         envs = self.make_envs(training_status["curriculum_stage"])
         if resuming:
             self.model_store.load_vocab()
@@ -72,7 +81,11 @@ class Trainer:
             ldba = ltl2ldba(formula)
         
         # 构建基础模型（不加载 checkpoint）
-        model = build_model(envs[0], {}, model_configs[self.args.model_config])
+        if self.args.architecture == 'deepltl':
+            from model.deepltl_reference import DeepLTLSequenceModel
+            model = DeepLTLSequenceModel(envs[0], model_configs[self.args.model_config])
+        else:
+            model = build_model(envs[0], {}, model_configs[self.args.model_config])
         
         # ---- 先增强模型结构（如果需要）----
         if enable_longshort:
@@ -92,12 +105,9 @@ class Trainer:
         
         # ---- 再加载 checkpoint（如果存在）----
         if "model_state" in training_status:
-            try:
-                load_checkpoint_compatible(model, training_status["model_state"], strict=False)
-                self.text_logger.info("Successfully loaded model from checkpoint.")
-            except Exception as e:
-                self.text_logger.info(f"WARNING: Failed to load checkpoint: {e}. Starting from scratch.")
-        
+            model.load_state_dict(training_status['model_state'], strict=True)
+            self.text_logger.info('Strictly loaded model from checkpoint.')
+
         model.to(self.args.experiment.device)
         algo = torch_ac.PPO(envs, model, self.args.experiment.device, self.args.ppo,
                             preprocess_obss=preprocessing.preprocess_obss, parallel=False)
@@ -115,7 +125,7 @@ class Trainer:
             if self.args.save and (num_updates == 0 or num_eval_steps >= self.args.experiment.eval_interval):
                 num_eval_steps = 0
                 training_status = {"num_steps": num_steps, "num_updates": num_updates,
-                                   "model_state": algo.model.state_dict()}
+                                   "architecture": self.args.architecture, "model_state": algo.model.state_dict()}
                 self.model_store.save_eval_training_status(training_status)
             start = time.time()
             exps, logs = algo.collect_experiences()
@@ -135,7 +145,7 @@ class Trainer:
                     curriculum.finished or self.args.experiment.save_interval > 0 and num_updates % self.args.experiment.save_interval == 0) \
                     and self.args.save:
                 training_status = {"num_steps": num_steps, "num_updates": num_updates,
-                                   "model_state": algo.model.state_dict(),
+                                   "architecture": self.args.architecture, "model_state": algo.model.state_dict(),
                                    "optimizer_state": algo.optimizer.state_dict(),
                                    "curriculum_stage": curriculum.stage_index,
                                    "num_eval_steps": num_eval_steps,
@@ -215,6 +225,7 @@ def parse_arguments() -> argparse.Namespace:
     parser.add_argument("--log_csv", action=argparse.BooleanOptionalAction, default=True)
     parser.add_argument("--log_wandb", action=argparse.BooleanOptionalAction, default=False)
     parser.add_argument('--save', action=argparse.BooleanOptionalAction, default=True)
+    parser.add_argument('--architecture', choices=['sequence_gnn', 'deepltl'], default='sequence_gnn', help='deepltl: original DeepSets/GRU sequence architecture, no GNN')
     # ---- Long/Short RL flags ----
     parser.add_argument('--enable_hierarchical_value', action='store_true', help='启用层次价值网络')
     parser.add_argument('--enable_multiscale_gnn', action='store_true', help='启用多尺度GNN')
