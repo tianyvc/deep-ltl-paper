@@ -19,7 +19,7 @@ def summarize(values):
     return dict(n=len(values), mean=mean, sample_std=std, ci95=[mean-half, mean+half])
 
 
-def aggregate(files, expected_seeds, episodes):
+def aggregate(files, expected_seeds, episodes, reference_configuration="baseline"):
     groups = {}
     for filename in files:
         path = Path(filename)
@@ -60,8 +60,8 @@ def aggregate(files, expected_seeds, episodes):
         index[key] = seeds
     comparisons = []
     for key, seeds in index.items():
-        baseline_key = key[:-1] + ('baseline',)
-        if key[-1] == 'baseline' or baseline_key not in index:
+        baseline_key = key[:-1] + (reference_configuration,)
+        if key[-1] == reference_configuration or baseline_key not in index:
             continue
         baseline = index[baseline_key]
         differences = []
@@ -72,7 +72,7 @@ def aggregate(files, expected_seeds, episodes):
                 differences.append(ours-reference)
         if differences:
             comparisons.append(dict(environment=key[0], formula=key[-2], configuration=key[-1],
-                                    metric='paired_success_rate_difference', statistics=summarize(differences)))
+                                    reference_configuration=reference_configuration, split=key[1], gate=key[3], metric='paired_success_rate_difference', statistics=summarize(differences)))
     return dict(groups=output, comparisons=comparisons,
                 notes=['Training seeds are independent units; episodes are averaged within each training seed.',
                        'n=1 gives no variance/CI. Infinite specifications have no exact satisfaction SR.',
@@ -85,11 +85,12 @@ def main():
     parser.add_argument('evaluations', nargs='+', type=Path)
     parser.add_argument('--seeds', type=int, nargs='+', default=[1, 2, 3, 4, 5])
     parser.add_argument('--episodes', type=int, default=500)
+    parser.add_argument('--reference-configuration', default='baseline')
     parser.add_argument('--output', required=True, type=Path)
     args = parser.parse_args()
     if len(set(args.seeds)) != len(args.seeds) or args.episodes <= 0:
         parser.error('Seeds must be unique and episode count positive')
-    result = aggregate(args.evaluations, args.seeds, args.episodes)
+    result = aggregate(args.evaluations, args.seeds, args.episodes, args.reference_configuration)
     args.output.parent.mkdir(parents=True, exist_ok=True)
     with args.output.open('x') as stream:
         json.dump(result, stream, ensure_ascii=False, indent=2)

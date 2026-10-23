@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/home/dell/workspace/Tianyvc/deep-ltl-paper/.maintenance/zone_closeout.py", line 4, in <module>
+    p=repo/'docs/CODE_VALIDATION_ROADMAP.md';s=p.read_text();a=s.index('当前执行已按用户时间预算');b=s.index('更新：2026-10-20',a);s=s[:a]+'''已完成的v3工程检查：9个长时域pilot；方法语义12项、协议8项、公平/隔离5项、队列8项、统计oracle5项及15项实际训练/评估/续训检查。失败与修复留档，新增Zone六任务实际推理和25模型统计回归验收见validation-runs/20261021/zone-minimal。
+ValueError: substring not found

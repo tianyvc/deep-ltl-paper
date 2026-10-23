@@ -1,0 +1,18 @@
+{
+  "utc": "2026-10-21T05:47:25.968133+00:00",
+  "control_revision": 2,
+  "unique_task_ids": 993,
+  "acyclic": true,
+  "counts": {
+    "completed": 9,
+    "pending": 984
+  },
+  "manifest_sha256": "35a86d21fa2480b3857da5660fe430219f49b1be942e56bdf68081e004b9a202",
+  "resumed_training": [
+    "flatworld-gnn_single-fixed-s1-train",
+    "flatworld-hv_only-fixed-s1-train"
+  ],
+  "old_control_archive": "/home/dell/workspace/Tianyvc/deep-ltl-paper/experiments/reproduction/20261021-v3/control-revisions/01-id-collision",
+  "algorithm_source_unchanged": true,
+  "launch_stdout": "{\"job_dir\": \"/home/dell/workspace/Tianyvc/deep-ltl-paper/experiments/reproduction/20261021-v3/scheduler-02\", \"supervisor_pid\": 1222943, \"log\": \"/home/dell/workspace/Tianyvc/deep-ltl-paper/experiments/reproduction/20261021-v3/scheduler-02/output.log\"}\n"
+}

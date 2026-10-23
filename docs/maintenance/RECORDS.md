@@ -299,3 +299,120 @@ README、PROJECT_STATUS、CODE_VALIDATION_ROADMAP与LONG_RUNNING_TASKS已同步�
 ```
 
 发布暂存检查补充：完整 `git diff --cached --check` 报exit2，全部来自首次纳入Git的网站终稿原有空白及逐字差异文件 paper/review/long-short.diff。遵守终稿不改和原始差异保真，不清理这些空白；排除上述3份保真文件后的暂存格式检查通过。完整输出另存 release-full-whitespace-check.json，不能把全范围exit2写成exit0。本机.vscode设置保留在工作树且不提交。
+
+
+# 2026-10-21：论文投稿成熟度审查与正式重跑准备
+
+用户要求先按较高通用会议标准审查并反馈论文缺口，完善后再按GPU资源并行后台重跑。本次重新全文审阅长短稿与v2关键路径，提取仓库内原始DeepLTL PDF；审查详见paper/review/FINAL_VERSION_COMPARISON.md第6节，正式重跑门槛同步到CODE_VALIDATION_ROADMAP.md。
+
+确认GCRL-LTL引用错配、DeepLTL架构定位错误、原论文15M与新稿1M预算及任务不一致；q-only概率/MC混用、skip不可能、静态attention的进度主张、无限SR、baseline编码器混杂等需要先修订。现存结果不改、不判其产生方式；外部引用按用户决定不接官方实现，但不得写成当前同协议重跑。
+
+所有远端检查使用cf run → /home/dell/anaconda3/bin/conda run -n wty_LTL，PYTHONNOUSERSITE=1；未安装依赖。GPU快照4×4090空闲5372/5844/5922/5518MiB，已有其他任务；不结束他人进程，不作资源预留。资源、精确命令、环境、引用键检查、网站快照哈希及原文锚点位于validation-runs/20261021。两稿无缺失交叉引用label/citation key；没有重新编译或完成最新文献联网核验。
+
+本次只更新已有审查/验证/执行记录和机器证据，不修改源码、终稿、旧结果，不提交推送；正式训练/批量后台队列尚未启动。等待论文与实验合同完善后，先pilot定资源/吞吐，再真正启动并提供批次、任务ID和监视入口，避免把未冻结协议的运行冒充论文实验。
+
+
+## 2026-10-21：用户授权Copy短稿修订（八点落实）
+
+本次用户明确要求在Copy短版修改；此前“两个网站快照均不改”的要求仅在本次授权范围内被更新，长版仍未改。修改对象为overleaf/TLT__Copy_/manuscript.tex与ref.bib，原文件在paper/archive/pre-revision/short-manuscript-20261021.zip以原字节保留，含12资源SHA清单；其余10个资源未删未改。
+
+短稿围绕dual-target critic重写：TD/MC及融合为近似架构，长期头是有限时域回报代理；完整写明guard GRU/mean/message values、距离/SCC/接受转移、epsilon、PPO、Options内在奖励和SMDP。补conditional fusion error bound并明确不证明收益；移除无效skip、精确概率分解和“静态attention随q改变”等主张。Outer TimeLimit计epsilon决策，已从env_utils包装顺序核对后写入正文。
+
+改正DeepLTL/外部方法定位，Qiu2023和XuFekri2024依据本地原论文参考文献补入，Brody改为ICLR2022；85条旧文献收敛为实际引用14条，原文献库归档。没有完成最新文献完整联网核验。删去13张旧性能/重复表与相应提升、CI、难度趋势及旧图引用；2张新表仅记录诊断任务与工程checkcase，1张原生LaTeX图描述依赖，未编造性能结果。
+
+正式同编码器单critic/history-only等对照、独立validation、扩大公式集及正式预算尚未执行，论文按待完成计划表述；短稿修订不能认定研究证据和顶会录用条件已经满足。代码及旧结果本次未改，无长训、无Git提交推送。README/论文入口/现状/路线与既有审查文档同步，不新增平行MD。
+
+实际构建环境：cf run → /home/dell/anaconda3/bin/conda run -n wty_LTL env PYTHONNOUSERSITE=1 python维护脚本；LaTeX在.maintenance/short-revision-20261021-build隔离目录运行。pdflatex → bibtex → pdflatex → pdflatex均exit0，pdfinfo/pdftotext均exit0；6页（含参考文献），最终无缺失引用/标签/Overfull，有少量Underfull提示。初次构建引用未定义提示属于BibTeX及多轮编译前的正常中间状态，最终log无此提示。6页逐页渲染并检查整体排版，后续少量符号修订又完整重编译。
+
+证据与PDF位于validation-runs/20261021/short-revision；998个长版/源码/历史结果等文件哈希一致，短版仅tex/bib变化，归档字节核对通过。首次维护命令过长未启动，改为分段准备后应用；没有把失败命令计入编译通过。
+
+最终格式检查发现短稿EOF多余空行，清理后重新完整编译和复核；该格式失败未计为通过，未影响算法或论文内容。
+
+
+## 2026-10-21：论文实验重跑计划、v3及真实后台批次
+
+用户要求详细计划并按SSH资源后台开跑。本轮所有计算经cf run→/home/dell/anaconda3/bin/conda run -n wty_LTL，禁用户级包；cf here成功，读取上下级AGENTS。没有安装依赖、提交推送、改长稿或旧结果，没有启动第二个agent。初始本地沙箱CreateProcessWithLogonW 267无法启动，使用已获工具批准的沙箱外PowerShell访问挂载目录及cf后可运行。
+
+先检查4×RTX4090占用和CPU/mem/disk；每卡已有他人任务，CPU load约61。仅启用物理卡2/1各一个worker，启动准入空闲4096MiB，torch/OMP2线程；不停止他人进程。资源原始证据resource-audit.json及launch-gpu.txt归档。
+
+v3必要改动：同图encoder的gnn_single/gnn_track，容量匹配gnn_capacity/gnn_track_capacity（critic宽290/277，参数差<1%）；单critic+history输入history，包含msgnn_track。新增validation split并兼容旧train/held_out JSON，训练仅采样train；每环境固定10/3/9任务，含6/9/12访问长顺序，实际最大13状态。原始/剪枝图指纹跨split检查、环境reset/编译通过，未声称语言等价判定或所有地图物理可实现性证明。每100k实际更新存checkpoint，增加参数量/CUDA峰值记录，扩充指定配对基线统计工具。
+
+原guard协议测试首次失败：剪枝后label由set枚举，GRU输入在跨进程顺序变化，且冗长析取稀释命题差异。修复为符号布尔规范化后tokenize，不放宽原测试。修复前日志在pre-canonical-guard，修复后12+8语义/协议、5项公平/容量/validation检查通过，PYTHONHASHSEED=1/2原协议再次通过。后台统一HASHSEED=0，PYTHONPATH显式指向冻结src和定制Safety-Gymnasium。15项实际新配置训练/validation/跨进程resume与checkpoint保存通过。学习曲线实际评估成功，初始维护断言错误假设精确8/16/24步；完整episode超预算，改以torch checkpoint实际steps核对，不改训练/评估实现，保留原失败日志。
+
+新增paper_campaign.py：有界worker、显存准入、依赖、flock、原子状态/心跳、逐任务日志、产物验收、暂停、重启不重复及显式retry。调度8项成功/失败/等待/暂停/恢复/互斥/重复ID拒绝检查通过。analyze_paper_campaign统计oracle5项通过，预先固定种子级宏均值/配对差/HV×history交互，有限SR与循环访问次数分开；不混历史引用数据。checkpoint curve仅用validation，不以test选checkpoint。
+
+批次experiments/reproduction/20261021-v3：195×1M训练，9个pilot，585项final评估，195项曲线，9项summary，共993任务。源码1744文件约119MB冻结，记录未提交工作区、git基准3a96a70、diff、依赖和每文件SHA/任务HOA/逐项argv。模型/结果不自动上Git，需独立备份。完整计划整合现有LONG_RUNNING_TASKS.md，未新增平行说明MD。
+
+初始后台scheduler-01成功启动，9pilot均完成（1560–2008实际步，2–3update）。启动核查发现训练与train评估ID相撞；当时两项正式训练正在运行、评估尚未运行。立即pause，明确对本批次两worker保存停止；约21.6万/19.9万步checkpoint保留，原attempt日志保留。补重复ID拒绝回归，完全暂停后旧manifest/state/控制源码归档control-revisions/01-id-collision，修正eval-train ID和依赖，993唯一且DAG无环。仅控制修订02，训练/模型/任务源码未变；更新控制源码哈希与provenance，不伪装成初始从未改动。
+
+scheduler-02后台恢复成功（监督PID1222943，调度PID1222945），旧9pilot不重跑。UTC05:49（北京时间13:49）真实核查：9completed/2running/982pending；gnn_single物理卡2实际218880步，hv_only物理卡1实际201952步，均从原checkpoint加载、严格实现哈希通过、新update/loss有限，CUDA进程约520MiB。两份job.json含--resume及source cwd，原中断error历史字段保留，当前state=running。真实证据running-check.json、runtime-audit.json、launch-02.json。
+
+pilot稳态：baseline约79–85步/s；hv_track约15–36；full_all约8.6–24，条件估计单次百万步约3–32小时，不含评估和共享负载变化。全批次约142万评估回合，可能数周或更久，未承诺确定ETA。pilot零成功也保留，不以pilot结果挑seed/test或承诺最终收益。
+
+尚未完成：全部正式预算、多种子性能、held-out/学习曲线统计、环境可实现性诊断、最终论文结果。summary训练耗时当前为最后进程elapsed，resume运行累计成本需按attempt另核算。原稿外部对照仍为引用数据，不接官方实现、不写同协议SOTA。所有监控/暂停/恢复/完成判断/归档文件解释已给于统一手册。格式检查曾发现两处CR/行尾空白，清理后重查。
+
+
+## 2026-10-21：后台运行巡检、总耗时估算与本地只读监视
+
+用户要求检查是否正常、整批ETA和最简单本地监视方法。本轮重新加载上下级AGENTS并cf here；远端wty_LTL只读检查确认scheduler-02存活、心跳更新，9completed/2running/982pending，无当前failed/blocked。新增scripts/check_paper_campaign.py（主工作区工具，不加入或修改已冻结source），10秒采样训练steps/update、PID身份、CPU时间、指标新鲜度/有限性、近期吞吐、剩余训练时间；两次实际执行成功并保存输出。不启动/停止/重试任何队列任务。
+
+北京时间14:46两项373902/351202步，10秒增加553/627步；14:50再次查询，一项10秒未完成update但CPU仍工作、metrics_age13秒，另一项增加615步，不能将短窗口无更新当死锁。之后累计达到396907/374960步，近期吞吐49–54步/s。部分loss/裁剪前梯度明显波动（hv_only近100更新loss峰值约4767、gnn_single约127），当前有限且继续更新，不隐瞒为稳定收敛；运行健康与研究有效性分开，后续仍需正式评估。
+
+为补评估成本，在GPU0检查显存headroom后，顺序对已完成pilot的baseline/hv_track/full_all及三环境，各取最长顺序与GF公式一回合，共18回合只读推理计时；冻结source/cwd导入，strict加载pilot，不读活跃checkpoint、不更改任何训练数据。计时全完成无后台遗留，不是正式性能证据。以195次训练、每模型7300评估回合、两个连续worker粗外推：训练2351 worker-hours，评估2722，总约106天；有利/较慢情景约68/182天。11个非reference非Options配置以hv_track近似，只有两个特选公式和一个reset seed，故不是统计置信区间/可靠截止承诺。推荐3–4个月中心估计、2–6个月规划，正式评估出现后再校准。共享资源/停机/存活时长/图大小会改变结果。
+
+LONG_RUNNING_TASKS第13节补一条本地cf run监视命令、每字段解释、OK/CHECK_REQUIRED/WAIT/ALL_COMPLETED及真正全部完成条件。巡检证据monitor-20261021包含健康输出、状态快照、推理时间、ETA假设、loss波动。没有改训练方法、预算、并发、manifest或冻结哈希，没有依赖变更、提交推送。
+
+
+## 2026-10-21：按数天预算收敛为 ZoneEnv 主环境精简实证并后台启动
+
+用户拒绝数月训练预算，要求小而精、对齐草稿、ZoneEnv为主，Flat/Letter只检验扩展。本轮没有提交推送、安装依赖或修改网站长稿/历史结果；所有计算通过cf run及远端wty_LTL，禁用户级包，无第二个agent。
+
+先暂停原195模型大队列，对本项目两个训练worker保存停止，保留所有attempt与最终约43万/41万步模型。按预定最早>=200k规则提取Flat gnn_single step-200532与hv_only step-200263，独立复制并strict CPU resume校验（零新增更新），不按评估收益挑checkpoint。原大批次保留PAUSE，不再自动恢复。
+
+中途31模型/63阶段合同20261021-minimal-v3在用户进一步明确Zone为主之前已启动两项Flat评估；收到补充后立即pause停止新派发，两项短评估自然结束。原31队列最终paused，4completed/59pending，无新正式训练派发。旧原控制及数据保留，并写SUPERSEDED_BY。此前最小评估器真实gnn_single/baseline/full_all冻结推理、拒覆、过期deadline拒派发、31矩阵统计/负效应/单种子无CI共7项验收通过；初次测试fixture相对task_set路径失败保留日志，换实际绝对路径严格检查点通过，不计失败为成功。
+
+读取本地原DeepLTL全文提取（.maintenance/deepltl-original-review.txt），核对附录F.2表2/3、F.3/F.4及G.3：原Zone若干任务使用magenta，当前训练10公式不覆盖它，不能以此预设未训语义泛化。原文使用15M课程及不同超参数，本轮参考任务定义，不称官方复刻或混比较旧SR。
+
+最终合同20261021-zone-minimal-v3：Zone四因子gnn_single/hv_only/gnn_track/hv_track各3seed，加baseline3seed=15；Zone msgnn_only/msgnn_track/full_no_options/full_all各1seed=4；Flat四因子各1seed=4；Letter gnn_track/hv_track各1seed=2。共25模型×200k，23新训/约460万步；含复用两训练的总预算约500万。51阶段=25train+25eval+1summary。主环境核心优先，GPU2/1各1worker，>=4096MiB显存准入、OMP/torch2线程。
+
+任务：三环境草稿phi1/phi2/phi3及GF循环各50回合；Zone额外三段顺序reachability与原DeepLTL表2 phi7原式各50回合，共6900回合。phi1在train内，其他任务按文本/原始及剪枝图标seen；有限任务主表只聚合草稿三项，补充任务与循环分别报告，不让改变任务权重影响宏平均。不预设正结果，单种子不输出训练CI，不用有限循环轨迹估计严格无限满足概率。取消百万步/五种子、完整门控/容量、长公式压力/密集曲线与外部官方接入，因而不声称排除了容量影响、全组件稳定收益或SOTA。
+
+新增tests/test_paper_zone_summary.py：25模型合成聚合（合成fixture不是科研数据）、Zone三种子配对负效应保留、单种子无CI及CSV/逐任务比较通过。泛化summarize_paper_minimal.py，以manifest.main_environment选择主环境，并以primary_task_ids固定主表公式；添加独立逐任务配对统计。evaluate_paper_minimal.py仅将回合数备注改为从spec读取，算法五源与大批次逐字节一致，训练实现哈希不变。
+
+真实Zone六任务冻结推理（旧hv_track pilot，每任务1回合，不作性能证据）通过：phi1实际4states/8edges、phi2 8/20、phi3 5/11、GF 2/4、三段顺序4/7、原phi7 6/12；仅phi1标已见，循环finite=False，其余finite=True。冻结51项唯一ID、全部源码/spec SHA检查通过，git diff --check exit0。既有controller8项及方法检查本次无需无关重复；没有更改它们的训练五源。
+
+后台启动时间UTC 2026-10-21T07:50:33.993910+00:00；监督PID 1589541，调度PID 1589542。两旧批次确认paused且调度PID不存活后才启动；两份已完成Flat评估经spec/checkpoint SHA和逐回合产物验收复用，4阶段直接完成。启动后Zone hv_track seed1在物理GPU2、gnn_track seed1在GPU1，初检4completed/2running/45pending，failed/blocked=0，两个child及supervisor存活、CPU活动/心跳正常。初检尚无completed-update指标，仅计启动健康，后续正式更新见runtime/health证据，不把进程存在冒称收敛。
+
+统一LONG_RUNNING_TASKS、README、PROJECT_STATUS、CODE_VALIDATION_ROADMAP；不新增平行计划MD。计划数天、约2–5天并预留一周，但整批ETA未由新正式吞吐验证；五天截止2026-10-26T07:41:38 UTC（北京时间15:41:38），停止新派发、让当前任务结束，未完成项必须披露，不自动扩大预算。ACTIVE.json切换最终合同，本地监视命令不变：cf run -- /home/dell/anaconda3/bin/conda run --no-capture-output -n wty_LTL env PYTHONNOUSERSITE=1 python scripts/check_paper_campaign.py。全部完成必须51completed、其余0、ALL_COMPLETED且summary JSON/CSV齐备。
+
+机器证据：validation-runs/20261021/zone-minimal/的manifest/commands/imports、summary-acceptance.json、acceptance.json、zone-task-smoke、launch.json、initial-health.txt与runtime-check.json。正式科研结论须等真实结果/区间和失败项审查后形成，未声称已经满足投稿实证。
+
+归档脚本复用时因已完成的文档替换片段不存在而退出（ValueError）；这是维护脚本重复运行缺陷，不是训练任务失败。已将一次性文档替换从只读复核脚本移除，保留closeout-initial-nonidempotent.log，再执行最终归档检查。
+
+启动后真实PPO进度复核（UTC 2026-10-21T08:02:56.636199+00:00）：[{"run": "zones-hv_track-s1", "steps": 15640, "updates": 16, "loss": -0.010685997156542726, "gradient_norm": 0.5056424166541547}, {"run": "zones-gnn_track-s1", "steps": 15372, "updates": 15, "loss": -0.11004203205811791, "gradient_norm": 0.515424182638526}]；两项训练均已有多次更新、损失/梯度有限、failed=0。此前无update属于启动阶段，并非本轮最终进度。15:57巡检近期吞吐27–29产品步/s，单项训练剩余约2小时（不含评估/资源波动）；整批预计仍按数天规划，不把单项训练时间当完整实验ETA。runtime-check.json/closeout.log保存最终快照。
+
+
+## 2026-10-21：PowerShell cf分隔符报错修复与监视字段说明
+
+用户在PowerShell执行cf run --报Expected --。Get-Command cf -All确认cf.ps1优先于cf.exe，读取包装器后明确其依赖args中的字面--，当前PowerShell调用未保留此分隔符。显式调用CloudFolder cf.exe的原命令成功；没有修改Program Files安装、profile、SSH或训练队列。新增scripts/check-training.ps1简短入口，显式native exe并固定远端wty_LTL/PYTHONNOUSERSITE，支持SampleSeconds且透传远端退出码；本机真实执行成功。
+
+主工作区check_paper_campaign.py新增整批训练步数/剩余步数（每模型按预算封顶、含复用检查点）、minimal评估回合/剩余回合、北京时间派发截止与预算剩余小时、整批ETA未校准说明；评估有基于实际回合吞吐的粗剩余时间，完成时验证summary及本批次CSV存在。不修改冻结source、manifest或训练逻辑，不暂停/重启模型。
+
+16:21实际入口验证正常：4completed/2running/45pending，2/25模型完成；训练494759/5000000，评估400/6900。hv_track44640步、45update，gnn_track50119步、50update，10秒均增1000步，近期25.70/30.17步每秒，单项剩余训练1.68/1.38小时。loss有波动但有限，不能据此称已稳定收敛。整批仍按数天规划，不把两项当前ETA当全部训练评估ETA。
+
+更新现有LONG_RUNNING_TASKS的命令及逐字段说明，README加最简入口；不新增平行MD。实际远端wty_LTL监视校验51任务/5M预算/6900回合通过、git diff --check通过。证据validation-runs/20261021/monitor-cli-fix/health.txt与diff-check.txt。无安装依赖、提交推送。
+
+
+## 2026-10-23：精简重跑完成、结果审计与工作区整合
+
+51/51阶段完成，25模型，6900评估回合。audit_paper_results.py在远端wty_LTL通过：冻结源码、checkpoint/spec哈希、模型/优化器张量、逐回合九指标与JSON/CSV重生成。实际检查点步数5,011,670，封顶预算5,000,000；两份导入Flat模型原始配置和差异明确记录。主环境未证明方法提升，详见EXPERIMENT_RESULTS.md；保留全部负结果，未修改论文源文件。
+
+README、PROJECT_STATUS、CODE_VALIDATION_ROADMAP和LONG_RUNNING_TASKS整合为当前事实；paper导航同步阶段说明，监视脚本完成状态ETA改为0h。轻量证据在results/reproduction/20261021-zone-minimal-v3，完整模型/快照只在服务器experiments，未上传大二进制。
+
+本轮删除一次性维护脚本、重复bundle和可重建构建缓存，详细删除清单及SHA见cleanup-20261023.json。受保护overleaf全部文件及完整完成批次文件逐字节复核不变；旧大队列源码作为导入模型依赖保留。未启动新训练。
+
+本轮补充回归：tests/test_paper_v3.py 5项、test_paper_campaign.py 8项、test_paper_campaign_analysis.py 5项、test_paper_zone_summary.py 3项均通过（共21项）。完整stdout/stderr归档到轻量证据verification-tests.json。
+
+补充真实推理回归tests/test_paper_minimal.py通过7项（3种模型冻结权重/拒绝覆盖、派发截止、31模型统计oracle及负结果/单种子边界），累计本轮28项检查通过。文档中的旧大队列manifest、展开命令清单及中间状态副本已删除，原始服务器experiments记录保留；本轮manifest只在轻量证据发布一份。历史条目提及的这些已退役副本路径不再作当前操作入口。
+
+最终核对：共删除204个冗余文件、323,486,033字节；2,676个Overleaf/完成批次文件SHA不变。研究证据配置.gitattributes -text防止跨平台自动换行破坏哈希。git diff --check对原始nvidia-smi空格输出保留例外，其余源码/文档通过（允许CRLF）。新增暂存文件无常见GitHub凭据/私钥模式且均低于50MiB；.vscode不提交。GitHub推送采用个人Windows Git/GCM HTTPS，服务器不接收个人凭据。

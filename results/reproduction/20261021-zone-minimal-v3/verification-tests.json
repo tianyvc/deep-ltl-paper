@@ -1,0 +1,31 @@
+[
+  {
+    "script": "tests/test_paper_v3.py",
+    "exit_code": 0,
+    "stdout": "{\"passed\": [\"identical_encoder_actor_initialization\", \"identical_actor_inputs\", \"capacity_difference_below_one_percent\", \"single_critic_history_gradient_and_dependence\", \"independent_validation_and_overlap_rejection\"], \"parameter_counts\": {\"gnn_single\": 355790, \"hv_only\": 380879, \"gnn_track\": 409550, \"hv_track\": 426447, \"gnn_capacity\": 380984, \"gnn_track_capacity\": 426182}}\n",
+    "stderr": "AdroitHandRelocateDense-v1, AdroitHandHammerDense-v1, AdroitHandDoorDense-v1 environment's reward functions were updated in v1.2.1 without an environment version update. Therefore, use gymnasium-robotics==1.2.0 for v1 reproducibility or use v2 in gymnasium-robotics>=1.4.3. See https://github.com/Farama-Foundation/Gymnasium-Robotics/pull/220 for more details\nAdroitHandRelocateDense-v1, AdroitHandHammerDense-v1, AdroitHandDoorDense-v1 environment's reward functions were updated in v1.2.1 without an environment version update. Therefore, use gymnasium-robotics==1.2.0 for v1 reproducibility or use v2 in gymnasium-robotics>=1.4.3. See https://github.com/Farama-Foundation/Gymnasium-Robotics/pull/220 for more details\n"
+  },
+  {
+    "script": "tests/test_paper_campaign.py",
+    "exit_code": 0,
+    "stdout": "{\"passed\": [\"duplicate_task_id_rejected_before_launch\", \"resource_wait_without_launch\", \"graceful_pause\", \"resume_pending_queue\", \"duplicate_scheduler_lock\", \"real_background_worker_success\", \"worker_failure_blocks_dependents\", \"completed_tasks_not_repeated_on_restart\"]}\n",
+    "stderr": ""
+  },
+  {
+    "script": "tests/test_paper_campaign_analysis.py",
+    "exit_code": 0,
+    "stdout": "/tmp/tmp11vfvfzs/summary.json\n{\"passed\": [\"full_13_by_5_matrix\", \"known_seed_macro_mean\", \"prespecified_matched_contrasts\", \"separate_recurrent_metrics\", \"input_hash_provenance\"]}\n",
+    "stderr": ""
+  },
+  {
+    "script": "tests/test_paper_zone_summary.py",
+    "exit_code": 0,
+    "stdout": "{\"passed\": [\"complete_25_run_zone_matrix_and_csv\", \"negative_paired_effect_preserved\", \"single_seed_no_ci\"], \"count\": 3}\n",
+    "stderr": ""
+  },
+  {
+    "script": "tests/test_paper_minimal.py",
+    "exit_code": 0,
+    "evidence": "docs/maintenance/validation-runs/20261021/minimal/minimal-acceptance.json"
+  }
+]

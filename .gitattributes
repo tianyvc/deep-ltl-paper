@@ -1,0 +1,3 @@
+
+# Preserve byte-level research evidence and its SHA256 across platforms.
+/results/reproduction/** -text

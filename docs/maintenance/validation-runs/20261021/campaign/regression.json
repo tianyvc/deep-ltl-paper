@@ -1,0 +1,22 @@
+[
+  {
+    "script": "tests/test_paper_hiltl.py",
+    "exit_code": 0,
+    "seconds": 14.44536354392767
+  },
+  {
+    "script": "tests/test_paper_protocol.py",
+    "exit_code": 0,
+    "seconds": 26.792480990290642
+  },
+  {
+    "script": "tests/test_paper_v3.py",
+    "exit_code": 0,
+    "seconds": 25.04265690408647
+  },
+  {
+    "script": "tests/test_paper_campaign.py",
+    "exit_code": 0,
+    "seconds": 5.817944373935461
+  }
+]

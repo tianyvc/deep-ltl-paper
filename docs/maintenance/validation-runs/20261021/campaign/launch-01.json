@@ -1,0 +1,21 @@
+{
+  "command": [
+    "/home/dell/anaconda3/envs/wty_LTL/bin/python",
+    "/home/dell/workspace/Tianyvc/deep-ltl-paper/experiments/reproduction/20261021-v3/source/scripts/long_task.py",
+    "start",
+    "--job-dir",
+    "/home/dell/workspace/Tianyvc/deep-ltl-paper/experiments/reproduction/20261021-v3/scheduler-01",
+    "--",
+    "/home/dell/workspace/Tianyvc/deep-ltl-paper/experiments/reproduction/20261021-v3/source/scripts/paper_campaign.py",
+    "run",
+    "--manifest",
+    "/home/dell/workspace/Tianyvc/deep-ltl-paper/experiments/reproduction/20261021-v3/manifest.json"
+  ],
+  "stdout": "{\"job_dir\": \"/home/dell/workspace/Tianyvc/deep-ltl-paper/experiments/reproduction/20261021-v3/scheduler-01\", \"supervisor_pid\": 927201, \"log\": \"/home/dell/workspace/Tianyvc/deep-ltl-paper/experiments/reproduction/20261021-v3/scheduler-01/output.log\"}\n",
+  "curve_actual_steps": [
+    8,
+    23,
+    31
+  ],
+  "safety_gymnasium": "/home/dell/workspace/Tianyvc/deep-ltl-paper/experiments/reproduction/20261021-v3/source/src/envs/zones/safety-gymnasium/safety_gymnasium/__init__.py"
+}

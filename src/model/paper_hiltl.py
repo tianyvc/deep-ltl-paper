@@ -11,9 +11,13 @@ from torch.nn.utils.rnn import pack_padded_sequence, pad_sequence
 from model.policy import ContinuousActor, DiscreteActor
 
 
-PROTOCOL_VERSION = 'hiltl-product-v2'
+PROTOCOL_VERSION = 'hiltl-product-v3'
 CONFIGURATIONS = {
     'baseline': (False, False, False),
+    'gnn_single': (False, False, False),
+    'gnn_track': (False, False, True),
+    'gnn_capacity': (False, False, False),
+    'gnn_track_capacity': (False, False, True),
     'hv_only': (True, False, False),
     'msgnn_only': (False, True, False),
     'hv_track': (True, False, True),
@@ -61,10 +65,14 @@ class AutomatonGraph:
             nodes.append([float(state in accepting), float(cyclic), float(state == ldba.initial_state), normalized[state]])
         edges, features, guards = [], [], []
         import re
+        from utils import simplify, to_sympy, sympy_to_str
         vocabulary = {p: i + 8 for i, p in enumerate(ldba.propositions)}
         vocabulary.update({"!": 1, "&": 2, "|": 3, "(": 4, ")": 5, "t": 6, "f": 7, "True": 6, "False": 7})
         for edge in transitions:
-            guards.append(tuple(vocabulary[token] for token in re.findall(r"[A-Za-z_][A-Za-z_0-9]*|[!&|()]", edge.label)) if not edge.is_epsilon() else (0,))
+            # Environment pruning enumerates unordered assignments. Canonicalize
+            # equivalent Boolean guards before sequence encoding.
+            guard_label = sympy_to_str(simplify(to_sympy(edge.label))) if not edge.is_epsilon() else None
+            guards.append(tuple(vocabulary[token] for token in re.findall(r"[A-Za-z_][A-Za-z_0-9]*|[!&|()]", guard_label)) if not edge.is_epsilon() else (0,))
             source, target = edge.source, edge.target
             if edge.is_epsilon():
                 category = 3
@@ -144,7 +152,9 @@ class PaperHiLTL(nn.Module):
             self.actor = DiscreteActor(action_space.n, [actor_size, 64, 64], nn.ReLU)
         else:
             self.actor = ContinuousActor(action_space.shape[0], [actor_size, 64, 64], nn.Tanh)
-        self.short_head = nn.Sequential(nn.Linear(hidden + graph_size + hidden, 256), nn.ReLU(), nn.Linear(256, 256), nn.ReLU(), nn.Linear(256, 1))
+        self.single_history = self.tracking and not self.hv
+        critic_width = {'gnn_capacity': 290, 'gnn_track_capacity': 277}.get(configuration, 256)
+        self.short_head = nn.Sequential(nn.Linear(hidden + graph_size + hidden + (hidden if self.single_history else 0), critic_width), nn.ReLU(), nn.Linear(critic_width, critic_width), nn.ReLU(), nn.Linear(critic_width, 1))
         self.long_head = nn.Sequential(nn.Linear(1 + hidden + (hidden if self.tracking else 0), 128), nn.ReLU(), nn.Linear(128, 128), nn.ReLU(), nn.Linear(128, 1)) if self.hv else None
         self.graph_cache = {}
 
@@ -228,7 +238,8 @@ class PaperHiLTL(nn.Module):
             option_values = self.option_critic(actor_input).squeeze(-1)
         distribution = self.actor(actor_input)
         distribution.set_epsilon_mask(torch.tensor(epsilon_masks, dtype=torch.bool, device=device))
-        short = self.short_head(short_input).squeeze(-1)
+        critic_input = torch.cat([short_input, history], dim=-1) if self.single_history else short_input
+        short = self.short_head(critic_input).squeeze(-1)
         proximity = torch.tensor(proximities, dtype=torch.float32, device=device).unsqueeze(1)
         beta = (self.beta_net(proximity).squeeze(-1).sigmoid() if self.beta_net is not None
                 else torch.full_like(proximity.squeeze(1), .5) if self.gate_type == "constant"

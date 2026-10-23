@@ -1,0 +1,335 @@
+{
+  "env": "PointLtl2-v0",
+  "formula": null,
+  "task_set": "/home/dell/workspace/Tianyvc/deep-ltl-paper/experiments/reproduction/20261021-zone-minimal-v3/source/configurations/zones_paper_v3.json",
+  "eval_formula": [],
+  "eval_split": null,
+  "gate": "fixed",
+  "option_max_steps": 50,
+  "configuration": "hv_only",
+  "output": "/home/dell/workspace/Tianyvc/deep-ltl-paper/experiments/reproduction/20261021-zone-minimal-v3/runs/zones-hv_only-s2",
+  "steps": 200000,
+  "rollout_steps": 512,
+  "max_episode_steps": 1000,
+  "epochs": 4,
+  "batch_size": 64,
+  "seed": 2,
+  "device": "cuda:0",
+  "gamma": 0.998,
+  "lr": 0.0003,
+  "checkpoint_every": 0,
+  "resume": false,
+  "evaluate": 0,
+  "eval_seed": 10001,
+  "deterministic": true,
+  "parameter_count": 390218,
+  "trainable_parameter_count": 390218,
+  "protocol": "hiltl-product-v3",
+  "implementation_sha256": "d664e4e2304423354d7e270459bae1b31acc0ee1109fdc4a873cbddf5a2dafa3",
+  "task_manifest": {
+    "train": [
+      "F blue",
+      "F green",
+      "F yellow",
+      "F blue & F green",
+      "F green & F yellow",
+      "F (blue & F green)",
+      "F (green & F yellow)",
+      "!blue U green",
+      "G F blue",
+      "G F green"
+    ],
+    "validation": [
+      "F (green & F blue)",
+      "(!yellow U blue) & F green",
+      "G F yellow"
+    ],
+    "held_out": [
+      "F (yellow & F blue)",
+      "F blue & F yellow",
+      "F (blue & F (green & F yellow))",
+      "F (yellow & F (green & F blue))",
+      "(!blue U yellow) & F green",
+      "G F blue & G F yellow",
+      "F (blue & F (green & F (yellow & F (blue & F (green & F yellow)))))",
+      "F (blue & F (green & F (yellow & F (blue & F (green & F (yellow & F (blue & F (green & F yellow))))))))",
+      "F (blue & F (green & F (yellow & F (blue & F (green & F (yellow & F (blue & F (green & F (yellow & F (blue & F (green & F yellow)))))))))))"
+    ],
+    "automata": [
+      {
+        "split": "train",
+        "formula": "F blue",
+        "raw_sha256": "9e33a44f79835a039da22f865fe7a9949aaaa5ebcd8664951ddde6fdba2d56b4",
+        "pruned_sha256": "38da05db54bc1f74ebe0b363fd124cdfd692eaad4ded32b9268b2dfac4743fd8",
+        "states": 2,
+        "edges": 3,
+        "finite": true
+      },
+      {
+        "split": "train",
+        "formula": "F green",
+        "raw_sha256": "19c6a33321e2832f5b4ec075096e1cccb333de1142754d60d0d41a4b69705c31",
+        "pruned_sha256": "76bb192090b61521a7f3c57e570aa450121b04b5a7fb1e166aaf0de494f6179d",
+        "states": 2,
+        "edges": 3,
+        "finite": true
+      },
+      {
+        "split": "train",
+        "formula": "F yellow",
+        "raw_sha256": "a93c2e8237ddeaa0f3e2a9301bd84d90aee70184f509936ea3dad8d873a9d735",
+        "pruned_sha256": "c34bd31b9d98319c1b2cb068201bc6f575ac6e41032e92e535d6ce78769261c6",
+        "states": 2,
+        "edges": 3,
+        "finite": true
+      },
+      {
+        "split": "train",
+        "formula": "F blue & F green",
+        "raw_sha256": "ea0cda1b8e8a24b0ceb7184f24f265d7a6f58faba49660cce36a7409b8364cf0",
+        "pruned_sha256": "0adb8c8d060711cfd309d5397ccd5b50baa326e0663a99c0e462e4f2efd822b5",
+        "states": 4,
+        "edges": 8,
+        "finite": true
+      },
+      {
+        "split": "train",
+        "formula": "F green & F yellow",
+        "raw_sha256": "7d50512a73747aa9ffc38a082511b63a509c3428d9417a23598d8a2a3b2271df",
+        "pruned_sha256": "d4076edf7dcc39b9efbcebf8a06cb9d46a36b64f5cfda8dd70f410349ffdce0e",
+        "states": 4,
+        "edges": 8,
+        "finite": true
+      },
+      {
+        "split": "train",
+        "formula": "F (blue & F green)",
+        "raw_sha256": "7fafa23b811a34c36d3935ab8fba131fe61c86f95245e2d0a84b4424cffe6082",
+        "pruned_sha256": "44dcc52419e93a5e2603a98655c096f30b4b5e5d1e0e4bdd004a8ce85ea8983a",
+        "states": 3,
+        "edges": 5,
+        "finite": true
+      },
+      {
+        "split": "train",
+        "formula": "F (green & F yellow)",
+        "raw_sha256": "2acfeb1ea79c0dc7ac1394cfe70218c7d3d10344b7fb18236956e88dfa897ed7",
+        "pruned_sha256": "508b4d096798468ad313066e301826439f4caa27e20bbbcb7789c6ca7c0a3ddc",
+        "states": 3,
+        "edges": 5,
+        "finite": true
+      },
+      {
+        "split": "train",
+        "formula": "!blue U green",
+        "raw_sha256": "69a9adf866f1d809bb52c80d6f74edf0e883295b6c1394e40b30a418a680854d",
+        "pruned_sha256": "9c09289381a337c460c50f1c66e751a2b1641e793335c69e870e5c1876a1a641",
+        "states": 3,
+        "edges": 5,
+        "finite": true
+      },
+      {
+        "split": "train",
+        "formula": "G F blue",
+        "raw_sha256": "324899636657fec7ea9c2a1290dbfe17db9f28918cde1db41b205e30fc4914ba",
+        "pruned_sha256": "86b3d2f1688251a154458d3ceb7c2690aa4fd71513ad1df5086665d6b2313db8",
+        "states": 1,
+        "edges": 2,
+        "finite": false
+      },
+      {
+        "split": "train",
+        "formula": "G F green",
+        "raw_sha256": "cf7a6a36c2e772443da3c6b15fa3abc7c95ae52c979db71e7d0032cfd752b7b2",
+        "pruned_sha256": "255836d58ece778e46ccddd0cb6b4a75549fc79f548e7db5a31e485cd0165880",
+        "states": 1,
+        "edges": 2,
+        "finite": false
+      },
+      {
+        "split": "validation",
+        "formula": "F (green & F blue)",
+        "raw_sha256": "15b50cac83756aea7b371aef9c9bb5aa2dae9217ffad42770c5e2a8e8f173a56",
+        "pruned_sha256": "b80feb12bc83030a18e6cc50621c626bd350eb2d753f99dd13ada054039a4326",
+        "states": 3,
+        "edges": 5,
+        "finite": true
+      },
+      {
+        "split": "validation",
+        "formula": "(!yellow U blue) & F green",
+        "raw_sha256": "f199d28f58d24e98c1621b82fe5ca3eb9700ccdb59e7cac7c864db603d160cb6",
+        "pruned_sha256": "7b426515e8d3b3617ce79156886779d36030487bb0401916dec4d1dc7c108288",
+        "states": 5,
+        "edges": 11,
+        "finite": true
+      },
+      {
+        "split": "validation",
+        "formula": "G F yellow",
+        "raw_sha256": "799a91f45781ea705bc03b9f03dabf5f8d327922db146b46d2bd187c69db2304",
+        "pruned_sha256": "68e09e64b8bcf6c409947bec518150bb51e46fb7b30c1fadf2b45ef22a82e98e",
+        "states": 1,
+        "edges": 2,
+        "finite": false
+      },
+      {
+        "split": "held_out",
+        "formula": "F (yellow & F blue)",
+        "raw_sha256": "30a60a955830c27d1bb9ce714392a4e026b10e1d6bf8aba545dcd9888028003f",
+        "pruned_sha256": "6d1063c5291c88f59b9fafa873ea84cca5853b9233a4b55f665c0e27568aa4d5",
+        "states": 3,
+        "edges": 5,
+        "finite": true
+      },
+      {
+        "split": "held_out",
+        "formula": "F blue & F yellow",
+        "raw_sha256": "40438af1413c6f92c56ba0320a3c07132fa5a52c9b971acda60074e45e90c2ff",
+        "pruned_sha256": "30ea308594403d925b28cd679d063c9abcf4c281204aa615ffbdd81313ca4c33",
+        "states": 4,
+        "edges": 8,
+        "finite": true
+      },
+      {
+        "split": "held_out",
+        "formula": "F (blue & F (green & F yellow))",
+        "raw_sha256": "3e103a8dd282bd68b9374f53c577159f5b8a074da31abe9aa796bab54ad9b5e2",
+        "pruned_sha256": "1d502d7873fd6a258c5fb0fb59e3ebad3eb35acf7d83e3da493a5dafb6e4a8e2",
+        "states": 4,
+        "edges": 7,
+        "finite": true
+      },
+      {
+        "split": "held_out",
+        "formula": "F (yellow & F (green & F blue))",
+        "raw_sha256": "4a7fb36213ed2425a37766657cea0a38e02aa1f5ae33318456124f9d038724f0",
+        "pruned_sha256": "cf248175d67a2574ec84800172a1c7cbf4eabefbbdcf397ff055b52430b4073f",
+        "states": 4,
+        "edges": 7,
+        "finite": true
+      },
+      {
+        "split": "held_out",
+        "formula": "(!blue U yellow) & F green",
+        "raw_sha256": "1b2836163f62936f59820d5716aaa34d5fd3883889961962dae700a34408e1cd",
+        "pruned_sha256": "286937a2bc6e402cd6743d1e22e2630152d0d865192ba6b05f73a3baf447a157",
+        "states": 5,
+        "edges": 11,
+        "finite": true
+      },
+      {
+        "split": "held_out",
+        "formula": "G F blue & G F yellow",
+        "raw_sha256": "a5837c607b6dbeebf0e29bb76898ad877fe2ccaad0b44e257d4fe7e348039df7",
+        "pruned_sha256": "89635733d4a8deed114ae720d18c545b83714ccb1d393afdff3b02808f118588",
+        "states": 2,
+        "edges": 4,
+        "finite": false
+      },
+      {
+        "split": "held_out",
+        "formula": "F (blue & F (green & F (yellow & F (blue & F (green & F yellow)))))",
+        "raw_sha256": "d15142443599d1e85936d38167b5c163a1770ff82bf25aacc3e79e830e83a21b",
+        "pruned_sha256": "a459207c04fe2ae705137dcae14996e199098f0a26aab8d8cc85485961c338d3",
+        "states": 7,
+        "edges": 13,
+        "finite": true
+      },
+      {
+        "split": "held_out",
+        "formula": "F (blue & F (green & F (yellow & F (blue & F (green & F (yellow & F (blue & F (green & F yellow))))))))",
+        "raw_sha256": "a31597114c4281cad969cf3ab063d50177895064889d8465835f7cb6f84bcba4",
+        "pruned_sha256": "09532d0531397804e9d2c92b8186f7f07f3385688806f715613ae7d7e511854e",
+        "states": 10,
+        "edges": 19,
+        "finite": true
+      },
+      {
+        "split": "held_out",
+        "formula": "F (blue & F (green & F (yellow & F (blue & F (green & F (yellow & F (blue & F (green & F (yellow & F (blue & F (green & F yellow)))))))))))",
+        "raw_sha256": "09d13621aab02ada4fee4613e6881009a44f1ee260143de052f1dc5f283edd84",
+        "pruned_sha256": "e56a2d8cfe6dc309054143d0f8a1216ffe0c98b2fc6798937c0dab5f5bfc9c4c",
+        "states": 13,
+        "edges": 25,
+        "finite": true
+      }
+    ],
+    "sha256": "f9f10eac989c0bae6852a21e1ee855742243228f3d100ac5d7abec2df409a66e"
+  },
+  "propositions": [
+    "blue",
+    "green",
+    "magenta",
+    "yellow"
+  ],
+  "automaton_states": [
+    0,
+    1
+  ],
+  "automaton_edges": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      1
+    ]
+  ],
+  "automaton_node_features": [
+    [
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    [
+      1.0,
+      1.0,
+      0.0,
+      0.0
+    ]
+  ],
+  "automaton_edge_features": [
+    [
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    [
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0
+    ]
+  ],
+  "protocol_notes": [
+    "Complete finite-horizon episodes per PPO batch; time limit is the defined horizon, with zero bootstrap.",
+    "Long head is a discounted MC return proxy, not a calibrated satisfaction probability.",
+    "Track enables history; product q is always observed for correct reward and task state.",
+    "SCC bit denotes a cyclic SCC; accepting nodes are targets of accepting transitions.",
+    "No artificial skip edges: shortest-hop progress decreases by at most one.",
+    "Guard GRU conditions edge messages on propositions; graph semantic feature dimensions remain 4/6.",
+    "full_all uses target-edge options, topology/timeout termination, intrinsic PPO and extrinsic SMDP PPO.",
+    "Task-set held_out formulas are never sampled for training. Structural overlap is rejected, without claiming language-equivalence checking.",
+    "Architecture and operational choices are explicit, not evidence for the historical paper performance numbers."
+  ]
+}

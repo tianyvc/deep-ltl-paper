@@ -1,0 +1,59 @@
+{
+  "python": "/home/dell/anaconda3/envs/wty_LTL/bin/python",
+  "conda_prefix": "/home/dell/anaconda3/envs/wty_LTL",
+  "torch": "2.5.1+cu124",
+  "cuda": true,
+  "snapshot_utc": "2026-10-21T01:24:04.707568+00:00",
+  "checks": [
+    {
+      "name": "gpu",
+      "command": [
+        "nvidia-smi",
+        "--query-gpu=index,uuid,name,memory.total,memory.used,memory.free,utilization.gpu",
+        "--format=csv"
+      ],
+      "exit_code": 0,
+      "output": "index, uuid, name, memory.total [MiB], memory.used [MiB], memory.free [MiB], utilization.gpu [%]\n0, GPU-9abb2f8d-5403-2e39-9da4-0b429a22dbfc, NVIDIA GeForce RTX 4090, 24564 MiB, 18740 MiB, 5372 MiB, 8 %\n1, GPU-faa4c06f-92b6-134a-7044-9619e1a271c0, NVIDIA GeForce RTX 4090, 24564 MiB, 18268 MiB, 5844 MiB, 9 %\n2, GPU-7440841e-345b-26c5-3549-dacfa2249fa0, NVIDIA GeForce RTX 4090, 24564 MiB, 18190 MiB, 5922 MiB, 8 %\n3, GPU-639813e7-7ef1-97a6-0416-44b70e630e90, NVIDIA GeForce RTX 4090, 24564 MiB, 18594 MiB, 5518 MiB, 13 %\n"
+    },
+    {
+      "name": "gpu-processes",
+      "command": [
+        "nvidia-smi",
+        "--query-compute-apps=gpu_uuid,pid,process_name,used_memory",
+        "--format=csv"
+      ],
+      "exit_code": 0,
+      "output": "gpu_uuid, pid, process_name, used_gpu_memory [MiB]\nGPU-9abb2f8d-5403-2e39-9da4-0b429a22dbfc, 2660396, /usr/libexec/gnome-remote-desktop-daemon, 390 MiB\nGPU-9abb2f8d-5403-2e39-9da4-0b429a22dbfc, 2141002, /snap/snapd-desktop-integration/391/usr/bin/snapd-desktop-integration, 10 MiB\nGPU-9abb2f8d-5403-2e39-9da4-0b429a22dbfc, 2866898, python, 16590 MiB\nGPU-9abb2f8d-5403-2e39-9da4-0b429a22dbfc, 3381968, /usr/local/lib/ollama/llama-server, 876 MiB\nGPU-9abb2f8d-5403-2e39-9da4-0b429a22dbfc, 1965487, /home/dell/anaconda3/envs/mpprl/bin/python, 820 MiB\nGPU-faa4c06f-92b6-134a-7044-9619e1a271c0, 3381968, /usr/local/lib/ollama/llama-server, 914 MiB\nGPU-faa4c06f-92b6-134a-7044-9619e1a271c0, 2302511, python, 16608 MiB\nGPU-faa4c06f-92b6-134a-7044-9619e1a271c0, 1905774, /home/dell/anaconda3/envs/mpprl/bin/python, 712 MiB\nGPU-7440841e-345b-26c5-3549-dacfa2249fa0, 2873608, python, 16570 MiB\nGPU-7440841e-345b-26c5-3549-dacfa2249fa0, 3381968, /usr/local/lib/ollama/llama-server, 874 MiB\nGPU-7440841e-345b-26c5-3549-dacfa2249fa0, 1924979, /home/dell/anaconda3/envs/mpprl/bin/python, 712 MiB\nGPU-639813e7-7ef1-97a6-0416-44b70e630e90, 3381968, /usr/local/lib/ollama/llama-server, 1020 MiB\nGPU-639813e7-7ef1-97a6-0416-44b70e630e90, 2654417, python, 16608 MiB\nGPU-639813e7-7ef1-97a6-0416-44b70e630e90, 1965447, /home/dell/anaconda3/envs/mpprl/bin/python, 932 MiB\n"
+    },
+    {
+      "name": "git",
+      "command": [
+        "git",
+        "status",
+        "--short"
+      ],
+      "exit_code": 0,
+      "output": "?? .vscode/\n?? docs/maintenance/validation-runs/20261021/\n"
+    },
+    {
+      "name": "revision",
+      "command": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "exit_code": 0,
+      "output": "3a96a70c450feddea04bef31af43b08ab4d15b47\n"
+    },
+    {
+      "name": "cpu",
+      "command": [
+        "sh",
+        "-c",
+        "getconf _NPROCESSORS_ONLN; uptime; free -m; df -h ."
+      ],
+      "exit_code": 0,
+      "output": "40\n               total        used        free      shared  buff/cache   available\nMem:          257379       72149        6314        3036      178915      180377\nSwap:           2047        2046           1\nFilesystem      Size  Used Avail Use% Mounted on\n/dev/sdb         11T  7.3T  2.6T  74% /home/dell/workspace\nsh: 1: uptime: not found\n"
+    }
+  ]
+}

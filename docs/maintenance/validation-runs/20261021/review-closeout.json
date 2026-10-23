@@ -1,0 +1,11 @@
+{
+  "protected_files": 24,
+  "unchanged": true,
+  "training_launched": false,
+  "git_diff_check": 0,
+  "modified_docs": [
+    "paper/review/FINAL_VERSION_COMPARISON.md",
+    "docs/CODE_VALIDATION_ROADMAP.md",
+    "docs/maintenance/RECORDS.md"
+  ]
+}

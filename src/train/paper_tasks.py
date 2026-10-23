@@ -42,11 +42,12 @@ def load_tasks(path, formula, env_name, horizon):
         source = dict(train=[formula], held_out=[])
     else:
         source = json.loads(Path(path).read_text())
-    if set(source) != {'train', 'held_out'} or not source['train']:
-        raise ValueError('Task JSON must contain a nonempty train list and a held_out list')
+    if set(source) not in ({'train', 'held_out'}, {'train', 'validation', 'held_out'}) or not source['train']:
+        raise ValueError('Task JSON must contain a nonempty train list, a held_out list, and optional validation list')
+    splits = ['train'] + (['validation'] if 'validation' in source else []) + ['held_out']
     records = []
     seen_text, seen_raw, seen_pruned = {}, {}, {}
-    for split in ['train', 'held_out']:
+    for split in splits:
         if not isinstance(source[split], list):
             raise ValueError('Task split must be a JSON list')
         for formula in source[split]:
@@ -69,7 +70,8 @@ def load_tasks(path, formula, env_name, horizon):
                                     edges=obs['ldba'].num_transitions, finite=obs['ldba'].is_finite_specification()))
             finally:
                 env.close()
-    payload = dict(train=list(source['train']), held_out=list(source['held_out']), automata=records)
+    payload = {split: list(source[split]) for split in splits}
+    payload['automata'] = records
     payload['sha256'] = hashlib.sha256(json.dumps(payload, sort_keys=True).encode()).hexdigest()
     return payload
 

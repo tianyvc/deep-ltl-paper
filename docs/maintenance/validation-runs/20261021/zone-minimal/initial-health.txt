@@ -1,0 +1,16 @@
+Manifest: /home/dell/workspace/Tianyvc/deep-ltl-paper/experiments/reproduction/20261021-zone-minimal-v3/manifest.json
+Sampling worker activity for 10s ...
+Checked at: 2026-10-21T15:50:44.185839+08:00
+Campaign=running | scheduler_alive=True | heartbeat_age=0s
+Tasks: completed=4 / running=2 / pending=45 / failed=0 / blocked=0 / total=51
+Formal training completed=2/25; task counts are NOT a wall-time percentage.
+
+zones-hv_track-s1-train | physical_GPU=2 | worker=running | supervisor_alive=True | child_alive=True | CPU_ticks_delta=878
+  Phase has no completed-update metrics yet (startup/evaluation/summary). CPU activity is liveness, not proof of scientific progress.
+  log=/home/dell/workspace/Tianyvc/deep-ltl-paper/experiments/reproduction/20261021-zone-minimal-v3/jobs/zones-hv_track-s1-train-attempt-1/output.log
+
+zones-gnn_track-s1-train | physical_GPU=1 | worker=running | supervisor_alive=True | child_alive=True | CPU_ticks_delta=915
+  Phase has no completed-update metrics yet (startup/evaluation/summary). CPU activity is liveness, not proof of scientific progress.
+  log=/home/dell/workspace/Tianyvc/deep-ltl-paper/experiments/reproduction/20261021-zone-minimal-v3/jobs/zones-gnn_track-s1-train-attempt-1/output.log
+
+OK: no current health-check failure detected. Compare steps/updates across checks; heartbeat alone does not prove learning quality.

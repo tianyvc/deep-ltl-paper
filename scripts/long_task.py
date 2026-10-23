@@ -78,10 +78,10 @@ def main():
         command = [sys.executable, *command]
         job.mkdir(parents=True, exist_ok=False)
         environment = os.environ.copy()
-        environment.update(PYTHONNOUSERSITE='1', PYTHONUNBUFFERED='1', PYTHONPATH=str(Path('src').resolve()), MUJOCO_GL='egl', OMP_NUM_THREADS='2')
+        environment.update(PYTHONHASHSEED='0', PYTHONNOUSERSITE='1', PYTHONUNBUFFERED='1', PYTHONPATH=os.pathsep.join([str(Path('src').resolve()), str(Path('src/envs/zones/safety-gymnasium').resolve())]), MUJOCO_GL='egl', OMP_NUM_THREADS='2')
         if args.gpu is not None:
             environment['CUDA_VISIBLE_DEVICES'] = args.gpu
-        overrides = {key: environment[key] for key in ['PYTHONNOUSERSITE','PYTHONUNBUFFERED','PYTHONPATH','MUJOCO_GL','OMP_NUM_THREADS','CUDA_VISIBLE_DEVICES'] if key in environment}
+        overrides = {key: environment[key] for key in ['PYTHONHASHSEED','PYTHONNOUSERSITE','PYTHONUNBUFFERED','PYTHONPATH','MUJOCO_GL','OMP_NUM_THREADS','CUDA_VISIBLE_DEVICES'] if key in environment}
         write(job / 'job.json', dict(command=command, cwd=str(Path.cwd()), created=now(), python=sys.executable, conda_prefix=sys.prefix, overrides=overrides))
         with (job / 'supervisor.log').open('a') as log:
             process = subprocess.Popen([sys.executable, str(Path(__file__).resolve()), '_supervise', '--job-dir', str(job)], env=environment, stdin=subprocess.DEVNULL, stdout=log, stderr=subprocess.STDOUT, start_new_session=True)

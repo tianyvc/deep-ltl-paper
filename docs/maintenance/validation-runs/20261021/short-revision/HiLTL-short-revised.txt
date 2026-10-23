@@ -1,0 +1,406 @@
+   HiLTL: Progress-Conditioned Dual-Target Critics
+    for Logic-Conditioned Reinforcement Learning
+                                                       Anonymous Authors
+                                                       Anonymous Institution
+
+
+   Abstract—Learning policies conditioned on temporal-logic          separate option extension uses real automaton transitions as
+specifications requires representing propositional constraints and   candidate subgoals; it is not required by the primary critic.
+logical progress. We study a critic that combines a one-step            Our methodological contributions are: (i) an explicit dual-
+temporal-difference estimator with an episode-return estimator
+through an automaton-distance gate. HiLTL uses a guard-aware         target critic and PPO objective; (ii) guard-aware structural
+graph encoder, optional logical history, and auxiliary losses        encoding and progress conditioning with specified boundary
+alongside proximal policy optimization. Fusion is an architectural   cases; and (iii) a controlled evaluation design separating repre-
+inductive bias rather than an exact decomposition of satis-          sentation, critic, and history changes. We report implementa-
+faction probability. We specify acceptance, reward, truncation,      tion checks, not improved task performance. The comparative
+and optional temporally extended decision rules, distinguishing
+finite-task completion from bounded observations of recurrent        experiments below remain outstanding.
+specifications. An executable implementation has passed tar-
+geted semantic, gradient, persistence, and short-training checks.                       II. P ROBLEM AND S COPE
+These establish limited implementation evidence; comparative
+performance and zero-shot generalization remain to be evaluated.     A. Product Interaction and Acceptance
+We provide a controlled evaluation protocol separating encoder,         Let M = (S, A, P, µ) describe an environment with un-
+critic, history, and option effects, without claiming unverified     known transition kernel, and let ℓ : S → 2AP label states with
+success-rate improvements.
+   Index Terms—Linear temporal logic, reinforcement learning,        atomic propositions. The alphabet is Σ = 2AP . A specification
+automata, graph neural networks, value estimation.                   φ is translated into a transition-accepting limit-deterministic
+                                                                     Büchi automaton
+                      I. I NTRODUCTION
+                                                                                       Aφ = (Q, q0 , Σ, E, Eϵ , FE ).
+   Linear temporal logic (LTL) expresses temporally extended
+reachability, avoidance, and recurrence requirements [1, 2].         A labeled edge e = (q, g, q ′ ) ∈ E carries a propositional
+In logic-conditioned reinforcement learning (RL), an agent           guard g, Eϵ contains epsilon edges, and FE contains accepting
+receives a specification and must relate its environment state       transitions. The labeled successor is determined by the current
+to the remaining logical task.                                       logical state and input label. Epsilon choices follow the
+   Existing methods already provide mechanisms for repre-            converter and wrapper interface. Accepting transitions may be
+senting and progressing specifications. LTL2Action condi-            labeled or epsilon transitions. We retain the actual transition
+tions policies on formula structure and applies LTL progres-         structure rather than imposing a desired state count.
+sion [3]. GCRL-LTL composes goal-conditioned behaviors                  A primitive action samples st+1 ∼ P (· | st , at ) and
+using automaton-based planning [4]. DeepLTL uses reach–              the automaton consumes ℓ(st+1 ). An enabled epsilon action
+avoid sequences, DeepSets, recurrent conditioning, and value-        changes logical state without advancing the underlying envi-
+guided sequence selection [5]. Consequently, neither progress        ronment. Epsilon actions are masked where unavailable. The
+tracking nor automaton-based decomposition alone establishes         outer time-limit wrapper counts epsilon decisions toward H,
+a new contribution.                                                  although they do not advance physical simulation. Index t
+   We investigate a narrower question: can automaton progress        counts product decisions; ht = (q0 , . . . , qt ) is logical history.
+provide a useful inductive bias for combining critic estimators      The policy input is denoted xt = (st , qt , ht , Aφ ), omitting
+trained with different temporal targets? A bootstrapped target       history in memoryless variants. Not every critic receives every
+provides a local learning signal; an episode-return target incor-    component.
+porates observed outcomes over the remaining rollout. These             An infinite run is accepting if it traverses accepting transi-
+estimators trade off bootstrapping error, sampling variance,         tions infinitely often. Merely visiting an accepting edge’s target
+and information restrictions. A progress-conditioned gate pro-       node is not an acceptance event: another incoming edge can be
+vides a structured mixture, whose benefit must be established        non-accepting. Reward and evaluation retain this distinction.
+against matched alternatives.
+   HiLTL couples this critic with a guard-aware automaton            B. Optimized Surrogate
+representation. Structural features describe transition roles,         The implemented reward is
+while guards retain the identity of their enabling conditions.
+Optional automaton history supplies trajectory context. A                         rt = I{et ∈ FE } − I{violation at t}.               (1)
+Violation means entry into a bottom non-accepting strongly         Tokens include Boolean operators, proposition identities in a
+connected component (SCC). Environment termination is              fixed environment vocabulary, and a dedicated epsilon token.
+logged separately. This reward replaces the environment re-        The mean pathway supplements the recurrent representation,
+ward; it does not supply dense distance shaping.                   but does not canonicalize logical expressions. The supported
+  Let T ≤ H be episode length under a fixed decision horizon       transfer setting retains proposition meanings.
+H. Training optimizes                                                 Let P(q) contain outgoing accepting, epsilon, or distance-
+                             "T −1
+                              X
+                                         #                         decreasing edges. Initial node embeddings include outgoing
+   JH (π) = Eφ∼Dtrain , τ ∼π       γ t rt , 0 < γ < 1. (2)         guard-conditioned values:
+                              t=0
+                                                                                                       P
+                                                                                  (0)                    e∈P(q) ψ(ze )
+For tasks certified by the wrapper’s conservative finite-                       vq = Wu uq + bu +                      ,     (6)
+                                                                                                       max(1, |P(q)|)
+specification check, an accepting event terminates with suc-
+cess. Otherwise execution continues until the horizon or an-       where ψ is linear–LeakyReLU. Guard information thus enters
+other termination. This check is not a complete characteriza-      message values rather than only normalized attention weights.
+tion of co-safe LTL.                                                 Message passing. Three GATv2 layers [6] use width 64
+   We do not assert equivalence between maximizing (2) and         and four averaged heads. For a directed message j → i,
+infinite-horizon LTL satisfaction probability. Such equivalence         (l)                             (l)          (l)
+requires additional reward and MDP assumptions. Finite-task           aij = a⊤
+                                                                             l LeakyReLU(Wi,l vi + Wj,l vj + We,l zji ),
+                                                                        (l)                       (l)
+completion and bounded observations of recurrent or persistent        αij = softmaxj∈N − (i) aij .                              (7)
+specifications are evaluated separately: a finite trace cannot
+certify the infinite suffix required by GF p or F Gp.              Residual linear–LeakyReLU transformations and LayerNorm
+                                                                   follow each convolution; no reverse edges or extra self-loops
+                           III. H I LTL                            are added. Graph-wise softmax pooling gives p(l) at each
+A. Guard-Aware Automaton Representation                            layer. Single-scale variants use p = p(3) ; multi-scale variants
+   Structural features. For features only, let FV = {q ′ :         concatenate all three pools.
+(q, g, q ′ ) ∈ FE } be accepting-transition targets. Let d(q) be      Edge-aware attention is an established component, not itself
+directed hop distance to FV along real edges, including epsilon    our novelty. The design under study combines guard iden-
+edges. Set D = max(1, max{d(q) : d(q) < ∞}), taking the            tity, structural features, and critic conditioning. Layer depth
+inner maximum as zero when empty. Define d(q)    ¯ = d(q)/D        measures graph neighborhoods, not environment time. Global
+                       ¯
+when reachable and d(q) = 1 otherwise. Node features are           pooling does not give every node unrestricted global relational
+                                                      ¯            information. With fixed parameters the graph encoder is static:
+       uq = [I{q ∈ FV }, I{q is cyclic}, I{q = q0 }, d(q)].  (3)   progress enters through the current-node query, history, and
+Cyclic means membership in an SCC with at least two                gate, not a state-dependent change in edge attention.
+nodes or existence of a self-loop, not necessarily accepting
+recurrence. Distance to FV ignores environment dynamics and        B. Progress-Conditioned Dual-Target Critic
+is not a full characterization of Büchi acceptance.                 Let f (st ) encode the environment and vqt be the cur-
+   Epsilon edges take precedence over progress edges (d(q ′ ) <    rent logical node embedding. Optional history is zthist =
+d(q)); all others are non-progress. The four-position compati-     LSTM(vq0 , . . . , vqt ). The wrapper processes each product
+bility code is                                                     decision once. Immutable history snapshots are read, not
+                                                                  advanced, during PPO replay.
+                (0, 0, 0, 1), e ∈ Eϵ ,
+                
+                                                                     The two estimators are
+          ce = (1, 0, 0, 0), e ∈  / Eϵ , d(q ′ ) < d(q),
+                
+                
+                  (0, 1, 0, 0), otherwise.                                    VD (xt ) = MLPD ([f (st ), p, vqt ]),
+                                                                                                      ¯ t ), vq , z hist ]).
+                                                                              VR (xt ) = MLPR ([1 − d(q                         (8)
+The third position is inactive, not a fourth observed type. The                                                  t     t
+
+six structural edge features are                                   History is omitted when disabled. Subscripts D and R de-
+                                          ¯ ′ )].
+                 ue = [ce , I{q ′ ∈ FV }, d(q                (4)   note TD-supervised and return-supervised heads. VR is an
+                                                                   environment-agnostic regression proxy with restricted infor-
+For an edge with finite endpoint distances, d(q) ≤ 1 + d(q ′ ).    mation, not a calibrated probability or, generally, the true
+A distance decrease greater than one is therefore impossible.      environment-dependent value. Its notation indicates depen-
+We introduce neither artificial skip edges nor a skip-based        dence through the displayed inputs only.
+contribution.                                                        The primary gate and fused critic are
+  Guard encoding. For guard tokens we,1:Le , learned embed-
+                                                                                                ¯ t) − 1 ) ,
+                                                                                                           
+dings and a GRU give                                                            βt = σ 3(1 − d(q         2
+                                          X
+   ge = GRU(we,1:Le ),          be = L−1
+                                       e      Emb(we,j ),                       Vbt = (1 − βt )VD (xt ) + βt VR (xt ).      (9)
+                                             j
+                                                                   Here σ(z) = (1 + e−z )−1 , giving βt ∈ [σ(−1.5), σ(1.5)] ≈
+   ze = We [ue ∥ ge ∥ be ] + b.                              (5)   [0.1824, 0.8176]. This is a deterministic state-conditioned gate,
+      Guard tokens + structural features −→ graph/node                            D. Optional Transition-Targeted Options
+                         embeddings                                                  An option [8] selects a real outgoing edge as its subgoal; ini-
+            Environment + current node −→ VD                                      tiation requires the edge’s source logical state. Candidates ex-
+           Current node + optional history −→ VR                                  clude edges into bottom non-accepting SCCs. Non-accepting
+              Distance gate −→ fused critic Vbt                                   self-loops are removed when a state-changing, accepting,
+      Frozen rollout targets −→ PPO + TD/return losses                            or epsilon alternative exists. A meta-policy scores target-
+                                                                                  node/edge embeddings. A shared primitive actor conditions
+Fig. 1. Primary critic dependencies. The actor receives environment, graph,       on the selected embedding rather than a fixed global state ID.
+and current-node features, plus optional history. Optional subgoal conditioning
+is separate.                                                                         An option terminates when its selected guard and source–
+                                                                                  target transition are realized, another logical state is reached,
+                                                                                  the duration limit is reached, or the episode ends. Epsilon
+not a learned schedule. Constant β = 1/2 and a learned 64-                        subgoals require an actual epsilon decision. Recurrent self-
+hidden-unit MLP gate are separately trained alternatives, not                     loop realization is checked by its guard, not just equality
+interchangeable checkpoint settings.                                              of source and target. Let de (q) be distance to the selected
+   Fusion defines an approximator, not a Bellman identity. A                      target capped at |Q|, and Φe (q) = −de (q)/ max(1, |Q|). The
+logical-state/history-only predictor can assign the same value                    intrinsic reward is
+to environment states with different future accessibility. Net-                    rtint = I{selected edge realized} + 0.1(Φe (qt+1 ) − Φe (qt )).
+works also omit an explicit remaining-horizon input, limiting                                                                                   (13)
+exact representation of arbitrary finite-horizon values. These                    This auxiliary signal omits the discount factor in its potential
+restrictions motivate matched empirical comparisons rather                        difference; we do not invoke discounted shaping invariance.
+than a satisfaction guarantee.                                                        The primitive actor adds separately standardized, clipped
+                                                                                  intrinsic GAE to its external advantage. An option critic
+C. Targets and PPO Optimization
+                                                                                                                         Pk0.5L
+                                                                                  learns intrinsic segment returns, adding
+                                                                                                                            n −1
+                                                                                                                                 int to (12). For
+                                                                                  duration kn , the meta reward is Rn = j=0      γ j rtn +j . SMDP
+  Let V̄t denote the fused prediction saved during collection,
+with V̄T = 0. For each complete episode, frozen targets are                       bootstrapping uses γ kn and advantage traces use (γλ)kn .
+                                                                                  A separate meta PPO update uses the fused external critic,
+                                                  T
+                                                  X −1                            advantages clipped to [−10, 10], value coefficient 0.5, and
+      ytD = rt + γ V̄t+1 ,                ytR =          γ k−t rk ,               entropy coefficient 0.01. Primitive and meta updates share an
+                                                  k=t                             optimizer and representations. Extra rewards and optimization
+       δt = rt + γ V̄t+1 − V̄t ,          At = δt + γλAt+1 ,             (10)     make Options a separate intervention, not a pure encoder
+                                                                                  ablation. The design is distinguished from future-dependent
+with AT = 0 and λ = 0.95. Termination and the defined                             options [9], without presuming comparative superiority.
+horizon both use zero bootstrap; this is not continuing-task
+bootstrapping. Auxiliary losses are LD = E[(VD − sg(y D ))2 ]                                   IV. A NALYSIS AND L IMITATIONS
+and LR = E[(VR −sg(y R ))2 ]. The two heads concern the same                      Proposition 1 (Conditional fusion error). For a reference
+external reward with different targets; they do not establish                     finite-horizon value vtπ , if |VD −vtπ | ≤ ϵD and |VR −vtπ | ≤ ϵR
+distinct physical time constants.                                                 at an input, then
+   PPO [7] uses the fused critic for collection and advantages.
+                                                                                                 |Vbt − vtπ | ≤ (1 − βt )ϵD + βt ϵR .
+The implementation standardizes advantages within the col-
+lected batch, clips them to [−1, 1], and detaches them. For                       Proof. Substitute (9) and apply the triangle inequality with
+ρt = π(at | xt )/πold (at | xt ),                                                 0 ≤ βt ≤ 1.
+
+            Lπ = −E[min(ρt A
+                           et , clip(ρt , 0.8, 1.2)A
+                                                   et )].                (11)       This elementary bound does not guarantee small errors,
+                                                                                  improvement over either head, or optimization convergence.
+The fused value loss LV uses frozen targets V̄t + At and the                      An inaccurate return head can degrade fusion. If VD were
+maximum of unclipped squared error and squared error after                        the exact Bellman backup of the true value, it would already
+prediction clipping at V̄t ± 0.2. The primitive objective is                      equal that value; imposing an exact nontrivial mixture would
+                                                                                  then force VR to equal it too. We instead specify two trained
+     L = Lπ + 0.5LV + LD + 0.3LR − 0.01E[H(π)].                          (12)     regressors.
+                                                                                    Guard identity addresses a different limitation. Two isomor-
+Single-head models omit the auxiliary losses. Adam uses                           phic task automata can differ only in whether a transition
+learning rate 3 × 10−4 and global gradient clipping at 0.5.                       requires blue or green. A permutation-invariant encoder re-
+Targets are not differentiated through. Target correlation and                    ceiving identical structural features but no guards produces
+information restrictions can cause interference or bias; im-                      identical task representations. At the same environment obser-
+proved learning is an empirical hypothesis.                                       vation it cannot select different actions solely because of those
+guards. This motivates guard-aware encodings, but does not                                      TABLE I
+prove the GRU/mean design optimal or sufficient for arbitrary        D IAGNOSTIC TASK SPLIT; FORMAL EVALUATION REQUIRES EXPANSION
+                                                                     AND INDEPENDENT VALIDATION . H ERE B , G , Y DENOTE BLUE , GREEN ,
+Boolean reasoning.                                                                              YELLOW.
+  SCC and distance preprocessing costs O(|Q|+|E|), exclud-
+ing conversion and guard processing. At fixed width and heads,        Split       Formulas
+message passing is linear in edges; node transformations              Train       F b ∧ F g; F y; F (b ∧ F g)
+have quadratic dependence on width. Guard cost depends                Held-out    GF b ∧ GF y; F (b ∧ F (g ∧ F y)); (¬b U g) ∧ F y
+on token length. Re-encoding full logical history at every
+decision can accumulate quadratic work in episode length.
+Graph complexity therefore does not determine end-to-end            B. Task Distribution and Held-Out Evaluation
+runtime: conversion, reference sequence search, simulation,            Target environments are PointLtl2-v0, LetterEnv-v0, and
+and optimization must also be measured.                             FlatWorld-v0. Models train separately in each environment:
+                                                                    this is multi-environment evaluation, not cross-environment
+   V. E VALUATION D ESIGN AND AVAILABLE E VIDENCE                   transfer. Zero-shot evaluation uses new formulas in the same
+                                                                    environment and proposition vocabulary without weight up-
+A. Research Questions and Fair Comparisons                          dates or test-guided checkpoint selection.
+                                                                       A full study requires fixed training, validation, and test man-
+   The evaluation asks: (RQ1) does dual-target estimation
+                                                                    ifests covering reachability, avoidance, ordering, and recur-
+improve learning against a matched single critic; (RQ2) what
+                                                                    rence. Validation determines hyperparameters and checkpoint-
+do history and the gate contribute; (RQ3) do guard/structural
+                                                                    selection rules before test evaluation. Formula length, actual
+encoding and multi-scale pooling improve held-out perfor-
+                                                                    automaton size, edge count, and diameter provide structural
+mance; and (RQ4) what are the benefits and computational
+                                                                    strata; graph size alone does not measure environment dif-
+costs of Options?
+                                                                    ficulty. Logical satisfiability and realizability under environ-
+   Required controls. The primary critic study must hold
+                                                                    ment constraints must be considered separately. Language-
+the environment encoder, graph encoder, actor, reward, task
+                                                                    equivalent formulas must not knowingly cross splits.
+distribution, and budget fixed. Its factorial controls are single
+                                                                       Current engineering manifests contain three training and
+critic, dual-target critic, single critic with history, and dual-
+                                                                    three held-out formulas per environment, without independent
+target critic with history. Gate studies independently retrain
+                                                                    validation. Table I gives the color-domain lists; LetterEnv
+fixed, constant, and learned variants. When feature dimen-
+                                                                    substitutes a, b, c. These small lists are diagnostic, not the
+sions change, report parameter counts and a capacity-matched
+                                                                    finalized benchmark. These manifests do not define a broad
+alternative. Guard-only versus additional structural features,
+                                                                    benchmark: additional independent formulas and validation
+and last-layer versus multi-layer pooling, isolate representation
+                                                                    tasks must be fixed before the comparative study.
+interventions. Removing all guards is a task-identifiability
+                                                                       The loader rejects whitespace-normalized duplicates and
+diagnostic, not a fair default baseline.
+                                                                    overlapping fingerprints of raw and environment-pruned,
+   Existing configurations. Seven named implementation              guard/acceptance-labeled automata. State-number-independent
+configurations are available. The sequence reference uses           graph hashing is a safeguard, not a complete language-
+DeepSets/GRU, whereas every non-reference configuration             equivalence procedure. A zero-shot checkpoint must never
+uses the guard-aware GNN. The multi-scale switch changes            train on its test formulas, even if those formulas appear in a
+pooled layers, not whether a GNN exists. The history switch         separate task-specific study. Split assignments and checkpoint
+controls an LSTM; current logical state remains observed in         provenance must remain explicit.
+every product model. Consequently, the sequence-reference
+versus HV-only comparison changes the whole architec-               C. Training, Metrics, and Statistical Units
+ture and cannot isolate HV. Matched single-GNN-critic and              The proposed starting budget is 1M interactions per inde-
+history-only controls are required additions, not completed ex-     pendent model, with training seeds 1–5. This is a protocol
+periments. Options are compared with the otherwise identical        choice, not an accomplished run. Current defaults are γ =
+full model without Options.                                         0.998, rollout threshold 512, minibatch size 64, and four PPO
+   External methods. DeepLTL [5] is not a static GNN                epochs. Complete episodes are collected until the threshold
+baseline. The repository’s reference architecture and product-      is reached; actual interactions can exceed requested budgets
+training adapter are not a bit-identical reproduction of its        and must be reported. Horizons, maps, reset distributions,
+upstream method or curriculum. LTL2Action [3] and GCRL-             action/counting conventions, and selected checkpoints must
+LTL [4] have not been rerun here. Published values are              be fixed in the finalized manifest. Short-run timing is not a
+historical context, not inputs to new statistical comparisons.      reliable full-training estimate.
+DeepLTL’s published evaluation used 15M interactions and               For finite tasks report completion within H, violation rate,
+different specifications; those values cannot serve as measure-     all-episode length, and successful-episode length with its
+ments on our proposed 1M-interaction suite. We make no              success count. Do not silently substitute one step statistic
+same-protocol numerical superiority claim over these methods.       for another. For recurrent tasks report accepting-transition
+                          TABLE II                                  performance table is reported before these experiments. No
+ R ECORDED IMPLEMENTATION CHECKS . C ASES ARE NOT INDEPENDENT       illustrative performance or gate plot is used as empirical
+        PERFORMANCE TRIALS OR TRAINING REPLICATIONS .
+                                                                    evidence. The final study must retain failed runs and negative
+      Check group                                      Cases        results, including possible degradation from fusion, multi-scale
+                                                                    features, or Options.
+      Graph/value/trajectory semantic regressions        12
+      Options, targets, split, reference checks           8
+      Final CLI short-run matrix, including expected     34                              VI. R ELATED W ORK
+      rejections                                                       Logic-conditioned methods differ in representation and
+      Independent-process reference/option restora-       2
+      tion
+                                                                    planning. LTL2Action uses formula structure and progres-
+                                                                    sion [3]; GCRL-LTL combines proposition-conditioned skills
+                                                                    with automaton planning [4]; DeepLTL reasons over reach–
+                                                                    avoid sequences with recurrent conditioning [5]. Reward
+counts and a defined rate under a common horizon. Where
+                                                                    machines formalize structured non-Markovian rewards [10].
+the automaton permits interpreting these as completed goal
+                                                                    Neither static representation nor absent progress tracking de-
+cycles, state the relationship explicitly. Do not average them
+                                                                    scribes all these approaches.
+with finite SR or label them infinite satisfaction probabilities.
+                                                                       Graph attention [6, 11] and message passing [12] moti-
+Any finite-trace persistence proxy needs a predeclared event.
+                                                                    vate the encoder, but edge features and stacked layers are
+Reward and discounted return refer to (1).
+                                                                    established tools. Our representation question concerns guard
+   For each training seed and test formula, the proposed
+                                                                    identity and structural progress, not inventing edge-aware
+evaluation uses 500 episodes with separately specified reset
+                                                                    attention. Similarly, different regression targets require simpler
+seeds. Deterministic and sampled policies are distinct pro-
+                                                                    multi-head and capacity-matched critic comparisons before
+tocols. Average episodes within each independent training
+                                                                    being credited with improved temporal reasoning.
+seed, then report seed-level means, sample standard devi-
+                                                                       Options formalize temporally extended actions [8]; Option-
+ations, and 95% Student-t intervals. Paired differences use
+                                                                    Critic learns option policies and termination [13]; future-
+matched seed indices and task conditions. Episodes are not
+                                                                    dependent options study temporal-logic task generalization [9].
+independent training repetitions. Formula/environment macro-
+                                                                    Our optional controller specifies candidate generation, guard-
+averaging must be fixed in advance; uncertainty over sampled
+                                                                    based termination, and SMDP updates without claiming supe-
+formulas differs from training-seed uncertainty. One training
+                                                                    riority to these alternatives. Evaluation must expose training-
+seed supplies no estimate of between-training variability.
+                                                                    seed variability and implementation differences [14].
+   Absolute SR differences are percentage points; relative
+change is (SRnew − SRref )/SRref for positive reference SR.                               VII. C ONCLUSION
+Intervals must target the same effect quantity. Qualitative
+significance labels and subtraction of rounded relative im-            HiLTL studies progress-conditioned fusion of TD- and
+provements are avoided. Checkpoints, split hashes, actual in-       return-supervised critics with guard-aware logical representa-
+teractions, episode outcomes, and analysis inputs are retained      tions. The formulation distinguishes approximate return es-
+for reconstruction.                                                 timation from satisfaction probability and specifies history,
+                                                                    finite-horizon targets, and optional temporally extended de-
+D. Implementation Evidence and Outstanding Experiments              cisions. Available checks establish limited implementation
+   Targeted implementation checks are summarized in Table II.       evidence. Improved sample efficiency, robustness, and held-out
+They concern selected inputs and short executions, not every        formula performance remain empirical questions for matched
+supported trace. The final short-run matrix exercised seven         multi-seed experiments. No performance gain or general sat-
+configurations, held-out evaluation and strict restoration, gate    isfaction guarantee follows from the present evidence.
+variants, Letter/Zone option runs, and a small CUDA run. Flat-
+                                                                                        A PPENDIX A
+World sequence-reference and option checkpoints were also
+                                                                       R EPRODUCIBILITY AND O PERATIONAL D EFINITIONS
+restored in independent processes. Frozen-weight evaluation
+and seed-level aggregation were checked, including rejection           The implementation is identified as hiltl-product-v2.
+of repeated training seeds and invalid episode counts.              Graph models flatten observations into a two-layer 128/64
+   Checks distinguishing guard identities motivated direct mes-     environment MLP; the TD and return heads have two hidden
+sage values and the mean-token pathway. Options checks              layers of width 256 and 128, respectively. History uses a 64-
+verify actual parameter updates rather than only an interface.      unit LSTM. The sequence reference uses environment-specific
+This supports the intended data flow on tested cases, not an        DeepLTL components, an encoder difference that cannot be
+SR advantage, faster convergence, robust generalization, or         hidden in a critic ablation.
+correctness for every LTL formula.                                     The repository’s Rabinizer4 pipeline produces automata,
+   Matched critic controls, independent validation, an ex-          which are pruned using possible environment assignments,
+panded task set, full-budget multi-seed curves, and formal          sink-completed when necessary, and analyzed for SCCs. State
+500-episode evaluations remain outstanding. No comparative          counts depend on conversion and pruning; they are recorded
+from the generated graph, not assigned from a formula dif-         [10] R. Toro Icarte, T. Q. Klassen, R. Valenzano, and S. A.
+ficulty label. Formal experiments must preserve conversion              McIlraith, “Reward machines: Exploiting reward func-
+options, actual graphs, and node/edge counts.                           tion structure in reinforcement learning,” Journal of
+   Option duration defaults to 50 decisions. Intrinsic returns          Artificial Intelligence Research, vol. 73, pp. 173–208,
+bootstrap to zero at segment boundaries; meta targets use               2022.
+external SMDP returns. Primitive and meta updates share            [11] P. Veličković, G. Cucurull, A. Casanova, A. Romero,
+representations, so their additional computation must enter             P. Liò, and Y. Bengio, “Graph attention networks,” in
+runtime comparisons.                                                    International Conference on Learning Representations
+   Rollouts store logical state, immutable history, behavior            (ICLR), 2018.
+log-probability, value, and selected option where applicable.      [12] J. Gilmer, S. S. Schoenholz, P. F. Riley, O. Vinyals, and
+The sequence reference stores the sequence chosen during                G. E. Dahl, “Neural message passing for quantum chem-
+collection; PPO replay does not reselect it. Restoration val-           istry,” in International conference on machine learning.
+idates model configuration, task manifest, and implementation           Pmlr, 2017, pp. 1263–1272.
+identity. Resumption starts a new environment episode, with-       [13] P.-L. Bacon, J. Harb, and D. Precup, “The option-critic
+out promising an uninterrupted trajectory. Evaluation verifies          architecture,” in Proceedings of the AAAI conference on
+unchanged model weights.                                                artificial intelligence, vol. 31, no. 1, 2017.
+   Formal evidence must preserve per-seed checkpoints, ver-        [14] P. Henderson, R. Islam, P. Bachman, J. Pineau, D. Pre-
+sions, manifests, actual budgets, all evaluation outcomes, and          cup, and D. Meger, “Deep reinforcement learning that
+statistical inputs. Predetermined budget points supply learning         matters,” in Proceedings of the AAAI conference on
+curves; validation-only rules select checkpoints. End-to-end            artificial intelligence, vol. 32, no. 1, 2018.
+cost includes conversion, encoding, simulation, optimization,
+and checkpointing, with hardware and concurrent load dis-
+closed. A layer microbenchmark or short GPU run does not
+establish practical acceleration.
+                        R EFERENCES
+ [1] A. Pnueli, “The temporal logic of programs,” in 18th
+     annual symposium on foundations of computer science
+     (sfcs 1977). ieee, 1977, pp. 46–57.
+ [2] C. Baier and J.-P. Katoen, Principles of model checking.
+     MIT press, 2008.
+ [3] P. Vaezipoor, A. C. Li, R. Toro Icarte, and S. A. McIl-
+     raith, “LTL2Action: Generalizing LTL instructions for
+     multi-task RL,” in International Conference on Machine
+     Learning. PMLR, 2021, pp. 10 497–10 508.
+ [4] W. Qiu, W. Mao, and H. Zhu, “Instructing goal-
+     conditioned reinforcement learning agents with temporal
+     logic objectives,” in Advances in Neural Information
+     Processing Systems, 2023.
+ [5] M. Jackermeier and A. Abate, “DeepLTL: Learning to
+     efficiently satisfy complex LTL specifications for multi-
+     task RL,” in International Conference on Learning Rep-
+     resentations (ICLR), 2025.
+ [6] S. Brody, U. Alon, and E. Yahav, “How attentive are
+     graph attention networks?” in International Conference
+     on Learning Representations, 2022.
+ [7] J. Schulman, F. Wolski, P. Dhariwal, A. Radford, and
+     O. Klimov, “Proximal policy optimization algorithms,”
+     2017, arXiv preprint arXiv:1707.06347.
+ [8] R. S. Sutton, D. Precup, and S. Singh, “Between mdps
+     and semi-mdps: A framework for temporal abstraction in
+     reinforcement learning,” Artificial intelligence, vol. 112,
+     no. 1-2, pp. 181–211, 1999.
+ [9] D. Xu and F. Fekri, “Generalization of temporal logic
+     tasks via future dependent options,” Machine Learning,
+     2024.
+

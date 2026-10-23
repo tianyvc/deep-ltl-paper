@@ -1,0 +1,18 @@
+{
+  "created_utc": "2026-10-21T03:45:39.762153+00:00",
+  "git_base": "3a96a70c450feddea04bef31af43b08ab4d15b47",
+  "git_status": " M README.md\n M docs/CODE_VALIDATION_ROADMAP.md\n M docs/LONG_RUNNING_TASKS.md\n M docs/PROJECT_STATUS.md\n M docs/maintenance/RECORDS.md\n M overleaf/TLT__Copy_/manuscript.tex\n M overleaf/TLT__Copy_/ref.bib\n M paper/README.md\n M paper/review/FINAL_VERSION_COMPARISON.md\n M scripts/long_task.py\n M scripts/summarize_paper_runs.py\n M src/model/paper_hiltl.py\n M src/train/paper_tasks.py\n M src/train/train_paper.py\n?? .vscode/\n?? configurations/flatworld_paper_v3.json\n?? configurations/letter_paper_v3.json\n?? configurations/zones_paper_v3.json\n?? docs/maintenance/validation-runs/20261021/\n?? paper/archive/pre-revision/\n?? scripts/analyze_paper_campaign.py\n?? scripts/evaluate_paper_checkpoints.py\n?? scripts/paper_campaign.py\n?? tests/test_paper_campaign.py\n?? tests/test_paper_campaign_analysis.py\n?? tests/test_paper_v3.py\n",
+  "python": "/home/dell/anaconda3/envs/wty_LTL/bin/python",
+  "source_files": 1744,
+  "source_bytes": 118806149,
+  "source_hash_index_sha256": "104f88e33840d20e605e0b3b8bad5433a8996d45d4e343a146b5cd106c027d94",
+  "dirty_snapshot": true,
+  "cuda_environment": {
+    "PYTHONNOUSERSITE": "1",
+    "PYTHONHASHSEED": "0",
+    "MUJOCO_GL": "egl",
+    "OMP_NUM_THREADS": "2"
+  },
+  "control_revision": 2,
+  "revision_note": "Duplicate training/eval-train IDs corrected after all 9 pilots. Two formal workers stopped with saved checkpoint and will resume; model/trainer/task source unchanged."
+}

@@ -1,0 +1,682 @@
+[
+  {
+    "line": 575,
+    "text": "F g)))) U (h \u2227 F i) in LetterWorld. We also separately investigate infinite-horizon tasks such as"
+  },
+  {
+    "line": 576,
+    "text": "G F a \u2227 G F b and F G a. The specifications we consider cover a wide range of LTL objectives,"
+  },
+  {
+    "line": 577,
+    "text": "including reachability, safety, recurrence, persistence, and combinations thereof. Details on the exact"
+  },
+  {
+    "line": 578,
+    "text": "specifications we use in each environment are given in Appendix F.2."
+  },
+  {
+    "line": 579,
+    "text": ""
+  },
+  {
+    "line": 580,
+    "text": "Baselines. We compare DeepLTL to two state-of-the-art approaches for learning general LTL-"
+  },
+  {
+    "line": 581,
+    "text": "satisfying policies. LTL2Action (Vaezipoor et al., 2021) encodes the syntax tree of a target formula"
+  },
+  {
+    "line": 582,
+    "text": "via a graph neural network (GNN) and uses a procedure known as LTL progression to progress"
+  },
+  {
+    "line": 583,
+    "text": "through the specification based on the observed propositions. The second baseline, GCRL-LTL (Qiu"
+  },
+  {
+    "line": 584,
+    "text": "et al., 2023), instead learns proposition-conditioned policies and combines them compositionally"
+  },
+  {
+    "line": 585,
+    "text": "using a weighted graph search on the Bu\u0308chi automaton of a target specification."
+  },
+  {
+    "line": 586,
+    "text": ""
+  },
+  {
+    "line": 587,
+    "text": "Evaluation protocol. In line with previous work, the methods are trained for 15M interaction"
+  },
+  {
+    "line": 588,
+    "text": "steps on each environment with PPO (Schulman et al., 2017). Details about hyperparameters and"
+  },
+  {
+    "line": 589,
+    "text": ""
+  },
+  {
+    "line": 590,
+    "text": ""
+  },
+  {
+    "line": 591,
+    "text": "                                                                                  8"
+  },
+  {
+    "line": 592,
+    "text": ""
+  },
+  {
+    "line": 593,
+    "text": "Published as a conference paper at ICLR 2025"
+  },
+  {
+    "line": 594,
+    "text": ""
+  },
+  {
+    "line": 595,
+    "text": ""
+  },
+  {
+    "line": 596,
+    "text": ""
+  },
+  {
+    "line": 597,
+    "text": ""
+  },
+  {
+    "line": 598,
+    "text": "Table 1: Evaluation results of trained policies on complex finite-horizon specifications. We report the"
+  },
+  {
+    "line": 599,
+    "text": "success rate (SR) and average number of steps to satisfy the task (\u00b5). Results are averaged over 5"
+  },
+  {
+    "line": 600,
+    "text": "seeds and 500 episodes per seed. \u201c\u00b1\u201d indicates the standard deviation over seeds."
+  },
+  {
+    "line": 601,
+    "text": ""
+  },
+  {
+    "line": 602,
+    "text": "                                  LTL2Action                 GCRL-LTL                   DeepLTL"
+  },
+  {
+    "line": 603,
+    "text": "                             SR (\u2191)        \u00b5 (\u2193)        SR (\u2191)        \u00b5 (\u2193)        SR (\u2191)        \u00b5 (\u2193)"
+  },
+  {
+    "line": 604,
+    "text": "                      \u03c61    0.75\u00b10.18     29.48\u00b13.20   0.94\u00b10.05     15.29\u00b10.70   1.00\u00b10.00      9.66\u00b10.35"
+  },
+  {
+    "line": 605,
+    "text": "        LetterWorld"
+  },
+  {
+    "line": 606,
+    "text": ""
+  },
+  {
+    "line": 607,
+    "text": "                      \u03c62    0.79\u00b10.10     19.04\u00b16.79   0.94\u00b10.03      9.77\u00b11.16   0.98\u00b10.00      7.26\u00b10.35"
+  },
+  {
+    "line": 608,
+    "text": "                      \u03c63    0.41\u00b10.14     40.31\u00b12.88   1.00\u00b10.00     20.72\u00b11.34   1.00\u00b10.00     12.23\u00b10.58"
+  },
+  {
+    "line": 609,
+    "text": "                      \u03c64    0.72\u00b10.17     28.83\u00b14.47   0.82\u00b10.07     14.60\u00b11.63   0.97\u00b10.01     12.13\u00b10.58"
+  },
+  {
+    "line": 610,
+    "text": "                      \u03c65    0.44\u00b10.26     31.84\u00b19.06   1.00\u00b10.00     25.63\u00b10.55   1.00\u00b10.00      9.48\u00b10.78"
+  },
+  {
+    "line": 611,
+    "text": "                      \u03c66    0.60\u00b10.20   424.07\u00b114.95   0.85\u00b10.03   452.19\u00b115.59   0.92\u00b10.06   303.38\u00b119.43"
+  },
+  {
+    "line": 612,
+    "text": "                      \u03c67    0.14\u00b10.18   416.78\u00b166.38   0.85\u00b10.05   451.18\u00b104.91   0.91\u00b10.03   299.95\u00b109.47"
+  },
+  {
+    "line": 613,
+    "text": "        ZoneEnv"
+  },
+  {
+    "line": 614,
+    "text": ""
+  },
+  {
+    "line": 615,
+    "text": ""
+  },
+  {
+    "line": 616,
+    "text": ""
+  },
+  {
+    "line": 617,
+    "text": ""
+  },
+  {
+    "line": 618,
+    "text": "                      \u03c68    0.67\u00b10.26   414.48\u00b168.52   0.89\u00b10.04   449.70\u00b116.82   0.96\u00b10.04   259.75\u00b108.07"
+  },
+  {
+    "line": 619,
+    "text": "                      \u03c69    0.69\u00b10.22   331.55\u00b141.40   0.87\u00b10.02   303.13\u00b105.83   0.90\u00b10.03   203.36\u00b114.97"
+  },
+  {
+    "line": 620,
+    "text": "                      \u03c610   0.66\u00b10.19   293.22\u00b163.94   0.85\u00b10.02   290.73\u00b117.39   0.91\u00b10.02   187.13\u00b110.61"
+  },
+  {
+    "line": 621,
+    "text": "                      \u03c611   0.93\u00b10.07   123.89\u00b107.30   0.89\u00b10.01   137.42\u00b108.30   0.98\u00b10.01   106.21\u00b107.88"
+  },
+  {
+    "line": 622,
+    "text": "                      \u03c612   1.00\u00b10.00    83.32\u00b101.57   0.82\u00b10.41    78.21\u00b108.98   1.00\u00b10.00    79.69\u00b102.50"
+  },
+  {
+    "line": 623,
+    "text": "        FlatWorld"
+  },
+  {
+    "line": 624,
+    "text": ""
+  },
+  {
+    "line": 625,
+    "text": ""
+  },
+  {
+    "line": 626,
+    "text": ""
+  },
+  {
+    "line": 627,
+    "text": ""
+  },
+  {
+    "line": 628,
+    "text": "                      \u03c613   0.63\u00b10.50    94.43\u00b139.30   0.00\u00b10.00     0.00\u00b100.00   1.00\u00b10.00    52.82\u00b103.09"
+  },
+  {
+    "line": 629,
+    "text": "                      \u03c614   0.71\u00b10.40    96.16\u00b128.93   0.73\u00b10.41    74.60\u00b101.86   0.98\u00b10.01    71.76\u00b102.87"
+  },
+  {
+    "line": 630,
+    "text": "                      \u03c615   0.07\u00b10.02    32.37\u00b101.63   0.73\u00b10.03    41.30\u00b101.24   0.86\u00b10.01    43.87\u00b101.45"
+  },
+  {
+    "line": 631,
+    "text": "                      \u03c616   0.56\u00b10.35    48.85\u00b132.85   0.64\u00b10.08    17.76\u00b101.63   1.00\u00b10.01    37.04\u00b105.28"
+  },
+  {
+    "line": 632,
+    "text": ""
+  },
+  {
+    "line": 633,
+    "text": ""
+  },
+  {
+    "line": 634,
+    "text": ""
+  },
+  {
+    "line": 635,
+    "text": "neural network architectures can be found in Appendix F.3. We report the performance in terms of"
+  },
+  {
+    "line": 636,
+    "text": "discounted return over the number of environment interactions (following Equation 2) on randomly"
+  },
+  {
+    "line": 637,
+    "text": "sampled reach/avoid tasks, and provide tabular results detailing the success rate (SR) and average"
+  },
+  {
+    "line": 638,
+    "text": "number of steps until completion (\u00b5) of trained policies on complex tasks. All results are averaged"
+  },
+  {
+    "line": 639,
+    "text": "across 5 different random seeds. Furthermore, we provide visualisations of trajectories of trained"
+  },
+  {
+    "line": 640,
+    "text": "policies for various specifications in the ZoneEnv and FlatWorld environments in Appendix G.9."
+  },
+  {
+    "line": 1350,
+    "text": "          (a) LetterWorld                     (b) ZoneEnv                       (c) FlatWorld"
+  },
+  {
+    "line": 1351,
+    "text": ""
+  },
+  {
+    "line": 1352,
+    "text": "                              Figure 8: Visualisations of environments."
+  },
+  {
+    "line": 1353,
+    "text": ""
+  },
+  {
+    "line": 1354,
+    "text": ""
+  },
+  {
+    "line": 1355,
+    "text": "data from other sensors. Both the zone and robot positions are randomly sampled at the beginning"
+  },
+  {
+    "line": 1356,
+    "text": "of each episode. If the agent at any point touches a wall, it receives a penalty and the episode is"
+  },
+  {
+    "line": 1357,
+    "text": "immediately terminated. A visualisation of the ZoneEnv environment is provided in Figure 8b."
+  },
+  {
+    "line": 1358,
+    "text": ""
+  },
+  {
+    "line": 1359,
+    "text": "FlatWorld. The FlatWorld environment (Voloshin et al., 2023; Shah et al., 2024) consists of a"
+  },
+  {
+    "line": 1360,
+    "text": "two-dimensional continuous world (S = [\u22122, 2]2 ) with a discrete action space. Atomic propositions"
+  },
+  {
+    "line": 1361,
+    "text": "are given by various coloured regions. Importantly, these regions overlap in various places, which"
+  },
+  {
+    "line": 1362,
+    "text": "means that multiple propositions can hold true at the same time. The initial agent position is sampled"
+  },
+  {
+    "line": 1363,
+    "text": "randomly from the space in which no propositions are true. At each time step, the agent can move"
+  },
+  {
+    "line": 1364,
+    "text": "in one of the 8 compass directions. If it leaves the boundary of the world, the agent receives a"
+  },
+  {
+    "line": 1365,
+    "text": "penalty and the episode is terminated prematurely. Figure 8c shows a visualisation of the FlatWorld"
+  },
+  {
+    "line": 1366,
+    "text": "environment."
+  },
+  {
+    "line": 1367,
+    "text": ""
+  },
+  {
+    "line": 1368,
+    "text": "F.2   T ESTING SPECIFICATIONS"
+  },
+  {
+    "line": 1369,
+    "text": ""
+  },
+  {
+    "line": 1370,
+    "text": "Tables 2 and 3 list the finite and infinite-horizon specifications used in our evaluation, respectively."
+  },
+  {
+    "line": 1371,
+    "text": ""
+  },
+  {
+    "line": 1372,
+    "text": "F.3   H YPERPARAMETERS"
+  },
+  {
+    "line": 1373,
+    "text": ""
+  },
+  {
+    "line": 1374,
+    "text": "Neural network architectures. Our choice of neural network architectures is similar to previous"
+  },
+  {
+    "line": 1375,
+    "text": "work (Vaezipoor et al., 2021). For DeepLTL and LTL2Action, we employ a fully connected actor"
+  },
+  {
+    "line": 1376,
+    "text": "network with [64, 64, 64] units and ReLU as the activation function. The critic has network structure"
+  },
+  {
+    "line": 1377,
+    "text": "[64, 64] and uses Tanh activations in LetterWorld and ZoneEnv, and ReLU activations in FlatWorld."
+  },
+  {
+    "line": 1378,
+    "text": "The actor is composed with a softmax layer in discrete action spaces, and outputs the mean and"
+  },
+  {
+    "line": 1379,
+    "text": "standard deviation of a Gaussian distribution in continuous action spaces. GCRL-LTL uses somewhat"
+  },
+  {
+    "line": 1380,
+    "text": "larger actor and critic networks with structure [512, 1024, 256] and ReLU activations in the ZoneEnv"
+  },
+  {
+    "line": 1381,
+    "text": "environment."
+  },
+  {
+    "line": 1382,
+    "text": "The observation module is environment-specific. For the ZoneEnv and FlatWorld environments, it"
+  },
+  {
+    "line": 1383,
+    "text": "consists of a simple fully connected network with [128, 64] units and Tanh activations, or [16, 16]"
+  },
+  {
+    "line": 1384,
+    "text": "units and ReLU activations, respectively. GCRL-LTL instead uses a simple projection of the input"
+  },
+  {
+    "line": 1385,
+    "text": "to dimensionality 100 in ZoneEnv. For LetterWorld, the observation module is a CNN with 16, 32,"
+  },
+  {
+    "line": 1386,
+    "text": "and 64 channels in three hidden layers, a kernel size of 2 \u00d7 2, stride of 1, no padding, and ReLU"
+  },
+  {
+    "line": 1387,
+    "text": "activations."
+  },
+  {
+    "line": 1388,
+    "text": "Finally, the sequence module consists of learned embeddings \u03d5 of dimensionality 32 in LetterWorld,"
+  },
+  {
+    "line": 1389,
+    "text": "and 16 in ZoneEnv and FlatWorld. The non-linear transformation \u03c1 is a fully connected network with"
+  },
+  {
+    "line": 1390,
+    "text": "[32, 32] units in LetterWorld, and [32, 16] units in ZoneEnv and FlatWorld. We use ReLU activations"
+  },
+  {
+    "line": 1391,
+    "text": "throughout for the sequence module. For the baselines, we use the hyperparameters reported in the"
+  },
+  {
+    "line": 1392,
+    "text": "respective papers (Vaezipoor et al., 2021; Qiu et al., 2023)."
+  },
+  {
+    "line": 1393,
+    "text": ""
+  },
+  {
+    "line": 1394,
+    "text": "PPO hyperparameters. The hyperparameters for PPO (Schulman et al., 2017) are listed in Table 4."
+  },
+  {
+    "line": 1395,
+    "text": "We use the Adam optimiser (Kingma & Ba, 2015) for all methods and environments."
+  },
+  {
+    "line": 1396,
+    "text": ""
+  },
+  {
+    "line": 1397,
+    "text": "Additional hyperparameters. LTL2Action requires an LTL task sampler to sample a random"
+  },
+  {
+    "line": 1398,
+    "text": "training specification at the beginning of each episode. We follow Vaezipoor et al. (2021) and"
+  },
+  {
+    "line": 1399,
+    "text": ""
+  },
+  {
+    "line": 1400,
+    "text": ""
+  },
+  {
+    "line": 1401,
+    "text": "                                                   21"
+  },
+  {
+    "line": 1402,
+    "text": ""
+  },
+  {
+    "line": 1403,
+    "text": "Published as a conference paper at ICLR 2025"
+  },
+  {
+    "line": 1404,
+    "text": ""
+  },
+  {
+    "line": 1405,
+    "text": ""
+  },
+  {
+    "line": 1406,
+    "text": ""
+  },
+  {
+    "line": 1407,
+    "text": ""
+  },
+  {
+    "line": 1408,
+    "text": "                        Table 2: Complex finite-horizon specifications used in our evaluation."
+  },
+  {
+    "line": 1409,
+    "text": ""
+  },
+  {
+    "line": 1410,
+    "text": "                       \u03c61      F (a \u2227 (\u00acb U c)) \u2227 F d"
+  },
+  {
+    "line": 1411,
+    "text": "        LetterWorld"
+  },
+  {
+    "line": 1412,
+    "text": ""
+  },
+  {
+    "line": 1413,
+    "text": ""
+  },
+  {
+    "line": 1414,
+    "text": ""
+  },
+  {
+    "line": 1415,
+    "text": "                       \u03c62      F d \u2227 (\u00acf U (d \u2227 F b))"
+  },
+  {
+    "line": 1416,
+    "text": "                       \u03c63      F ((a \u2228 c \u2228 j) \u2227 F b) \u2227 F (c \u2227 F d) \u2227 F k"
+  },
+  {
+    "line": 1417,
+    "text": "                       \u03c64      \u00aca U (b \u2227 (\u00acc U (d \u2227 (\u00ace U f))))"
+  },
+  {
+    "line": 1418,
+    "text": "                       \u03c65      ((a \u2228 b \u2228 c \u2228 d) \u21d2 F (e \u2227 (F (f \u2227 F g)))) U (h \u2227 F i)"
+  },
+  {
+    "line": 1419,
+    "text": "                       \u03c66      F (green \u2227 (\u00acblue U yellow)) \u2227 F magenta"
+  },
+  {
+    "line": 1420,
+    "text": "                       \u03c67      F blue \u2227 (\u00acblue U (green \u2227 F yellow))"
+  },
+  {
+    "line": 1421,
+    "text": "        ZoneEnv"
+  },
+  {
+    "line": 1422,
+    "text": ""
+  },
+  {
+    "line": 1423,
+    "text": ""
+  },
+  {
+    "line": 1424,
+    "text": ""
+  },
+  {
+    "line": 1425,
+    "text": ""
+  },
+  {
+    "line": 1426,
+    "text": "                       \u03c68      F (blue \u2228 green) \u2227 F yellow \u2227 F magenta"
+  },
+  {
+    "line": 1427,
+    "text": "                       \u03c69      \u00ac(magenta \u2228 yellow) U (blue \u2227 F green)"
+  },
+  {
+    "line": 1428,
+    "text": "                       \u03c610     \u00acgreen U ((blue \u2228 magenta) \u2227 (\u00acgreen U yellow))"
+  },
+  {
+    "line": 1429,
+    "text": "                       \u03c611     ((green \u2228 blue) \u21d2 (\u00acyellow U magenta)) U yellow"
+  },
+  {
+    "line": 1430,
+    "text": "                       \u03c612     F ((red \u2227 magenta) \u2227 F ((blue \u2227 green) \u2227 F yellow))"
+  },
+  {
+    "line": 1431,
+    "text": "        FlatWorld"
+  },
+  {
+    "line": 1432,
+    "text": ""
+  },
+  {
+    "line": 1433,
+    "text": ""
+  },
+  {
+    "line": 1434,
+    "text": ""
+  },
+  {
+    "line": 1435,
+    "text": ""
+  },
+  {
+    "line": 722,
+    "text": "considers safety constraints during task execution and not during high-level planning. Recently, Xu &"
+  },
+  {
+    "line": 723,
+    "text": "Fekri (2024) proposed future dependent options for satisfying arbitrary LTL tasks, which are option"
+  },
+  {
+    "line": 724,
+    "text": "policies that depend on future goals. Their method is only applicable to a fragment of LTL that does"
+  },
+  {
+    "line": 725,
+    "text": "not support conjunction nor infinite-horizon specifications, and does not consider safety constraints"
+  },
+  {
+    "line": 726,
+    "text": "during planning. See Appendix D for an extended discussion of related work."
+  },
+  {
+    "line": 727,
+    "text": ""
+  },
+  {
+    "line": 925,
+    "text": " Computer Science (SFCS 1977), pp. 46\u201357, October 1977. doi: 10.1109/SFCS.1977.32."
+  },
+  {
+    "line": 926,
+    "text": "Wenjie Qiu, Wensen Mao, and He Zhu. Instructing Goal-Conditioned Reinforcement Learning"
+  },
+  {
+    "line": 927,
+    "text": " Agents with Temporal Logic Objectives. In Thirty-Seventh Conference on Neural Information"
+  },
+  {
+    "line": 928,
+    "text": " Processing Systems, November 2023."
+  },
+  {
+    "line": 929,
+    "text": "Dorsa Sadigh, Eric S. Kim, Samuel Coogan, S. Shankar Sastry, and Sanjit A. Seshia. A learning"
+  },
+  {
+    "line": 930,
+    "text": "  based approach to control synthesis of Markov decision processes for linear temporal logic"
+  },
+  {
+    "line": 980,
+    "text": "  1992. ISSN 1573-0565. doi: 10.1007/BF00992698."
+  },
+  {
+    "line": 981,
+    "text": "Duo Xu and Faramarz Fekri. Generalization of temporal logic tasks via future dependent options."
+  },
+  {
+    "line": 982,
+    "text": " Machine Learning, August 2024. ISSN 1573-0565. doi: 10.1007/s10994-024-06614-y."
+  },
+  {
+    "line": 983,
+    "text": "Beyazit Yalcinkaya, Niklas Lauffer, Marcell Vazquez-Chanlatte, and Sanjit Seshia. Automata"
+  },
+  {
+    "line": 984,
+    "text": "  Conditioned Reinforcement Learning with Experience Replay. In NeurIPS 2023 Workshop on"
+  },
+  {
+    "line": 985,
+    "text": "  Goal-Conditioned Reinforcement Learning, 2023."
+  }
+]

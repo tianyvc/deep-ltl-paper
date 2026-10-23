@@ -25,7 +25,7 @@ def arguments():
     tasks.add_argument('--formula')
     tasks.add_argument('--task-set', type=Path, help='JSON with train and held_out LTL lists')
     parser.add_argument('--eval-formula', action='append', default=[])
-    parser.add_argument('--eval-split', choices=['train', 'held_out'], default=None)
+    parser.add_argument('--eval-split', choices=['train', 'validation', 'held_out'], default=None)
     parser.add_argument('--gate', choices=['fixed', 'learned', 'constant'], default='fixed')
     parser.add_argument('--option-max-steps', type=int, default=50)
     parser.add_argument('--configuration', choices=CONFIGURATIONS, default='hv_track')
@@ -39,6 +39,7 @@ def arguments():
     parser.add_argument('--device', default='cpu')
     parser.add_argument('--gamma', type=float, default=.998)
     parser.add_argument('--lr', type=float, default=3e-4)
+    parser.add_argument('--checkpoint-every', type=int, default=0, help='Keep immutable checkpoints every N product decisions (0 disables)')
     parser.add_argument('--resume', action='store_true')
     parser.add_argument('--evaluate', type=int, default=0, metavar='EPISODES')
     parser.add_argument('--eval-seed', type=int, default=10001)
@@ -46,6 +47,8 @@ def arguments():
     args = parser.parse_args()
     if min(args.steps, args.rollout_steps, args.epochs, args.batch_size) <= 0 or args.evaluate < 0:
         parser.error('Training sizes must be positive and evaluation count nonnegative')
+    if args.checkpoint_every < 0:
+        parser.error('Checkpoint interval must be nonnegative')
     if args.option_max_steps <= 0 or (args.max_episode_steps is not None and args.max_episode_steps <= 0):
         parser.error("Episode and option horizons must be positive")
     if (args.eval_formula or args.eval_split) and not args.evaluate:
@@ -229,6 +232,8 @@ def update_meta(model, optimizer, episodes, args):
 def evaluate(args, training_env, model, manifest, checkpoint_path, checkpoint_steps):
     model.eval()
     split = args.eval_split or ('held_out' if manifest['held_out'] else 'train')
+    if split not in manifest:
+        raise ValueError('Selected split is absent from the frozen task manifest: ' + split)
     formulas = args.eval_formula or manifest[split]
     if not formulas or len(set(formulas)) != len(formulas) or any(f not in manifest[split] for f in formulas):
         raise ValueError('Requested evaluation tasks must be unique members of the selected saved split')
@@ -295,6 +300,8 @@ def main():
         model = PaperHiLTL(initial['features'].shape, env.action_space, args.configuration, propositions=initial['ldba'].propositions, gate=args.gate).to(args.device)
     optimizer = torch.optim.Adam(model.parameters(), lr=args.lr)
     config = {key: str(value) if isinstance(value, Path) else value for key, value in vars(args).items()}
+    config['parameter_count'] = sum(p.numel() for p in model.parameters())
+    config['trainable_parameter_count'] = sum(p.numel() for p in model.parameters() if p.requires_grad)
     config['protocol'] = PROTOCOL_VERSION
     implementation_paths = ['src/model/paper_hiltl.py', 'src/model/paper_options.py', 'src/model/deepltl_reference.py', 'src/train/train_paper.py', 'src/train/paper_tasks.py']
     config['implementation_sha256'] = hashlib.sha256(b''.join(Path(path).read_bytes() for path in implementation_paths)).hexdigest()
@@ -344,6 +351,7 @@ def main():
     signal.signal(signal.SIGINT, request_stop)
     started = time.monotonic()
     model.train()
+    next_snapshot = (steps // args.checkpoint_every + 1) * args.checkpoint_every if args.checkpoint_every else None
     with (args.output / 'metrics.jsonl').open('a') as metrics_file, (args.output / 'episodes.jsonl').open('a') as episode_file:
         while steps < args.steps and not stopped:
             episodes = []
@@ -359,10 +367,17 @@ def main():
             metrics = update(model, optimizer, episodes, args)
             steps += collected
             updates += 1
-            metrics.update(steps=steps, update=updates, elapsed_seconds=time.monotonic() - started, samples=collected, completed_episodes=len(episodes))
+            metrics.update(steps=steps, update=updates, elapsed_seconds=time.monotonic() - started, cuda_peak_allocated_bytes=torch.cuda.max_memory_allocated() if args.device.startswith('cuda') else None, samples=collected, completed_episodes=len(episodes))
             metrics_file.write(json.dumps(metrics) + '\n')
             metrics_file.flush()
             checkpoint(status_path, model, optimizer, steps, updates, config)
+            if next_snapshot is not None and steps >= next_snapshot:
+                snapshot_dir = args.output / 'checkpoints' / f'step-{steps}'
+                snapshot_dir.mkdir(parents=True, exist_ok=False)
+                import shutil
+                shutil.copy2(status_path, snapshot_dir / 'status.pt')
+                atomic_json(snapshot_dir / 'config.json', config)
+                next_snapshot = (steps // args.checkpoint_every + 1) * args.checkpoint_every
             atomic_json(args.output / 'progress.json', dict(state='running', steps=steps, updates=updates, target_steps=args.steps, pid=os.getpid()))
             print(json.dumps(metrics), flush=True)
     atomic_json(args.output / 'progress.json', dict(state='interrupted' if stopped else 'completed', steps=steps, updates=updates, target_steps=args.steps, pid=os.getpid()))

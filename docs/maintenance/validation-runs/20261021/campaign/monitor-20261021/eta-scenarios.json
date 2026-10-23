@@ -1,0 +1,99 @@
+{
+  "utc": "2026-10-21T06:54:46.784260+00:00",
+  "workers": 2,
+  "training_worker_hours": 2351.1830000568016,
+  "evaluation_worker_hours": 2722.188063599816,
+  "central_days": 105.69523049284619,
+  "favorable_scenario_days": 67.54250899677811,
+  "slow_scenario_days": 182.00067348498237,
+  "detail": [
+    {
+      "env": "FlatWorld-v0",
+      "proxy_family": "baseline",
+      "configuration_count": 1,
+      "seeds": 5,
+      "training_worker_hours": 17.636257498913768,
+      "timing_seconds_per_episode": 0.9984514070674777,
+      "evaluation_worker_hours": 10.123187877211926
+    },
+    {
+      "env": "FlatWorld-v0",
+      "proxy_family": "hv_track",
+      "configuration_count": 11,
+      "seeds": 5,
+      "training_worker_hours": 424.2275082708483,
+      "timing_seconds_per_episode": 18.171764502301812,
+      "evaluation_worker_hours": 2026.656513242827
+    },
+    {
+      "env": "FlatWorld-v0",
+      "proxy_family": "full_all",
+      "configuration_count": 1,
+      "seeds": 5,
+      "training_worker_hours": 83.46209872240031,
+      "timing_seconds_per_episode": 0.4215380987152457,
+      "evaluation_worker_hours": 4.273927945307353
+    },
+    {
+      "env": "LetterEnv-v0",
+      "proxy_family": "baseline",
+      "configuration_count": 1,
+      "seeds": 5,
+      "training_worker_hours": 16.398489896598203,
+      "timing_seconds_per_episode": 1.3856632402166724,
+      "evaluation_worker_hours": 14.049085629974595
+    },
+    {
+      "env": "LetterEnv-v0",
+      "proxy_family": "hv_track",
+      "configuration_count": 11,
+      "seeds": 5,
+      "training_worker_hours": 1007.1611906074824,
+      "timing_seconds_per_episode": 2.783187194727361,
+      "evaluation_worker_hours": 310.40268296750986
+    },
+    {
+      "env": "LetterEnv-v0",
+      "proxy_family": "full_all",
+      "configuration_count": 1,
+      "seeds": 5,
+      "training_worker_hours": 161.76471970534365,
+      "timing_seconds_per_episode": 1.810896784067154,
+      "evaluation_worker_hours": 18.360481282903088
+    },
+    {
+      "env": "PointLtl2-v0",
+      "proxy_family": "baseline",
+      "configuration_count": 1,
+      "seeds": 5,
+      "training_worker_hours": 17.08775799531136,
+      "timing_seconds_per_episode": 1.5052786385640502,
+      "evaluation_worker_hours": 15.261852863218841
+    },
+    {
+      "env": "PointLtl2-v0",
+      "proxy_family": "hv_track",
+      "configuration_count": 11,
+      "seeds": 5,
+      "training_worker_hours": 566.0280802726952,
+      "timing_seconds_per_episode": 2.54435290209949,
+      "evaluation_worker_hours": 283.7660250535959
+    },
+    {
+      "env": "PointLtl2-v0",
+      "proxy_family": "full_all",
+      "configuration_count": 1,
+      "seeds": 5,
+      "training_worker_hours": 57.41689708720849,
+      "timing_seconds_per_episode": 3.8756028562784195,
+      "evaluation_worker_hours": 39.294306737267306
+    }
+  ],
+  "assumptions": [
+    "195 x 1M training, 7300 planned evaluation episodes per run, two workers continuously available.",
+    "11 non-baseline/non-options configurations use hv_track as a coarse cost proxy; actual architectures differ.",
+    "Evaluation timing uses two deliberately selected formulas and one reset seed per family/environment, with pilot weights. Not a representative random sample or confidence interval.",
+    "Evaluation cost can shrink with early termination or increase with longer survival/history, new load, larger graph costs and retries.",
+    "Central estimate excludes significant outages, new protocol revisions and new experiments. Small already completed budget not material to month-scale estimate."
+  ]
+}

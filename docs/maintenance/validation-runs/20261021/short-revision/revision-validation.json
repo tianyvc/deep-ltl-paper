@@ -1,0 +1,22 @@
+{
+  "source_sha256": "02000aaf80c8c5d9bcbe5cc374e40cc365e8ce66ddbb72c64c8273707774da63",
+  "bibliography_sha256": "f4a0424c3c30628f8bd768b0b134fa483e5c340461c76b75d1b1e9c2c5c172ca",
+  "archive_sha256": "61865bb36e66bd2add4db6e8c761ce7c0523a7eea7cbf3d1b97049d4d702264f",
+  "protected_files": 998,
+  "protected_unchanged": true,
+  "short_changed": [
+    "overleaf/TLT__Copy_/ref.bib",
+    "overleaf/TLT__Copy_/manuscript.tex"
+  ],
+  "cited_works": 14,
+  "undefined_references": [],
+  "duplicate_labels": [],
+  "tables": 2,
+  "figures": 1,
+  "underfull_hboxes": 4,
+  "overfull_hboxes": 0,
+  "git_diff_check": 0,
+  "training_launched": false,
+  "comparative_performance_evidence": "pending",
+  "pdfinfo": "Creator:         TeX\nProducer:        pdfTeX-1.40.22\nCreationDate:    Tue Oct 20 22:36:38 2026 EDT\nModDate:         Tue Oct 20 22:36:38 2026 EDT\nCustom Metadata: yes\nMetadata Stream: no\nTagged:          no\nUserProperties:  no\nSuspects:        no\nForm:            none\nJavaScript:      no\nPages:           6\nEncrypted:       no\nPage size:       612 x 792 pts (letter)\nPage rot:        0\nFile size:       258721 bytes\nOptimized:       no\nPDF version:     1.5\n"
+}

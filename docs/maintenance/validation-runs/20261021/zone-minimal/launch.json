@@ -1,0 +1,87 @@
+{
+  "utc": "2026-10-21T07:50:33.993910+00:00",
+  "command": [
+    "/home/dell/anaconda3/envs/wty_LTL/bin/python",
+    "/home/dell/workspace/Tianyvc/deep-ltl-paper/experiments/reproduction/20261021-zone-minimal-v3/source/scripts/long_task.py",
+    "start",
+    "--job-dir",
+    "/home/dell/workspace/Tianyvc/deep-ltl-paper/experiments/reproduction/20261021-zone-minimal-v3/scheduler-01",
+    "--",
+    "/home/dell/workspace/Tianyvc/deep-ltl-paper/experiments/reproduction/20261021-zone-minimal-v3/source/scripts/paper_campaign.py",
+    "run",
+    "--manifest",
+    "/home/dell/workspace/Tianyvc/deep-ltl-paper/experiments/reproduction/20261021-zone-minimal-v3/manifest.json"
+  ],
+  "stdout": "{\"job_dir\": \"/home/dell/workspace/Tianyvc/deep-ltl-paper/experiments/reproduction/20261021-zone-minimal-v3/scheduler-01\", \"supervisor_pid\": 1589541, \"log\": \"/home/dell/workspace/Tianyvc/deep-ltl-paper/experiments/reproduction/20261021-zone-minimal-v3/scheduler-01/output.log\"}\n",
+  "active_manifest": "/home/dell/workspace/Tianyvc/deep-ltl-paper/experiments/reproduction/20261021-zone-minimal-v3/manifest.json",
+  "prior_batch_states": {
+    "/home/dell/workspace/Tianyvc/deep-ltl-paper/experiments/reproduction/20261021-v3": "paused",
+    "/home/dell/workspace/Tianyvc/deep-ltl-paper/experiments/reproduction/20261021-minimal-v3": "paused"
+  },
+  "current_state": {
+    "manifest_sha256": "2eed3a6da9df65aa3d15f6808be79d784dcee010a9745eca9d7d60a2d41f763a",
+    "pid": 1589542,
+    "identity": "1173968055",
+    "started": "2026-10-21T07:50:32.132977+00:00",
+    "state": "running",
+    "heartbeat": "2026-10-21T07:50:32.869084+00:00",
+    "counts": {
+      "completed": 4,
+      "pending": 47
+    },
+    "resources": {
+      "0": {
+        "free_mib": 6253,
+        "utilization": 0
+      },
+      "1": {
+        "free_mib": 6761,
+        "utilization": 0
+      },
+      "2": {
+        "free_mib": 6801,
+        "utilization": 0
+      },
+      "3": {
+        "free_mib": 6539,
+        "utilization": 0
+      }
+    }
+  },
+  "active_tasks": {
+    "zones-hv_track-s1-train": {
+      "state": "running",
+      "gpu": 2,
+      "job_dir": "/home/dell/workspace/Tianyvc/deep-ltl-paper/experiments/reproduction/20261021-zone-minimal-v3/jobs/zones-hv_track-s1-train-attempt-1",
+      "started": "2026-10-21T07:50:33.106443+00:00",
+      "attempt": 1
+    },
+    "zones-gnn_track-s1-train": {
+      "state": "running",
+      "gpu": 1,
+      "job_dir": "/home/dell/workspace/Tianyvc/deep-ltl-paper/experiments/reproduction/20261021-zone-minimal-v3/jobs/zones-gnn_track-s1-train-attempt-1",
+      "started": "2026-10-21T07:50:33.243005+00:00",
+      "attempt": 1
+    }
+  },
+  "imported_evaluations": [
+    {
+      "task": "flatworld-gnn_single-s1-eval",
+      "source": "/home/dell/workspace/Tianyvc/deep-ltl-paper/experiments/reproduction/20261021-minimal-v3/runs/flatworld-gnn_single-s1/evaluation-minimal.json",
+      "evidence": {
+        "result_sha256": "d58df2b23c755f89c1ef02517a94ad6414a7925068c683f93e8cfd9f988d84ef",
+        "episodes": 200
+      },
+      "selection": "All completed identity-matched evaluations; no outcome filtering."
+    },
+    {
+      "task": "flatworld-hv_only-s1-eval",
+      "source": "/home/dell/workspace/Tianyvc/deep-ltl-paper/experiments/reproduction/20261021-minimal-v3/runs/flatworld-hv_only-s1/evaluation-minimal.json",
+      "evidence": {
+        "result_sha256": "3420c3204099dd0e5869618740b3f2fde47932e17a0f479be853be3ffb8f8d8f",
+        "episodes": 200
+      },
+      "selection": "All completed identity-matched evaluations; no outcome filtering."
+    }
+  ]
+}

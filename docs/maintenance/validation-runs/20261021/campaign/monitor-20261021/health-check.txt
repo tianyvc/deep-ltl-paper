@@ -1,0 +1,19 @@
+Sampling worker activity for 10s ...
+Checked at: 2026-10-21T14:50:49.808389+08:00
+Campaign=running | scheduler_alive=True | heartbeat_age=8s
+Tasks: completed=9 / running=2 / pending=982 / failed=0 / blocked=0 / total=993
+Formal training completed=0/195; task counts are NOT a wall-time percentage.
+
+flatworld-gnn_single-fixed-s1-train | physical_GPU=2 | worker=running | supervisor_alive=True | child_alive=True | CPU_ticks_delta=901
+  steps=384894/1000000 (38.49%) | updates=533 | metrics_age=13s | sample_steps_delta=0
+  loss=85.5459 | gradient_norm=233.249
+  recent_speed=50.64 product_steps/s | training_only_remaining=3.37h
+  log=/home/dell/workspace/Tianyvc/deep-ltl-paper/experiments/reproduction/20261021-v3/jobs/flatworld-gnn_single-fixed-s1-train-attempt-2/output.log
+
+flatworld-hv_only-fixed-s1-train | physical_GPU=1 | worker=running | supervisor_alive=True | child_alive=True | CPU_ticks_delta=756
+  steps=363377/1000000 (36.34%) | updates=512 | metrics_age=0s | sample_steps_delta=615
+  loss=1980.74 | gradient_norm=1962.57
+  recent_speed=50.32 product_steps/s | training_only_remaining=3.51h
+  log=/home/dell/workspace/Tianyvc/deep-ltl-paper/experiments/reproduction/20261021-v3/jobs/flatworld-hv_only-fixed-s1-train-attempt-2/output.log
+
+OK: no current health-check failure detected. Compare steps/updates across checks; heartbeat alone does not prove learning quality.
