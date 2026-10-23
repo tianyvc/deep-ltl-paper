@@ -1,0 +1,96 @@
+{
+  "protocol": "tlt-upstream-curriculum-v1",
+  "runs": {
+    "baseline": {
+      "progress": {
+        "state": "completed",
+        "steps": 4096,
+        "target_steps": 4096,
+        "updates": 2,
+        "curriculum_stage": 0,
+        "elapsed_seconds": 19.374060219153762
+      },
+      "evaluation": {
+        "protocol": "tlt-upstream-curriculum-v1",
+        "configuration": "baseline",
+        "checkpoint_sha256": "2490459b110e9a5277012461b39395571b15d4ea9450efb48d7c336ebc4f4ee5",
+        "training_steps": 4096,
+        "episodes": [
+          {
+            "formula": "F blue",
+            "seed": 10001,
+            "completed": true,
+            "steps": 170,
+            "success": false,
+            "violation": false,
+            "accepting_visits": 0,
+            "physical_return": -1.0
+          },
+          {
+            "formula": "F blue & F green",
+            "seed": 10001,
+            "completed": true,
+            "steps": 170,
+            "success": false,
+            "violation": false,
+            "accepting_visits": 0,
+            "physical_return": -1.0
+          }
+        ],
+        "completed_episodes": 2,
+        "requested_episodes": 2,
+        "success_rate": 0.0,
+        "elapsed_seconds": 11.349086532369256,
+        "budget_stopped": false,
+        "mode": "deterministic",
+        "note": "Small diagnostic only; truncated episodes excluded. Recurrent acceptance visits are a finite-horizon proxy, not infinite LTL satisfaction."
+      }
+    },
+    "hv_track": {
+      "progress": {
+        "state": "completed",
+        "steps": 4096,
+        "target_steps": 4096,
+        "updates": 2,
+        "curriculum_stage": 0,
+        "elapsed_seconds": 52.146847104653716
+      },
+      "evaluation": {
+        "protocol": "tlt-upstream-curriculum-v1",
+        "configuration": "hv_track",
+        "checkpoint_sha256": "34b19e3d00d99458c49b64966c1cf777b30a4e76ff21d3fd7608a4fc41976394",
+        "training_steps": 4096,
+        "episodes": [
+          {
+            "formula": "F blue",
+            "seed": 10001,
+            "completed": true,
+            "steps": 171,
+            "success": false,
+            "violation": false,
+            "accepting_visits": 0,
+            "physical_return": -1.0
+          },
+          {
+            "formula": "F blue & F green",
+            "seed": 10001,
+            "completed": true,
+            "steps": 171,
+            "success": false,
+            "violation": false,
+            "accepting_visits": 0,
+            "physical_return": -1.0
+          }
+        ],
+        "completed_episodes": 2,
+        "requested_episodes": 2,
+        "success_rate": 0.0,
+        "elapsed_seconds": 11.962328841909766,
+        "budget_stopped": false,
+        "mode": "deterministic",
+        "note": "Small diagnostic only; truncated episodes excluded. Recurrent acceptance visits are a finite-horizon proxy, not infinite LTL satisfaction."
+      }
+    }
+  },
+  "meaning": "previous 4096-step integration probe, not improvement evidence"
+}

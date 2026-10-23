@@ -1,0 +1,53 @@
+{
+  "files": [
+    {
+      "original_path": "results/FlatWorld-v0.csv",
+      "path": "results/reference/finite/FlatWorld-v0.csv",
+      "sha256": "175e334119990f11320a9c7693b37bfc00dda8303160500888b0775d5315efaa",
+      "provenance": "historical data; not a new validation of manuscript improvements"
+    },
+    {
+      "original_path": "results/PointLtl2-v0.csv",
+      "path": "results/reference/finite/PointLtl2-v0.csv",
+      "sha256": "5a29d0f2d0eb99ed1f557a33304285398e45658a3a59d2735c45e140a4d59344",
+      "provenance": "historical data; not a new validation of manuscript improvements"
+    },
+    {
+      "original_path": "results/generalisation.csv",
+      "path": "results/reference/finite/generalisation.csv",
+      "sha256": "2d46ea39ebd823a8ed94b571427b67013c32ebf26b950a1b56152d7f95d6531b",
+      "provenance": "historical data; not a new validation of manuscript improvements"
+    },
+    {
+      "original_path": "results/safety.csv",
+      "path": "results/reference/finite/safety.csv",
+      "sha256": "cb5ff5e66ab40d810cab492b725d5c5c88bc74bf765c906d29ec4e69beb57b93",
+      "provenance": "historical data; not a new validation of manuscript improvements"
+    },
+    {
+      "original_path": "results/LetterEnv-v0.csv",
+      "path": "results/reference/finite/LetterEnv-v0.csv",
+      "sha256": "ac96a01f173f6550f6e6619f708f14cebe10bb6a41425f41ff7f4760348cad88",
+      "provenance": "historical data; not a new validation of manuscript improvements"
+    },
+    {
+      "original_path": "results_infinite/FlatWorld-v0.csv",
+      "path": "results/reference/infinite/FlatWorld-v0.csv",
+      "sha256": "4ab6587ee6027226bcd3a672c5c1e84632926b45ff1256c8f89f9f988cfe39c3",
+      "provenance": "historical data; not a new validation of manuscript improvements"
+    },
+    {
+      "original_path": "results_infinite/PointLtl2-v0.csv",
+      "path": "results/reference/infinite/PointLtl2-v0.csv",
+      "sha256": "3f35ca37d0736db38b7822ad2da877ce12a68e7ebcb6b4cf783c3d07df040e6d",
+      "provenance": "historical data; not a new validation of manuscript improvements"
+    },
+    {
+      "original_path": "results_infinite/LetterEnv-v0.csv",
+      "path": "results/reference/infinite/LetterEnv-v0.csv",
+      "sha256": "22230ece8401982a8df63c2b906854989d9a21d58aad1d0e756e7453e0522a27",
+      "provenance": "historical data; not a new validation of manuscript improvements"
+    }
+  ],
+  "note": "Historical CSVs kept byte-for-byte. External baselines were not rerun. Old source is recoverable in Git history; old ignored model files were removed as obsolete."
+}

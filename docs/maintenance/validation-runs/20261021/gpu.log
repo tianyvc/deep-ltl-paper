@@ -1,5 +1,0 @@
-index, uuid, name, memory.total [MiB], memory.used [MiB], memory.free [MiB], utilization.gpu [%]
-0, GPU-9abb2f8d-5403-2e39-9da4-0b429a22dbfc, NVIDIA GeForce RTX 4090, 24564 MiB, 18740 MiB, 5372 MiB, 8 %
-1, GPU-faa4c06f-92b6-134a-7044-9619e1a271c0, NVIDIA GeForce RTX 4090, 24564 MiB, 18268 MiB, 5844 MiB, 9 %
-2, GPU-7440841e-345b-26c5-3549-dacfa2249fa0, NVIDIA GeForce RTX 4090, 24564 MiB, 18190 MiB, 5922 MiB, 8 %
-3, GPU-639813e7-7ef1-97a6-0416-44b70e630e90, NVIDIA GeForce RTX 4090, 24564 MiB, 18594 MiB, 5518 MiB, 13 %

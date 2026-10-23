@@ -1,4 +1,0 @@
-usage: run_flatworld_big.py [-h] --name str --seed int|list --device str
-                            [--num_procs int] [--size int] [--log_csv bool]
-                            [--log_wandb bool] [--save bool]
-run_flatworld_big.py: error: unrecognized arguments: --steps_per_process 16 --batch_size 16 --epochs 1 --num_steps 32 --no-save --no-log_csv --no-log_wandb

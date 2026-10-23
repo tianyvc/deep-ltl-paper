@@ -1,7 +1,0 @@
-40
-               total        used        free      shared  buff/cache   available
-Mem:          257379       72149        6314        3036      178915      180377
-Swap:           2047        2046           1
-Filesystem      Size  Used Avail Use% Mounted on
-/dev/sdb         11T  7.3T  2.6T  74% /home/dell/workspace
-sh: 1: uptime: not found

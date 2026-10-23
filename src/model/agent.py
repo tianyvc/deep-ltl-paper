@@ -2,12 +2,12 @@ import numpy as np
 import torch
 
 import preprocessing
-from model.model import Model
+from torch.nn import Module
 from sequence.search import SequenceSearch
 
 
 class Agent:
-    def __init__(self, model: Model, search: SequenceSearch, propositions: set[str], verbose=False):
+    def __init__(self, model: Module, search: SequenceSearch, propositions: set[str], verbose=False):
         self.model = model
         self.search = search
         self.propositions = propositions

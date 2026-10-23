@@ -1,0 +1,83 @@
+{
+  "source": "overleaf/TLT/manuscript.tex, Table Task Evaluation Set; Letter uses a/b/c substitution. Recurrent formulas are diagnostic templates, not exhaustive paper benchmarks.",
+  "environments": {
+    "PointLtl2-v0": {
+      "finite": [
+        {
+          "id": "phi1",
+          "formula": "F blue & F green"
+        },
+        {
+          "id": "phi2",
+          "formula": "F blue & F green & F yellow"
+        },
+        {
+          "id": "phi3",
+          "formula": "(!blue U green) & F yellow"
+        }
+      ],
+      "recurrent": [
+        {
+          "id": "recurrent-single",
+          "formula": "G F green"
+        },
+        {
+          "id": "recurrent-multiple",
+          "formula": "G F blue & G F yellow"
+        }
+      ]
+    },
+    "FlatWorld-v0": {
+      "finite": [
+        {
+          "id": "phi1",
+          "formula": "F blue & F green"
+        },
+        {
+          "id": "phi2",
+          "formula": "F blue & F green & F yellow"
+        },
+        {
+          "id": "phi3",
+          "formula": "(!blue U green) & F yellow"
+        }
+      ],
+      "recurrent": [
+        {
+          "id": "recurrent-single",
+          "formula": "G F green"
+        },
+        {
+          "id": "recurrent-multiple",
+          "formula": "G F blue & G F yellow"
+        }
+      ]
+    },
+    "LetterEnv-v0": {
+      "finite": [
+        {
+          "id": "phi1",
+          "formula": "F a & F b"
+        },
+        {
+          "id": "phi2",
+          "formula": "F a & F b & F c"
+        },
+        {
+          "id": "phi3",
+          "formula": "(!a U b) & F c"
+        }
+      ],
+      "recurrent": [
+        {
+          "id": "recurrent-single",
+          "formula": "G F b"
+        },
+        {
+          "id": "recurrent-multiple",
+          "formula": "G F a & G F c"
+        }
+      ]
+    }
+  }
+}

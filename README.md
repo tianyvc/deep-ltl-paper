@@ -1,43 +1,38 @@
-# HiLTL / DeepLTL：LTL 与强化学习研究工作区
+# HiLTL：以 TLT 长稿为主线的 DeepLTL 扩展
 
-在 DeepLTL（Jackermeier & Abate, ICLR 2025）基础上研究自动机语义图、进展条件双目标价值、历史追踪及 Options。仓库保留训练实现、真实实验数据、论文工作稿和复现工具。
+本仓库在 [DeepLTL](https://github.com/mathiasj33/deep-ltl) 的序列课程、DeepSets/GRU 策略和 PPO 基础上，实现自动机语义图、多尺度图池化、进展门控双价值头与自动机历史追踪。主环境为 ZoneEnv，同时保留 LetterEnv、FlatWorld。
 
-**2026-10-23：精简重跑已完成，51/51 阶段、25 模型、6,900 评估回合均通过独立归档审计。主环境 ZoneEnv 尚未证实方法提升。** `hv_track` 三种子主任务 macro SR 为 0%，内部 `gnn_track` 为 9.11%，`baseline` 为 27.78%。FlatWorld 与 Letter 单种子相对 `gnn_track` 有 +19.33/+4.67 pp 局部信号，但存在违反率或循环指标恶化，不代表稳定优势。
+当前阶段聚焦**实现对应与可运行性**。论文中的成功率及增益留待后续实验验证。方法对应关系、实现选择和未覆盖内容统一见 [阶段总结](docs/STAGE_SUMMARY.md)，机器可读检查结果见 [verification.json](docs/verification.json)。
 
-## 核心入口
+## 保留的结构
 
-- [详细实验结果与论文证据审查](docs/EXPERIMENT_RESULTS.md)：全部配置、任务、消融、统计限制和下一轮最小诊断路径。
-- [可追溯轻量证据](results/reproduction/20261021-zone-minimal-v3/)：原始回合、训练日志、配置、汇总与检查点哈希；大模型仅保留服务器。
-- [项目现状](docs/PROJECT_STATUS.md)、[验证路线](docs/CODE_VALIDATION_ROADMAP.md)、[运行与监视手册](docs/LONG_RUNNING_TASKS.md)。
-- [论文导航](paper/README.md)：网站长稿、修订短稿、原稿与差异审查。
-- [维护历史](docs/maintenance/RECORDS.md)：历史命令与验证记录，旧计划不代表当前任务。
-
-## 方法与执行入口
-
-统一研究入口为 `src/train/train_paper.py`，当前协议 `hiltl-product-v3`。原序列课程 PPO 保留在 `src/train/train_ppo.py` 及 `run_*.py`，两种协议不能混作同一实验。
-
-|配置|含义|
+|路径|用途|
 |---|---|
-|baseline|DeepSets/GRU 序列参考架构，统一产品协议下运行|
-|gnn_single / gnn_track|匹配图编码器单 critic，对照无历史/有历史|
-|hv_only / hv_track|双目标 critic，无历史/有历史|
-|msgnn_only / msgnn_track|语义图增强，无历史/有历史|
-|full_no_options / full_all|完整图与双头/历史组合，后者启用真实 Options/SMDP|
+|`src/train/train_tlt.py`|唯一维护的训练入口，沿用原 DeepLTL 序列课程|
+|`src/model/`|原序列策略、LDBA 图特征、TLT 图网络与价值头|
+|`src/torch_ac/`|原 PPO/GAE 与双目标辅助训练|
+|`src/envs/`、`src/ltl/`、`src/sequence/`|三个环境、逻辑/自动机、原课程及序列搜索|
+|`scripts/evaluate_tlt.py`|冻结模型、固定公式的有限/循环任务评估|
+|`configurations/paper_tasks.json`|长稿三类有限任务及循环诊断模板|
+|`tests/`|实现合同、论文映射、短训和离线官方基线核对|
+|`overleaf/TLT/`、`overleaf/TLT__Copy_/`|长稿和短稿，本次整理未改动|
+|`paper/DeepLTL-ICLR2025.pdf`|原论文及其附录|
+|`eval_datasets/`|原评估任务与世界布局资源，未改动|
+|`results/reference/`|保留的历史数据与精简来源记录，不能当作新性能验证|
+|`rabinizer4/bin/ltl2ldba`、`rabinizer4/lib/owl.jar`|实际使用的公式转换工具，需 Java|
 
-HV 的短头采用 TD 目标，长头采用折扣 MC 回报代理，融合价值参与 PPO；长头不是校准后的 LTL 满足概率。固定进展门控、guard 词元编码、真实 LDBA 转移、不可变历史与 Options 高低层更新均有实现。实现存在不等于已证实实验收益；循环任务报告有限时域接受访问代理。
+旧产品训练入口、旧矩阵调度器、过期脚本、重复论文图、历史文档和源码快照已经移除。旧代码可从 Git 历史查看；本地训练输出和缓存不纳入 Git。
 
-`baseline` 并非官方 DeepLTL 完整课程与原预算的复现。历史 LTL2Action/GCRL-LTL 数值引用自原论文，未在本仓库按本轮协议重跑，不能与新实验合并宣传公平 SOTA 优势。
+## 运行环境
 
-## 环境与快速检查
-
-本工作区为 CloudFolder 挂载目录。所有项目运行在 SSH 服务器 conda `wty_LTL`，不在本机或 base 环境执行，不擅自变更共享依赖：
+项目位于 CloudFolder 挂载盘，运行使用 SSH 服务器的 conda `wty_LTL`，不要在本机或 base 环境运行项目。
 
 ```powershell
 cf.exe here
 cf.exe shell
 ```
 
-进入远端后：
+进入远端后，在仓库根目录：
 
 ```bash
 conda activate wty_LTL
@@ -45,46 +40,70 @@ export PYTHONNOUSERSITE=1
 export PYTHONPATH=src:src/envs/zones/safety-gymnasium
 export MUJOCO_GL=egl
 export PYTHONHASHSEED=0
-python tests/test_paper_v3.py
-python scripts/audit_paper_results.py
 ```
 
-本地查看完成状态：
+`requirements.txt`记录已验证环境的主要运行依赖，本次整理没有安装或修改环境。Python 为3.10，主要版本为 torch2.5.1、PyG2.6.1、Gymnasium0.28.1、MuJoCo2.3.3、NumPy1.23.5。Safety-Gymnasium 使用仓库内定制源码与资源；其原安装元数据中的pygame2.1.0与现用2.6.1不同，不要对现有环境直接重装。完整的空环境安装尚未重新验证。
+
+使用`cf.exe`可以避免PowerShell中的同名脚本吞掉`--`。本地一次性运行示例：
 
 ```powershell
-.\scripts\check-training.ps1 -SampleSeconds 0
+cf.exe run -- /home/dell/anaconda3/bin/conda run --no-capture-output -n wty_LTL env PYTHONNOUSERSITE=1 PYTHONPATH=src:src/envs/zones/safety-gymnasium MUJOCO_GL=egl PYTHONHASHSEED=0 python tests/test_tlt_curriculum.py
 ```
 
-使用 `cf.exe` 避免 PowerShell 的 `cf.ps1` 吞掉 `--`。一次性命令使用 `cf.exe run -- /home/dell/anaconda3/bin/conda run --no-capture-output -n wty_LTL env PYTHONNOUSERSITE=1 <cmd>`。
+## 快速检查
 
-已用环境包括 Python 3.10、torch 2.5.1+cu124、PyG 2.6.1、Gymnasium 0.28.1、MuJoCo 2.3.3、NumPy 1.23.5；Safety Gymnasium 使用仓库内定制源码。requirements.txt 不是完整锁定环境，pygame 精确版本约束仍有冲突，无头训练通过不代表全部渲染接口兼容。
-
-短时训练示例（不会启动大队列，输出需新目录）：
+以下命令在上述远端环境执行；输出文件和目录使用新名称：
 
 ```bash
-PYTHONNOUSERSITE=1 PYTHONPATH=src python src/train/train_paper.py \
-  --env FlatWorld-v0 --task-set configurations/flatworld_paper_v3.json \
-  --configuration hv_track --device cpu --seed 1 \
-  --steps 32 --rollout-steps 16 --max-episode-steps 16 \
-  --batch-size 16 --epochs 1 --output experiments/manual-smoke-new
+python tests/test_tlt_curriculum.py
+python tests/test_paper_mapping.py --output experiments/checks/paper-mapping.json
+python scripts/verify_tlt_upstream.py --output experiments/checks/upstream.json
+python tests/test_runtime.py --output experiments/runtime-new \
+  --report experiments/checks/runtime.json
 ```
 
-这仅验证训练链路，不能作性能证据。本轮已结束，不要重启旧195/31模型大队列。下一步先做小规模失败诊断。
+前三项核实奖励/课程、图语义、门控、梯度与原模型兼容性。最后一项约分钟级，覆盖三个环境、六个配置共九组短训，验证更新、保存和有限参数；它不评估方法增益。
 
-## 目录与数据规则
+## 训练与配置
 
-|目录|用途|
-|---|---|
-|src/|模型、PPO、LTL/自动机、环境、训练与评估|
-|configurations/|训练/验证/测试任务清单与协议配置|
-|scripts/、tests/|队列、监视、结果审计/统计与方法检查|
-|results/reproduction/|本轮可发布的真实轻量证据|
-|results/、results_infinite/|原有历史结果，来源与本轮分开|
-|experiments/|服务器完整模型、冻结源码与原始作业日志；Git 忽略|
-|overleaf/、paper/|论文工作稿、网站长稿、原论文、历史与资源|
-|docs/|当前结果、现状、验证路线、运行手册与历史记录|
-|rabinizer4/、src/envs/zones/safety-gymnasium/|必要第三方工具/资源，保留许可证|
+```bash
+python src/train/train_tlt.py --env PointLtl2-v0 --configuration hv_track \
+  --seed 1 --device cuda:0 --steps 4096 --num-procs 2 \
+  --rollout-steps 1024 --epochs 2 --batch-size 64 \
+  --output experiments/zone-hv-track-new
+```
 
-网站长稿 `overleaf/TLT/` 保持原样；`overleaf/TLT__Copy_/` 是经授权修订的工作稿，原短稿保存在 `paper/archive/pre-revision/`。本轮未改论文源码，后续应将新证据与论文实验段同步。旧图的硬编码/模拟数据不充当新结果。
+这是短时集成预算，原课程和1000步回合上限保持不变。支持`baseline`、`hv_only`、`msgnn_only`、`hv_track`、`msgnn_track`、`full_no_options`。**`full_all/Options`未纳入当前维护协议**，原因见阶段总结。Letter、FlatWorld分别指定`LetterEnv-v0`、`FlatWorld-v0`，其原回合上限为75、500。
 
-保留 LICENSE 与第三方许可。GitHub 不含完整模型二进制；请单独异地备份服务器 experiments/。共享服务器不保存个人 GitHub 凭据，发布使用个人 Windows 的 Git/GCM HTTPS 授权。
+`--steps`、`--output`必须显式提供，新运行目录必须不存在。未覆盖的Zone超参数保持原训练默认：16环境、rollout4096/环境、batch2048、10epoch、lr0.0003、discount0.998。请显式缩小短测参数，避免误用长预算。
+
+原序列模型用`--warm-start /path/status.pth`及同目录`vocab.pkl`迁移；严格检查参数形状。已删除的产品路径`status.pt`不是兼容模型。续训使用同配置、同源码的`--resume`，`--steps`是累计目标；环境中的未完成回合会重启。
+
+每次训练输出`config.json`、`vocab.pkl`、`status.pth`、`metrics.jsonl`、`progress.json`。完整自有训练源码哈希与课程采样状态、优化器、随机状态写入检查点。
+
+## 评估与监视
+
+```bash
+python scripts/evaluate_tlt.py --checkpoint experiments/zone-hv-track-new/status.pth \
+  --output experiments/zone-hv-track-new/eval-finite \
+  --episodes 10 --max-seconds 300 --device cuda:0
+```
+
+默认读取任务配置中对应环境的三类有限公式；`--task-group recurrent`选择循环诊断任务，`--formulas 'F blue'`可显式指定公式。Zone默认确定性，Letter/FlatWorld默认采样。输出`episodes.json`和`summary.json`，记录模型SHA、评估脚本SHA、公式、种子、回合是否完整、成功、逻辑违例、物理回报与接受访问次数。循环任务的有限访问记录不能解释为无限时域满足概率；预算中断回合不计入成功率分母。
+
+需要后台运行时，在远端已激活的环境中：
+
+```bash
+nohup python src/train/train_tlt.py --env PointLtl2-v0 --configuration hv_track \
+  --steps 4096 --num-procs 2 --rollout-steps 1024 --epochs 2 --batch-size 64 \
+  --device cuda:0 --output experiments/zone-background-new \
+  > zone-background.log 2>&1 &
+```
+
+本地PowerShell查看状态：
+
+```powershell
+cf.exe run -- /home/dell/anaconda3/bin/conda run --no-capture-output -n wty_LTL cat experiments/zone-background-new/progress.json
+```
+
+`steps/updates`连续增加表示更新推进；`completed`表示达到步数目标或课程结束；`budget_stopped`表示更新间的时间预算耗尽；`failed`或日志Traceback需要排查。第一轮更新前可能尚无progress；旧JSON不能证明进程仍活跃，应结合`tail -n 20 zone-background.log`和`nvidia-smi`查看。没有完整回合时`success_rate=null`。训练结束、程序可运行与论文效果成立应分别判断。

@@ -1,5 +1,4 @@
 import random
-import subprocess
 from contextlib import ContextDecorator
 from typing import Callable
 import time
@@ -28,8 +27,3 @@ class timeit(ContextDecorator):
         elapsed = time.time() - self.start
         print(f'{self.name} took {elapsed:.2f} seconds')
         return False  # re-raise any exception that occurred in the with block
-
-
-# kill all wandb processes – sometimes required due a bug in wandb
-def kill_all_wandb_processes():
-    subprocess.run('ps aux|grep wandb|grep -v grep | awk \'{print $2}\'|xargs kill -9', shell=True)

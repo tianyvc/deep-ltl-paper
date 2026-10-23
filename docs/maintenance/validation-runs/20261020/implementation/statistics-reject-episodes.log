@@ -1,8 +1,0 @@
-Traceback (most recent call last):
-  File "/home/dell/workspace/Tianyvc/deep-ltl-paper/scripts/summarize_paper_runs.py", line 101, in <module>
-    main()
-  File "/home/dell/workspace/Tianyvc/deep-ltl-paper/scripts/summarize_paper_runs.py", line 92, in main
-    result = aggregate(args.evaluations, args.seeds, args.episodes)
-  File "/home/dell/workspace/Tianyvc/deep-ltl-paper/scripts/summarize_paper_runs.py", line 39, in aggregate
-    raise ValueError('Wrong number of evaluation episodes or duplicate seeds: ' + str(path))
-ValueError: Wrong number of evaluation episodes or duplicate seeds: experiments/implementation_20261020/final_hv_track/evaluation-held_out-10001-2-det.json

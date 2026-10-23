@@ -51,18 +51,6 @@ class ActorConfig:
 
 
 @dataclass
-class GNNConfig:
-    hidden_dim: int = 64
-    num_layers: int = 3
-    dropout: float = 0.1
-    heads: int = 4
-    use_edge_attr: bool = False
-    edge_dim: int = 6
-    use_node_state: bool = False
-    node_state_dim: int = 4
-
-
-@dataclass
 class ModelConfig:
     actor: ActorConfig
     critic: StandardNetConfig
@@ -70,7 +58,6 @@ class ModelConfig:
     num_rnn_layers: int
     env_net: Optional[AbstractModelConfig]
     set_net: SetNetConfig
-    gnn: Optional[GNNConfig] = None
 
 
 zones = ModelConfig(
@@ -95,16 +82,6 @@ zones = ModelConfig(
     set_net=SetNetConfig(
         layers=[32, 16],
         activation=nn.ReLU
-    ),
-    gnn=GNNConfig(
-        hidden_dim=64,
-        num_layers=3,
-        dropout=0.1,
-        heads=4,
-        use_edge_attr=True,      # ✅ 启用边特征
-        edge_dim=6,
-        use_node_state=True,     # ✅ 启用节点状态特征
-        node_state_dim=4
     )
 )
 
@@ -127,16 +104,6 @@ letter = ModelConfig(
     set_net=SetNetConfig(
         layers=[32, 32],
         activation=nn.ReLU
-    ),
-    gnn=GNNConfig(
-        hidden_dim=64,
-        num_layers=3,
-        dropout=0.1,
-        heads=4,
-        use_edge_attr=True,      # ✅ 启用边特征
-        edge_dim=6,
-        use_node_state=True,     # ✅ 启用节点状态特征
-        node_state_dim=4
     )
 )
 
@@ -158,15 +125,5 @@ flatworld = ModelConfig(
     set_net=SetNetConfig(
         layers=[32, 16],
         activation=nn.ReLU
-    ),
-    gnn=GNNConfig(
-        hidden_dim=64,
-        num_layers=3,
-        dropout=0.1,
-        heads=4,
-        use_edge_attr=True,      # ✅ 启用边特征
-        edge_dim=6,
-        use_node_state=True,     # ✅ 启用节点状态特征
-        node_state_dim=4
     )
 )

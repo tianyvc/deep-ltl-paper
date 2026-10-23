@@ -1,9 +1,0 @@
-{
-  "exit_code": 0,
-  "actual_steps": [
-    8,
-    23,
-    31
-  ],
-  "note": "Initial test incorrectly assumed exact nominal 8/16/24. Full-episode overshoot requires actual checkpoint steps; evaluation implementation succeeded without code changes."
-}

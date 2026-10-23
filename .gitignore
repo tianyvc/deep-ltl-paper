@@ -1,21 +1,12 @@
-spot-2.9/
-owl-21.0/
-**/__pycache__
-.idea
-wandb
-experiments
-.pytest_cache
-trajectories.pdf
-cache
-/eval_results/
-multiple_results/
-*.fish
-paper_utils
-ldba.png
-chat/chat.json
-
-# Local recovery archive and generated LaTeX files
+# Local/generated state
 /.maintenance/
+/.vscode/
+/experiments/
+/cache/
+/wandb/
+**/__pycache__/
+.pytest_cache/
+*.py[cod]
 *.aux
 *.bbl
 *.blg

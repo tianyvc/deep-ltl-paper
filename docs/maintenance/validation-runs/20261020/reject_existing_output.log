@@ -1,8 +1,0 @@
-AdroitHandRelocateDense-v1, AdroitHandHammerDense-v1, AdroitHandDoorDense-v1 environment's reward functions were updated in v1.2.1 without an environment version update. Therefore, use gymnasium-robotics==1.2.0 for v1 reproducibility or use v2 in gymnasium-robotics>=1.4.3. See https://github.com/Farama-Foundation/Gymnasium-Robotics/pull/220 for more details
-AdroitHandRelocateDense-v1, AdroitHandHammerDense-v1, AdroitHandDoorDense-v1 environment's reward functions were updated in v1.2.1 without an environment version update. Therefore, use gymnasium-robotics==1.2.0 for v1 reproducibility or use v2 in gymnasium-robotics>=1.4.3. See https://github.com/Farama-Foundation/Gymnasium-Robotics/pull/220 for more details
-Traceback (most recent call last):
-  File "/home/dell/workspace/Tianyvc/deep-ltl-paper/src/train/train_paper.py", line 235, in <module>
-    main()
-  File "/home/dell/workspace/Tianyvc/deep-ltl-paper/src/train/train_paper.py", line 166, in main
-    raise FileExistsError('Existing run; use --resume or a new output directory')
-FileExistsError: Existing run; use --resume or a new output directory

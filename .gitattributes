@@ -1,3 +1,7 @@
-
-# Preserve byte-level research evidence and its SHA256 across platforms.
-/results/reproduction/** -text
+# Preserve manuscript files, reference data and verification hashes byte-for-byte.
+/overleaf/** -text
+/results/** -text
+/tests/fixtures/** -text
+*.pdf -text
+*.png -text
+*.jar -text

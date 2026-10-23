@@ -1,2 +1,0 @@
-{"update": 1, "formula": "F (blue & F green)", "option_segments": [], "steps": 8, "rewards": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "success": false, "violation": false, "accepting_visits": 0}
-{"update": 2, "formula": "F blue & F green", "option_segments": [], "steps": 8, "rewards": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "success": false, "violation": false, "accepting_visits": 0}
