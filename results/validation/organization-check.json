@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-29",
+  "environment": "wty_LTL",
+  "protected_files_unchanged": 135,
+  "markdown_files_checked": 5,
+  "broken_relative_links": [],
+  "source_syntax": "passed",
+  "git_diff_check": "Maintained files passed; original final-package whitespace preserved, including blank EOF and two whitespace-only lines in manuscript.tex. Staged check excludes overleaf/HiLTL-final to preserve exact author files.",
+  "author_pdf_text_matches_compilation": true,
+  "remote_origin_has_no_credentials": true,
+  "repository_credential_config_present": false,
+  "github_entry_in_remote_netrc": false,
+  "remote_git_credentials_file_exists": false,
+  "removed_regenerable_pycache_directories": 49,
+  "archive_manifest_sha256": "7aa6113fc4505071a65db86f34e16548c40a0da008e7292c534ea4ef75cd4a2c",
+  "note": "No full-scale manuscript performance rerun. Tests and paper build results stored separately.",
+  "staged_safety_check": {
+    "secret_pattern_files": [],
+    "credential_filenames": [],
+    "over_90MB": []
+  }
+}

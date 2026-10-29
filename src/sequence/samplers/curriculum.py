@@ -57,13 +57,18 @@ class ExplicitCurriculumStage(CurriculumStage):
         return probs.numpy()
 
     def update_task_success(self, task_success: dict[LDBASequence, float]) -> None:
+        if self._tasks is None:
+            return
+        # In-flight episodes sampled before a stage transition may finish later.
+        # Restrict the sampling table to this stage's own task universe.
+        relevant = {k: v for k, v in task_success.items() if k in self._tasks}
         if self._task_success is None:
-            self._task_success = {k: v for k, v in task_success.items() if k in self._tasks}
+            self._task_success = relevant
             for t in self._tasks:
                 if t not in self._task_success:
                     self._task_success[t] = 0.0
         else:
-            self._task_success.update(task_success)
+            self._task_success.update(relevant)
 
 
 @dataclass
@@ -116,6 +121,11 @@ class Curriculum:
             return
         if self.current_stage.threshold is None:
             return
+        if isinstance(self.current_stage, ExplicitCurriculumStage):
+            tasks = self.current_stage._tasks or []
+            task_success = {k: v for k, v in task_success.items() if k in tasks}
+            if not task_success:
+                return
         self.num_updates += 1
         self.num_updates %= 100
         self.current_stage.update_task_success(task_success)

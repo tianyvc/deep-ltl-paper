@@ -1,0 +1,7 @@
+Observation shape: (80,)
+Num LTLNet params: 7536
+Observation shape: (2,)
+Num LTLNet params: 7664
+{"commit": "3157200b5910cd7f5c493ffba8913994f2207eaf", "checks": [{"env": "PointLtl2-v0", "configuration_equal_excluding_unused_gnn": true, "state_keys_and_seeded_tensors_equal": true, "action_distribution_and_value_equal": true, "parameters": 51446}, {"env": "FlatWorld-v0", "configuration_equal_excluding_unused_gnn": true, "state_keys_and_seeded_tensors_equal": true, "action_distribution_and_value_equal": true, "parameters": 27451}], "scope": "Upstream builder/config with current shared layers; not a complete byte-identical upstream dependency audit."}
+AdroitHandRelocateDense-v1, AdroitHandHammerDense-v1, AdroitHandDoorDense-v1 environment's reward functions were updated in v1.2.1 without an environment version update. Therefore, use gymnasium-robotics==1.2.0 for v1 reproducibility or use v2 in gymnasium-robotics>=1.4.3. See https://github.com/Farama-Foundation/Gymnasium-Robotics/pull/220 for more details
+AdroitHandRelocateDense-v1, AdroitHandHammerDense-v1, AdroitHandDoorDense-v1 environment's reward functions were updated in v1.2.1 without an environment version update. Therefore, use gymnasium-robotics==1.2.0 for v1 reproducibility or use v2 in gymnasium-robotics>=1.4.3. See https://github.com/Farama-Foundation/Gymnasium-Robotics/pull/220 for more details

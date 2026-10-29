@@ -1,0 +1,2569 @@
+[
+  {
+    "key": "Ba2016",
+    "line": 6,
+    "expected": {
+      "title": "{Layer Normalization}",
+      "author": "Ba, Jimmy Lei and Kiros, Jamie Ryan and Hinton, Geoffrey E.",
+      "url": "https://arxiv.org/abs/1607.06450",
+      "year": "2016",
+      "eprint": "1607.06450",
+      "archivePrefix": "arXiv"
+    },
+    "requested_url": "https://arxiv.org/abs/1607.06450",
+    "status": 200,
+    "final_url": "https://arxiv.org/abs/1607.06450",
+    "sha256": "cf77082ba0753f9a21d86258df0af5157f15dfbc3d2a86ca508e0e8539a154d6",
+    "metadata": [
+      "<meta property=\"og:title\" content=\"Layer Normalization\" />",
+      "<meta name=\"citation_title\" content=\"Layer Normalization\" />",
+      "<meta name=\"citation_author\" content=\"Ba, Jimmy Lei\" />",
+      "<meta name=\"citation_author\" content=\"Kiros, Jamie Ryan\" />",
+      "<meta name=\"citation_author\" content=\"Hinton, Geoffrey E.\" />",
+      "<meta name=\"citation_date\" content=\"2016/07/21\" />",
+      "<meta name=\"citation_online_date\" content=\"2016/07/21\" />",
+      "<meta name=\"citation_pdf_url\" content=\"https://arxiv.org/pdf/1607.06450\" />",
+      "<meta name=\"citation_arxiv_id\" content=\"1607.06450\" />",
+      "<meta name=\"citation_abstract\" content=\"Training state-of-the-art, deep neural networks is computationally expensive. One way to reduce the training time is to normalize the activities of the neurons. A recently introduced technique called batch normalization uses the distribution of the summed input to a neuron over a mini-batch of training cases to compute a mean and variance which are then used to normalize the summed input to that neuron on each training case. This significantly reduces the training time in feed-forward neural networks. However, the effect of batch normalization is dependent on the mini-batch size and it is not obvious how to apply it to recurrent neural networks. In this paper, we transpose batch normalization into layer normalization by computing the mean and variance used for normalization from all of the summed inputs to the neurons in a layer on a single training case. Like batch normalization, we also give each neuron its own adaptive bias and gain which are applied after the normalization but before the non-linearity. Unlike batch normalization, layer normalization performs exactly the same computation at training and test times. It is also straightforward to apply to recurrent neural networks by computing the normalization statistics separately at each time step. Layer normalization is very effective at stabilizing the hidden state dynamics in recurrent networks. Empirically, we show that layer normalization can substantially reduce the training time compared with previously published techniques.\" />"
+    ],
+    "page_title": "[1607.06450] Layer Normalization"
+  },
+  {
+    "key": "Bacon2017",
+    "line": 16,
+    "expected": {
+      "title": "{The Option-Critic Architecture}",
+      "author": "Bacon, Pierre-Luc and Harb, Jean and Precup, Doina",
+      "year": "2017",
+      "doi": "10.1609/aaai.v31i1.10916",
+      "url": "https://doi.org/10.1609/aaai.v31i1.10916",
+      "booktitle": "Proceedings of the AAAI Conference on Artificial Intelligence",
+      "volume": "31",
+      "number": "1"
+    },
+    "requested_url": "https://api.crossref.org/works/10.1609/aaai.v31i1.10916",
+    "status": 200,
+    "final_url": "https://api.crossref.org/works/10.1609/aaai.v31i1.10916",
+    "sha256": "dfa4d2e17a805285c787a6230b0e1723814325c0bc52fb0272eb33751b32ff67",
+    "metadata": {
+      "title": [
+        "The Option-Critic Architecture"
+      ],
+      "author": [
+        {
+          "given": "Pierre-Luc",
+          "family": "Bacon",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jean",
+          "family": "Harb",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Doina",
+          "family": "Precup",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2017,
+            2,
+            13
+          ]
+        ]
+      },
+      "published-print": null,
+      "published-online": {
+        "date-parts": [
+          [
+            2017,
+            2,
+            13
+          ]
+        ]
+      },
+      "container-title": [
+        "Proceedings of the AAAI Conference on Artificial Intelligence"
+      ],
+      "volume": "31",
+      "issue": "1",
+      "page": null,
+      "type": "journal-article",
+      "DOI": "10.1609/aaai.v31i1.10916"
+    }
+  },
+  {
+    "key": "Baier2008",
+    "line": 28,
+    "expected": {
+      "title": "{Principles of Model Checking}",
+      "author": "Baier, Christel and Katoen, Joost-Pieter",
+      "publisher": "MIT Press",
+      "year": "2008",
+      "isbn": "9780262026499"
+    },
+    "requested_url": "https://mitpress.mit.edu/9780262026499/principles-of-model-checking/",
+    "status": 403,
+    "final_url": "https://mitpress.mit.edu/9780262026499/principles-of-model-checking/",
+    "sha256": "899ad72cfaa27d0b8b1235d6ef21bc68377db17e65567f3723567e79ff451c3c",
+    "metadata": [],
+    "page_title": "Access Denied"
+  },
+  {
+    "key": "bozkurt2020control",
+    "line": 37,
+    "expected": {
+      "title": "{Control Synthesis from Linear Temporal Logic Specifications using Model-Free Reinforcement Learning}",
+      "author": "Bozkurt, Alper Kamil and Wang, Yu and Zavlanos, Michael M. and Pajic, Miroslav",
+      "year": "2020",
+      "doi": "10.1109/icra40945.2020.9196796",
+      "url": "https://doi.org/10.1109/icra40945.2020.9196796",
+      "booktitle": "2020 IEEE International Conference on Robotics and Automation (ICRA)",
+      "pages": "10349--10355"
+    },
+    "requested_url": "https://api.crossref.org/works/10.1109/icra40945.2020.9196796",
+    "status": 200,
+    "final_url": "https://api.crossref.org/works/10.1109/icra40945.2020.9196796",
+    "sha256": "e990983047d7410905e50c72fba5e4294532f5f8769c887b81893d6b80b60e66",
+    "metadata": {
+      "title": [
+        "Control Synthesis from Linear Temporal Logic Specifications using Model-Free Reinforcement Learning"
+      ],
+      "author": [
+        {
+          "given": "Alper Kamil",
+          "family": "Bozkurt",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Yu",
+          "family": "Wang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Michael M.",
+          "family": "Zavlanos",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Miroslav",
+          "family": "Pajic",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            5
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2020,
+            5
+          ]
+        ]
+      },
+      "published-online": null,
+      "container-title": [
+        "2020 IEEE International Conference on Robotics and Automation (ICRA)"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "10349-10355",
+      "type": "proceedings-article",
+      "DOI": "10.1109/icra40945.2020.9196796"
+    }
+  },
+  {
+    "key": "brandstetter2022message",
+    "line": 48,
+    "expected": {
+      "title": "{Message Passing Neural PDE Solvers}",
+      "author": "Brandstetter, Johannes and Worrall, Daniel and Welling, Max",
+      "year": "2022",
+      "booktitle": "International Conference on Learning Representations",
+      "url": "https://arxiv.org/abs/2202.03376"
+    },
+    "requested_url": "https://arxiv.org/abs/2202.03376",
+    "status": 200,
+    "final_url": "https://arxiv.org/abs/2202.03376",
+    "sha256": "d6fa9beb882b89e37b42128a43f8bc220a40b5faa81391f5c62e4ec15b53a235",
+    "metadata": [
+      "<meta property=\"og:title\" content=\"Message Passing Neural PDE Solvers\" />",
+      "<meta name=\"citation_title\" content=\"Message Passing Neural PDE Solvers\" />",
+      "<meta name=\"citation_author\" content=\"Brandstetter, Johannes\" />",
+      "<meta name=\"citation_author\" content=\"Worrall, Daniel\" />",
+      "<meta name=\"citation_author\" content=\"Welling, Max\" />",
+      "<meta name=\"citation_date\" content=\"2022/02/07\" />",
+      "<meta name=\"citation_online_date\" content=\"2023/03/20\" />",
+      "<meta name=\"citation_pdf_url\" content=\"https://arxiv.org/pdf/2202.03376\" />",
+      "<meta name=\"citation_arxiv_id\" content=\"2202.03376\" />",
+      "<meta name=\"citation_abstract\" content=\"The numerical solution of partial differential equations (PDEs) is difficult, having led to a century of research so far. Recently, there have been pushes to build neural--numerical hybrid solvers, which piggy-backs the modern trend towards fully end-to-end learned systems. Most works so far can only generalize over a subset of properties to which a generic solver would be faced, including: resolution, topology, geometry, boundary conditions, domain discretization regularity, dimensionality, etc. In this work, we build a solver, satisfying these properties, where all the components are based on neural message passing, replacing all heuristically designed components in the computation graph with backprop-optimized neural function approximators. We show that neural message passing solvers representationally contain some classical methods, such as finite differences, finite volumes, and WENO schemes. In order to encourage stability in training autoregressive models, we put forward a method that is based on the principle of zero-stability, posing stability as a domain adaptation problem. We validate our method on various fluid-like flow problems, demonstrating fast, stable, and accurate performance across different domain topologies, equation parameters, discretizations, etc., in 1D and 2D.\" />"
+    ],
+    "page_title": "[2202.03376] Message Passing Neural PDE Solvers"
+  },
+  {
+    "key": "Brody2022",
+    "line": 57,
+    "expected": {
+      "title": "{How Attentive are Graph Attention Networks?}",
+      "author": "Brody, Shaked and Alon, Uri and Yahav, Eran",
+      "url": "https://arxiv.org/abs/2105.14491",
+      "year": "2022",
+      "booktitle": "International Conference on Learning Representations"
+    },
+    "requested_url": "https://arxiv.org/abs/2105.14491",
+    "status": 200,
+    "final_url": "https://arxiv.org/abs/2105.14491",
+    "sha256": "03ff6c140d875f66a0febf1bbe6674399235c867b4792faff660c4be07192954",
+    "metadata": [
+      "<meta property=\"og:title\" content=\"How Attentive are Graph Attention Networks?\" />",
+      "<meta name=\"citation_title\" content=\"How Attentive are Graph Attention Networks?\" />",
+      "<meta name=\"citation_author\" content=\"Brody, Shaked\" />",
+      "<meta name=\"citation_author\" content=\"Alon, Uri\" />",
+      "<meta name=\"citation_author\" content=\"Yahav, Eran\" />",
+      "<meta name=\"citation_date\" content=\"2021/05/30\" />",
+      "<meta name=\"citation_online_date\" content=\"2022/01/31\" />",
+      "<meta name=\"citation_pdf_url\" content=\"https://arxiv.org/pdf/2105.14491\" />",
+      "<meta name=\"citation_arxiv_id\" content=\"2105.14491\" />",
+      "<meta name=\"citation_abstract\" content=\"Graph Attention Networks (GATs) are one of the most popular GNN architectures and are considered as the state-of-the-art architecture for representation learning with graphs. In GAT, every node attends to its neighbors given its own representation as the query. However, in this paper we show that GAT computes a very limited kind of attention: the ranking of the attention scores is unconditioned on the query node. We formally define this restricted kind of attention as static attention and distinguish it from a strictly more expressive dynamic attention. Because GATs use a static attention mechanism, there are simple graph problems that GAT cannot express: in a controlled problem, we show that static attention hinders GAT from even fitting the training data. To remove this limitation, we introduce a simple fix by modifying the order of operations and propose GATv2: a dynamic graph attention variant that is strictly more expressive than GAT. We perform an extensive evaluation and show that GATv2 outperforms GAT across 11 OGB and other benchmarks while we match their parametric costs. Our code is available at https://github.com/tech-srl/how_attentive_are_gats . GATv2 is available as part of the PyTorch Geometric library, the Deep Graph Library, and the TensorFlow GNN library.\" />"
+    ],
+    "page_title": "[2105.14491] How Attentive are Graph Attention Networks?"
+  },
+  {
+    "key": "deepltl",
+    "line": 66,
+    "expected": {
+      "title": "{DeepLTL: Learning to Efficiently Satisfy Complex LTL Specifications for Multi-Task RL}",
+      "author": "Mathias Jackermeier and Alessandro Abate",
+      "booktitle": "International Conference on Learning Representations",
+      "year": "2025",
+      "url": "https://openreview.net/forum?id=9pW2J49flQ"
+    },
+    "requested_url": "https://openreview.net/forum?id=9pW2J49flQ",
+    "status": 200,
+    "final_url": "https://openreview.net/challenge?redirect=%2Fforum%3Fid%3D9pW2J49flQ",
+    "sha256": "9d0b76bac12d58f4daf2f869d91a85348fc86288a4ba5aad5c797062cceb788b",
+    "metadata": [],
+    "page_title": "Verifying your browser | OpenReview"
+  },
+  {
+    "key": "Dwivedi2023",
+    "line": 75,
+    "expected": {
+      "title": "{Graph Neural Networks with Learnable Structural and Positional Representations}",
+      "author": "Dwivedi, Vijay Prakash and Luu, Anh Tuan and Laurent, Thomas and Bengio, Yoshua and Bresson, Xavier",
+      "url": "https://arxiv.org/abs/2110.07875",
+      "year": "2022",
+      "booktitle": "International Conference on Learning Representations"
+    },
+    "requested_url": "https://arxiv.org/abs/2110.07875",
+    "status": 200,
+    "final_url": "https://arxiv.org/abs/2110.07875",
+    "sha256": "c8eb86475484da27557c08eb6291633a5c41ee27348a59e78e2e83c35932ba3d",
+    "metadata": [
+      "<meta property=\"og:title\" content=\"Graph Neural Networks with Learnable Structural and Positional Representations\" />",
+      "<meta name=\"citation_title\" content=\"Graph Neural Networks with Learnable Structural and Positional Representations\" />",
+      "<meta name=\"citation_author\" content=\"Dwivedi, Vijay Prakash\" />",
+      "<meta name=\"citation_author\" content=\"Luu, Anh Tuan\" />",
+      "<meta name=\"citation_author\" content=\"Laurent, Thomas\" />",
+      "<meta name=\"citation_author\" content=\"Bengio, Yoshua\" />",
+      "<meta name=\"citation_author\" content=\"Bresson, Xavier\" />",
+      "<meta name=\"citation_date\" content=\"2021/10/15\" />",
+      "<meta name=\"citation_online_date\" content=\"2022/02/10\" />",
+      "<meta name=\"citation_pdf_url\" content=\"https://arxiv.org/pdf/2110.07875\" />",
+      "<meta name=\"citation_arxiv_id\" content=\"2110.07875\" />",
+      "<meta name=\"citation_abstract\" content=\"Graph neural networks (GNNs) have become the standard learning architectures for graphs. GNNs have been applied to numerous domains ranging from quantum chemistry, recommender systems to knowledge graphs and natural language processing. A major issue with arbitrary graphs is the absence of canonical positional information of nodes, which decreases the representation power of GNNs to distinguish e.g. isomorphic nodes and other graph symmetries. An approach to tackle this issue is to introduce Positional Encoding (PE) of nodes, and inject it into the input layer, like in Transformers. Possible graph PE are Laplacian eigenvectors. In this work, we propose to decouple structural and positional representations to make easy for the network to learn these two essential properties. We introduce a novel generic architecture which we call LSPE (Learnable Structural and Positional Encodings). We investigate several sparse and fully-connected (Transformer-like) GNNs, and observe a performance increase for molecular datasets, from 1.79% up to 64.14% when considering learnable PE for both GNN classes.\" />"
+    ],
+    "page_title": "[2110.07875] Graph Neural Networks with Learnable Structural and Positional Representations"
+  },
+  {
+    "key": "Gaon2020",
+    "line": 84,
+    "expected": {
+      "title": "{Reinforcement Learning with Non-Markovian Rewards}",
+      "author": "Gaon, Maor and Brafman, Ronen",
+      "year": "2020",
+      "doi": "10.1609/aaai.v34i04.5814",
+      "url": "https://doi.org/10.1609/aaai.v34i04.5814",
+      "volume": "34",
+      "number": "04",
+      "pages": "3980--3987",
+      "booktitle": "Proceedings of the AAAI Conference on Artificial Intelligence"
+    },
+    "requested_url": "https://api.crossref.org/works/10.1609/aaai.v34i04.5814",
+    "status": 200,
+    "final_url": "https://api.crossref.org/works/10.1609/aaai.v34i04.5814",
+    "sha256": "89d82b37535c56a01a66f567e739d517ae635087091829382284fb014ca7af63",
+    "metadata": {
+      "title": [
+        "Reinforcement Learning with Non-Markovian Rewards"
+      ],
+      "author": [
+        {
+          "given": "Maor",
+          "family": "Gaon",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Ronen",
+          "family": "Brafman",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            4,
+            3
+          ]
+        ]
+      },
+      "published-print": null,
+      "published-online": {
+        "date-parts": [
+          [
+            2020,
+            4,
+            3
+          ]
+        ]
+      },
+      "container-title": [
+        "Proceedings of the AAAI Conference on Artificial Intelligence"
+      ],
+      "volume": "34",
+      "issue": "04",
+      "page": "3980-3987",
+      "type": "journal-article",
+      "DOI": "10.1609/aaai.v34i04.5814"
+    }
+  },
+  {
+    "key": "Gilmer2017",
+    "line": 97,
+    "expected": {
+      "title": "{Neural Message Passing for Quantum Chemistry}",
+      "author": "Justin Gilmer and Samuel S. Schoenholz and Patrick F. Riley and Oriol Vinyals and George E. Dahl",
+      "url": "https://proceedings.mlr.press/v70/gilmer17a.html",
+      "year": "2017",
+      "booktitle": "International Conference on Machine Learning",
+      "pages": "1263--1272",
+      "volume": "70",
+      "publisher": "PMLR",
+      "series": "Proceedings of Machine Learning Research"
+    },
+    "requested_url": "https://proceedings.mlr.press/v70/gilmer17a.html",
+    "status": 200,
+    "final_url": "https://proceedings.mlr.press/v70/gilmer17a.html",
+    "sha256": "5529f0e123291ca605173683d6d67b22bd53718d45d8618e751b05afe9559a09",
+    "metadata": [
+      "<meta name=\"citation_publisher\" content=\"PMLR\"/>",
+      "<meta name=\"citation_title\" content=\"Neural Message Passing for Quantum Chemistry\"/>",
+      "<meta name=\"citation_language\" content=\"en\"/>",
+      "<meta name=\"citation_abstract_html_url\" content=\"https://proceedings.mlr.press/v70/gilmer17a.html\"/>",
+      "<meta name=\"citation_pdf_url\" content=\"http://proceedings.mlr.press/v70/gilmer17a/gilmer17a.pdf\">",
+      "<meta name=\"citation_firstpage\" content=\"1263\">",
+      "<meta name=\"citation_lastpage\" content=\"1272\">",
+      "<meta name=\"citation_author\" content=\"Justin Gilmer\">",
+      "<meta name=\"citation_author\" content=\"Samuel S. Schoenholz\">",
+      "<meta name=\"citation_author\" content=\"Patrick F. Riley\">",
+      "<meta name=\"citation_author\" content=\"Oriol Vinyals\">",
+      "<meta name=\"citation_author\" content=\"George E. Dahl\">",
+      "<meta name=\"citation_publication_date\" content=\"2017/07/17\">",
+      "<meta name=\"citation_inbook_title\" content=\"International Conference on Machine Learning\"/>",
+      "<meta name=\"citation_conference_title\" content=\"International Conference on Machine Learning\"/>",
+      "<meta name=\"citation_issn\" content=\"2640-3498\">",
+      "<meta property=\"og:title\" content=\"Neural Message Passing for Quantum Chemistry\"/>"
+    ],
+    "page_title": "Neural Message Passing for Quantum Chemistry"
+  },
+  {
+    "key": "glanois2024survey",
+    "line": 110,
+    "expected": {
+      "title": "{A survey on interpretable reinforcement learning}",
+      "author": "Glanois, Claire and Weng, Paul and Zimmer, Matthieu and Li, Dong and Yang, Tianpei and Hao, Jianye and Liu, Wulong",
+      "year": "2024",
+      "doi": "10.1007/s10994-024-06543-w",
+      "url": "https://doi.org/10.1007/s10994-024-06543-w",
+      "journal": "Machine Learning",
+      "volume": "113",
+      "number": "8",
+      "pages": "5847--5890"
+    },
+    "requested_url": "https://api.crossref.org/works/10.1007/s10994-024-06543-w",
+    "status": 200,
+    "final_url": "https://api.crossref.org/works/10.1007/s10994-024-06543-w",
+    "sha256": "f7ea6243f482599896886beecf142773e3b2e5d67712c24c2ab06d64476edbdc",
+    "metadata": {
+      "title": [
+        "A survey on interpretable reinforcement learning"
+      ],
+      "author": [
+        {
+          "given": "Claire",
+          "family": "Glanois",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-2008-4569",
+          "authenticated-orcid": false,
+          "given": "Paul",
+          "family": "Weng",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Matthieu",
+          "family": "Zimmer",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Dong",
+          "family": "Li",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Tianpei",
+          "family": "Yang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jianye",
+          "family": "Hao",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Wulong",
+          "family": "Liu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            4,
+            19
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2024,
+            8
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2024,
+            4,
+            19
+          ]
+        ]
+      },
+      "container-title": [
+        "Machine Learning"
+      ],
+      "volume": "113",
+      "issue": "8",
+      "page": "5847-5890",
+      "type": "journal-article",
+      "DOI": "10.1007/s10994-024-06543-w"
+    }
+  },
+  {
+    "key": "Hahn2021",
+    "line": 123,
+    "expected": {
+      "title": "{Model-Free Reinforcement Learning for Lexicographic Omega-Regular Objectives}",
+      "author": "Hahn, Ernst Moritz and Perez, Mateo and Schewe, Sven and Somenzi, Fabio and Trivedi, Ashutosh and Wojtczak, Dominik",
+      "year": "2021",
+      "doi": "10.1007/978-3-030-90870-6_8",
+      "url": "https://doi.org/10.1007/978-3-030-90870-6_8",
+      "booktitle": "Formal Methods",
+      "pages": "142--159"
+    },
+    "requested_url": "https://api.crossref.org/works/10.1007/978-3-030-90870-6_8",
+    "status": 200,
+    "final_url": "https://api.crossref.org/works/10.1007/978-3-030-90870-6_8",
+    "sha256": "14092d03c06cef97173f2295cc150b3c6e1e4b97dcb3597743f4e95cacee4655",
+    "metadata": {
+      "title": [
+        "Model-Free Reinforcement Learning for Lexicographic Omega-Regular Objectives"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-9348-7684",
+          "authenticated-orcid": false,
+          "given": "Ernst Moritz",
+          "family": "Hahn",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-4220-3212",
+          "authenticated-orcid": false,
+          "given": "Mateo",
+          "family": "Perez",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-9093-9518",
+          "authenticated-orcid": false,
+          "given": "Sven",
+          "family": "Schewe",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-2085-2003",
+          "authenticated-orcid": false,
+          "given": "Fabio",
+          "family": "Somenzi",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-9346-0126",
+          "authenticated-orcid": false,
+          "given": "Ashutosh",
+          "family": "Trivedi",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-5560-0546",
+          "authenticated-orcid": false,
+          "given": "Dominik",
+          "family": "Wojtczak",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2021
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2021
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2021,
+            11,
+            10
+          ]
+        ]
+      },
+      "container-title": [
+        "Lecture Notes in Computer Science",
+        "Formal Methods"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "142-159",
+      "type": "book-chapter",
+      "DOI": "10.1007/978-3-030-90870-6_8"
+    }
+  },
+  {
+    "key": "Hamilton2017",
+    "line": 134,
+    "expected": {
+      "title": "{Inductive Representation Learning on Large Graphs}",
+      "author": "Hamilton, Will and Ying, Zhitao and Leskovec, Jure",
+      "year": "2017",
+      "url": "https://papers.nips.cc/paper/2017/hash/5dd9db5e033da9c6fb5ba83c7a7ebea9-Abstract.html",
+      "booktitle": "Advances in Neural Information Processing Systems",
+      "volume": "30"
+    },
+    "requested_url": "https://papers.nips.cc/paper/2017/hash/5dd9db5e033da9c6fb5ba83c7a7ebea9-Abstract.html",
+    "status": 200,
+    "final_url": "https://papers.nips.cc/paper/2017/hash/5dd9db5e033da9c6fb5ba83c7a7ebea9-Abstract.html",
+    "sha256": "9fd65eb244ffc207908b83b96332bbceeae20866c5e95b689eeee414c1b120ce",
+    "metadata": [
+      "<meta name=\"citation_title\" content=\"Inductive Representation Learning on Large Graphs\">",
+      "<meta name=\"citation_author\" content=\"Hamilton, Will\">",
+      "<meta name=\"citation_author\" content=\"Ying, Zhitao\">",
+      "<meta name=\"citation_author\" content=\"Leskovec, Jure\">",
+      "<meta name=\"citation_journal_title\" content=\"Advances in Neural Information Processing Systems\">",
+      "<meta name=\"citation_volume\" content=\"30\">",
+      "<meta name=\"citation_pdf_url\" content=\"https://proceedings.neurips.cc/paper_files/paper/2017/file/5dd9db5e033da9c6fb5ba83c7a7ebea9-Paper.pdf\">",
+      "<meta name=\"citation_publication_date\" content=\"2017\">"
+    ],
+    "page_title": "Inductive Representation Learning on Large Graphs"
+  },
+  {
+    "key": "HasanbeigCertified2021",
+    "line": 144,
+    "expected": {
+      "title": "{Certified reinforcement learning with logic guidance}",
+      "author": "Hasanbeig, Hosein and Kroening, Daniel and Abate, Alessandro",
+      "year": "2023",
+      "doi": "10.1016/j.artint.2023.103949",
+      "url": "https://doi.org/10.1016/j.artint.2023.103949",
+      "journal": "Artificial Intelligence",
+      "volume": "322",
+      "pages": "103949"
+    },
+    "requested_url": "https://api.crossref.org/works/10.1016/j.artint.2023.103949",
+    "status": 200,
+    "final_url": "https://api.crossref.org/works/10.1016/j.artint.2023.103949",
+    "sha256": "cc4d0d7401689d2e89bf444277009d2ce7e2fdf2b9adb6617fc5e02047860721",
+    "metadata": {
+      "title": [
+        "Certified reinforcement learning with logic guidance"
+      ],
+      "author": [
+        {
+          "given": "Hosein",
+          "family": "Hasanbeig",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Daniel",
+          "family": "Kroening",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Alessandro",
+          "family": "Abate",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            9
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2023,
+            9
+          ]
+        ]
+      },
+      "published-online": null,
+      "container-title": [
+        "Artificial Intelligence"
+      ],
+      "volume": "322",
+      "issue": null,
+      "page": "103949",
+      "type": "journal-article",
+      "DOI": "10.1016/j.artint.2023.103949"
+    }
+  },
+  {
+    "key": "He2016",
+    "line": 156,
+    "expected": {
+      "title": "{Deep Residual Learning for Image Recognition}",
+      "author": "He, Kaiming and Zhang, Xiangyu and Ren, Shaoqing and Sun, Jian",
+      "url": "https://openaccess.thecvf.com/content_cvpr_2016/html/He_Deep_Residual_Learning_CVPR_2016_paper.html",
+      "year": "2016",
+      "booktitle": "Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition",
+      "pages": "770--778"
+    },
+    "requested_url": "https://openaccess.thecvf.com/content_cvpr_2016/html/He_Deep_Residual_Learning_CVPR_2016_paper.html",
+    "status": 200,
+    "final_url": "https://openaccess.thecvf.com/content_cvpr_2016/html/He_Deep_Residual_Learning_CVPR_2016_paper.html",
+    "sha256": "a6128bfc0780410d6155b3ebb04e135a903418bab86385fd4c7bfeb1a69a2237",
+    "metadata": [
+      "<meta name=\"citation_title\" content=\"Deep Residual Learning for Image Recognition\">",
+      "<meta name=\"citation_author\" content=\"He, Kaiming\">",
+      "<meta name=\"citation_author\" content=\"Zhang, Xiangyu\">",
+      "<meta name=\"citation_author\" content=\"Ren, Shaoqing\">",
+      "<meta name=\"citation_author\" content=\"Sun, Jian\">",
+      "<meta name=\"citation_publication_date\" content=\"2016\">",
+      "<meta name=\"citation_conference_title\" content=\"Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition\">",
+      "<meta name=\"citation_firstpage\" content=\"770\">",
+      "<meta name=\"citation_lastpage\" content=\"778\">",
+      "<meta name=\"citation_pdf_url\" content=\"http://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/He_Deep_Residual_Learning_CVPR_2016_paper.pdf\">"
+    ],
+    "page_title": "CVPR 2016 Open Access Repository"
+  },
+  {
+    "key": "Icarte2022",
+    "line": 166,
+    "expected": {
+      "title": "{Reward Machines: Exploiting Reward Function Structure in Reinforcement Learning}",
+      "author": "Toro Icarte, Rodrigo and Klassen, Toryn Q. and Valenzano, Richard and McIlraith, Sheila A.",
+      "year": "2022",
+      "doi": "10.1613/jair.1.12440",
+      "url": "https://doi.org/10.1613/jair.1.12440",
+      "journal": "Journal of Artificial Intelligence Research",
+      "volume": "73",
+      "pages": "173--208"
+    },
+    "requested_url": "https://api.crossref.org/works/10.1613/jair.1.12440",
+    "status": 200,
+    "final_url": "https://api.crossref.org/works/10.1613/jair.1.12440",
+    "sha256": "cf64a31bf928090e59b609e1e5394e18dee88f2babb629321cb09272baf3ada7",
+    "metadata": {
+      "title": [
+        "Reward Machines: Exploiting Reward Function Structure in Reinforcement Learning"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-7734-099X",
+          "authenticated-orcid": false,
+          "given": "Rodrigo",
+          "family": "Toro Icarte",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Toryn Q.",
+          "family": "Klassen",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Richard",
+          "family": "Valenzano",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Sheila A.",
+          "family": "McIlraith",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            1,
+            11
+          ]
+        ]
+      },
+      "published-print": null,
+      "published-online": {
+        "date-parts": [
+          [
+            2022,
+            1,
+            11
+          ]
+        ]
+      },
+      "container-title": [
+        "Journal of Artificial Intelligence Research"
+      ],
+      "volume": "73",
+      "issue": null,
+      "page": "173-208",
+      "type": "journal-article",
+      "DOI": "10.1613/jair.1.12440"
+    }
+  },
+  {
+    "key": "IcarteRewardMachines2019",
+    "line": 178,
+    "expected": {
+      "title": "{LTL and Beyond: Formal Languages for Reward Function Specification in Reinforcement Learning}",
+      "author": "Camacho, Alberto and Toro Icarte, Rodrigo and Klassen, Toryn Q. and Valenzano, Richard and McIlraith, Sheila A.",
+      "year": "2019",
+      "booktitle": "Proceedings of the International Joint Conference on Artificial Intelligence",
+      "pages": "6065--6073",
+      "doi": "10.24963/ijcai.2019/840",
+      "url": "https://www.ijcai.org/proceedings/2019/840"
+    },
+    "requested_url": "https://api.crossref.org/works/10.24963/ijcai.2019/840",
+    "status": 200,
+    "final_url": "https://api.crossref.org/works/10.24963/ijcai.2019/840",
+    "sha256": "744e8e73711a18e84ae295c916cade9cd73b274396dc9a1a4fb37b89204fab1e",
+    "metadata": {
+      "title": [
+        "LTL and Beyond: Formal Languages for Reward Function Specification in Reinforcement Learning"
+      ],
+      "author": [
+        {
+          "given": "Alberto",
+          "family": "Camacho",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Department of Computer Science, University of Toronto, Toronto, Canada"
+            },
+            {
+              "name": "Vector Institute, Toronto, Canada"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Rodrigo",
+          "family": "Toro Icarte",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Computer Science, University of Toronto, Toronto, Canada"
+            },
+            {
+              "name": "Vector Institute, Toronto, Canada"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Toryn Q.",
+          "family": "Klassen",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Computer Science, University of Toronto, Toronto, Canada"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Richard",
+          "family": "Valenzano",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Element AI, Toronto, Canada"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Sheila A.",
+          "family": "McIlraith",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Computer Science, University of Toronto, Toronto, Canada"
+            },
+            {
+              "name": "Vector Institute, Toronto, Canada"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2019,
+            8
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2019,
+            8
+          ]
+        ]
+      },
+      "published-online": null,
+      "container-title": [
+        "Proceedings of the Twenty-Eighth International Joint Conference on Artificial Intelligence"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "6065-6073",
+      "type": "proceedings-article",
+      "DOI": "10.24963/ijcai.2019/840"
+    }
+  },
+  {
+    "key": "Jothimurugan2021",
+    "line": 189,
+    "expected": {
+      "title": "{Compositional Reinforcement Learning from Logical Specifications}",
+      "author": "Jothimurugan, Kishor and Bansal, Suguman and Bastani, Osbert and Alur, Rajeev",
+      "url": "https://papers.nips.cc/paper_files/paper/2021/hash/531db99cb00833bcd414459069dc7387-Abstract.html",
+      "year": "2021",
+      "booktitle": "Advances in Neural Information Processing Systems",
+      "volume": "34",
+      "pages": "10026--10039"
+    },
+    "requested_url": "https://papers.nips.cc/paper_files/paper/2021/hash/531db99cb00833bcd414459069dc7387-Abstract.html",
+    "status": 200,
+    "final_url": "https://papers.nips.cc/paper_files/paper/2021/hash/531db99cb00833bcd414459069dc7387-Abstract.html",
+    "sha256": "06e42838803b20e2404fce62061bbf625948daa90b13956659c91c452d73813f",
+    "metadata": [
+      "<meta name=\"citation_title\" content=\"Compositional Reinforcement Learning from Logical Specifications\">",
+      "<meta name=\"citation_author\" content=\"Jothimurugan, Kishor\">",
+      "<meta name=\"citation_author\" content=\"Bansal, Suguman\">",
+      "<meta name=\"citation_author\" content=\"Bastani, Osbert\">",
+      "<meta name=\"citation_author\" content=\"Alur, Rajeev\">",
+      "<meta name=\"citation_journal_title\" content=\"Advances in Neural Information Processing Systems\">",
+      "<meta name=\"citation_volume\" content=\"34\">",
+      "<meta name=\"citation_firstpage\" content=\"10026\">",
+      "<meta name=\"citation_lastpage\" content=\"10039\">",
+      "<meta name=\"citation_pdf_url\" content=\"https://proceedings.neurips.cc/paper_files/paper/2021/file/531db99cb00833bcd414459069dc7387-Paper.pdf\">",
+      "<meta name=\"citation_publication_date\" content=\"2021-12-06\">"
+    ],
+    "page_title": "Compositional Reinforcement Learning from Logical Specifications"
+  },
+  {
+    "key": "katz2017reluplex",
+    "line": 200,
+    "expected": {
+      "title": "{Reluplex: An Efficient SMT Solver for Verifying Deep Neural Networks}",
+      "author": "Katz, Guy and Barrett, Clark and Dill, David L. and Julian, Kyle and Kochenderfer, Mykel J.",
+      "year": "2017",
+      "doi": "10.1007/978-3-319-63387-9_5",
+      "url": "https://doi.org/10.1007/978-3-319-63387-9_5",
+      "booktitle": "Computer Aided Verification",
+      "pages": "97--117"
+    },
+    "requested_url": "https://api.crossref.org/works/10.1007/978-3-319-63387-9_5",
+    "status": 200,
+    "final_url": "https://api.crossref.org/works/10.1007/978-3-319-63387-9_5",
+    "sha256": "d82baa922cc1cbc8cf8f58168ed493b34ebc0eadb664499cfa1c50111d2d377d",
+    "metadata": {
+      "title": [
+        "Reluplex: An Efficient SMT Solver for Verifying Deep Neural Networks"
+      ],
+      "author": [
+        {
+          "given": "Guy",
+          "family": "Katz",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Clark",
+          "family": "Barrett",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "David L.",
+          "family": "Dill",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Kyle",
+          "family": "Julian",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Mykel J.",
+          "family": "Kochenderfer",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2017
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2017
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2017,
+            7,
+            13
+          ]
+        ]
+      },
+      "container-title": [
+        "Lecture Notes in Computer Science",
+        "Computer Aided Verification"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "97-117",
+      "type": "book-chapter",
+      "DOI": "10.1007/978-3-319-63387-9_5"
+    }
+  },
+  {
+    "key": "Kingma2015",
+    "line": 211,
+    "expected": {
+      "title": "{Adam: A Method for Stochastic Optimization}",
+      "author": "Kingma, Diederik P. and Ba, Jimmy Lei",
+      "url": "https://arxiv.org/abs/1412.6980",
+      "year": "2015",
+      "booktitle": "International Conference on Learning Representations"
+    },
+    "requested_url": "https://arxiv.org/abs/1412.6980",
+    "status": 200,
+    "final_url": "https://arxiv.org/abs/1412.6980",
+    "sha256": "4129fc8bd4e092ed19a5b924569a3a4a1f85dbd1930af973262d755672bcd458",
+    "metadata": [
+      "<meta property=\"og:title\" content=\"Adam: A Method for Stochastic Optimization\" />",
+      "<meta name=\"citation_title\" content=\"Adam: A Method for Stochastic Optimization\" />",
+      "<meta name=\"citation_author\" content=\"Kingma, Diederik P.\" />",
+      "<meta name=\"citation_author\" content=\"Ba, Jimmy\" />",
+      "<meta name=\"citation_date\" content=\"2014/12/22\" />",
+      "<meta name=\"citation_online_date\" content=\"2017/01/30\" />",
+      "<meta name=\"citation_pdf_url\" content=\"https://arxiv.org/pdf/1412.6980\" />",
+      "<meta name=\"citation_arxiv_id\" content=\"1412.6980\" />",
+      "<meta name=\"citation_abstract\" content=\"We introduce Adam, an algorithm for first-order gradient-based optimization of stochastic objective functions, based on adaptive estimates of lower-order moments. The method is straightforward to implement, is computationally efficient, has little memory requirements, is invariant to diagonal rescaling of the gradients, and is well suited for problems that are large in terms of data and/or parameters. The method is also appropriate for non-stationary objectives and problems with very noisy and/or sparse gradients. The hyper-parameters have intuitive interpretations and typically require little tuning. Some connections to related algorithms, on which Adam was inspired, are discussed. We also analyze the theoretical convergence properties of the algorithm and provide a regret bound on the convergence rate that is comparable to the best known results under the online convex optimization framework. Empirical results demonstrate that Adam works well in practice and compares favorably to other stochastic optimization methods. Finally, we discuss AdaMax, a variant of Adam based on the infinity norm.\" />"
+    ],
+    "page_title": "[1412.6980] Adam: A Method for Stochastic Optimization"
+  },
+  {
+    "key": "Kipf2017",
+    "line": 220,
+    "expected": {
+      "title": "{Semi-Supervised Classification with Graph Convolutional Networks}",
+      "author": "Kipf, Thomas N. and Welling, Max",
+      "url": "https://arxiv.org/abs/1609.02907",
+      "year": "2017",
+      "booktitle": "International Conference on Learning Representations"
+    },
+    "requested_url": "https://arxiv.org/abs/1609.02907",
+    "status": 200,
+    "final_url": "https://arxiv.org/abs/1609.02907",
+    "sha256": "bc3680594ac8f984c5a25c8ee84b17e5dd0c477eb0520082db3c9a4107d2d047",
+    "metadata": [
+      "<meta property=\"og:title\" content=\"Semi-Supervised Classification with Graph Convolutional Networks\" />",
+      "<meta name=\"citation_title\" content=\"Semi-Supervised Classification with Graph Convolutional Networks\" />",
+      "<meta name=\"citation_author\" content=\"Kipf, Thomas N.\" />",
+      "<meta name=\"citation_author\" content=\"Welling, Max\" />",
+      "<meta name=\"citation_date\" content=\"2016/09/09\" />",
+      "<meta name=\"citation_online_date\" content=\"2017/02/22\" />",
+      "<meta name=\"citation_pdf_url\" content=\"https://arxiv.org/pdf/1609.02907\" />",
+      "<meta name=\"citation_arxiv_id\" content=\"1609.02907\" />",
+      "<meta name=\"citation_abstract\" content=\"We present a scalable approach for semi-supervised learning on graph-structured data that is based on an efficient variant of convolutional neural networks which operate directly on graphs. We motivate the choice of our convolutional architecture via a localized first-order approximation of spectral graph convolutions. Our model scales linearly in the number of graph edges and learns hidden layer representations that encode both local graph structure and features of nodes. In a number of experiments on citation networks and on a knowledge graph dataset we demonstrate that our approach outperforms related methods by a significant margin.\" />"
+    ],
+    "page_title": "[1609.02907] Semi-Supervised Classification with Graph Convolutional Networks"
+  },
+  {
+    "key": "li2019graph",
+    "line": 229,
+    "expected": {
+      "title": "{Graph Matching Networks for Learning the Similarity of Graph Structured Objects}",
+      "author": "Yujia Li and Chenjie Gu and Thomas Dullien and Oriol Vinyals and Pushmeet Kohli",
+      "year": "2019",
+      "url": "https://proceedings.mlr.press/v97/li19d.html",
+      "booktitle": "Proceedings of the International Conference on Machine Learning",
+      "volume": "97",
+      "pages": "3835--3845"
+    },
+    "requested_url": "https://proceedings.mlr.press/v97/li19d.html",
+    "status": 200,
+    "final_url": "https://proceedings.mlr.press/v97/li19d.html",
+    "sha256": "26297c6ec67cace8920165df78d8e391d56d69c8b3dd18d31316524f41818e41",
+    "metadata": [
+      "<meta name=\"citation_publisher\" content=\"PMLR\"/>",
+      "<meta name=\"citation_title\" content=\"Graph Matching Networks for Learning the Similarity of Graph Structured Objects\"/>",
+      "<meta name=\"citation_language\" content=\"en\"/>",
+      "<meta name=\"citation_abstract_html_url\" content=\"https://proceedings.mlr.press/v97/li19d.html\"/>",
+      "<meta name=\"citation_pdf_url\" content=\"http://proceedings.mlr.press/v97/li19d/li19d.pdf\">",
+      "<meta name=\"citation_firstpage\" content=\"3835\">",
+      "<meta name=\"citation_lastpage\" content=\"3845\">",
+      "<meta name=\"citation_author\" content=\"Yujia Li\">",
+      "<meta name=\"citation_author\" content=\"Chenjie Gu\">",
+      "<meta name=\"citation_author\" content=\"Thomas Dullien\">",
+      "<meta name=\"citation_author\" content=\"Oriol Vinyals\">",
+      "<meta name=\"citation_author\" content=\"Pushmeet Kohli\">",
+      "<meta name=\"citation_publication_date\" content=\"2019/05/24\">",
+      "<meta name=\"citation_inbook_title\" content=\"International Conference on Machine Learning\"/>",
+      "<meta name=\"citation_conference_title\" content=\"International Conference on Machine Learning\"/>",
+      "<meta name=\"citation_issn\" content=\"2640-3498\">",
+      "<meta property=\"og:title\" content=\"Graph Matching Networks for Learning the Similarity of Graph Structured Objects\"/>"
+    ],
+    "page_title": "Graph Matching Networks for Learning the Similarity of Graph Structured Objects"
+  },
+  {
+    "key": "morris2019weisfeiler",
+    "line": 240,
+    "expected": {
+      "title": "{Weisfeiler and Leman Go Neural: Higher-Order Graph Neural Networks}",
+      "author": "Morris, Christopher and Ritzert, Martin and Fey, Matthias and Hamilton, William L. and Lenssen, Jan Eric and Rattan, Gaurav and Grohe, Martin",
+      "year": "2019",
+      "doi": "10.1609/aaai.v33i01.33014602",
+      "url": "https://doi.org/10.1609/aaai.v33i01.33014602",
+      "booktitle": "Proceedings of the AAAI Conference on Artificial Intelligence",
+      "volume": "33",
+      "number": "01",
+      "pages": "4602--4609"
+    },
+    "requested_url": "https://api.crossref.org/works/10.1609/aaai.v33i01.33014602",
+    "status": 200,
+    "final_url": "https://api.crossref.org/works/10.1609/aaai.v33i01.33014602",
+    "sha256": "b25ccebf1af09c92e8c288c0df49f48166433b2f4ca99ca6afa233929a0813f5",
+    "metadata": {
+      "title": [
+        "Weisfeiler and Leman Go Neural: Higher-Order Graph Neural Networks"
+      ],
+      "author": [
+        {
+          "given": "Christopher",
+          "family": "Morris",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Martin",
+          "family": "Ritzert",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Matthias",
+          "family": "Fey",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "William L.",
+          "family": "Hamilton",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jan Eric",
+          "family": "Lenssen",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Gaurav",
+          "family": "Rattan",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Martin",
+          "family": "Grohe",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2019,
+            7,
+            17
+          ]
+        ]
+      },
+      "published-print": null,
+      "published-online": {
+        "date-parts": [
+          [
+            2019,
+            7,
+            17
+          ]
+        ]
+      },
+      "container-title": [
+        "Proceedings of the AAAI Conference on Artificial Intelligence"
+      ],
+      "volume": "33",
+      "issue": "01",
+      "page": "4602-4609",
+      "type": "journal-article",
+      "DOI": "10.1609/aaai.v33i01.33014602"
+    }
+  },
+  {
+    "key": "murphy2018machine",
+    "line": 253,
+    "expected": {
+      "title": "{Machine Learning: A Probabilistic Perspective}",
+      "author": "Murphy, Kevin P.",
+      "publisher": "MIT Press",
+      "year": "2012",
+      "url": "https://www.cs.ubc.ca/~murphyk/MLbook/"
+    },
+    "requested_url": "https://www.cs.ubc.ca/~murphyk/MLbook/",
+    "status": 200,
+    "final_url": "https://www.cs.ubc.ca/~murphyk/MLbook/",
+    "sha256": "7c2033c985569a03c08af5fb903227ca34765a01dcc553a731a36755dfcb7469",
+    "metadata": [],
+    "page_title": "Machine learning textbook"
+  },
+  {
+    "key": "Nachum2018",
+    "line": 262,
+    "expected": {
+      "title": "{Data-Efficient Hierarchical Reinforcement Learning}",
+      "author": "Nachum, Ofir and Gu, Shixiang (Shane) and Lee, Honglak and Levine, Sergey",
+      "year": "2018",
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2018/hash/e6384711491713d29bc63fc5eeb5ba4f-Abstract.html",
+      "booktitle": "Advances in Neural Information Processing Systems",
+      "volume": "31"
+    },
+    "requested_url": "https://proceedings.neurips.cc/paper_files/paper/2018/hash/e6384711491713d29bc63fc5eeb5ba4f-Abstract.html",
+    "status": 200,
+    "final_url": "https://proceedings.neurips.cc/paper_files/paper/2018/hash/e6384711491713d29bc63fc5eeb5ba4f-Abstract.html",
+    "sha256": "ecc86c9c81f0f42532d6ff5b787a4c5598bf687f96341934f06cf107d692a48f",
+    "metadata": [
+      "<meta name=\"citation_title\" content=\"Data-Efficient Hierarchical Reinforcement Learning\">",
+      "<meta name=\"citation_author\" content=\"Nachum, Ofir\">",
+      "<meta name=\"citation_author\" content=\"Gu, Shixiang (Shane)\">",
+      "<meta name=\"citation_author\" content=\"Lee, Honglak\">",
+      "<meta name=\"citation_author\" content=\"Levine, Sergey\">",
+      "<meta name=\"citation_journal_title\" content=\"Advances in Neural Information Processing Systems\">",
+      "<meta name=\"citation_volume\" content=\"31\">",
+      "<meta name=\"citation_pdf_url\" content=\"https://proceedings.neurips.cc/paper_files/paper/2018/file/e6384711491713d29bc63fc5eeb5ba4f-Paper.pdf\">",
+      "<meta name=\"citation_publication_date\" content=\"2018\">"
+    ],
+    "page_title": "Data-Efficient Hierarchical Reinforcement Learning"
+  },
+  {
+    "key": "Pnueli1977",
+    "line": 272,
+    "expected": {
+      "title": "{The temporal logic of programs}",
+      "author": "Pnueli, Amir",
+      "year": "1977",
+      "doi": "10.1109/sfcs.1977.32",
+      "url": "https://doi.org/10.1109/sfcs.1977.32",
+      "booktitle": "18th Annual Symposium on Foundations of Computer Science",
+      "pages": "46--57"
+    },
+    "requested_url": "https://api.crossref.org/works/10.1109/sfcs.1977.32",
+    "status": 200,
+    "final_url": "https://api.crossref.org/works/10.1109/sfcs.1977.32",
+    "sha256": "d27e7276fe32c19422718bfb880b1640f022097c5410cee64d594f5a2dc106e8",
+    "metadata": {
+      "title": [
+        "The temporal logic of programs"
+      ],
+      "author": [
+        {
+          "given": "Amir",
+          "family": "Pnueli",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "published": {
+        "date-parts": [
+          [
+            1977,
+            9
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            1977,
+            9
+          ]
+        ]
+      },
+      "published-online": null,
+      "container-title": [
+        "18th Annual Symposium on Foundations of Computer Science (sfcs 1977)"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "46-57",
+      "type": "proceedings-article",
+      "DOI": "10.1109/sfcs.1977.32"
+    }
+  },
+  {
+    "key": "pong2022offline",
+    "line": 283,
+    "expected": {
+      "title": "{Offline Meta-Reinforcement Learning with Online Self-Supervision}",
+      "author": "Vitchyr H Pong and Ashvin V Nair and Laura M Smith and Catherine Huang and Sergey Levine",
+      "year": "2022",
+      "url": "https://proceedings.mlr.press/v162/pong22a.html",
+      "booktitle": "Proceedings of the International Conference on Machine Learning",
+      "volume": "162",
+      "pages": "17811--17829"
+    },
+    "requested_url": "https://proceedings.mlr.press/v162/pong22a.html",
+    "status": 200,
+    "final_url": "https://proceedings.mlr.press/v162/pong22a.html",
+    "sha256": "d7ebd5b5bd4e01fee4d51a13df8d5d6c78abca937741fd3beba097beecf5856e",
+    "metadata": [
+      "<meta name=\"citation_publisher\" content=\"PMLR\"/>",
+      "<meta name=\"citation_title\" content=\"Offline Meta-Reinforcement Learning with Online Self-Supervision\"/>",
+      "<meta name=\"citation_language\" content=\"en\"/>",
+      "<meta name=\"citation_abstract_html_url\" content=\"https://proceedings.mlr.press/v162/pong22a.html\"/>",
+      "<meta name=\"citation_pdf_url\" content=\"https://proceedings.mlr.press/v162/pong22a/pong22a.pdf\">",
+      "<meta name=\"citation_firstpage\" content=\"17811\">",
+      "<meta name=\"citation_lastpage\" content=\"17829\">",
+      "<meta name=\"citation_author\" content=\"Vitchyr H Pong\">",
+      "<meta name=\"citation_author\" content=\"Ashvin V Nair\">",
+      "<meta name=\"citation_author\" content=\"Laura M Smith\">",
+      "<meta name=\"citation_author\" content=\"Catherine Huang\">",
+      "<meta name=\"citation_author\" content=\"Sergey Levine\">",
+      "<meta name=\"citation_publication_date\" content=\"2022/06/28\">",
+      "<meta name=\"citation_inbook_title\" content=\"International Conference on Machine Learning\"/>",
+      "<meta name=\"citation_conference_title\" content=\"International Conference on Machine Learning\"/>",
+      "<meta name=\"citation_issn\" content=\"2640-3498\">",
+      "<meta property=\"og:title\" content=\"Offline Meta-Reinforcement Learning with Online Self-Supervision\"/>"
+    ],
+    "page_title": "Offline Meta-Reinforcement Learning with Online Self-Supervision"
+  },
+  {
+    "key": "Qiu2023",
+    "line": 294,
+    "expected": {
+      "title": "{Instructing Goal-Conditioned Reinforcement Learning Agents with Temporal Logic Objectives}",
+      "author": "Qiu, Wenjie and Mao, Wensen and Zhu, He",
+      "url": "https://papers.nips.cc/paper_files/paper/2023/hash/7b35a69f434b5eb07ed1b1ef16ace52c-Abstract-Conference.html",
+      "year": "2023",
+      "booktitle": "Advances in Neural Information Processing Systems",
+      "volume": "36",
+      "doi": "10.52202/075280-1701",
+      "pages": "39147--39175"
+    },
+    "requested_url": "https://api.crossref.org/works/10.52202/075280-1701",
+    "status": 200,
+    "final_url": "https://api.crossref.org/works/10.52202/075280-1701",
+    "sha256": "f6a577c1d229553dd0e624f6f9fe9b769461522b8c8d2c8678fb234d834e4193",
+    "metadata": {
+      "title": [
+        "Instructing Goal-Conditioned Reinforcement Learning Agents with Temporal Logic Objectives"
+      ],
+      "author": [
+        {
+          "given": "Wenjie",
+          "family": "Qiu",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Wensen",
+          "family": "Mao",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "He",
+          "family": "Zhu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2023
+          ]
+        ]
+      },
+      "published-online": null,
+      "container-title": [
+        "Advances in Neural Information Processing Systems 36"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "39147-39175",
+      "type": "proceedings-article",
+      "DOI": "10.52202/075280-1701"
+    }
+  },
+  {
+    "key": "Rabinizer2018",
+    "line": 306,
+    "expected": {
+      "title": "{Rabinizer 4: From LTL to Your Favourite Deterministic Automaton}",
+      "author": "K{\\v{r}}et{\\'{i}}nsk{\\'{y}}, Jan and Meggendorfer, Tobias and Sickert, Salomon and Ziegler, Christopher",
+      "year": "2018",
+      "doi": "10.1007/978-3-319-96145-3_30",
+      "url": "https://doi.org/10.1007/978-3-319-96145-3_30",
+      "booktitle": "Computer Aided Verification",
+      "pages": "567--577"
+    },
+    "requested_url": "https://api.crossref.org/works/10.1007/978-3-319-96145-3_30",
+    "status": 200,
+    "final_url": "https://api.crossref.org/works/10.1007/978-3-319-96145-3_30",
+    "sha256": "2206df81888563bc6f9a5d2860523e86def38ef420fb3630aa9a1b54d8e25ba5",
+    "metadata": {
+      "title": [
+        "Rabinizer 4: From LTL to Your Favourite Deterministic Automaton"
+      ],
+      "author": [
+        {
+          "given": "Jan",
+          "family": "Křetínský",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-1712-2165",
+          "authenticated-orcid": false,
+          "given": "Tobias",
+          "family": "Meggendorfer",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-0280-8981",
+          "authenticated-orcid": false,
+          "given": "Salomon",
+          "family": "Sickert",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Christopher",
+          "family": "Ziegler",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2018
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2018
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2018,
+            7,
+            18
+          ]
+        ]
+      },
+      "container-title": [
+        "Lecture Notes in Computer Science",
+        "Computer Aided Verification"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "567-577",
+      "type": "book-chapter",
+      "DOI": "10.1007/978-3-319-96145-3_30"
+    }
+  },
+  {
+    "key": "rampavsek2022recipe",
+    "line": 317,
+    "expected": {
+      "title": "{Recipe for a General, Powerful, Scalable Graph Transformer}",
+      "author": "Ramp{\\'{a}}{\\v{s}}ek, Ladislav and Galkin, Michael and Dwivedi, Vijay Prakash and Luu, Anh Tuan and Wolf, Guy and Beaini, Dominique",
+      "year": "2022",
+      "url": "https://papers.nips.cc/paper_files/paper/2022/hash/5d4834a159f1547b267a05a4e2b7cf5e-Abstract-Conference.html",
+      "booktitle": "Advances in Neural Information Processing Systems",
+      "volume": "35",
+      "pages": "14501--14515",
+      "doi": "10.52202/068431-1054"
+    },
+    "requested_url": "https://api.crossref.org/works/10.52202/068431-1054",
+    "status": 200,
+    "final_url": "https://api.crossref.org/works/10.52202/068431-1054",
+    "sha256": "3b2bcc7289a76f40e6281e112b25dae7f0ae200c4b8afc49ad037e540274d166",
+    "metadata": {
+      "title": [
+        "Recipe for a General, Powerful, Scalable Graph Transformer"
+      ],
+      "author": [
+        {
+          "given": "Ladislav",
+          "family": "Rampášek",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Michael",
+          "family": "Galkin",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Vijay Prakash",
+          "family": "Dwivedi",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Anh Tuan",
+          "family": "Luu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Guy",
+          "family": "Wolf",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Dominique",
+          "family": "Beaini",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2022
+          ]
+        ]
+      },
+      "published-online": null,
+      "container-title": [
+        "Advances in Neural Information Processing Systems 35"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "14501-14515",
+      "type": "proceedings-article",
+      "DOI": "10.52202/068431-1054"
+    }
+  },
+  {
+    "key": "sato2020survey",
+    "line": 329,
+    "expected": {
+      "title": "{A Survey on The Expressive Power of Graph Neural Networks}",
+      "author": "Sato, Ryoma",
+      "year": "2020",
+      "eprint": "2003.04078",
+      "archivePrefix": "arXiv",
+      "url": "https://arxiv.org/abs/2003.04078"
+    },
+    "requested_url": "https://arxiv.org/abs/2003.04078",
+    "status": 200,
+    "final_url": "https://arxiv.org/abs/2003.04078",
+    "sha256": "f50f28d69f6b51f792c84563a5e0098b6cd61bc84a04815a7c37741770bd5f9d",
+    "metadata": [
+      "<meta property=\"og:title\" content=\"A Survey on The Expressive Power of Graph Neural Networks\" />",
+      "<meta name=\"citation_title\" content=\"A Survey on The Expressive Power of Graph Neural Networks\" />",
+      "<meta name=\"citation_author\" content=\"Sato, Ryoma\" />",
+      "<meta name=\"citation_date\" content=\"2020/03/09\" />",
+      "<meta name=\"citation_online_date\" content=\"2020/10/16\" />",
+      "<meta name=\"citation_pdf_url\" content=\"https://arxiv.org/pdf/2003.04078\" />",
+      "<meta name=\"citation_arxiv_id\" content=\"2003.04078\" />",
+      "<meta name=\"citation_abstract\" content=\"Graph neural networks (GNNs) are effective machine learning models for various graph learning problems. Despite their empirical successes, the theoretical limitations of GNNs have been revealed recently. Consequently, many GNN models have been proposed to overcome these limitations. In this survey, we provide a comprehensive overview of the expressive power of GNNs and provably powerful variants of GNNs.\" />"
+    ],
+    "page_title": "[2003.04078] A Survey on The Expressive Power of Graph Neural Networks"
+  },
+  {
+    "key": "Schulman2017",
+    "line": 339,
+    "expected": {
+      "title": "{Proximal Policy Optimization Algorithms}",
+      "author": "Schulman, John and Wolski, Filip and Dhariwal, Prafulla and Radford, Alec and Klimov, Oleg",
+      "url": "https://arxiv.org/abs/1707.06347",
+      "year": "2017",
+      "eprint": "1707.06347",
+      "archivePrefix": "arXiv"
+    },
+    "requested_url": "https://arxiv.org/abs/1707.06347",
+    "status": 200,
+    "final_url": "https://arxiv.org/abs/1707.06347",
+    "sha256": "fe5bc67504d63fbb57418f789f1993711f935212fb4f0015abff0bd14635bc49",
+    "metadata": [
+      "<meta property=\"og:title\" content=\"Proximal Policy Optimization Algorithms\" />",
+      "<meta name=\"citation_title\" content=\"Proximal Policy Optimization Algorithms\" />",
+      "<meta name=\"citation_author\" content=\"Schulman, John\" />",
+      "<meta name=\"citation_author\" content=\"Wolski, Filip\" />",
+      "<meta name=\"citation_author\" content=\"Dhariwal, Prafulla\" />",
+      "<meta name=\"citation_author\" content=\"Radford, Alec\" />",
+      "<meta name=\"citation_author\" content=\"Klimov, Oleg\" />",
+      "<meta name=\"citation_date\" content=\"2017/07/20\" />",
+      "<meta name=\"citation_online_date\" content=\"2017/08/28\" />",
+      "<meta name=\"citation_pdf_url\" content=\"https://arxiv.org/pdf/1707.06347\" />",
+      "<meta name=\"citation_arxiv_id\" content=\"1707.06347\" />",
+      "<meta name=\"citation_abstract\" content=\"We propose a new family of policy gradient methods for reinforcement learning, which alternate between sampling data through interaction with the environment, and optimizing a &#34;surrogate&#34; objective function using stochastic gradient ascent. Whereas standard policy gradient methods perform one gradient update per data sample, we propose a novel objective function that enables multiple epochs of minibatch updates. The new methods, which we call proximal policy optimization (PPO), have some of the benefits of trust region policy optimization (TRPO), but they are much simpler to implement, more general, and have better sample complexity (empirically). Our experiments test PPO on a collection of benchmark tasks, including simulated robotic locomotion and Atari game playing, and we show that PPO outperforms other online policy gradient methods, and overall strikes a favorable balance between sample complexity, simplicity, and wall-time.\" />"
+    ],
+    "page_title": "[1707.06347] Proximal Policy Optimization Algorithms"
+  },
+  {
+    "key": "Sickert2016",
+    "line": 349,
+    "expected": {
+      "title": "{Limit-Deterministic B{\\\"{u}}chi Automata for Linear Temporal Logic}",
+      "author": "Sickert, Salomon and Esparza, Javier and Jaax, Stefan and K{\\v{r}}et{\\'{i}}nsk{\\'{y}}, Jan",
+      "year": "2016",
+      "doi": "10.1007/978-3-319-41540-6_17",
+      "url": "https://doi.org/10.1007/978-3-319-41540-6_17",
+      "booktitle": "Computer Aided Verification",
+      "pages": "312--332"
+    },
+    "requested_url": "https://api.crossref.org/works/10.1007/978-3-319-41540-6_17",
+    "status": 200,
+    "final_url": "https://api.crossref.org/works/10.1007/978-3-319-41540-6_17",
+    "sha256": "fd33ef4b5c0ecf471606ca7013e511e12e03a298a2c992c5d6845b76cb87838e",
+    "metadata": {
+      "title": [
+        "Limit-Deterministic Büchi Automata for Linear Temporal Logic"
+      ],
+      "author": [
+        {
+          "given": "Salomon",
+          "family": "Sickert",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Javier",
+          "family": "Esparza",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Stefan",
+          "family": "Jaax",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jan",
+          "family": "Křetínský",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2016
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2016,
+            7,
+            13
+          ]
+        ]
+      },
+      "container-title": [
+        "Lecture Notes in Computer Science",
+        "Computer Aided Verification"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "312-332",
+      "type": "book-chapter",
+      "DOI": "10.1007/978-3-319-41540-6_17"
+    }
+  },
+  {
+    "key": "Sutton2018",
+    "line": 360,
+    "expected": {
+      "title": "{Between MDPs and semi-MDPs: A framework for temporal abstraction in reinforcement learning}",
+      "author": "Sutton, Richard S. and Precup, Doina and Singh, Satinder",
+      "year": "1999",
+      "doi": "10.1016/s0004-3702(99)00052-1",
+      "url": "https://doi.org/10.1016/s0004-3702(99)00052-1",
+      "journal": "Artificial Intelligence",
+      "volume": "112",
+      "number": "1-2",
+      "pages": "181--211"
+    },
+    "requested_url": "https://api.crossref.org/works/10.1016/s0004-3702(99)00052-1",
+    "status": 200,
+    "final_url": "https://api.crossref.org/works/10.1016/s0004-3702(99)00052-1",
+    "sha256": "a17deb88fe9d8d27f58471bf0ad681c9016e0d4c0b61d48259f4d1e17021aa0a",
+    "metadata": {
+      "title": [
+        "Between MDPs and semi-MDPs: A framework for temporal abstraction in reinforcement learning"
+      ],
+      "author": [
+        {
+          "given": "Richard S.",
+          "family": "Sutton",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Doina",
+          "family": "Precup",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Satinder",
+          "family": "Singh",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "published": {
+        "date-parts": [
+          [
+            1999,
+            8
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            1999,
+            8
+          ]
+        ]
+      },
+      "published-online": null,
+      "container-title": [
+        "Artificial Intelligence"
+      ],
+      "volume": "112",
+      "issue": "1-2",
+      "page": "181-211",
+      "type": "journal-article",
+      "DOI": "10.1016/s0004-3702(99)00052-1"
+    }
+  },
+  {
+    "key": "Toro2020",
+    "line": 373,
+    "expected": {
+      "title": "{Teaching Multiple Tasks to an RL Agent using LTL}",
+      "author": "Toro Icarte, Rodrigo and Klassen, Toryn Q. and Valenzano, Richard and McIlraith, Sheila A.",
+      "year": "2018",
+      "booktitle": "Proceedings of the 17th International Conference on Autonomous Agents and MultiAgent Systems",
+      "pages": "452--461",
+      "url": "https://www.ifaamas.org/Proceedings/aamas2018/pdfs/p452.pdf"
+    },
+    "requested_url": "https://www.ifaamas.org/Proceedings/aamas2018/pdfs/p452.pdf",
+    "status": 200,
+    "final_url": "https://www.ifaamas.org/Proceedings/aamas2018/pdfs/p452.pdf",
+    "sha256": "2d71c669ebc3fc5b84f64787560d0f4b8350e58dcd4c601de13b06f5a192ccfd",
+    "metadata": [],
+    "page_title": null
+  },
+  {
+    "key": "Vaezipoor2021",
+    "line": 383,
+    "expected": {
+      "title": "{LTL2Action: Generalizing LTL Instructions for Multi-Task RL}",
+      "author": "Vaezipoor, Pashootan and Li, Andrew C. and Toro Icarte, Rodrigo A. and McIlraith, Sheila A.",
+      "url": "https://proceedings.mlr.press/v139/vaezipoor21a.html",
+      "year": "2021",
+      "booktitle": "International Conference on Machine Learning",
+      "pages": "10497--10508",
+      "volume": "139",
+      "publisher": "PMLR",
+      "series": "Proceedings of Machine Learning Research"
+    },
+    "requested_url": "https://proceedings.mlr.press/v139/vaezipoor21a.html",
+    "status": 200,
+    "final_url": "https://proceedings.mlr.press/v139/vaezipoor21a.html",
+    "sha256": "a60c5836c2d6d80280675ce214052c6fff8ad2e4cbc89d1971bd4a5cdb7e6c8d",
+    "metadata": [
+      "<meta name=\"citation_publisher\" content=\"PMLR\"/>",
+      "<meta name=\"citation_title\" content=\"LTL2Action: Generalizing LTL Instructions for Multi-Task RL\"/>",
+      "<meta name=\"citation_language\" content=\"en\"/>",
+      "<meta name=\"citation_abstract_html_url\" content=\"https://proceedings.mlr.press/v139/vaezipoor21a.html\"/>",
+      "<meta name=\"citation_pdf_url\" content=\"http://proceedings.mlr.press/v139/vaezipoor21a/vaezipoor21a.pdf\">",
+      "<meta name=\"citation_firstpage\" content=\"10497\">",
+      "<meta name=\"citation_lastpage\" content=\"10508\">",
+      "<meta name=\"citation_author\" content=\"Pashootan Vaezipoor\">",
+      "<meta name=\"citation_author\" content=\"Andrew C Li\">",
+      "<meta name=\"citation_author\" content=\"Rodrigo A Toro Icarte\">",
+      "<meta name=\"citation_author\" content=\"Sheila A. Mcilraith\">",
+      "<meta name=\"citation_publication_date\" content=\"2021/07/01\">",
+      "<meta name=\"citation_inbook_title\" content=\"International Conference on Machine Learning\"/>",
+      "<meta name=\"citation_conference_title\" content=\"International Conference on Machine Learning\"/>",
+      "<meta name=\"citation_issn\" content=\"2640-3498\">",
+      "<meta property=\"og:title\" content=\"LTL2Action: Generalizing LTL Instructions for Multi-Task RL\"/>"
+    ],
+    "page_title": "LTL2Action: Generalizing LTL Instructions for Multi-Task RL"
+  },
+  {
+    "key": "Vezhnevets2017",
+    "line": 396,
+    "expected": {
+      "title": "{FeUdal Networks for Hierarchical Reinforcement Learning}",
+      "author": "Alexander Sasha Vezhnevets and Simon Osindero and Tom Schaul and Nicolas Heess and Max Jaderberg and David Silver and Koray Kavukcuoglu",
+      "year": "2017",
+      "url": "https://proceedings.mlr.press/v70/vezhnevets17a.html",
+      "booktitle": "Proceedings of the International Conference on Machine Learning",
+      "volume": "70",
+      "pages": "3540--3549"
+    },
+    "requested_url": "https://proceedings.mlr.press/v70/vezhnevets17a.html",
+    "status": 200,
+    "final_url": "https://proceedings.mlr.press/v70/vezhnevets17a.html",
+    "sha256": "22ce67d8ee9577d4801a0600963c13c8eb3cc00ff67915f30b2ef938b4392e04",
+    "metadata": [
+      "<meta name=\"citation_publisher\" content=\"PMLR\"/>",
+      "<meta name=\"citation_title\" content=\"FeUdal Networks for Hierarchical Reinforcement Learning\"/>",
+      "<meta name=\"citation_language\" content=\"en\"/>",
+      "<meta name=\"citation_abstract_html_url\" content=\"https://proceedings.mlr.press/v70/vezhnevets17a.html\"/>",
+      "<meta name=\"citation_pdf_url\" content=\"http://proceedings.mlr.press/v70/vezhnevets17a/vezhnevets17a.pdf\">",
+      "<meta name=\"citation_firstpage\" content=\"3540\">",
+      "<meta name=\"citation_lastpage\" content=\"3549\">",
+      "<meta name=\"citation_author\" content=\"Alexander Sasha Vezhnevets\">",
+      "<meta name=\"citation_author\" content=\"Simon Osindero\">",
+      "<meta name=\"citation_author\" content=\"Tom Schaul\">",
+      "<meta name=\"citation_author\" content=\"Nicolas Heess\">",
+      "<meta name=\"citation_author\" content=\"Max Jaderberg\">",
+      "<meta name=\"citation_author\" content=\"David Silver\">",
+      "<meta name=\"citation_author\" content=\"Koray Kavukcuoglu\">",
+      "<meta name=\"citation_publication_date\" content=\"2017/07/17\">",
+      "<meta name=\"citation_inbook_title\" content=\"International Conference on Machine Learning\"/>",
+      "<meta name=\"citation_conference_title\" content=\"International Conference on Machine Learning\"/>",
+      "<meta name=\"citation_issn\" content=\"2640-3498\">",
+      "<meta property=\"og:title\" content=\"FeUdal Networks for Hierarchical Reinforcement Learning\"/>"
+    ],
+    "page_title": "FeUdal Networks for Hierarchical Reinforcement Learning"
+  },
+  {
+    "key": "wang2023graph",
+    "line": 407,
+    "expected": {
+      "title": "{Graph Mixture of Experts: Learning on Large-Scale Graphs with Explicit Diversity Modeling}",
+      "author": "Wang, Haotao and Jiang, Ziyu and You, Yuning and Han, Yan and Liu, Gaowen and Srinivasa, Jayanth and Kompella, Ramana and Wang, Zhangyang \"Atlas\"",
+      "year": "2023",
+      "url": "https://papers.nips.cc/paper_files/paper/2023/hash/9f4064d145bad5e361206c3303bda7b8-Abstract-Conference.html",
+      "booktitle": "Advances in Neural Information Processing Systems",
+      "volume": "36",
+      "pages": "50825--50837",
+      "doi": "10.52202/075280-2211"
+    },
+    "requested_url": "https://api.crossref.org/works/10.52202/075280-2211",
+    "status": 200,
+    "final_url": "https://api.crossref.org/works/10.52202/075280-2211",
+    "sha256": "eb5082d343be5f6128f302ebe74d666aa72f6c609002eaccee90813ef6ce9fa6",
+    "metadata": {
+      "title": [
+        "Graph Mixture of Experts: Learning on Large-Scale Graphs with Explicit Diversity Modeling"
+      ],
+      "author": [
+        {
+          "given": "Haotao",
+          "family": "Wang",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Ziyu",
+          "family": "Jiang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Yuning",
+          "family": "You",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Yan",
+          "family": "Han",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Gaowen",
+          "family": "Liu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jayanth",
+          "family": "Srinivasa",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Ramana",
+          "family": "Kompella",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Zhangyang \"atlas\"",
+          "family": "Wang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2023
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2023
+          ]
+        ]
+      },
+      "published-online": null,
+      "container-title": [
+        "Advances in Neural Information Processing Systems 36"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "50825-50837",
+      "type": "proceedings-article",
+      "DOI": "10.52202/075280-2211"
+    }
+  },
+  {
+    "key": "Yalcinkaya2024",
+    "line": 419,
+    "expected": {
+      "title": "{Compositional Automata Embeddings for Goal-Conditioned Reinforcement Learning}",
+      "author": "Yalcinkaya, Beyazit and Lauffer, Niklas and Vazquez-Chanlatte, Marcell and Seshia, Sanjit",
+      "url": "https://papers.nips.cc/paper_files/paper/2024/hash/858fc542b70d3b39067f7d3b1cd77635-Abstract-Conference.html",
+      "year": "2024",
+      "booktitle": "Advances in Neural Information Processing Systems",
+      "volume": "37",
+      "doi": "10.52202/079017-2322",
+      "pages": "72933--72963"
+    },
+    "requested_url": "https://api.crossref.org/works/10.52202/079017-2322",
+    "status": 200,
+    "final_url": "https://api.crossref.org/works/10.52202/079017-2322",
+    "sha256": "3f3366db641b2479e5aab477a8a093500f32f6a8253ca8ed8f7e1325403cbc3a",
+    "metadata": {
+      "title": [
+        "Compositional Automata Embeddings for Goal-Conditioned Reinforcement Learning"
+      ],
+      "author": [
+        {
+          "given": "Beyazit",
+          "family": "Yalcinkaya",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Niklas",
+          "family": "Lauffer",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Marcell",
+          "family": "Vazquez-Chanlatte",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Sanjit",
+          "family": "Seshia",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2024
+          ]
+        ]
+      },
+      "published-online": null,
+      "container-title": [
+        "Advances in Neural Information Processing Systems 37"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "72933-72963",
+      "type": "proceedings-article",
+      "DOI": "10.52202/079017-2322"
+    }
+  },
+  {
+    "key": "ying2021transformers",
+    "line": 431,
+    "expected": {
+      "title": "{Do Transformers Really Perform Badly for Graph Representation?}",
+      "author": "Ying, Chengxuan and Cai, Tianle and Luo, Shengjie and Zheng, Shuxin and Ke, Guolin and He, Di and Shen, Yanming and Liu, Tie-Yan",
+      "year": "2021",
+      "url": "https://papers.nips.cc/paper_files/paper/2021/hash/f1c1592588411002af340cbaedd6fc33-Abstract.html",
+      "booktitle": "Advances in Neural Information Processing Systems",
+      "volume": "34",
+      "pages": "28877--28888"
+    },
+    "requested_url": "https://papers.nips.cc/paper_files/paper/2021/hash/f1c1592588411002af340cbaedd6fc33-Abstract.html",
+    "status": 200,
+    "final_url": "https://papers.nips.cc/paper_files/paper/2021/hash/f1c1592588411002af340cbaedd6fc33-Abstract.html",
+    "sha256": "a370daff42c82178f973811f4cc047ead8590a1cb2157f79fde11f865bcbc538",
+    "metadata": [
+      "<meta name=\"citation_title\" content=\"Do Transformers Really Perform Badly for Graph Representation?\">",
+      "<meta name=\"citation_author\" content=\"Ying, Chengxuan\">",
+      "<meta name=\"citation_author\" content=\"Cai, Tianle\">",
+      "<meta name=\"citation_author\" content=\"Luo, Shengjie\">",
+      "<meta name=\"citation_author\" content=\"Zheng, Shuxin\">",
+      "<meta name=\"citation_author\" content=\"Ke, Guolin\">",
+      "<meta name=\"citation_author\" content=\"He, Di\">",
+      "<meta name=\"citation_author\" content=\"Shen, Yanming\">",
+      "<meta name=\"citation_author\" content=\"Liu, Tie-Yan\">",
+      "<meta name=\"citation_journal_title\" content=\"Advances in Neural Information Processing Systems\">",
+      "<meta name=\"citation_volume\" content=\"34\">",
+      "<meta name=\"citation_firstpage\" content=\"28877\">",
+      "<meta name=\"citation_lastpage\" content=\"28888\">",
+      "<meta name=\"citation_pdf_url\" content=\"https://proceedings.neurips.cc/paper_files/paper/2021/file/f1c1592588411002af340cbaedd6fc33-Paper.pdf\">",
+      "<meta name=\"citation_publication_date\" content=\"2021-12-06\">"
+    ],
+    "page_title": "Do Transformers Really Perform Badly for Graph Representation?"
+  }
+]

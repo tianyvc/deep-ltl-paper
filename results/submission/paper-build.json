@@ -1,0 +1,51 @@
+{
+  "environment": "wty_LTL",
+  "runs": [
+    {
+      "command": [
+        "pdflatex",
+        "-interaction=nonstopmode",
+        "-halt-on-error",
+        "manuscript.tex"
+      ],
+      "returncode": 0
+    },
+    {
+      "command": [
+        "bibtex",
+        "manuscript"
+      ],
+      "returncode": 0
+    },
+    {
+      "command": [
+        "pdflatex",
+        "-interaction=nonstopmode",
+        "-halt-on-error",
+        "manuscript.tex"
+      ],
+      "returncode": 0
+    },
+    {
+      "command": [
+        "pdflatex",
+        "-interaction=nonstopmode",
+        "-halt-on-error",
+        "manuscript.tex"
+      ],
+      "returncode": 0
+    }
+  ],
+  "pages": 13,
+  "source_sha256": "0820cc85ae27b176a101b0c9f03b4fd9b41d747993ad59d1034043d497694e26",
+  "missing_citations": [],
+  "unused_bib": [],
+  "citation_count": 40,
+  "undefined_refs": [],
+  "duplicate_labels": [],
+  "overfull": [],
+  "warnings": [
+    "LaTeX Warning: `h' float specifier changed to `ht'.",
+    "LaTeX Warning: `h' float specifier changed to `ht'."
+  ]
+}

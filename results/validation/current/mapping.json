@@ -1,0 +1,134 @@
+{
+  "passed": [
+    "three_environments_and_fifteen_task_automata",
+    "semantic_node4_edge6_and_guards",
+    "finite_graph_features",
+    "six_core_configuration_scope",
+    "three_gatv2_layers",
+    "single_vs_multiscale_widths",
+    "fixed_gate_boundary_values"
+  ],
+  "tasks": [
+    {
+      "env": "PointLtl2-v0",
+      "task": "phi1",
+      "formula": "F blue & F green",
+      "group": "finite",
+      "actual_states": 4,
+      "actual_edges": 8
+    },
+    {
+      "env": "PointLtl2-v0",
+      "task": "phi2",
+      "formula": "F blue & F green & F yellow",
+      "group": "finite",
+      "actual_states": 8,
+      "actual_edges": 20
+    },
+    {
+      "env": "PointLtl2-v0",
+      "task": "phi3",
+      "formula": "(!blue U green) & F yellow",
+      "group": "finite",
+      "actual_states": 5,
+      "actual_edges": 11
+    },
+    {
+      "env": "PointLtl2-v0",
+      "task": "recurrent-single",
+      "formula": "G F green",
+      "group": "recurrent",
+      "actual_states": 1,
+      "actual_edges": 2
+    },
+    {
+      "env": "PointLtl2-v0",
+      "task": "recurrent-multiple",
+      "formula": "G F blue & G F yellow",
+      "group": "recurrent",
+      "actual_states": 2,
+      "actual_edges": 4
+    },
+    {
+      "env": "FlatWorld-v0",
+      "task": "phi1",
+      "formula": "F blue & F green",
+      "group": "finite",
+      "actual_states": 4,
+      "actual_edges": 9
+    },
+    {
+      "env": "FlatWorld-v0",
+      "task": "phi2",
+      "formula": "F blue & F green & F yellow",
+      "group": "finite",
+      "actual_states": 8,
+      "actual_edges": 22
+    },
+    {
+      "env": "FlatWorld-v0",
+      "task": "phi3",
+      "formula": "(!blue U green) & F yellow",
+      "group": "finite",
+      "actual_states": 5,
+      "actual_edges": 11
+    },
+    {
+      "env": "FlatWorld-v0",
+      "task": "recurrent-single",
+      "formula": "G F green",
+      "group": "recurrent",
+      "actual_states": 1,
+      "actual_edges": 2
+    },
+    {
+      "env": "FlatWorld-v0",
+      "task": "recurrent-multiple",
+      "formula": "G F blue & G F yellow",
+      "group": "recurrent",
+      "actual_states": 2,
+      "actual_edges": 4
+    },
+    {
+      "env": "LetterEnv-v0",
+      "task": "phi1",
+      "formula": "F a & F b",
+      "group": "finite",
+      "actual_states": 4,
+      "actual_edges": 8
+    },
+    {
+      "env": "LetterEnv-v0",
+      "task": "phi2",
+      "formula": "F a & F b & F c",
+      "group": "finite",
+      "actual_states": 8,
+      "actual_edges": 20
+    },
+    {
+      "env": "LetterEnv-v0",
+      "task": "phi3",
+      "formula": "(!a U b) & F c",
+      "group": "finite",
+      "actual_states": 5,
+      "actual_edges": 11
+    },
+    {
+      "env": "LetterEnv-v0",
+      "task": "recurrent-single",
+      "formula": "G F b",
+      "group": "recurrent",
+      "actual_states": 1,
+      "actual_edges": 2
+    },
+    {
+      "env": "LetterEnv-v0",
+      "task": "recurrent-multiple",
+      "formula": "G F a & G F c",
+      "group": "recurrent",
+      "actual_states": 2,
+      "actual_edges": 4
+    }
+  ],
+  "note": "Actual converter states are recorded, not forced to manuscript example counts. Recurrent visits are finite-horizon proxies."
+}

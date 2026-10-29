@@ -1,0 +1,20 @@
+{
+  "commit": "3157200b5910cd7f5c493ffba8913994f2207eaf",
+  "checks": [
+    {
+      "env": "PointLtl2-v0",
+      "configuration_equal_excluding_unused_gnn": true,
+      "state_keys_and_seeded_tensors_equal": true,
+      "action_distribution_and_value_equal": true,
+      "parameters": 51446
+    },
+    {
+      "env": "FlatWorld-v0",
+      "configuration_equal_excluding_unused_gnn": true,
+      "state_keys_and_seeded_tensors_equal": true,
+      "action_distribution_and_value_equal": true,
+      "parameters": 27451
+    }
+  ],
+  "scope": "Upstream builder/config with current shared layers; not a complete byte-identical upstream dependency audit."
+}

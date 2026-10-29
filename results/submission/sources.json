@@ -1,0 +1,1807 @@
+{
+  "retrieved": "2026-10-29",
+  "sources": [
+    {
+      "key": "ieee-xplore",
+      "url": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=4267003",
+      "status": 200,
+      "final_url": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=4267003",
+      "sha256": "c8468446f482a0c8702ed19385918fac73198769051c7860baeb9dd48195b3b5",
+      "title": "IEEE Systems Journal | IEEE Xplore",
+      "links": [
+        {
+          "text": "Update Address",
+          "href": "https://www.ieee.org/profile/address/getAddrInfoPage.html?refSite=https://ieeexplore.ieee.org&refSiteName=IEEE Xplore"
+        }
+      ],
+      "text": "IEEE Systems Journal | IEEE Xplore\nIEEE Account\nChange Username/Password\nUpdate Address\nPurchase Details\nPayment Options\nOrder History\nView Purchased Documents\nProfile Information\nCommunications Preferences\nProfession and Education\nTechnical Interests\nNeed Help?\nUS & Canada:\n+1 800 678 4333\nWorldwide:\n+1 732 981 0060\nContact & Support\nAbout IEEE\nXplore\nContact Us\nHelp\nAccessibility\nTerms of Use\nNondiscrimination Policy\nSitemap\nPrivacy & Opting Out of Cookies\nA not-for-profit organization, IEEE is the world's largest technical professional organization dedicated to advancing technology for the benefit of humanity.\n© Copyright 2026 IEEE - All rights reserved. Use of this web site signifies your agreement to the terms and conditions."
+    },
+    {
+      "key": "ieee-author",
+      "url": "https://journals.ieeeauthorcenter.ieee.org/submit-your-article-for-peer-review/",
+      "status": 200,
+      "final_url": "https://journals.ieeeauthorcenter.ieee.org/submit-your-article-for-peer-review/",
+      "sha256": "26f2e1880aa9ae1a8b90b3e5ecfa6d2b689348fcf2027ac0032ffa990b3af613",
+      "title": "Submit Your Article for Peer Review - IEEE Author Center Journals",
+      "links": [
+        {
+          "text": "Submit to TechRxiv",
+          "href": "https://www.techrxiv.org/"
+        },
+        {
+          "text": "Join IEEE",
+          "href": "https://ieeeauthorcenter.ieee.org/ieee-membership-advantages/"
+        },
+        {
+          "text": "Resources & Tools for Authors",
+          "href": "https://ieeeauthorcenter.ieee.org/"
+        },
+        {
+          "text": "Home",
+          "href": "http://ieeeauthorcenter.ieee.org"
+        },
+        {
+          "text": "New Authors",
+          "href": "https://newauthors.ieeeauthorcenter.ieee.org/"
+        },
+        {
+          "text": "Journal Authors",
+          "href": "https://journals.ieeeauthorcenter.ieee.org"
+        },
+        {
+          "text": "Conference Authors",
+          "href": "http://conferences.ieeeauthorcenter.ieee.org"
+        },
+        {
+          "text": "Book Authors",
+          "href": "http://books.ieeeauthorcenter.ieee.org"
+        },
+        {
+          "text": "Magazine Authors",
+          "href": "http://magazines.ieeeauthorcenter.ieee.org"
+        },
+        {
+          "text": "Become an IEEE Journal Author",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/become-an-ieee-journal-author/"
+        },
+        {
+          "text": "Benefits of Publishing with IEEE",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/become-an-ieee-journal-author/benefits-of-publishing-with-ieee/"
+        },
+        {
+          "text": "Publishing Ethics",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/become-an-ieee-journal-author/publishing-ethics/"
+        },
+        {
+          "text": "Ethical Requirements",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/become-an-ieee-journal-author/publishing-ethics/ethical-requirements/"
+        },
+        {
+          "text": "Author Responsibilities",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/become-an-ieee-journal-author/publishing-ethics/author-responsibilities/"
+        },
+        {
+          "text": "Guidelines and Policies",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/become-an-ieee-journal-author/publishing-ethics/guidelines-and-policies/"
+        },
+        {
+          "text": "Fundamental Publishing Guidelines and Principles",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/become-an-ieee-journal-author/publishing-ethics/guidelines-and-policies/fundamental-publishing-guidelines-and-principles/"
+        },
+        {
+          "text": "Submission and Peer Review Policies",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/become-an-ieee-journal-author/publishing-ethics/guidelines-and-policies/submission-and-peer-review-policies/"
+        },
+        {
+          "text": "Post-Publication Policies",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/become-an-ieee-journal-author/publishing-ethics/guidelines-and-policies/post-publication-policies/"
+        },
+        {
+          "text": "IEEE Author Name Change Policy",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/become-an-ieee-journal-author/publishing-ethics/guidelines-and-policies/ieee-author-name-change-policy/"
+        },
+        {
+          "text": "IEEE Guidelines on Advertising, Accessibility, and Data Privacy",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/become-an-ieee-journal-author/publishing-ethics/guidelines-and-policies/ieee-guidelines-on-advertising-accessibility-data-privacy/"
+        },
+        {
+          "text": "Video Tutorials",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/become-an-ieee-journal-author/video-tutorials/"
+        },
+        {
+          "text": "Create Your IEEE Journal Article",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/create-your-ieee-journal-article/"
+        },
+        {
+          "text": "Authoring Tools and Templates",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/create-your-ieee-journal-article/authoring-tools-and-templates/"
+        },
+        {
+          "text": "Checklist for Creating Your Article",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/create-your-ieee-journal-article/authoring-tools-and-templates/checklist-for-creating-your-article/"
+        },
+        {
+          "text": "Tools for IEEE Authors",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/create-your-ieee-journal-article/authoring-tools-and-templates/tools-for-ieee-authors/"
+        },
+        {
+          "text": "Find a Journal",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/create-your-ieee-journal-article/authoring-tools-and-templates/tools-for-ieee-authors/find-a-journal/"
+        },
+        {
+          "text": "IEEE Article Templates",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/create-your-ieee-journal-article/authoring-tools-and-templates/tools-for-ieee-authors/ieee-article-templates/"
+        },
+        {
+          "text": "Create the Text of Your Article",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/create-your-ieee-journal-article/create-the-text-of-your-article/"
+        },
+        {
+          "text": "Structure Your Article",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/create-your-ieee-journal-article/create-the-text-of-your-article/structure-your-article/"
+        },
+        {
+          "text": "IEEE Editorial Style Manual",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/create-your-ieee-journal-article/create-the-text-of-your-article/ieee-editorial-style-manual/"
+        },
+        {
+          "text": "Create Graphics for Your Article",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/create-your-ieee-journal-article/create-graphics-for-your-article/"
+        },
+        {
+          "text": "Resolution and Size",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/create-your-ieee-journal-article/create-graphics-for-your-article/resolution-and-size/"
+        },
+        {
+          "text": "File Formatting",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/create-your-ieee-journal-article/create-graphics-for-your-article/file-formatting/"
+        },
+        {
+          "text": "Prepare Supplementary Materials",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/create-your-ieee-journal-article/prepare-supplementary-materials/"
+        },
+        {
+          "text": "Research Reproducibility",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/create-your-ieee-journal-article/research-reproducibility/"
+        },
+        {
+          "text": "Submit Your Article for Peer Review",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/submit-your-article-for-peer-review/"
+        },
+        {
+          "text": "The IEEE Article Submission Process",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/submit-your-article-for-peer-review/the-ieee-article-submission-process/"
+        },
+        {
+          "text": "IEEE Publishing Portal",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/submit-your-article-for-peer-review/ieee-publishing-portal/"
+        },
+        {
+          "text": "About the Peer Review Process",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/submit-your-article-for-peer-review/about-the-peer-review-process/"
+        },
+        {
+          "text": "Understanding the Decision Process",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/submit-your-article-for-peer-review/understanding-the-decision-process/"
+        },
+        {
+          "text": "Checklist for Submitting Your Article for Peer Review",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/submit-your-article-for-peer-review/checklist-for-submitting-your-article-for-peer-review/"
+        },
+        {
+          "text": "Ethics in Peer Review",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/submit-your-article-for-peer-review/ethics-in-peer-review/"
+        },
+        {
+          "text": "Become an IEEE Reviewer",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/submit-your-article-for-peer-review/become-an-ieee-reviewer/"
+        },
+        {
+          "text": "Choose a Publishing Agreement",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/choose-a-publishing-agreement/"
+        },
+        {
+          "text": "About the IEEE Copyright Form",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/choose-a-publishing-agreement/about-the-ieee-copyright-form/"
+        },
+        {
+          "text": "Open Access Rights Management",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/choose-a-publishing-agreement/open-access-rights-management/"
+        },
+        {
+          "text": "Avoid Infringement upon IEEE Copyright",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/choose-a-publishing-agreement/avoid-infringement-upon-ieee-copyright/"
+        },
+        {
+          "text": "Checklist for Choosing Your Publishing Agreement",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/choose-a-publishing-agreement/checklist-for-choosing-your-publishing-agreement/"
+        },
+        {
+          "text": "Your Role in Article Production",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/your-role-in-article-production/"
+        },
+        {
+          "text": "Use the IEEE Author Gateway",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/your-role-in-article-production/use-the-ieee-author-gateway/"
+        },
+        {
+          "text": "How to Review Your Article Proof",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/your-role-in-article-production/how-to-review-your-article-proof/"
+        },
+        {
+          "text": "About Potential Article Processing Charges",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/your-role-in-article-production/about-potential-article-processing-charges/"
+        },
+        {
+          "text": "IEEE Editorial Style Manual",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/your-role-in-article-production/ieee-editorial-style-manual/"
+        },
+        {
+          "text": "Checklist for Article Production",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/your-role-in-article-production/checklist-for-article-production/"
+        },
+        {
+          "text": "When Your Article Is Published",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/when-your-article-is-published/"
+        },
+        {
+          "text": "About the IEEE Xplore® Digital Library",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/when-your-article-is-published/about-the-ieee-xplore-digital-library/"
+        },
+        {
+          "text": "IEEE Xplore® Author Profiles",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/when-your-article-is-published/ieee-xplore-author-profiles/"
+        },
+        {
+          "text": "Create Citation Alerts in the IEEE Xplore Digital Library",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/when-your-article-is-published/create-citation-alerts-in-the-ieee-xplore-digital-library/"
+        },
+        {
+          "text": "View Your Article Metrics in the IEEE Xplore Digital Library",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/when-your-article-is-published/view-your-article-metrics-in-the-ieee-xplore-digital-library/"
+        },
+        {
+          "text": "Promote Your Article",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/when-your-article-is-published/promote-your-article/"
+        },
+        {
+          "text": "Abstracting & Indexing (A&I) Databases",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/when-your-article-is-published/abstracting-indexing-ai-databases/"
+        },
+        {
+          "text": "Purchase Print Copies of Your Article",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/when-your-article-is-published/purchase-print-copies-of-your-article/"
+        },
+        {
+          "text": "Checklist for Post-Publication",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/when-your-article-is-published/checklist-for-post-publication/"
+        },
+        {
+          "text": "Home",
+          "href": "https://journals.ieeeauthorcenter.ieee.org"
+        },
+        {
+          "text": "article submission process",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/submit-your-article-for-peer-review/the-ieee-article-submission-process/"
+        },
+        {
+          "text": "peer review",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/submit-your-article-for-peer-review/about-the-peer-review-process/"
+        },
+        {
+          "text": "decision process",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/submit-your-article-for-peer-review/understanding-the-decision-process/"
+        },
+        {
+          "text": "Subscribe to our newsletter",
+          "href": "https://engage.ieee.org/Author-Center-Authors-Newsletter-Opt-in.html"
+        },
+        {
+          "text": "Home",
+          "href": "http://ieeeauthorcenter.ieee.org"
+        },
+        {
+          "text": "New Authors",
+          "href": "https://newauthors.ieeeauthorcenter.ieee.org/"
+        },
+        {
+          "text": "Journal Authors",
+          "href": "https://journals.ieeeauthorcenter.ieee.org"
+        },
+        {
+          "text": "Conference Authors",
+          "href": "http://conferences.ieeeauthorcenter.ieee.org"
+        },
+        {
+          "text": "Book Authors",
+          "href": "http://books.ieeeauthorcenter.ieee.org"
+        },
+        {
+          "text": "Magazine Authors",
+          "href": "http://magazines.ieeeauthorcenter.ieee.org"
+        },
+        {
+          "text": "IEEE Author Center Home",
+          "href": "https://ieeeauthorcenter.ieee.org"
+        },
+        {
+          "text": "Contact IEEE Author Center",
+          "href": "https://ieeeauthorcenter.ieee.org/contact-us/"
+        }
+      ],
+      "text": "Submit Your Article for Peer Review - IEEE Author Center Journals\nSkip to main content\nIEEE Publishing Portal\nSubmit to TechRxiv\nJoin IEEE\nSearch\nHome\n»\nSubmit Your Article for Peer Review\nSubmit Your Article for Peer Review\nAvoid publication delays by understanding the process when you submit your article for peer review. IEEE guides you through the submission and peer review process with helpful tips and information. Learn more about the\narticle submission process\n,\npeer review\n, and the\ndecision process\n.\nSubscribe to our newsletter"
+    },
+    {
+      "key": "ieee-ethics",
+      "url": "https://journals.ieeeauthorcenter.ieee.org/become-an-ieee-journal-author/publishing-ethics/",
+      "status": 200,
+      "final_url": "https://journals.ieeeauthorcenter.ieee.org/become-an-ieee-journal-author/publishing-ethics/",
+      "sha256": "8a9c78b947a8a7a41fd9bd1c6b14163893c5676c70965159da35d85635126a85",
+      "title": "Publishing Ethics - IEEE Author Center Journals",
+      "links": [
+        {
+          "text": "Submit to TechRxiv",
+          "href": "https://www.techrxiv.org/"
+        },
+        {
+          "text": "Join IEEE",
+          "href": "https://ieeeauthorcenter.ieee.org/ieee-membership-advantages/"
+        },
+        {
+          "text": "Resources & Tools for Authors",
+          "href": "https://ieeeauthorcenter.ieee.org/"
+        },
+        {
+          "text": "Home",
+          "href": "http://ieeeauthorcenter.ieee.org"
+        },
+        {
+          "text": "New Authors",
+          "href": "https://newauthors.ieeeauthorcenter.ieee.org/"
+        },
+        {
+          "text": "Journal Authors",
+          "href": "https://journals.ieeeauthorcenter.ieee.org"
+        },
+        {
+          "text": "Conference Authors",
+          "href": "http://conferences.ieeeauthorcenter.ieee.org"
+        },
+        {
+          "text": "Book Authors",
+          "href": "http://books.ieeeauthorcenter.ieee.org"
+        },
+        {
+          "text": "Magazine Authors",
+          "href": "http://magazines.ieeeauthorcenter.ieee.org"
+        },
+        {
+          "text": "Become an IEEE Journal Author",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/become-an-ieee-journal-author/"
+        },
+        {
+          "text": "Benefits of Publishing with IEEE",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/become-an-ieee-journal-author/benefits-of-publishing-with-ieee/"
+        },
+        {
+          "text": "Publishing Ethics",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/become-an-ieee-journal-author/publishing-ethics/"
+        },
+        {
+          "text": "Ethical Requirements",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/become-an-ieee-journal-author/publishing-ethics/ethical-requirements/"
+        },
+        {
+          "text": "Author Responsibilities",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/become-an-ieee-journal-author/publishing-ethics/author-responsibilities/"
+        },
+        {
+          "text": "Guidelines and Policies",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/become-an-ieee-journal-author/publishing-ethics/guidelines-and-policies/"
+        },
+        {
+          "text": "Fundamental Publishing Guidelines and Principles",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/become-an-ieee-journal-author/publishing-ethics/guidelines-and-policies/fundamental-publishing-guidelines-and-principles/"
+        },
+        {
+          "text": "Submission and Peer Review Policies",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/become-an-ieee-journal-author/publishing-ethics/guidelines-and-policies/submission-and-peer-review-policies/"
+        },
+        {
+          "text": "Post-Publication Policies",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/become-an-ieee-journal-author/publishing-ethics/guidelines-and-policies/post-publication-policies/"
+        },
+        {
+          "text": "IEEE Author Name Change Policy",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/become-an-ieee-journal-author/publishing-ethics/guidelines-and-policies/ieee-author-name-change-policy/"
+        },
+        {
+          "text": "IEEE Guidelines on Advertising, Accessibility, and Data Privacy",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/become-an-ieee-journal-author/publishing-ethics/guidelines-and-policies/ieee-guidelines-on-advertising-accessibility-data-privacy/"
+        },
+        {
+          "text": "Video Tutorials",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/become-an-ieee-journal-author/video-tutorials/"
+        },
+        {
+          "text": "Create Your IEEE Journal Article",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/create-your-ieee-journal-article/"
+        },
+        {
+          "text": "Authoring Tools and Templates",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/create-your-ieee-journal-article/authoring-tools-and-templates/"
+        },
+        {
+          "text": "Checklist for Creating Your Article",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/create-your-ieee-journal-article/authoring-tools-and-templates/checklist-for-creating-your-article/"
+        },
+        {
+          "text": "Tools for IEEE Authors",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/create-your-ieee-journal-article/authoring-tools-and-templates/tools-for-ieee-authors/"
+        },
+        {
+          "text": "Find a Journal",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/create-your-ieee-journal-article/authoring-tools-and-templates/tools-for-ieee-authors/find-a-journal/"
+        },
+        {
+          "text": "IEEE Article Templates",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/create-your-ieee-journal-article/authoring-tools-and-templates/tools-for-ieee-authors/ieee-article-templates/"
+        },
+        {
+          "text": "Create the Text of Your Article",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/create-your-ieee-journal-article/create-the-text-of-your-article/"
+        },
+        {
+          "text": "Structure Your Article",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/create-your-ieee-journal-article/create-the-text-of-your-article/structure-your-article/"
+        },
+        {
+          "text": "IEEE Editorial Style Manual",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/create-your-ieee-journal-article/create-the-text-of-your-article/ieee-editorial-style-manual/"
+        },
+        {
+          "text": "Create Graphics for Your Article",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/create-your-ieee-journal-article/create-graphics-for-your-article/"
+        },
+        {
+          "text": "Resolution and Size",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/create-your-ieee-journal-article/create-graphics-for-your-article/resolution-and-size/"
+        },
+        {
+          "text": "File Formatting",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/create-your-ieee-journal-article/create-graphics-for-your-article/file-formatting/"
+        },
+        {
+          "text": "Prepare Supplementary Materials",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/create-your-ieee-journal-article/prepare-supplementary-materials/"
+        },
+        {
+          "text": "Research Reproducibility",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/create-your-ieee-journal-article/research-reproducibility/"
+        },
+        {
+          "text": "Submit Your Article for Peer Review",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/submit-your-article-for-peer-review/"
+        },
+        {
+          "text": "The IEEE Article Submission Process",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/submit-your-article-for-peer-review/the-ieee-article-submission-process/"
+        },
+        {
+          "text": "IEEE Publishing Portal",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/submit-your-article-for-peer-review/ieee-publishing-portal/"
+        },
+        {
+          "text": "About the Peer Review Process",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/submit-your-article-for-peer-review/about-the-peer-review-process/"
+        },
+        {
+          "text": "Understanding the Decision Process",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/submit-your-article-for-peer-review/understanding-the-decision-process/"
+        },
+        {
+          "text": "Checklist for Submitting Your Article for Peer Review",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/submit-your-article-for-peer-review/checklist-for-submitting-your-article-for-peer-review/"
+        },
+        {
+          "text": "Ethics in Peer Review",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/submit-your-article-for-peer-review/ethics-in-peer-review/"
+        },
+        {
+          "text": "Become an IEEE Reviewer",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/submit-your-article-for-peer-review/become-an-ieee-reviewer/"
+        },
+        {
+          "text": "Choose a Publishing Agreement",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/choose-a-publishing-agreement/"
+        },
+        {
+          "text": "About the IEEE Copyright Form",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/choose-a-publishing-agreement/about-the-ieee-copyright-form/"
+        },
+        {
+          "text": "Open Access Rights Management",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/choose-a-publishing-agreement/open-access-rights-management/"
+        },
+        {
+          "text": "Avoid Infringement upon IEEE Copyright",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/choose-a-publishing-agreement/avoid-infringement-upon-ieee-copyright/"
+        },
+        {
+          "text": "Checklist for Choosing Your Publishing Agreement",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/choose-a-publishing-agreement/checklist-for-choosing-your-publishing-agreement/"
+        },
+        {
+          "text": "Your Role in Article Production",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/your-role-in-article-production/"
+        },
+        {
+          "text": "Use the IEEE Author Gateway",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/your-role-in-article-production/use-the-ieee-author-gateway/"
+        },
+        {
+          "text": "How to Review Your Article Proof",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/your-role-in-article-production/how-to-review-your-article-proof/"
+        },
+        {
+          "text": "About Potential Article Processing Charges",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/your-role-in-article-production/about-potential-article-processing-charges/"
+        },
+        {
+          "text": "IEEE Editorial Style Manual",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/your-role-in-article-production/ieee-editorial-style-manual/"
+        },
+        {
+          "text": "Checklist for Article Production",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/your-role-in-article-production/checklist-for-article-production/"
+        },
+        {
+          "text": "When Your Article Is Published",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/when-your-article-is-published/"
+        },
+        {
+          "text": "About the IEEE Xplore® Digital Library",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/when-your-article-is-published/about-the-ieee-xplore-digital-library/"
+        },
+        {
+          "text": "IEEE Xplore® Author Profiles",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/when-your-article-is-published/ieee-xplore-author-profiles/"
+        },
+        {
+          "text": "Create Citation Alerts in the IEEE Xplore Digital Library",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/when-your-article-is-published/create-citation-alerts-in-the-ieee-xplore-digital-library/"
+        },
+        {
+          "text": "View Your Article Metrics in the IEEE Xplore Digital Library",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/when-your-article-is-published/view-your-article-metrics-in-the-ieee-xplore-digital-library/"
+        },
+        {
+          "text": "Promote Your Article",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/when-your-article-is-published/promote-your-article/"
+        },
+        {
+          "text": "Abstracting & Indexing (A&I) Databases",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/when-your-article-is-published/abstracting-indexing-ai-databases/"
+        },
+        {
+          "text": "Purchase Print Copies of Your Article",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/when-your-article-is-published/purchase-print-copies-of-your-article/"
+        },
+        {
+          "text": "Checklist for Post-Publication",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/when-your-article-is-published/checklist-for-post-publication/"
+        },
+        {
+          "text": "Home",
+          "href": "https://journals.ieeeauthorcenter.ieee.org"
+        },
+        {
+          "text": "Become an IEEE Journal Author",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/become-an-ieee-journal-author/"
+        },
+        {
+          "text": "authorship",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/become-an-ieee-journal-author/publishing-ethics/ethical-requirements/#authorship"
+        },
+        {
+          "text": "citations",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/become-an-ieee-journal-author/publishing-ethics/ethical-requirements/#cite-appropriately"
+        },
+        {
+          "text": "data reporting",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/become-an-ieee-journal-author/publishing-ethics/ethical-requirements/#report-data"
+        },
+        {
+          "text": "one-page summary",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/wp-content/uploads/IEEE-Author-Ethics-Guidelines.pdf"
+        },
+        {
+          "text": "IEEE ethical requirements",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/become-an-ieee-journal-author/publishing-ethics/ethical-requirements/"
+        },
+        {
+          "text": "author responsibilities",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/become-an-ieee-journal-author/publishing-ethics/your-responsibilities-and-rights/"
+        },
+        {
+          "text": "IEEE guidelines and policies",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/become-an-ieee-journal-author/publishing-ethics/guidelines-and-policies/"
+        },
+        {
+          "text": "Subscribe to our newsletter",
+          "href": "https://engage.ieee.org/Author-Center-Authors-Newsletter-Opt-in.html"
+        },
+        {
+          "text": "Home",
+          "href": "http://ieeeauthorcenter.ieee.org"
+        },
+        {
+          "text": "New Authors",
+          "href": "https://newauthors.ieeeauthorcenter.ieee.org/"
+        },
+        {
+          "text": "Journal Authors",
+          "href": "https://journals.ieeeauthorcenter.ieee.org"
+        },
+        {
+          "text": "Conference Authors",
+          "href": "http://conferences.ieeeauthorcenter.ieee.org"
+        },
+        {
+          "text": "Book Authors",
+          "href": "http://books.ieeeauthorcenter.ieee.org"
+        },
+        {
+          "text": "Magazine Authors",
+          "href": "http://magazines.ieeeauthorcenter.ieee.org"
+        },
+        {
+          "text": "IEEE Author Center Home",
+          "href": "https://ieeeauthorcenter.ieee.org"
+        },
+        {
+          "text": "Contact IEEE Author Center",
+          "href": "https://ieeeauthorcenter.ieee.org/contact-us/"
+        }
+      ],
+      "text": "Publishing Ethics - IEEE Author Center Journals\nSkip to main content\nIEEE Publishing Portal\nSubmit to TechRxiv\nJoin IEEE\nSearch\nHome\n»\nBecome an IEEE Journal Author\n»\nPublishing Ethics\nPublishing Ethics\nEthical guidelines are required in scientific publishing. IEEE can help you understand publishing guidelines and concepts including\nauthorship\n,\ncitations\n, and\ndata reporting\n. A\none-page summary\ndetails IEEE author ethics guidelines.  Read on to learn more about\nIEEE ethical requirements\n,\nauthor responsibilities\n, and other\nIEEE guidelines and policies\n.\nSubscribe to our newsletter"
+    },
+    {
+      "key": "lncs",
+      "url": "https://www.springer.com/gp/computer-science/lncs/conference-proceedings-guidelines",
+      "status": 200,
+      "final_url": "https://link.springer.com/series/558/information-for-authors-and-editors",
+      "sha256": "fbacb8ac72c90635af07a77302f828805dcf812f6fa72eb29ee47c44242d7a0a",
+      "title": "Lecture Notes in Computer Science | Information for authors and editors",
+      "links": [
+        {
+          "text": "Log in",
+          "href": "https://idp.springer.com/auth/personal/springernature?redirect_uri=https://link.springer.com/series/558/information-for-authors-and-editors"
+        },
+        {
+          "text": "Publish with us",
+          "href": "https://www.springernature.com/gp/authors"
+        },
+        {
+          "text": "Instructions for Authors (PDF)",
+          "href": "https://cms-resources.apps.public.k8s.springernature.io/springer-cms/rest/v1/content/27852130/data/Instructions for Authors PDF"
+        },
+        {
+          "text": "LaTeX2e Proceedings Template (ZIP)",
+          "href": "https://cms-resources.apps.public.k8s.springernature.io/springer-cms/rest/v1/content/27851904/data/LaTeX2e Proceedings Template ZIP"
+        },
+        {
+          "text": "Microsoft Word Proceedings Template (ZIP)",
+          "href": "https://cms-resources.apps.public.k8s.springernature.io/springer-cms/rest/v1/content/27852136/data/Microsoft Word Proceedings Template ZIP"
+        },
+        {
+          "text": "Guidelines for Volume Editors (PDF)",
+          "href": "https://cms-resources.apps.public.k8s.springernature.io/springer-cms/rest/v1/content/27852128/data/Guidelines for Volume Editors PDF"
+        },
+        {
+          "text": "Volume Editor Frontmatter Template (ZIP)",
+          "href": "https://cms-resources.apps.public.k8s.springernature.io/springer-cms/rest/v1/content/27852138/data/Volume Editor Frontmatter Template ZIP"
+        },
+        {
+          "text": "Information for authors and editors",
+          "href": "/series/558/information-for-authors-and-editors"
+        },
+        {
+          "text": "Publish with us",
+          "href": "https://www.springernature.com/gp/authors"
+        },
+        {
+          "text": "Publish your research",
+          "href": "https://www.springernature.com/gp/authors"
+        },
+        {
+          "text": "Language editing",
+          "href": "https://authorservices.springernature.com/go/sn/?utm_source=SNLinkfooter&utm_medium=Web&utm_campaign=SNReferral"
+        }
+      ],
+      "text": "Lecture Notes in Computer Science | Information for authors and editors\nSkip to main content\nInformation for authors and editors\nProceedings series\nThese guidelines and instructions apply for volumes and papers included in these Springer Nature\n                Computer\n                Science proceedings series: Lecture Notes in Computer Science (\nLNCS\n); Lecture Notes in Artificial\n                Intelligence (\nLNAI\n); Lecture Notes in Bioinformatics (\nLNBI\n); Lecture Notes in Business Information\n                Processing (\nLNBIP\n); Communications in Computer and Information Science (\nCCIS\n); Lecture Notes of the\n                Institute for Computer Sciences, Social Informatics and Telecommunications Engineering (\nLNICST\n); and\n                IFIP\n                Advances in Information and Communication Technology (\nIFIP AICT\n).\nDownloadable instructions and templates\nDocuments for authors\nInstructions for Authors (PDF)\nLaTeX2e Proceedings Template (ZIP)\nMicrosoft Word Proceedings Template (ZIP)\nDocuments for editors\nLicense-to-Publish Form, Default (Word)\nLicense-to-Publish Form, Singapore (Word)\nLicense-to-Publish Form, IFIP (PDF)\nGuidelines for Volume Editors (PDF)\nVolume Editor Frontmatter Template (ZIP)\nProposals\nA conference or workshop applying for publication should have an international program committee, a\n                coherent\n                subject scope limited to related computer science topics, and an appropriate plan for reviewing the\n                submitted\n                papers. To submit a proposal please complete the form below and send it to\nlncs@springer.com\n.\nProposal form\nComputer Science Proceedings Proposal Form\nDownloadable logos\nConference organisers can use the logos available here on their websites and in their calls for papers.\nDownloadable Logos\nLNCS Logo (ZIP)\nLNBI Logo (ZIP)\nLNAI Logo (ZIP)\nCCIS Logo (ZIP)\nLNBIP Logo (ZIP)\nSpringer Logo (ZIP)\nForthcoming proceedings\nPlease check our lists of planned proceedings in the attached PDFs, including event dates and links to\n                conference websites.\nLNCS Forthcoming Proceedings (PDF)\nCCIS Forthcoming Proceedings (PDF)\nLNBIP Forthcoming Proceedings (PDF)\nProceedings editorial contacts\nPlease contact one of our Computer Science Proceedings editors to discuss a planned or proposed event or\n                proceedings. See our\neditorial contacts\n.\nPublishing policies\nWe require volume editors (conference organisers), authors of proceedings papers, and reviewers engaged\n                to evaluate papers submitted to conferences to abide by our\nbook publishing policies\nand respective codes\n                of conduct.\nOpen access\nConference organisers may opt for gold open access of all content in proceedings volumes. Alternatively individual author teams may select gold Open Choice for their proceedings papers. Please contact Springer to enquire about terms.\nPublishing service\nSpringer Nature offers a full publishing service, including typesetting of papers, making most content available in PDF, HTML, print, and ePub formats. Authors can embed videos in their content, or add electronic supplementary material to be made available in our digital library (SpringerNatureLink).\nOverleaf\nThe LaTeX2e Proceedings Templates are available in the scientific authoring platform Overleaf.\nPublish with us\nInformation for authors and editors\nPolicies and ethics\nEditorial contacts\nContact the Publishing Editor\nRonan Nugent"
+    },
+    {
+      "key": "neurocomputing",
+      "url": "https://www.sciencedirect.com/journal/neurocomputing/about/aims-and-scope",
+      "status": 403,
+      "final_url": "https://www.sciencedirect.com/journal/neurocomputing/about/aims-and-scope",
+      "sha256": "481e534b291d5cc330257c5a8c5b7b76b1932d6b3842af6e4dbc7ee5f4c1e411",
+      "title": "ScienceDirect",
+      "links": [],
+      "text": "ScienceDirect\nThere was a problem providing the content you requested\nPlease\ncontact our support team\nfor more information and provide the details below.\nReference number:\na51ed24f5a5814fd\nIP Address:\n202.117.81.125\nCPE00001\n::CLOUDFLARE_ERROR_1000S_BOX::"
+    },
+    {
+      "key": "neurocomputing-guide",
+      "url": "https://www.sciencedirect.com/journal/neurocomputing/publish/guide-for-authors",
+      "status": 403,
+      "final_url": "https://www.sciencedirect.com/journal/neurocomputing/publish/guide-for-authors",
+      "sha256": "d72fc544e8fa5584f59a073dac6d8e521c3b15eea4d1bbf4ba987e4362995572",
+      "title": "ScienceDirect",
+      "links": [],
+      "text": "ScienceDirect\nThere was a problem providing the content you requested\nPlease\ncontact our support team\nfor more information and provide the details below.\nReference number:\na51ed254afb8fdec\nIP Address:\n202.117.81.125\nCPE00001\n::CLOUDFLARE_ERROR_1000S_BOX::"
+    },
+    {
+      "key": "engineering-ai",
+      "url": "https://www.sciencedirect.com/journal/engineering-applications-of-artificial-intelligence/about/aims-and-scope",
+      "status": 403,
+      "final_url": "https://www.sciencedirect.com/journal/engineering-applications-of-artificial-intelligence/about/aims-and-scope",
+      "sha256": "288ace996e65dfbfbf0c0957b12bfb6af25e3245f0da5d2441b1e49a6a836b48",
+      "title": "ScienceDirect",
+      "links": [],
+      "text": "ScienceDirect\nThere was a problem providing the content you requested\nPlease\ncontact our support team\nfor more information and provide the details below.\nReference number:\na51ed2582eeefd98\nIP Address:\n202.117.81.125\nCPE00001\n::CLOUDFLARE_ERROR_1000S_BOX::"
+    },
+    {
+      "key": "engineering-ai-guide",
+      "url": "https://www.sciencedirect.com/journal/engineering-applications-of-artificial-intelligence/publish/guide-for-authors",
+      "status": 403,
+      "final_url": "https://www.sciencedirect.com/journal/engineering-applications-of-artificial-intelligence/publish/guide-for-authors",
+      "sha256": "1a8d392eead25ebd933cfe2d308e10b893a5c43205104913ea3619ec92d53fa1",
+      "title": "ScienceDirect",
+      "links": [],
+      "text": "ScienceDirect\nThere was a problem providing the content you requested\nPlease\ncontact our support team\nfor more information and provide the details below.\nReference number:\na51ed2596ffb806f\nIP Address:\n202.117.81.125\nCPE00001\n::CLOUDFLARE_ERROR_1000S_BOX::"
+    },
+    {
+      "key": "machine-learning",
+      "url": "https://link.springer.com/journal/10994/aims-and-scope",
+      "error": "HTTPSConnectionPool(host='idp.springer.com', port=443): Read timed out. (read timeout=10)"
+    },
+    {
+      "key": "tcds",
+      "url": "https://cis.ieee.org/publications/t-cognitive-and-developmental-systems",
+      "status": 200,
+      "final_url": "https://cis.ieee.org/publications/t-cognitive-and-developmental-systems",
+      "sha256": "d52d496ac0ac54b8cde257c55b60081ea8b5c466c1b316bc21ec93f970764464",
+      "title": "IEEE Transactions on Cognitive and Developmental Systems - IEEE Computational Intelligence Society",
+      "links": [
+        {
+          "text": "Submit Manuscript",
+          "href": "https://ieee.atyponrex.com/journal/tcds-ieee"
+        },
+        {
+          "text": "Information for Authors",
+          "href": "/publications/t-cognitive-and-developmental-systems/tcds-information-for-authors"
+        },
+        {
+          "text": "Featured Papers",
+          "href": "/publications/t-cognitive-and-developmental-systems/featured-papers"
+        }
+      ],
+      "text": "IEEE Transactions on Cognitive and Developmental Systems - IEEE Computational Intelligence Society\nJoin IEEE\n|\nDonate\n|\nSign In\nIEEE.org\nIEEE\nXplore®\nIEEE Standards\nIEEE Spectrum\nMore Sites\nMore Sites\nIEEE\nXplore®\nIEEE Standards\nIEEE Spectrum\nMore Sites\nIEEE Computational Intelligence Society\nHome\nPublications\nIEEE Transactions on Cognitive and Developmental Systems\nScope\nThe IEEE TRANSACTIONS ON COGNITIVE AND DEVELOPMENTAL SYSTEMS (TCDS) focuses on advances in the study of development and cognition in natural (humans, animals) and artificial (robots, agents) systems. It welcomes contributions from multiple related disciplines including cognitive systems, cognitive robotics, developmental and epigenetic robotics, autonomous and evolutionary robotics, social structures, multi-agent and artificial life systems, computational neuroscience, and developmental psychology. Articles on theoretical, computational, application-oriented, and experimental studies as well as reviews in these areas are considered.\nTCDS is financially co-sponsored by the Computational Intelligence Society and the Robotics and Automation Society. TCDS is technically co-sponsored by the Computer Society.\nImpact Score\nThe values displayed for the journal bibliometrics fields in IEEE Xplore are based on the Journal Citation Report from Clarivate from the 2025 report released in June 2026. Journal Citation Metrics Journal Citation Metrics such as Impact Factor, Eigenfactor Score™ and Article Influence Score™ are available where applicable. Each year, Journal Citation Reports© (JCR) from Thomson Reuters examines the influence and impact of scholarly research journals. JCR reveals the relationship between citing and cited journals, offering a systematic, objective means to evaluate the world's leading journals.  Find out more about\nIEEE Journal Bibliometrics\n.\nSubscribe\nSubmit Manuscript\nView Current Issue\nIEEE Transactions on Cognitive and Developmental Systems\nIEEE Transactions on Cognitive and Developmental Systems\nWelcome from the Vice President for Publications\nEditors and Associate Editors\nIEEE Xplore (TCDS)\nInformation for Authors\nPlagiarism and Ethical Issues\nArxiv\nRecent Articles\nFeatured Papers\nMost Accessed Articles\nSpecial Issues\nAdvertising\nIEEE PSPB Operations Manual"
+    },
+    {
+      "key": "pakdd-research",
+      "url": "https://pakdd2027.org/pages/calls/research",
+      "status": 200,
+      "final_url": "https://pakdd2027.org/pages/calls/research",
+      "sha256": "e1f9902e0174a9ff6bc3a337093215073096ac51769a414e85d56e0cfa26a9cb",
+      "title": "Research Track Call for Papers — PAKDD 2027",
+      "links": [
+        {
+          "text": "Dates",
+          "href": "/pages/dates"
+        },
+        {
+          "text": "Calls",
+          "href": "/pages/calls/research"
+        },
+        {
+          "text": "Research Track",
+          "href": "/pages/calls/research"
+        },
+        {
+          "text": "Applied Data Science Track",
+          "href": "/pages/calls/applied"
+        },
+        {
+          "text": "Special Track on Large Language Models and Agentic AI",
+          "href": "/pages/calls/llm-agentic"
+        },
+        {
+          "text": "Survey Track",
+          "href": "/pages/calls/survey"
+        },
+        {
+          "text": "Author's Kit",
+          "href": "/pages/calls/authors-kit"
+        },
+        {
+          "text": "Author's Kit",
+          "href": "/pages/calls/authors-kit"
+        },
+        {
+          "text": "important dates",
+          "href": "/pages/dates"
+        },
+        {
+          "text": "Applied Data Science Track",
+          "href": "/pages/calls/applied"
+        },
+        {
+          "text": "Special Track on Large Language Models and Agentic AI",
+          "href": "/pages/calls/llm-agentic"
+        }
+      ],
+      "text": "Research Track Call for Papers — PAKDD 2027\nCall for papers · Research Track\nResearch Track\nPAKDD 2027 will be held exclusively in person. All accepted presentations must be delivered on-site.\nThe 31st Pacific-Asia Conference on Knowledge Discovery and Data Mining (PAKDD) will take place in Wellington, New Zealand, on 29 June – 2 July 2027. PAKDD 2027 is soliciting contributed technical papers for presentation at the Conference and publication in the Conference Proceedings by Springer. We solicit novel, high-quality, and original research papers that provide innovative insights into all facets of knowledge discovery and data science, including but not limited to theoretical foundations of mining, inference, and learning, big data technologies, as well as security, privacy, and integrity. We also encourage visionary papers on emerging topics and application-based papers offering innovative technical advancements to interdisciplinary research and applications of data science.\nPapers must be formatted using the Springer LNCS template and will be reviewed double-blind. Full submission policy, formatting guidelines, and instructions are available in the\nAuthor's Kit\n. Submit your paper through\nPAKDD 2027 on CMT\n.\nKey dates\nSubmission deadline\nFriday, 20 November 2026\nAcceptance notification\nFriday, 26 February 2027\nCamera ready\nFriday, 19 March 2027\nAll deadlines are 23:59\nAnywhere on Earth (AoE)\n. See\nimportant dates\n.\nConference topics\nTopics of interest\nTopics of relevance for the conference include, but are not limited to, the following.\nTheoretical Foundations\nMathematical, statistical, and information-theoretic foundations\nOptimization methods for data mining and machine learning\nCausal learning and causal inference\nRepresentation learning\nNon-IID learning and distribution shift\nDomain adaptation and domain generalisation\nGeneralisation and out-of-distribution learning\nNeuro-symbolic learning and reasoning\nGenerative modelling\nQuantum machine learning\nFoundations of trustworthy and responsible machine learning\nLearning Methods and Algorithms\nClustering, classification, pattern mining and association rules discovery\nSupervised learning, semi-supervised learning, few-shot and zero-shot learning, active learning\nReinforcement learning and bandits\nTransfer learning, federated learning\nAnomaly detection, outlier detection\nLearning in recommendation engines\nLearning in streams and in time series\nLearning on structured data, images, texts and multi-modal data\nOnline learning, model adaption\nGraph mining and Graph NNs\nTrustworthy Machine Learning\nFairness\nData Processing for Learning\nDimensionality reduction, feature extraction, subspace construction\nData cleaning and preparation, data integration and summarization\nLearning in real-time\nBig data technologies\nInformation retrieval\nData/entity/event/relationship extraction\nUser interfaces and visual analytics\nSecurity, Privacy, Ethics, Information Integrity and Social Issues\nModeling credibility, trustworthiness, and reliability\nPrivacy-preserving data mining and privacy models\nModel transparency, interpretability, and fairness\nMisinformation detection, monitoring, and prevention\nSocial issues, such as health inequities, social development, and poverty\nInterdisciplinary Research on Data Science Applications\nSocial network/media analysis and dynamics, reputation, influence, trust, opinion mining, sentiment analysis, link prediction, and community detection\nSymbiotic human-AI interaction, human-agent collaboration, socially interactive robots, and affective computing\nInternet of Things, logistics management, network traffic and log analysis, and supply chain management\nBusiness and financial data, computational advertising, customer relationship management, intrusion and fraud detection, and intelligent assistants\nUrban computing, spatial data science and pervasive computing\nMedical and public health applications, drug discovery, healthcare management, and epidemic monitoring and prevention\nMethods for detecting and combating spamming, trolling, aggression, toxic online behaviors, bullying, hate speech, and low-quality and offensive content\nClimate, ecological, and environmental science, and resilience and sustainability\nAstronomy and astrophysics, genomics and bioinformatics, high energy physics, robotics, AI-assisted programming, and scientific data\nOther tracks\nPapers with a strong applied or industrial focus are better suited to the\nApplied Data Science Track\n. Work on large language models and agentic AI for data science is better suited to the\nSpecial Track on Large Language Models and Agentic AI\n, whose scope has been extended from large language models to large language models and agentic AI.\nTrack organisation\nResearch Track Program Chairs\nPhilippe Fournier-Viger\nShenzhen University\nChina\nYun Sing Koh\nUniversity of Auckland\nNew Zealand\nJingrui He\nUniversity of Illinois at Urbana-Champaign\nUnited States\nQuestions about this track\nEmail the Research Track Program Chairs at\npc@pakdd2027.org\n."
+    },
+    {
+      "key": "pakdd-dates",
+      "url": "https://pakdd2027.org/pages/dates",
+      "status": 200,
+      "final_url": "https://pakdd2027.org/pages/dates",
+      "sha256": "31f6d0c6513c3c93114fe3ce2783771db1008a4883b85dfead8668850ffcdd72",
+      "title": "Important Dates — PAKDD 2027",
+      "links": [
+        {
+          "text": "Dates",
+          "href": "/pages/dates"
+        },
+        {
+          "text": "Calls",
+          "href": "/pages/calls/research"
+        },
+        {
+          "text": "Research Track",
+          "href": "/pages/calls/research"
+        },
+        {
+          "text": "Applied Data Science Track",
+          "href": "/pages/calls/applied"
+        },
+        {
+          "text": "Special Track on Large Language Models and Agentic AI",
+          "href": "/pages/calls/llm-agentic"
+        },
+        {
+          "text": "Survey Track",
+          "href": "/pages/calls/survey"
+        },
+        {
+          "text": "Author's Kit",
+          "href": "/pages/calls/authors-kit"
+        },
+        {
+          "text": "Research Track",
+          "href": "/pages/calls/research"
+        },
+        {
+          "text": "Applied Data Science Track",
+          "href": "/pages/calls/applied"
+        },
+        {
+          "text": "Survey Track",
+          "href": "/pages/calls/survey"
+        },
+        {
+          "text": "Special Track on Large Language Models and Agentic AI",
+          "href": "/pages/calls/llm-agentic"
+        },
+        {
+          "text": "Author's Kit",
+          "href": "/pages/calls/authors-kit"
+        }
+      ],
+      "text": "Important Dates — PAKDD 2027\nImportant dates\nKey dates\nAll deadlines are at\n23:59\nAnywhere on Earth (AoE)\n.\nConference\nPAKDD 2027, Wellington\nTuesday 29 June – Friday 2 July 2027\nMain Submission Deadline\nPaper submission deadline\nFriday, 20 November 2026\nPaper acceptance notification\nFriday, 26 February 2027\nCamera ready papers due\nFriday, 19 March 2027\nThe\nResearch Track\n,\nApplied Data Science Track\n,\nSurvey Track\nand\nSpecial Track on Large Language Models and Agentic AI\nshare the same submission deadline, with scope set out in their respective calls and general submission policy in the\nAuthor's Kit\n.\nWorkshops\nWorkshop proposal deadline\nTo be announced\nWorkshop acceptance notification\nTo be announced\nWorkshop paper submission deadline\nTo be announced\nTutorials\nTutorial proposal deadline\nTo be announced\nTutorial acceptance notification\nTo be announced\nDoctoral Consortium\nSubmission deadline\nTo be announced\nAuthor notification\nTo be announced\nRegistration\nRegistration opens\nTo be announced\nEarly registration deadline\nTo be announced"
+    },
+    {
+      "key": "pakdd-authors",
+      "url": "https://pakdd2027.org/pages/calls/authors-kit",
+      "status": 200,
+      "final_url": "https://pakdd2027.org/pages/calls/authors-kit",
+      "sha256": "4c852c663d693a4cf73ddf37ecb5ee34976622d450baa6870b42a2a75018fcb4",
+      "title": "Author's Kit — PAKDD 2027",
+      "links": [
+        {
+          "text": "Dates",
+          "href": "/pages/dates"
+        },
+        {
+          "text": "Calls",
+          "href": "/pages/calls/research"
+        },
+        {
+          "text": "Research Track",
+          "href": "/pages/calls/research"
+        },
+        {
+          "text": "Applied Data Science Track",
+          "href": "/pages/calls/applied"
+        },
+        {
+          "text": "Special Track on Large Language Models and Agentic AI",
+          "href": "/pages/calls/llm-agentic"
+        },
+        {
+          "text": "Survey Track",
+          "href": "/pages/calls/survey"
+        },
+        {
+          "text": "Author's Kit",
+          "href": "/pages/calls/authors-kit"
+        },
+        {
+          "text": "See important dates",
+          "href": "/pages/dates"
+        },
+        {
+          "text": "Springer guidelines",
+          "href": "https://www.springer.com/gp/computer-science/lncs/conference-proceedings-guidelines"
+        }
+      ],
+      "text": "Author's Kit — PAKDD 2027\nCall for papers · All tracks\nAuthor's Kit\nPAKDD 2027 will be held exclusively in person. All accepted presentations must be delivered on-site.\nThis page collects the formatting rules and submission policy that apply to every PAKDD 2027 paper track. Read it alongside the call for the track you are submitting to. All submissions are in English, reviewed double-blind, and must be prepared with the Springer LNCS/LNAI template and submitted as PDF. Papers that do not comply with the policy below are rejected without review.\nSpringer will publish the proceedings of the conference as a volume of the Lecture Notes in Artificial Intelligence (LNAI) series. Submitting a paper to the conference means that if the paper is accepted, at least one author will complete the regular registration and attend the conference to present the paper. Papers of no-show authors will not be included in the proceedings.\nSubmission overview\nSubmission site\nPAKDD 2027 on CMT\nSubmission deadline\nSee important dates\nTemplate\nSpringer LNCS/LNAI\nSubmission policy\nRules for all tracks\nThe following policy applies to every paper track. Papers that do not comply are rejected without review.\nEligibility\nPaper submission must be in\nEnglish\n. All papers will be\ndouble-blind reviewed\nby the Program Committee based on technical quality, relevance to PAKDD, originality, significance, and presentation quality.\nEach submitted paper must include an\nabstract up to 200 words\n.\nThe\nauthor list and order cannot be changed\nafter the paper is submitted.\nEach listed author must have made a substantial contribution to the research and/or paper writing and must take full responsibility for the paper's entire content.\nPapers that do not comply with the Submission Policy will be\nrejected without review\n.\nConcurrent submission\nPAKDD 2027 will not accept any paper that, at the time of submission, is under review for, has already been published in, or has already been accepted for publication in a journal or another venue with formally published proceedings.\nAuthors are also required not to submit their papers to other venues with formal publication during the PAKDD 2027 review period.\nPapers on\narXiv do not violate this rule\nas long as the submitted paper does not cite them.\nFormat and length\nAuthors must use the\nSpringer LNCS/LNAI\nmanuscript submission guidelines and formatting template. Usage of other formats may lead to disqualification of the paper. See the\nSpringer guidelines\n.\nResearch Track:\nno longer than 12 pages, including references, appendices, etc.\nSpecial Track on Large Language Models and Agentic AI:\nno longer than 12 pages, including references, appendices, etc.\nSurvey Track:\nno longer than 18 pages, of which at most 15 pages may be the body of the paper and 3 pages the references. Supplementary material is not accepted.\nAll papers must be submitted electronically in\nPDF format only\n.\nDouble-blind review\nSubmissions must remove all details identifying the author(s) from the original manuscript.\nAuthors should refer to their prior work in the third person and include all relevant citations.\nUse of generative AI\nThe use of generative AI models must be\nexplicitly disclosed and explained\nin the submission form.\nSuch tools\ndo not qualify as authors\nand may only be employed for grammatical error correction.\nIf generative AI is used at any stage of the paper-writing process, the authors assume full responsibility for all content, including checking for plagiarism and correctness of the entire submission.\nAcknowledgment\nThe Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support."
+    },
+    {
+      "key": "pakdd-applied",
+      "url": "https://pakdd2027.org/pages/calls/applied",
+      "status": 200,
+      "final_url": "https://pakdd2027.org/pages/calls/applied",
+      "sha256": "af04ac72df743a1062501aa8040b16ed2e13e8b6f7d4202417f0df731e4bd282",
+      "title": "Applied Data Science Track Call for Papers — PAKDD 2027",
+      "links": [
+        {
+          "text": "Dates",
+          "href": "/pages/dates"
+        },
+        {
+          "text": "Calls",
+          "href": "/pages/calls/research"
+        },
+        {
+          "text": "Research Track",
+          "href": "/pages/calls/research"
+        },
+        {
+          "text": "Applied Data Science Track",
+          "href": "/pages/calls/applied"
+        },
+        {
+          "text": "Special Track on Large Language Models and Agentic AI",
+          "href": "/pages/calls/llm-agentic"
+        },
+        {
+          "text": "Survey Track",
+          "href": "/pages/calls/survey"
+        },
+        {
+          "text": "Author's Kit",
+          "href": "/pages/calls/authors-kit"
+        },
+        {
+          "text": "Author's Kit",
+          "href": "/pages/calls/authors-kit"
+        },
+        {
+          "text": "important dates",
+          "href": "/pages/dates"
+        },
+        {
+          "text": "Research Track",
+          "href": "/pages/calls/research"
+        },
+        {
+          "text": "Special Track on Large Language Models and Agentic AI in Data Science",
+          "href": "/pages/calls/llm-agentic"
+        }
+      ],
+      "text": "Applied Data Science Track Call for Papers — PAKDD 2027\nCall for papers · Applied Data Science Track\nApplied Data Science Track\nPAKDD 2027 will be held exclusively in person. All accepted presentations must be delivered on-site.\nThe 31st Pacific-Asia Conference on Knowledge Discovery and Data Mining (PAKDD) will take place in Wellington, New Zealand, on 29 June – 2 July 2027. The Applied Data Science Track is new for PAKDD 2027. It invites submissions presenting innovative, compelling, impactful applications of data science, machine learning, and knowledge discovery to real-world problems. The track aims to connect research and practice in both directions. It welcomes evidence on how data science methods perform under real-world constraints, including findings that expose limitations in current problem formulations, algorithms, model architectures, or evaluation methods, or reveal important tasks that research has yet to address. Accepted papers are published in the Conference Proceedings by Springer alongside the main research track.\nWe welcome papers that examine what data science achieves, where it falls short, and what it takes to make it work in consequential real-world settings. Contributions may report deployed systems, field pilots, or evaluations that faithfully capture the intended setting's data, decisions, and operational constraints. This includes studies of unexpected or instructive failures, provided they investigate the reasons, support their explanations with evidence, and offer concrete lessons to help other practitioners avoid similar mistakes or discuss limitations of current methods that should be addressed by the scientific community. Authors should explain how their findings were validated, their practical implications, and what others working on comparable problems can learn from them.\nMethodological novelty is welcome but is not required. Papers using established methods must make a substantive applied contribution, for example, through non-trivial adaptation or integration, evaluation under realistic operational constraints, or new insight into when and why an approach succeeds or fails in practice. Strong submissions will demonstrate all three: substantial practical relevance, sound methodology and evaluation, and lessons that researchers and/or practitioners working on comparable problems can use. Merely applying an existing method to a real-world dataset is insufficient.\nSubmissions follow the same format, platform, and timeline as the main research track. Papers must be formatted using the Springer LNCS template. Submissions are double-blind and limited to 12 pages, including references. Papers not conforming to these requirements may be rejected without review. Full submission policy, formatting guidelines, and instructions are available in the\nAuthor's Kit\n. Submit your paper through\nPAKDD 2027 on CMT\n.\nKey dates\nSubmission deadline\nFriday, 20 November 2026\nAcceptance notification\nFriday, 26 February 2027\nCamera ready\nFriday, 19 March 2027\nAll deadlines are 23:59\nAnywhere on Earth (AoE)\n. See\nimportant dates\n.\nSubmissions\nWhat submissions should contain\nPapers submitted to this track should:\nClearly describe the real-world problem being addressed, including the domain goals, operational constraints, and data characteristics such as scale, quality, and heterogeneity.\nDetail the methodology applied, including data preparation, modelling, evaluation procedure, and validation.\nDiscuss the results and their domain impact, explaining the insights, implications, or improvements achieved in the real-world context and/or their scientific impact, explaining the limitations found in current problem formulations, algorithms, model architectures, or evaluation methods that should be addressed by the research community.\nThe track accepts deployed systems, field pilots, case studies, and rigorous lab evaluations that reproduce the important conditions of intended use. Authors are required to explain the setting, operational constraints, appropriate baselines, and domain outcomes. In particular, running a standard algorithm on a real-world dataset by itself is insufficient; while we explicitly allow realistic laboratory validation (corresponding at least to TRL 4), being able to present measures of the project's impact in the domain is a strength.\nTransparency and reproducibility are strongly encouraged. Authors should make data and code publicly available wherever possible; however, restricted data or code do not disqualify a paper. Authors should still provide enough detail to assess the claims, and release what they can, such as an evaluation protocol, aggregate results, synthetic examples, or non-sensitive code.\nEvaluation criteria\nSubmissions will be evaluated on:\nRelevance and significance of the real-world problem, including clearly described domain goals, data characteristics, operational constraints and consequences for the intended users or stakeholders.\nSoundness, clarity and transparency of the methodology and evaluation, including appropriate baselines, validation procedures, limitations, and sufficient detail or supporting materials for reproducibility.\nEvidence for practical outcomes, clearly labelled as observed in operation, observed in a pilot or estimated from realistic evaluation, with justified and appropriately qualified impact claims.\nValue and transferability of lessons for practitioners and domain experts, including carefully investigated failures, supported explanations of their causes, and guidance useful beyond the specific application.\nContribution to future research through evidence identifying limitations in existing problem formulations, algorithms, models and evaluation methods, or establishing important tasks that deserve further investigation.\nPapers are not assessed on methodological novelty. Reviewers are asked to judge whether the work is useful, sound and instructive for practice, rather than whether it advances the state of the art in method development.\nTrack topics\nTopics of interest\nThe track welcomes work from any application domain. Topics include, but are not limited to, the following.\nApplication Domains\nHealth, medicine, and public health\nFinance, insurance, and risk\nIndustry, manufacturing, and Industry 4.0\nSmart cities, transport, logistics, and supply chains\nEnergy, climate, environment, and sustainability\nAgriculture, food systems, and primary industries\nRetail, e-commerce, advertising, and recommendation\nTelecommunications, networks, and infrastructure\nGovernment, public sector, and social good\nScience and engineering, including astronomy, biology, and materials\nPractice, Evaluation and Deployment\nProblem formulation and project organisation, including domain collaboration, stakeholder requirements, and practical needs that motivate new tasks or research questions\nData collection, labelling, quality, preparation and integration, including limited or heterogeneous data\nPrivacy, security, fairness and responsible governance, including data access, regulatory requirements and human oversight\nMethod selection, adaptation and integration under practical constraints, including robustness, scalability, cost, latency and resource use\nSystem engineering and deployment, including integration with existing infrastructure and operational workflows\nHuman-AI interaction and collaboration, including decision support, transparency, explainability, user trust and adoption\nEvaluation under realistic conditions, including offline validation, field pilots, domain-relevant metrics, comparison with existing practice, A/B testing and online evaluation\nModel monitoring and maintenance over time, including drift detection, retraining and adaptation to changing conditions\nNegative results and failure analysis, including limitations of existing methods or evaluation practices, supported explanations of failures, and transferable lessons from unsuccessful approaches, pilots or deployments\nRelationship to other tracks\nPapers whose primary contribution is a new method, algorithm or theoretical result should be submitted to the main\nResearch Track\n, even where they are evaluated on real data. Papers reporting deployed systems and industrial case studies should be submitted here, including those built on large language models or agents. Papers whose primary contribution concerns large language models or agentic methods themselves should be submitted to the\nSpecial Track on Large Language Models and Agentic AI in Data Science\n.\nTrack organisation\nApplied Data Science Track Chairs\nSlawomir Nowaczyk\nHalmstad University\nSweden\nCarlos Soares\nUniversity of Porto\nPortugal\nQuestions about this track\nEmail the Applied Data Science Track Chairs at\napplied@pakdd2027.org\n."
+    },
+    {
+      "key": "systems-submission",
+      "url": "https://ieeesystemsjournal.org/",
+      "status": 200,
+      "final_url": "https://ieeesystemscouncil.org/publication/ieee-systems-journal",
+      "sha256": "58eaf9f840bafac00a18f65b1d1d78e66b36f807f6bd80b362a261b92f0b9530",
+      "title": "IEEE Systems Journal | IEEE Systems Council",
+      "links": [
+        {
+          "text": "Systems Journal Best Paper Award",
+          "href": "/paper-award/systems-journal-best-paper-award"
+        },
+        {
+          "text": "Conference Papers on Systems Engineering Topics",
+          "href": "/conferences/resources/conference-papers-systems-engineering-topics"
+        },
+        {
+          "text": "Call for Papers",
+          "href": "/call-papers-regular-issues"
+        },
+        {
+          "text": "Instructions for Authors",
+          "href": "/publication/ieee-systems-journal/instructions-for-authors"
+        },
+        {
+          "text": "Systems Journal Best Paper Award",
+          "href": "/paper-award/systems-journal-best-paper-award"
+        },
+        {
+          "text": "Systems Journal Best Paper Award",
+          "href": "/paper-award/systems-journal-best-paper-award"
+        },
+        {
+          "text": "Conference Papers on Systems Engineering Topics",
+          "href": "/conferences/resources/conference-papers-systems-engineering-topics"
+        },
+        {
+          "text": "Call for Papers",
+          "href": "/call-papers-regular-issues"
+        },
+        {
+          "text": "Instructions for Authors",
+          "href": "/publication/ieee-systems-journal/instructions-for-authors"
+        },
+        {
+          "text": "Systems Journal Best Paper Award",
+          "href": "/paper-award/systems-journal-best-paper-award"
+        },
+        {
+          "text": "Reviewers",
+          "href": "/publication/ieee-systems-journal/systems-journal-reviewers"
+        },
+        {
+          "text": "Call for Papers Regular Issues",
+          "href": "/publication/iEEE-systems-journal/call-papers-regular-issues"
+        },
+        {
+          "text": "Call for Papers Special Issues",
+          "href": "/publication/ieee-systems-journal/isj-cfp-special-issue"
+        },
+        {
+          "text": "Top 10 Downloaded Papers",
+          "href": "/publication/ieee-systems-journal/top-10-downloaded-papers"
+        },
+        {
+          "text": "Call For Papers",
+          "href": "#"
+        },
+        {
+          "text": "",
+          "href": "http://www.ieeesystemsjournal.org/author-instructions"
+        },
+        {
+          "text": "IEEE Systems Journal: Call for Nominations for 2026-2027 ISJ EiC",
+          "href": "/post/announcement/ieee-systems-journal-call-nominations-2026-2027-isj-eic"
+        },
+        {
+          "text": "Special Issue on “Advanced Learning-based Support for Large-scale Multi-agent Systems”",
+          "href": "https://ieeesystemscouncil.org/files/ieeesyscouncil/2023-10/Call%20for%20Papers_IEEE%20Systems%20Journal_V2.pdf"
+        },
+        {
+          "text": "Reviewers",
+          "href": "/publication/ieee-systems-journal/systems-journal-reviewers"
+        },
+        {
+          "text": "Call for Papers Regular Issues",
+          "href": "/publication/iEEE-systems-journal/call-papers-regular-issues"
+        },
+        {
+          "text": "Call for Papers Special Issues",
+          "href": "/publication/ieee-systems-journal/isj-cfp-special-issue"
+        },
+        {
+          "text": "Top 10 Downloaded Papers",
+          "href": "/publication/ieee-systems-journal/top-10-downloaded-papers"
+        }
+      ],
+      "text": "IEEE Systems Journal | IEEE Systems Council\nSkip to main content\nClose panel\nQuick Links\nReviewers\nCall for Papers Regular Issues\nCall for Papers Special Issues\nLatest Issue Table of Contents\nTop 10 Downloaded Papers\nContact Us\nPublication\nIEEE Systems Journal\nPublication Menu\nIEEE Xplore Journal Bibliometrics\nImpact Factor\n4.9\nEigenfactor® Score\n0.0188\nArticle Influence® Score\n0.988\nCiteScore\n14.1\nScope\nThis publication provides a systems-level, focused forum for application-oriented manuscripts that address complex systems or system-of-systems, of national and global significance. It intends to encourage and facilitate cooperation and interaction among IEEE Societies with systems-level and systems engineering interest, and to attract non-IEEE contributors and readers from around the globe. Our IEEE Systems Council job is to address issues in new ways that are not solvable in the domains of the existing IEEE or other societies or global organizations. These problems do not fit within traditional hierarchical boundaries. For example, disaster response such as that triggered by hurricanes, tsunamis, or volcanic eruptions is not solvable by pure engineering solutions. We need to think about changing and enlarging the paradigm to include systems issues.\nJOURNAL NEED:\nThe journal is intended to stimulate awareness, appreciation and utilization of systems thinking and the supporting systems engineering disciplines, especially for complex systems, systems-of-systems, complex cyber-physical systems, and complex smart systems, across many domains and application areas.\nAttention will be directed to theory, technology, design methodology, management, applications, successful lessons, impact in the real life, and social implications. In particular, but not only, themes that will be addressed include architectures, complexity, dynamics, integration, interoperability, adaptability, completeness, effectiveness, modeling, analysis, simulation, development tools and environments, engineering, science, mission assurance, regulatory compliance, robustness, reliability, availability, safety, maintainability, quality, risk management, interaction, usability, human factors, privacy, deployment, management, operations, communications, security, standards, applications, ethics, and education.\nExamples of in-scope papers:\nPapers considering systems in which several independent entities are interacting and cooperating.\nFor example, networked systems such as power grids, sensor networks, multi-agent systems, and communication networks are considered in-scope, when the main focus is not just one component of the network. In other words, the analysis and design should take the interaction between these components into account.\nExamples of out-of-scope papers:\nPapers considering one single system or one specific component of a network.\nFor example, papers dealing with one specific power grid component, such as inverters, transformers, etc. are considered out-of-scope. Note that a feedback control system, although it consists of different components such as a plant, a controller, an actuator, and a sensor, is considered just one system, so this type of control system is out-of-scope, no matter how complex the controller is. A system consisting of a transmitter and a receiver is also not within this journal’s scope because these two devices are considered one system combined. Papers merely dealing with graph theory are not in-scope. Papers dealing with neural networks and fuzzy systems are not in scope, unless they are used to address a problem related to, for example, interconnected systems. Also, papers based only on data analysis are out-of-scope because they do not tackle a complex system from the systems engineering viewpoint. Papers on pure cryptography with no impact analysis on the communication network are also out-of-scope. BioMed applications related to brain interface or related to robotic vision or image processing are considered out-of-scope even though these are complex problems. There are other IEEE journals for this type of application. Papers related to signal and image processing techniques are out-of-scope.\nDescription\nAPPROPRIATE USE OF BIBLIOMETRICS: IEEE has issued a\nrecommendation\nabout the appropriate use of bibliometric indices.\nNEW ISSUE ALERT: IEEE Xplore offers free subscription to the alerting system. When a new issue is posted in IEEE Xplore, the system sends you an email with the link to the table of content. Log in IEEE Xplore, go to the\nIEEE Systems Journal\n, page and select “Add Journal to My Alerts” at the top right corner.\nSUBMISSION INSTRUCTIONS: The manuscripts should be prepared and submitted by following the detailed instructions provided in the Authors’ Instructions page. The manuscripts should present original work in the scope of the journal and must be exclusively submitted to this journal, must not have been published before, and must not be under consideration for publication elsewhere. Significantly extended and expanded versions of papers published in conference proceedings can be submitted, providing also a detailed description of the additions.\nThis publication is a hybrid journal, allowing traditional manuscript publication and open-access manuscripts. If the paper will be accepted for publication, you can choose to have your manuscript published open access.\nFor more information about preparing and submitting manuscripts as well as possible charges for accepted papers, please visit the Authors\npage.\nGUIDELINES FOR SUBMITTING AN EXTENDED VERSION OF A PREVIOUSLY PUBLISHED CONFERENCE PROCEEDINGS PAPER: View the full guidelines\nhere.\nSPECIAL ISSUE PROPOSALS: IEEE Systems Journal now accepts Special Issue proposals.\nQUESTIONS: Questions concerning papers submitted to regular issues should be sent to the Editor-in-Chief.\nQuestions concerning papers submitted to special issues should be sent to the respective guest editors (see the call for papers of the specific special issue).\nQuestions, comments and suggestions, and any other problem concerning the journal as well as any questions concerning papers accepted in special issues should be sent to the\nEditor-in-Chief.\n2025\n2025-03-02\n|\nIEEE Systems Journal: Call for Nominations for 2026-2027 ISJ EiC\nTitle\nIEEE Systems Journal Editorial Board\nSystems Journal Editor-in-Chief\nRuqiang Yan\nCountry\nCHN\nAffiliation\nXi'an Jiaotong University\nIEEE Region\nRegion 10 (Asia and Pacific)\nSystems Journal Co-Editor-in-Chief\nSaeid Nahavandi\nCountry\nAUS\nAffiliation\nSwinburne University of Technology\nIEEE Region\nRegion 10 (Asia and Pacific)\nSystems Journal Chief Senior Editor\nTimothy L.J. Ferris\nCountry\nGBR\nAffiliation\nCranfield University\nIEEE Region\nRegion 8 (Africa, Europe, Middle East)\nSystems Journal Senior Editor\nChoon Ki Ahn\nCountry\nROK\nAffiliation\nKorea University\nIEEE Region\nRegion 10 (Asia and Pacific)\nRamesh Bansal\nCountry\nARE\nAffiliation\nUniversity of Sharjah\nIEEE Region\nRegion 8 (Africa, Europe, Middle East)\nMaria Teresa Correia de Barros\nCountry\nPRT\nAffiliation\nUniversidade de Lisboa\nIEEE Region\nRegion 8 (Africa, Europe, Middle East)\nGuangjie Han\nCountry\nCHN\nAffiliation\nHohai University\nIEEE Region\nRegion 10 (Asia and Pacific)\nElyas Rakhshani\nCountry\nNLD\nAffiliation\nDelft University of Technology\nIEEE Region\nRegion 8 (Africa, Europe, Middle East)\nJoel Rodrigues\nCountry\nPRT\nAffiliation\nFederal University of Piauí, Brazil; Instituto de Telecomunicações\nIEEE Region\nRegion 8 (Africa, Europe, Middle East)\nSystems Journal Senior Associate Editor\nDiego Andina\nCountry\nESP\nAffiliation\nTechnical University of Madrid\nIEEE Region\nRegion 8 (Africa, Europe, Middle East)\nPetr Korba\nCountry\nCHE\nAffiliation\nZurich University of Applied Sciences\nIEEE Region\nRegion 8 (Africa, Europe, Middle East)\nBaoxian Zhang\nCountry\nCHN\nAffiliation\nThe University of Chinese Academy of Sciences\nIEEE Region\nRegion 10 (Asia and Pacific)\nSystems Journal Associate Editor\nRamon Aguero\nCountry\nESP\nAffiliation\nUniversity of Cantabria\nIEEE Region\nRegion 8 (Africa, Europe, Middle East)\nBhaveshkumar Bhalja\nCountry\nIND\nAffiliation\nIndian Institute of Technology Roorkee\nIEEE Region\nRegion 10 (Asia and Pacific)\nChinmay Chakraborty\nCountry\nIND\nAffiliation\nKIIT Deemed to be University\nIEEE Region\nRegion 10 (Asia and Pacific)\nShih-Yu Chang\nCountry\nUSA\nAffiliation\nSan Jose State University\nIEEE Region\nRegion 6 (Western U.S.)\nLin Chen\nCountry\nCHN\nAffiliation\nSun Yat-sen University\nIEEE Region\nRegion 10 (Asia and Pacific)\nXi Chen\nCountry\nUSA\nAffiliation\nGlobal Energy Interconnection Research Institute North America\nIEEE Region\nRegion 6 (Western U.S.)\nPasquale Coscia\nCountry\nITA\nAffiliation\nDepartment of Computer Science, Università degli Studi di Milano\nIEEE Region\nRegion 8 (Africa, Europe, Middle East)\nHany E. Farag\nCountry\nCAN\nAffiliation\nYork University\nIEEE Region\nRegion 7 (Canada)\nShaahin Filizadeh\nCountry\nCAN\nAffiliation\nUniversity of Manitoba\nIEEE Region\nRegion 7 (Canada)\nZhen Gao\nCountry\nCHN\nAffiliation\nBeijing Institute of Technology\nIEEE Region\nRegion 10 (Asia and Pacific)\nPrasanta Ghosh\nCountry\nUSA\nAffiliation\nSyracuse University\nIEEE Region\nRegion 1 (Northeastern U.S.)\nAlex Gorod\nCountry\nAUS\nAffiliation\nThe University of Adelaide\nIEEE Region\nRegion 10 (Asia and Pacific)\nZehua Guo\nCountry\nCHN\nAffiliation\nBeijing Institute of Technology\nIEEE Region\nRegion 10 (Asia and Pacific)\nJun Cai\nCountry\nCAN\nAffiliation\nConcordia University\nIEEE Region\nRegion 7 (Canada)\nYoungjin Kim\nCountry\nROK\nAffiliation\nPohang University of Science and Technology\nIEEE Region\nRegion 10 (Asia and Pacific)\nChristopher Kitts\nCountry\nUSA\nAffiliation\nSanta Clara University\nIEEE Region\nRegion 6 (Western U.S.)\nChandan Kumar\nCountry\nIND\nAffiliation\nIndian Institute of Technology Guwahati\nIEEE Region\nRegion 10 (Asia and Pacific)\nSaru Kumari\nCountry\nIND\nAffiliation\nChaudhary Charan Singh University\nIEEE Region\nRegion 10 (Asia and Pacific)\nChing-Ming Lai\nCountry\nTWN\nAffiliation\nNational Central University\nIEEE Region\nRegion 10 (Asia and Pacific)\nKa-Cheong Leung\nCountry\nTWN\nAffiliation\nNational Sun Yat-Sen University\nIEEE Region\nRegion 10 (Asia and Pacific)\nXingwang Li\nCountry\nCHN\nAffiliation\nHenan Polytechnic University\nIEEE Region\nRegion 10 (Asia and Pacific)\nZhiyi Li\nCountry\nCHN\nAffiliation\nZhejiang University\nIEEE Region\nRegion 10 (Asia and Pacific)\nDatong Liu\nCountry\nCHN\nAffiliation\nHarbin Institute of Technology\nIEEE Region\nRegion 10 (Asia and Pacific)\nXin Liu\nAffiliation\nDalian University of Technology\nIEEE Region\nRegion 10 (Asia and Pacific)\nJianxing Liu\nCountry\nCHN\nAffiliation\nHarbin Institute of Technology\nIEEE Region\nRegion 10 (Asia and Pacific)\nWalter Lucia\nCountry\nCAN\nAffiliation\nConcordia University\nIEEE Region\nRegion 7 (Canada)\nFeng Lyu\nCountry\nCHN\nAffiliation\nCentral South University\nIEEE Region\nRegion 10 (Asia and Pacific)\nShahab Mehraeen\nCountry\nUSA\nAffiliation\nLouisiana State University\nIEEE Region\nRegion 5 (Southwestern U.S.)\nSudip Misra\nCountry\nIND\nAffiliation\nIndian Institute of Technology Kharagpur\nIEEE Region\nRegion 10 (Asia and Pacific)\nSeyed Masoud Mohseni-Bonab\nAffiliation\nHydro-Quebec's Research Institute (IREQ)\nIEEE Region\nRegion 7 (Canada)\nNikolaos Paterakis\nCountry\nNLD\nAffiliation\nEindhoven University of Technology\nIEEE Region\nRegion 8 (Africa, Europe, Middle East)\nEdris Pouresmaeil\nCountry\nFIN\nAffiliation\nAalto University\nIEEE Region\nRegion 8 (Africa, Europe, Middle East)\nJianbin Qiu\nCountry\nCHN\nAffiliation\nHarbin Institute of Technology\nIEEE Region\nRegion 10 (Asia and Pacific)\nShaolei Ren\nCountry\nUSA\nAffiliation\nUniversity of California, Riverside\nIEEE Region\nRegion 6 (Western U.S.)\nKumars Rouzbehi\nCountry\nESP\nAffiliation\nUniversity of Seville\nIEEE Region\nRegion 8 (Africa, Europe, Middle East)\nAlireza Safaee\nCountry\nUSA\nAffiliation\nApple\nIEEE Region\nRegion 6 (Western U.S.)\nMiadreza Shafie-khah\nCountry\nFIN\nAffiliation\nUniversity of Vaasa\nIEEE Region\nRegion 8 (Africa, Europe, Middle East)\nPeng Shi\nCountry\nAUS\nAffiliation\nUniversity of Adelaide\nIEEE Region\nRegion 10 (Asia and Pacific)\nXiaojie Su\nCountry\nCHN\nAffiliation\nChongqing University\nIEEE Region\nRegion 10 (Asia and Pacific)\nBidyadhar Subudhi\nPersonal Gender Pronouns\n(he/him)\nCountry\nIND\nAffiliation\nIndian Institute of Technology Goa\nIEEE Region\nRegion 10 (Asia and Pacific)\nJie Tang\nCountry\nCHN\nAffiliation\nTsinghua University\nIEEE Region\nRegion 10 (Asia and Pacific)\nYang Tang\nCountry\nCHN\nAffiliation\nEast China University of Science and Technology\nIEEE Region\nRegion 10 (Asia and Pacific)\nAkin Tascikaraoglu\nCountry\nTUR\nAffiliation\nMugla Sitki Kocman University\nIEEE Region\nRegion 8 (Africa, Europe, Middle East)\nReinaldo Tonkoski\nCountry\nDEU\nAffiliation\nTechnical University of Munich\nIEEE Region\nRegion 8 (Africa, Europe, Middle East)\nSana Ullah\nCountry\nPAK\nAffiliation\nUniversity of Swat\nIEEE Region\nRegion 10 (Asia and Pacific)\nCan Wan\nCountry\nCHN\nAffiliation\nZhejiang University\nIEEE Region\nRegion 10 (Asia and Pacific)\nZhaojian Wang\nCountry\nCHN\nAffiliation\nShanghai Jiao Tong University\nIEEE Region\nRegion 10 (Asia and Pacific)\nKun Wang\nCountry\nUSA\nAffiliation\nUniversity of California, Los Angeles\nIEEE Region\nRegion 6 (Western U.S.)\nYishen Wang\nCountry\nCHN\nAffiliation\nGlobal Energy Interconnection Research Institute Co. Ltd.\nIEEE Region\nRegion 10 (Asia and Pacific)\nFangqing Wen\nCountry\nCHN\nAffiliation\nChina Three Gorges University\nIEEE Region\nRegion 10 (Asia and Pacific)\nN. Peter Whitehead\nIEEE Region\nRegion 2 (Eastern U.S.)\nChenye Wu\nCountry\nHKG\nAffiliation\nThe Chinese University of Hong Kong – Shenzhen\nIEEE Region\nRegion 10 (Asia and Pacific)\nHuaming Wu\nCountry\nCHN\nAffiliation\nTianjin University\nIEEE Region\nRegion 10 (Asia and Pacific)\nJing Yan\nCountry\nCHN\nAffiliation\nYanshan University\nIEEE Region\nRegion 10 (Asia and Pacific)\nYujian Ye\nCountry\nCHN\nAffiliation\nSoutheast University\nIEEE Region\nRegion 10 (Asia and Pacific)\nXinwei Yue\nCountry\nCHN\nAffiliation\nBeijing Information Science and Technology University\nIEEE Region\nRegion 10 (Asia and Pacific)\nWeiye Zheng\nCountry\nCHN\nAffiliation\nUniversity of Macau\nIEEE Region\nRegion 10 (Asia and Pacific)\nHaibin Zhu\nCountry\nCAN\nAffiliation\nNipissing University\nMemberships\nSMCS\nIEEE Region\nRegion 7 (Canada)\nGuopu Zhu\nCountry\nCHN\nAffiliation\nHarbin Institute of Technology\nIEEE Region\nRegion 10 (Asia and Pacific)\nGuangdeng Zong\nCountry\nCHN\nAffiliation\nTiangong University\nIEEE Region\nRegion 10 (Asia and Pacific)\nPast Systems Journal Editor-in-Chief\nVincenzo Piuri\nCountry\nITA\nAffiliation\nUniversity of Milan\nIEEE Region\nRegion 8 (Africa, Europe, Middle East)\nSystems Journal Founding Editor-in-Chief\nMo Jamshidi\nCountry\nUSA\nAffiliation\nUniversity of Texas, San Antonio\nIEEE Region\nRegion 5 (Southwestern U.S.)\nSystems Journal Editorial Advisory Board\nHojjat Adeli\nCountry\nUSA\nAffiliation\nThe Ohio State University\nIEEE Region\nRegion 4 (Central U.S.)\nMauli Agrawal\nCountry\nUSA\nAffiliation\nUniversity of Texas at San Antonio\nIEEE Region\nRegion 5 (Southwestern U.S.)\nRafik Aliev\nCountry\nAZE\nAffiliation\nAzerbaijan State Oil Academy\nIEEE Region\nRegion 8 (Africa, Europe, Middle East)\nAdedeji B. Badiru\nCountry\nUSA\nAffiliation\nAir Force Institute of Technology\nIEEE Region\nRegion 4 (Central U.S.)\nGeorge Bekey\nCountry\nUSA\nAffiliation\nUniversity of Southern California\nIEEE Region\nRegion 6 (Western U.S.)\nZenn Bien\nCountry\nROK\nAffiliation\nKorea Advanced Institute of Science and Technology\nIEEE Region\nRegion 10 (Asia and Pacific)\nPierre Borne\nCountry\nFRA\nAffiliation\nEcole Centrale de Lille\nIEEE Region\nRegion 8 (Africa, Europe, Middle East)\nFarouk El-Baz\nCountry\nUSA\nAffiliation\nBoston University\nIEEE Region\nRegion 1 (Northeastern U.S.)\nKim Fowler\nCountry\nUSA\nAffiliation\nCampbell University\nIEEE Region\nRegion 3 (Southeastern U.S.)\nRoy S. Kalawsky\nCountry\nGBR\nAffiliation\nLoughborough University\nIEEE Region\nRegion 8 (Africa, Europe, Middle East)\nPradeep Khosla\nCountry\nUSA\nAffiliation\nCarnegie Mellon University\nIEEE Region\nRegion 1 (Northeastern U.S.)\nPeter Luh\nCountry\nUSA\nAffiliation\nUniversity of Connecticut\nIEEE Region\nRegion 1 (Northeastern U.S.)\nAsad Madni\nCountry\nUSA\nAffiliation\nBEI Technologies Inc.\nIEEE Region\nRegion 6 (Western U.S.)\nMark Montrose\nCountry\nUSA\nAffiliation\nMontrose Compliance Services, Inc.\nIEEE Region\nRegion 6 (Western U.S.)\nM. Hashem Nehrir\nCountry\nUSA\nAffiliation\nMontana State University-Bozeman\nIEEE Region\nRegion 5 (Southwestern U.S.)\nCharlie C. Nguyen\nCountry\nUSA\nAffiliation\nThe Catholic University of America\nIEEE Region\nRegion 1 (Northeastern U.S.)\nJay Pearlman\nCountry\nUSA\nAffiliation\nBoeing\nIEEE Region\nRegion 2 (Eastern U.S.)\nWitold Pedrycz\nCountry\nCAN\nAffiliation\nUniversity of Alberta\nIEEE Region\nRegion 7 (Canada)\nYannis A. Phillis\nCountry\nGRC\nAffiliation\nTechnical University of Crete\nIEEE Region\nRegion 8 (Africa, Europe, Middle East)\nMarwan Simaan\nCountry\nUSA\nAffiliation\nUniversity of Pittsburgh\nIEEE Region\nRegion 2 (Eastern U.S.)\nSoroosh Sorooshian\nCountry\nUSA\nAffiliation\nUniversity of California, Irvine\nIEEE Region\nRegion 6 (Western U.S.)\nDelbert Tesar\nCountry\nUSA\nAffiliation\nThe University of Texas at Austin\nIEEE Region\nRegion 5 (Southwestern U.S.)\nJames M. Tien\nCountry\nUSA\nAffiliation\nRensselaer Polytechnic Institute\nIEEE Region\nRegion 1 (Northeastern U.S.)\nEdward Tunstel\nCountry\nUSA\nAffiliation\nJohns Hopkins University\nIEEE Region\nRegion 2 (Eastern U.S.)\nFei-Yue Wang\nCountry\nCHN\nAffiliation\nChinese Academy of Science\nIEEE Region\nRegion 10 (Asia and Pacific)\nTakeshi Yamakawa\nCountry\nJPN\nAffiliation\nKyushu Institute of Technology\nIEEE Region\nRegion 10 (Asia and Pacific)\nReza Zoughi\nCountry\nUSA\nAffiliation\nUniversity of Missouri-Rolla\nIEEE Region\nRegion 4 (Central U.S.)\nNo current call documents available.\nRecent Past Call Documents:\nCall Doc Category\nISJ\nName\nISJ 2026 CFP\nDeadline:\n30 May 2026\n(Extended)\nCall Doc Category\nISJ\nName\nSpecial Issue on Injecting Intelligence for Reliability and Resilience: Theories, Models, and Applications for Complex and System of Systems\nDeadline:\n1 Dec 2025\nCall Doc Category\nISJ\nName\nSpecial Issue on AIoMT-enabled Systems-of-Systems for Complex Healthcare Environments\nDeadline:\n30 Nov 2024\n(Extended)\nCall Doc Category\nISJ\nName\nSpecial Issue on “Navigating the Multi-Robotic Frontier with Reinforcement Learning”\nDeadline:\n30 Jun 2024\nCall Doc Category\nISJ\nName\nSpecial Issue on “Advanced Learning-based Support for Large-scale Multi-agent Systems”\nDeadline:\n15 Nov 2023\nCall Doc Category\nISJ\nName\nSpecial Issue on “Artificial Intelligence for Next Generation Industrial Cyber-Physical Systems”\nDeadline:\n30 Dec 2022\nQuick Links\nReviewers\nCall for Papers Regular Issues\nCall for Papers Special Issues\nLatest Issue Table of Contents\nTop 10 Downloaded Papers\nContact Us\nShare on:\nView on IEEE Xplore\nEditorial Committee Leadership Position(s)\nSystems Journal Editor-in-Chief\n2026\n-\n2027\nCountry\nCHN\nRuqiang Yan\nAffiliation\nXi'an Jiaotong University\nIEEE Region\nRegion 10 (Asia and Pacific)\nEmail\nEmail\nThis site is created, maintained, and managed by\nConference Catalysts, LLC\n.\nPlease feel free to\ncontact us\nfor any assistance."
+    },
+    {
+      "key": "machine-learning-scope",
+      "url": "https://link.springer.com/journal/10994/aims-and-scope",
+      "status": 200,
+      "final_url": "https://link.springer.com/journal/10994/aims-and-scope",
+      "sha256": "403b68544c39c14c6051d5a40e0156ce0966106b730956ccc70697e56aad90b3",
+      "title": "Aims and scope | Machine Learning | Springer Nature Link",
+      "links": [
+        {
+          "text": "Log in",
+          "href": "https://idp.springer.com/auth/personal/springernature?redirect_uri=https://link.springer.com/journal/10994/aims-and-scope"
+        },
+        {
+          "text": "Publish with us",
+          "href": "https://www.springernature.com/gp/authors"
+        },
+        {
+          "text": "Submit your manuscript",
+          "href": "https://submission.springernature.com/new-submission/10994/3"
+        },
+        {
+          "text": "For authors",
+          "href": "#for-authors"
+        },
+        {
+          "text": "Journal updates",
+          "href": "/journal/10994/updates"
+        },
+        {
+          "text": "Aims and scope",
+          "href": "/journal/10994/aims-and-scope"
+        },
+        {
+          "text": "Pre-submission checklist",
+          "href": "/pre-submission?journalId=10994"
+        },
+        {
+          "text": "Submission guidelines",
+          "href": "/journal/10994/submission-guidelines"
+        },
+        {
+          "text": "Language editing",
+          "href": "https://authorservices.springernature.com/go/sn/?utm_source=For+Authors&utm_medium=Website_SpringerLink&utm_campaign=Platform+Experimentation+2022&utm_id=PE2022"
+        },
+        {
+          "text": "Submit your manuscript",
+          "href": "https://submission.springernature.com/new-submission/10994/3"
+        },
+        {
+          "text": "Journal updates",
+          "href": "/journal/10994/updates"
+        },
+        {
+          "text": "Aims and scope",
+          "href": "/journal/10994/aims-and-scope"
+        },
+        {
+          "text": "Pre-submission checklist",
+          "href": "/pre-submission?journalId=10994"
+        },
+        {
+          "text": "Submission guidelines",
+          "href": "/journal/10994/submission-guidelines"
+        },
+        {
+          "text": "Language editing",
+          "href": "https://authorservices.springernature.com/go/sn/?utm_source=For+Authors&utm_medium=Website_SpringerLink&utm_campaign=Platform+Experimentation+2022&utm_id=PE2022"
+        },
+        {
+          "text": "Submit your manuscript",
+          "href": "https://submission.springernature.com/new-submission/10994/3"
+        },
+        {
+          "text": "Journal updates",
+          "href": "/journal/10994/updates"
+        },
+        {
+          "text": "Publish with us",
+          "href": "https://www.springernature.com/gp/authors"
+        },
+        {
+          "text": "Publish your research",
+          "href": "https://www.springernature.com/gp/authors"
+        },
+        {
+          "text": "Language editing",
+          "href": "https://authorservices.springernature.com/go/sn/?utm_source=SNLinkfooter&utm_medium=Web&utm_campaign=SNReferral"
+        }
+      ],
+      "text": "Aims and scope | Machine Learning | Springer Nature Link\nSkip to main content\nMachine Learning\nMachine Learning\nPublishing model\n:\nHybrid\nSubmit your manuscript\nSave journal\nView saved research\nNorthwestern Polytechnical University\nJournal menu\nAims and scope\nMachine Learning\nis an international forum for research on computational approaches to learning. The journal publishes articles reporting substantive results on a wide range of learning methods applied to a variety of learning problems, including but not limited to:\nLearning Problems:\nClassification, regression, recognition, and prediction; Problem solving and planning; Reasoning and inference; Data mining; Web mining; Scientific discovery; Information retrieval; Natural language processing; Design and diagnosis; Vision and speech perception; Robotics and control; Combinatorial optimization; Game playing; Industrial, financial, and scientific applications of all kinds.\nLearning Methods:\nSupervised and unsupervised learning methods (including learning decision and regression trees, rules, connectionist networks, probabilistic networks and other statistical models, inductive logic programming, case-based methods, ensemble methods, clustering, etc.); Reinforcement learning; Evolution-based methods; Explanation-based learning; Analogical learning methods; Automated knowledge acquisition; Learning from instruction; Visualization of patterns in data; Learning in integrated architectures; Multistrategy learning; Multi-agent learning.\nPapers describe research on problems and methods, applications research, and issues of research methodology. Papers making claims about learning problems (e.g., inherent complexity) or methods (e.g., relative performance of alternative algorithms) provide solid support via empirical studies, theoretical analysis, or comparison to psychological phenomena. Applications papers show how to apply learning methods to solve important applications problems. Research methodology papers improve how machine learning research is conducted. All papers must state their contributions clearly and describe how the contributions are supported. All papers must describe the supporting evidence in ways that can be verified or  replicated by other researchers. All papers must describe the learning component clearly, and must discuss assumptions regarding knowledge representation and the performance task. All papers must place their contribution clearly in the context of existing work in machine learning. Variations from these prototypes, such as comprehensive surveys of active research areas, critical reviews of existing work, and book reviews, will be considered provided they make a clear contribution to the field.\nJournal navigation"
+    },
+    {
+      "key": "springer-nca",
+      "url": "https://link.springer.com/journal/521/aims-and-scope",
+      "status": 200,
+      "final_url": "https://link.springer.com/journal/521/aims-and-scope",
+      "sha256": "e4fabc59901972c91863ddb4b34316b8f280a5094240ceca3e6afcc4a8ae1296",
+      "title": "Aims and scope | Neural Computing and Applications | Springer Nature Link",
+      "links": [
+        {
+          "text": "Log in",
+          "href": "https://idp.springer.com/auth/personal/springernature?redirect_uri=https://link.springer.com/journal/521/aims-and-scope"
+        },
+        {
+          "text": "Publish with us",
+          "href": "https://www.springernature.com/gp/authors"
+        },
+        {
+          "text": "Submit your manuscript",
+          "href": "https://www.editorialmanager.com/ncaa"
+        },
+        {
+          "text": "For authors",
+          "href": "#for-authors"
+        },
+        {
+          "text": "Journal updates",
+          "href": "/journal/521/updates"
+        },
+        {
+          "text": "Aims and scope",
+          "href": "/journal/521/aims-and-scope"
+        },
+        {
+          "text": "Pre-submission checklist",
+          "href": "/pre-submission?journalId=521"
+        },
+        {
+          "text": "Submission guidelines",
+          "href": "/journal/521/submission-guidelines"
+        },
+        {
+          "text": "Calls for papers",
+          "href": "/journal/521/collections?filter=Open"
+        },
+        {
+          "text": "Language editing",
+          "href": "https://authorservices.springernature.com/go/sn/?utm_source=For+Authors&utm_medium=Website_SpringerLink&utm_campaign=Platform+Experimentation+2022&utm_id=PE2022"
+        },
+        {
+          "text": "Submit your manuscript",
+          "href": "https://www.editorialmanager.com/ncaa"
+        },
+        {
+          "text": "Journal updates",
+          "href": "/journal/521/updates"
+        },
+        {
+          "text": "Aims and scope",
+          "href": "/journal/521/aims-and-scope"
+        },
+        {
+          "text": "Pre-submission checklist",
+          "href": "/pre-submission?journalId=521"
+        },
+        {
+          "text": "Submission guidelines",
+          "href": "/journal/521/submission-guidelines"
+        },
+        {
+          "text": "Calls for papers",
+          "href": "/journal/521/collections?filter=Open"
+        },
+        {
+          "text": "Language editing",
+          "href": "https://authorservices.springernature.com/go/sn/?utm_source=For+Authors&utm_medium=Website_SpringerLink&utm_campaign=Platform+Experimentation+2022&utm_id=PE2022"
+        },
+        {
+          "text": "Submit your manuscript",
+          "href": "https://www.editorialmanager.com/ncaa"
+        },
+        {
+          "text": "Journal updates",
+          "href": "/journal/521/updates"
+        },
+        {
+          "text": "Publish with us",
+          "href": "https://www.springernature.com/gp/authors"
+        },
+        {
+          "text": "Publish your research",
+          "href": "https://www.springernature.com/gp/authors"
+        },
+        {
+          "text": "Language editing",
+          "href": "https://authorservices.springernature.com/go/sn/?utm_source=SNLinkfooter&utm_medium=Web&utm_campaign=SNReferral"
+        }
+      ],
+      "text": "Aims and scope | Neural Computing and Applications | Springer Nature Link\nSkip to main content\nNeural Computing and Applications\nNeural Computing and Applications\nPublishing model\n:\nHybrid\nSubmit your manuscript\nSave journal\nView saved research\nNorthwestern Polytechnical University\nJournal menu\nAims and scope\nNeural Computing & Applications\nis an international journal which publishes original research and other information in the field of practical applications of neural computing and related techniques such as genetic algorithms, fuzzy logic and neuro-fuzzy systems.\nAll items relevant to building practical systems are within its scope, including but not limited to:\nadaptive computing\nalgorithms\napplicable neural networks theory\napplied statistics\narchitectures\nartificial intelligence\nbenchmarks\ncase histories of innovative applications\nfuzzy logic\ngenetic algorithms\nhardware implementations\nhybrid intelligent systems\nintelligent agents\nintelligent control systems\nintelligent diagnostics\nintelligent forecasting\nmachine learning\nneural networks\nneuro-fuzzy systems\npattern recognition\nperformance measures\nself-learning systems\nsoftware simulations\nsupervised and unsupervised learning methods\nsystem engineering and integration\nFeatured contributions fall into several categories: Original Articles, Review Articles, Book Reviews and Announcements.\nThe Original Articles will be high-quality contributions, representing new and significant research, developments or applications of practical use and value.  They will be reviewed by at least two referees.\nFOUNDING EDITOR\nHoward James\nJOURNAL ADMINISTRATOR\nTanya Daly, United Kingdom\nFor all queries relating to papers after submission, please contact the Journal Editorial Office via “contact us” at Editorial Manager.\nJournal navigation"
+    },
+    {
+      "key": "systems-instructions",
+      "url": "https://ieeesystemscouncil.org/publication/ieee-systems-journal/instructions-for-authors",
+      "status": 200,
+      "final_url": "https://ieeesystemscouncil.org/publication/ieee-systems-journal/instructions-for-authors",
+      "sha256": "f26c274b8105d70800537b311685b1c7f120e3117fd0e56fe64154fd94794eb6",
+      "title": "Instructions for Authors | IEEE Systems Council",
+      "links": [
+        {
+          "text": "Systems Journal Best Paper Award",
+          "href": "/paper-award/systems-journal-best-paper-award"
+        },
+        {
+          "text": "Conference Papers on Systems Engineering Topics",
+          "href": "/conferences/resources/conference-papers-systems-engineering-topics"
+        },
+        {
+          "text": "Call for Papers",
+          "href": "/call-papers-regular-issues"
+        },
+        {
+          "text": "Instructions for Authors",
+          "href": "/publication/ieee-systems-journal/instructions-for-authors"
+        },
+        {
+          "text": "Systems Journal Best Paper Award",
+          "href": "/paper-award/systems-journal-best-paper-award"
+        },
+        {
+          "text": "Systems Journal Best Paper Award",
+          "href": "/paper-award/systems-journal-best-paper-award"
+        },
+        {
+          "text": "Conference Papers on Systems Engineering Topics",
+          "href": "/conferences/resources/conference-papers-systems-engineering-topics"
+        },
+        {
+          "text": "Call for Papers",
+          "href": "/call-papers-regular-issues"
+        },
+        {
+          "text": "Instructions for Authors",
+          "href": "/publication/ieee-systems-journal/instructions-for-authors"
+        },
+        {
+          "text": "Systems Journal Best Paper Award",
+          "href": "/paper-award/systems-journal-best-paper-award"
+        },
+        {
+          "text": "Submit a Manuscript",
+          "href": "https://ieee.atyponrex.com/journal/ieee-sj"
+        },
+        {
+          "text": "IEEE Author Portal",
+          "href": "https://ieee.atyponrex.com/journal/ieee-sj"
+        },
+        {
+          "text": "scope",
+          "href": "/publication/ieee-systems-journal"
+        },
+        {
+          "text": "IEEE Journal format",
+          "href": "https://ieeeauthorcenter.ieee.org/"
+        },
+        {
+          "text": "Article Templates",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/create-your-ieee-journal-article/authoring-tools-and-templates/tools-for-ieee-authors/ieee-article-templates/"
+        },
+        {
+          "text": "IEEE Author Center",
+          "href": "https://ieeeauthorcenter.ieee.org/"
+        },
+        {
+          "text": "IEEE Author Portal",
+          "href": "https://ieee.atyponrex.com/journal/ieee-sj"
+        },
+        {
+          "text": "IEEE Author Portal",
+          "href": "https://ieee.atyponrex.com/journal/ieee-sj"
+        },
+        {
+          "text": "IEEE Journal format",
+          "href": "http://www.ieee.org/publications_standards/publications/authors/authors_journals.html"
+        },
+        {
+          "text": "IEEE Author Portal",
+          "href": "https://ieee.atyponrex.com/journal/ieee-sj"
+        }
+      ],
+      "text": "Instructions for Authors | IEEE Systems Council\nSkip to main content\nClose panel\nInstructions for Authors\nQuick Links\nSubmit a Manuscript\nManuscript Submission System\nFor submitting a new manuscript or a revised version of a manuscript, please visit the\nIEEE Author Portal\n.\nPrepare a Manuscript\nThe IEEE Systems Journal publishes original, innovative contributions in its\nscope\n. Manuscript must be exclusively submitted to this journal, must not have been published before, and must not be under consideration for publication elsewhere. Significantly extended and expanded versions of papers published in conference proceedings can be submitted, providing also a detailed description of the additions.\nManuscript type:\nregular paper:\nup to 12 pages at every round of review process (up to 8 final published pages are complimentary; up to 4 allowable additional pages will be subject to the extra-page charge);\nshort paper:\nup to 4 pages on any stage of the review process;\nsurvey or tutorial paper:\nup to 12 pages on any stage of the review process (up to 8 final published pages are complimentary; up to 4 allowable additional pages will be subject to the extra-page charge). For more information on survey papers’ page limit, you may want to contact the Editor-in-Chief.\nManuscript length:\nregular paper:\nup to 12 final published pages (up to 8 final published pages are complimentary; up to 4 allowable additional pages will be subject to the extra-page charge);\nshort paper:\nup to 4 final published pages;\nsurvey or tutorial paper:\nup to 12 final published pages (up to 8 final published pages are complimentary; up to 4 allowable additional pages will be subject to the extra-page charge). For more information on survey papers’ page limit, you may want to contact the Editor-in-Chief.\nManuscript style\nPrepare the manuscript in the standard\nIEEE Journal format\n(double column, font 10 Times Roman, keywords, corresponding author, etc.). Look for the “Template for Transactions” in “\nArticle Templates\n” within the resources for Journals.\nOnly manuscripts written in English are considered. Contributors for whom English is not a native language may consult a colleague who is familiar with the English language, prior to submitting the paper, for the purpose of editing the manuscript for proper English usage.\nAn informative abstract should be provided at the beginning of the manuscript (see details below).\nAt least five keywords or index terms should be included after the abstract to characterize the manuscript.\nAcknowledgement of possible financial support will be listed in the first page of the final manuscript, as a footnote.\nReferences should appear in a separate section at the end of the paper, with items referred to by numerals in square brackets. References must be complete and in IEEE style: Style for papers: Author, first initials followed by last name, title in quotations, periodical, volume, page numbers, month, year. Style for books: Author, title. Location: publisher, year, chapter, and page numbers (if desired).\nFigures and tables should be sharp, noise-free, and of good contrast: unfortunately, we cannot provide drafting or art service. On graphs, show only the coordinate axes, or at most the major grid lines to avoid a dense hard-to read image. All lettering should be large enough to permit legibility in the final IEEE Journal format. The authors must submit figure and photo files in the appropriate format and resolution.\nAbstract style\nThe abstract is what users and researches will read when deciding whether your article pertains to their interests and needs. For this reason, your abstract is an extremely important and powerful representation of your article. As an author, you should spend time ensuring that it is readable and that it contains a complete description of your research. In approximately 150-250 words, you will need to summarize your findings, and describe the implications of those findings. The abstract must be an accurate reflection of what is in your article as follows.\nYour abstract must be self-contained, without abbreviations, footnotes, or references. It should be a microcosm of the full article.\nYour abstract must be written as one paragraph, and should not contain displayed mathematical equations or tabular material.\nYour abstract should include three or four different keywords or phrases, as this will help readers to find it. (It is important to avoid over-repetition of such phrases as this can result in a page being rejected by search engines).\nEnsure that your abstract reads well and is grammatically correct.\nVisit the journal’s “Information for Authors” page to review its abstract’s specifications and description. Be sure that you adhere to its guidelines and limitations; otherwise, it is likely that you will be asked to edit your abstract accordingly.\nWhen submitting an abstract for your original research, it is important to state the primary objective and offer any tested hypotheses. Describe your research design and methodology and accurately state the following: the methods and procedures you employed, the main outcomes and results, and the conclusions that might be drawn from these data and results. Include any implications for further research or application/practice.\nEnglish Language Editing Services\nEnglish language editing services can help refine the language of your article and reduce the risk of rejection for poor readability. IEEE authors are eligible for discounts at several language editing services; visit the\nIEEE Author Center\nto learn more. Please note these services are fee-based and do not guarantee acceptance.\nSubmit a Manuscript\nThe IEEE Systems Journal currently accepts manuscripts only in Adobe Acrobat PDF file format.\nSubmit electronically your manuscript at the\nIEEE Author Portal\n. The site has instructions and/or help buttons on each page. No other submission procedure is accepted.\nDuring the online submission process, the contact author will be requested to list all authors with their email addresses, provide the text of the paper abstract, select appropriate keywords from a predefined list (keywords listed in the manuscript may be different and give a more detailed characterization of the manuscript), and upload an optional cover letter (where authors can provide any additional information to the editor, e.g., about possible previous versions published in conference proceedings). Due to possible conflict of interest, the contact author will be allowed for specifying non-preferred Associate Editors and/or reviewers, who will not be involved in the review process.\nIn addition to the manuscript, attachments (video, animations, applets, code, data, etc.) may be uploaded to be considered in the review process and, possibly, posted as supplementary material with the online version of accepted papers. Currently the following files are accepted: avi files (PowerPoint animations), MPEG video files, Java applets, code with specific compilation instructions and execution instructions and machine specific information, and data sets with a description of the data format.\nORCID.\nAll IEEE journals require an Open Researcher and Contributor ID (ORCID) for all authors. ORCID is a persistent unique identifier for researchers and functions similarly to an article’s Digital Object Identifier (DOI). ORCIDs enable accurate attribution and improved discoverability of an author’s published work. The author will need a registered ORCID in order to submit a manuscript or review a proof in this journal.\nPage limits and extra page charges.\nBy submitting a manuscript authors automatically commit to accept the page limits on the final manuscript for the corresponding type (regular, short, and survey/tutorial paper) and to pay the possible related extra page charges if the manuscript will be accepted for publication. Each extra page or fraction of page exceeding the complimentary pages is subject to a mandatory extra page charge of 150 US$. Payment will be requested for accepted papers during the production stage.\nOpen-Access charge.\nThe IEEE Systems Journal is a hybrid journal, allowing traditional manuscript publication and open-access manuscripts. After being accepted for publication, authors can choose to have their manuscript published as an open-access paper: making this choice, authors automatically commit to pay the open-access charge to enable unrestricted public access. The open-access charge defined by IEEE is $2,495.00. Any other production charges (such as extra page charge) are not included in the open-access charge and will be billed separately.\nIf authors will choose their manuscript to be a traditional publication, no open-access charge will be required and the paper will be made available to qualified subscribers and purchasers via IEEE Xplore.\nReview Process\nAll manuscripts are subject to the following review process.\nThe manuscript is verified with respect to the scope of the journal. If the manuscript is out of the journal scope, it is rejected (desk reject) by the Editor-in-Chief, possibly in consultation with an Associate Editor, without performing the complete review process.\nAn administrative check is performed on the submitted material. Completeness is verified. All questions in the submission form must be answered and, eventually, properly documented in the cover letter. All authors must be listed in the submission form. The manuscript must be readable both in PDF and HTML formats. The manuscript cannot exceed the page limit of the manuscript type selected by the authors. The manuscripts must be written in English.\nIf any of the above aspects is not satisfying the requirements, the manuscript is returned to authors for proper correction. Then, the complete review process is started.\nA manuscript submitted to regular issues is assigned by the Editor-in-Chief to an Associate Editor. Authors are allowed to name possible non-preferred Associate Editors: no suggestion for preferred Associate Editors will be considered. Manuscripts submitted to special issues will be forwarded to the Guest Editors.\nThe Associate Editor (or the Guest Editor for a special issue) assigns the manuscript to at least 3 independent reviewers.\nThe reviewers return their evaluation, recommendations, and suggestions for improving the manuscript.\nThe Associate Editor (or the Guest Editor for a special issue) makes a recommendation for acceptance, revision, or rejection to the Editor-in-Chief, on the basis of the received reviews and his/her personal assessment of the manuscript. Recommendation will be always based on at least 2 independent reviews.\nThe Editor-in-Chief takes the final decision about acceptance, revision, or rejection on the basis both of the Associate Editor’s recommendation and assessment and the reviewers’ reports.\nIf the final decision for a manuscript is revise, the review process is repeated from step 2.\nThe first review cycle is on average 3 months long. The second review cycle is about 1.5 months long.\nPeer Review\nThe articles in this journal are peer reviewed in accordance with the requirements set forth in the IEEE Publication Services and Products Board Operations Manual (\nhttps://pspb.ieee.org/images/files/files/opsmanual.pdf\n). Each published article was reviewed by a minimum of two independent reviewers using a single-anonymous peer review process, where the identities of the reviewers are not known to the authors, but the reviewers know the identities of the authors. Articles will be screened for plagiarism before acceptance.\nCheck the Status of a Manuscript\nAuthors can check the status of the review process at the\nIEEE Author Portal\n.\nPrepare and Submit a Revised Manuscript\nIf revisions have been requested for a manuscript, the revised version should be prepared by following the same guidelines provided above for the manuscript which has been initially submitted.\nAuthors are also requested to prepare a separate document describing which action has been taken for each of the recommendations given by the reviewers, the Associate Editor or the Editor-in-Chief.\nThe IEEE Systems Journal currently accepts manuscripts and documents containing the answers to reviewers/editors’ recommendations only in Adobe Acrobat PDF file format.\nBy submitting the revised version of a manuscript, authors implicitly commit to pay all applicable charges, as described above for the initial submission, if their manuscript will be accepted for publication.\nPrepare and Submit the Final Material for an Accepted Manuscript\nThe final material of an accepted manuscript should be prepared by following the same guidelines provided above for the initial submission.\nIn the first page, the first footnote should be “Manuscript received…” (date to be filled in by Editor), followed by the affiliation of the author(s) with possible contact information and possible acknowledgement of financial support.\nFor the final production process, authors should submit the source files of the manuscript in one of the electronic formats that can be processed by the IEEE: the preferred formats are TeX, LaTeX, and Microsoft Word. LaTeX style files can be obtained at\nIEEE Journal format\n.\nEach figure and photograph should be submitted in a separate file in one of the following formats: TIFF (.tif), Postscript (.ps), or Encapsulated Postscript (.eps). Figures and photographs should have appropriate resolution.\nA short technical biography (usually less than 100 words) and a recent head-and-shoulder photo of each author should be provided. Typically, the biography includes: name, degrees earned and schools, main employments and positions, fields of work, professional society membership and activities, offices, awards.\nOpen Access\nThe copyright transfer form should be filled in electronically during the submission of the final material if the authors will not choose to publish their accepted manuscript in open access.\nPage limits and extra page charges. Each extra page or fraction of page exceeding the complimentary pages in the final manuscript for the corresponding type (regular, short, and survey/tutorial paper) is subject to a mandatory extra page charge of 150 US$. Payment will be requested for accepted papers during the production stage.\nOpen-Access charge. The IEEE Systems Journal is a hybrid journal, allowing traditional manuscript publication and open-access manuscripts. Authors of an accepted manuscript can choose to have their manuscript published as an open-access paper: making this choice, authors automatically commit to pay the $2,045 open-access charge to enable unrestricted public access. Any other production charges (such as extra page charge) are not included in the open-access charge and will be billed separately.\nIf authors will choose their manuscript to be a traditional publication, no open-access charge will be required and the paper will be made available to qualified subscribers and purchasers via IEEE Xplore.\nFor submitting the final material of an accepted manuscript, please visit the\nIEEE Author Portal\n. No other submission procedure is accepted.\nCorrection of the galley proofs\nThe final formatted manuscript (galley proofs) will be made available to authors for final verification and correction of possible minor errors occurred during the formatting phase. Significant corrections not due to production errors, but by authors’ autonomous choice may be subject to a processing charge: before applying these corrections authors will be contacted to verify if they accept to pay this processing charge. Details about the proof-reading of the final formatted manuscript will be provided to authors.\nAdvance posting\nThe IEEE Systems Journal adopts an advance posting policy. An accepted paper will be posted in IEEE Xplore as soon as the production process has been completed and the final formatted manuscript approved by the authors, even prior the formal publication. Authors will be provided with a unique DOI, which will not change after formal publication.\nAn advance-posted paper will be accessible according to the same rules of the corresponding published paper. If authors have chosen to publish it in open access, the paper will have unrestricted public access. If authors have chosen the traditional publication, the paper will be made available to qualified subscribers and purchasers via IEEE Xplore.\nPapers ready in advance-posting can be reached also in the Upcoming Papers page.\nPosting of accepted papers in personal, employers or institutional web sites\nAccording to IEEE regulations and following the practice of many other publishers, authors and/or their employers are allowed to post the accepted version of IEEE-copyrighted papers on their own personal servers or the servers of their institutions or employers without permission from IEEE, provided that the posted version includes a prominently displayed IEEE copyright notice and, when published, a full citation to the original IEEE publication, including a Digital Object Identifier (DOI).\nThe IEEE permits also posting on certain approved third-party servers (typically public institutions funding research for the benefit of the general public), under the same conditions described above. The list of approved servers is available at the IEEE Intellectual Property Rights Office.\nAuthors and/or their employers are not allowed to post the final, published versions of their papers (i.e., the ones including the number of issue and the page number).\nImmediately at the end of the production process, the IEEE production department will provide the PDF file of the accepted version of IEEE-copyrighted papers, which can be posted as described above.\nPapers published in open access are not subject to the above dissemination conditions.\nThis site is created, maintained, and managed by\nConference Catalysts, LLC\n.\nPlease feel free to\ncontact us\nfor any assistance."
+    },
+    {
+      "key": "systems-regular",
+      "url": "https://ieeesystemscouncil.org/publication/iEEE-systems-journal/call-papers-regular-issues",
+      "status": 200,
+      "final_url": "https://ieeesystemscouncil.org/publication/iEEE-systems-journal/call-papers-regular-issues",
+      "sha256": "9cae7c27a81fcd6f3b0e0eb33261b2bd6d47f6fdc65275c5dcd97aaa0a6a2d41",
+      "title": "Call for Papers - Regular Issues | IEEE Systems Council",
+      "links": [
+        {
+          "text": "Systems Journal Best Paper Award",
+          "href": "/paper-award/systems-journal-best-paper-award"
+        },
+        {
+          "text": "Conference Papers on Systems Engineering Topics",
+          "href": "/conferences/resources/conference-papers-systems-engineering-topics"
+        },
+        {
+          "text": "Call for Papers",
+          "href": "/call-papers-regular-issues"
+        },
+        {
+          "text": "Instructions for Authors",
+          "href": "/publication/ieee-systems-journal/instructions-for-authors"
+        },
+        {
+          "text": "Systems Journal Best Paper Award",
+          "href": "/paper-award/systems-journal-best-paper-award"
+        },
+        {
+          "text": "Systems Journal Best Paper Award",
+          "href": "/paper-award/systems-journal-best-paper-award"
+        },
+        {
+          "text": "Conference Papers on Systems Engineering Topics",
+          "href": "/conferences/resources/conference-papers-systems-engineering-topics"
+        },
+        {
+          "text": "Call for Papers",
+          "href": "/call-papers-regular-issues"
+        },
+        {
+          "text": "Instructions for Authors",
+          "href": "/publication/ieee-systems-journal/instructions-for-authors"
+        },
+        {
+          "text": "Systems Journal Best Paper Award",
+          "href": "/paper-award/systems-journal-best-paper-award"
+        },
+        {
+          "text": "Instructions for Authors",
+          "href": "/publication/ieee-systems-journal/instructions-for-authors"
+        },
+        {
+          "text": "Instructions for Authors",
+          "href": "/publication/ieee-systems-journal/instructions-for-authors"
+        },
+        {
+          "text": "View Call For Papers",
+          "href": "https://ieeesystemscouncil.org/files/ieeesyscouncil/ISJ_cfp_2022.pdf"
+        }
+      ],
+      "text": "Call for Papers - Regular Issues | IEEE Systems Council\nSkip to main content\nClose panel\nCall for Papers - Regular Issues\nBody\nThe IEEE Systems Journal (ISJ) is the technical journal of the IEEE Systems Council and is published quarterly.\nQuick Links\nAbout the Systems Journal\nScope:\nThis journal is created to provide a systems-level focused forum for application-oriented manuscripts that address complex systems and system-of-systems of national and global significance. It is intended to encourage and facilitate cooperation and interaction among IEEE societies, and other professional societies, with systems-level and systems engineering interest.\nJournal Need:\nThe journal is intended to stimulate awareness, appreciation and utilization of systems thinking and the supporting systems engineering disciplines, especially for complex systems, systems-of-systems, complex cyber-physical systems, and complex smart systems, across many domains and application areas. Attention will be directed to theory, technology, design methodology, management, applications, successful lessons, impact in the real life, and social implications. In particular, but not only, themes that will be addressed include architectures, complexity, dynamics, integration, interoperability, adaptability, completeness, effectiveness, modeling, analysis, simulation, development tools and environments, engineering, science, mission assurance, regulatory compliance, robustness, reliability, availability, safety, maintainability, quality, risk management, interaction, usability, human factors, privacy, deployment, management, operations, communications, security, standards, applications, ethics, and education.\nTypical domains encompass, but not limited to: autonomous vehicles and systems, disaster response, energy, environmental monitoring and control, exploratory exploration (space, terrestrial, underwater), global Earth observation and prediction, Earth science, biological systems, biotechnological systems, infrastructure monitoring and control, manufacturing systems, automation, cyber-physical systems, human health and life science, medical systems, transportation systems, logistics, service systems, decision support systems, management of large-scale systems, national defense and security, information and computer systems, cyberspace, internet, distributed networks, information systems security, privacy, educational systems, social and political systems, banking and trading systems, and socio-economic systems.\nInterdisciplinarity is increasingly interesting due to its relevance in the modern and future complex systems, including aspects in engineering areas as well as in biology, chemistry, physics, material sciences, mathematics, life science, physiology, psychology, sociology, law, ethics, management, economy, finance, and many others.\nThis publication fills therefore a void un-addressed by most other journals, both within IEEE and outside, aiming to serve the broad community interested\nManuscript Submission:\nPrepare and submit your manuscript by following the detailed instructions provided in Authors page at the\nInstructions for Authors\npage. The manuscripts should present original work in the scope of the journal and must be exclusively submitted to this journal, must not have been published before, and must not be under consideration for publication elsewhere. Significantly extended and expanded versions of papers published in conference proceedings can be submitted, providing also a detailed description of the additions. Three types of manuscripts are considered: regular, short, and survey/tutorial papers.\nOpen Access\n: This publication is a hybrid journal, allowing traditional manuscript publication and open-access manuscripts. If the paper will be accepted for publication, you can choose to have your manuscript published open access.\nPage Limits and Charges:\nRegular papers are limited to a maximum of 12 pages of the journal (up to 8 pages will be complimentary, the 4 allowable extra pages will cost US$150 per page). Short papers are limited to 4 pages. For surveys/tutorial papers, contact in advance the Editor-in-Chief. For more information about charges for accepted papers, please visit the\nInstructions for Authors\npage.\nView Call For Papers\nThis site is created, maintained, and managed by\nConference Catalysts, LLC\n.\nPlease feel free to\ncontact us\nfor any assistance."
+    },
+    {
+      "key": "ieee-ai",
+      "url": "https://journals.ieeeauthorcenter.ieee.org/become-an-ieee-journal-author/publishing-ethics/guidelines-and-policies/",
+      "status": 200,
+      "final_url": "https://journals.ieeeauthorcenter.ieee.org/become-an-ieee-journal-author/publishing-ethics/guidelines-and-policies/",
+      "sha256": "48ea3786a3c89f3b1ab74d458c16421c09f6b8784519a39867f5632a11aa2f3d",
+      "title": "Guidelines and Policies - IEEE Author Center Journals",
+      "links": [
+        {
+          "text": "Submit to TechRxiv",
+          "href": "https://www.techrxiv.org/"
+        },
+        {
+          "text": "Join IEEE",
+          "href": "https://ieeeauthorcenter.ieee.org/ieee-membership-advantages/"
+        },
+        {
+          "text": "Resources & Tools for Authors",
+          "href": "https://ieeeauthorcenter.ieee.org/"
+        },
+        {
+          "text": "Home",
+          "href": "http://ieeeauthorcenter.ieee.org"
+        },
+        {
+          "text": "New Authors",
+          "href": "https://newauthors.ieeeauthorcenter.ieee.org/"
+        },
+        {
+          "text": "Journal Authors",
+          "href": "https://journals.ieeeauthorcenter.ieee.org"
+        },
+        {
+          "text": "Conference Authors",
+          "href": "http://conferences.ieeeauthorcenter.ieee.org"
+        },
+        {
+          "text": "Book Authors",
+          "href": "http://books.ieeeauthorcenter.ieee.org"
+        },
+        {
+          "text": "Magazine Authors",
+          "href": "http://magazines.ieeeauthorcenter.ieee.org"
+        },
+        {
+          "text": "Become an IEEE Journal Author",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/become-an-ieee-journal-author/"
+        },
+        {
+          "text": "Benefits of Publishing with IEEE",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/become-an-ieee-journal-author/benefits-of-publishing-with-ieee/"
+        },
+        {
+          "text": "Publishing Ethics",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/become-an-ieee-journal-author/publishing-ethics/"
+        },
+        {
+          "text": "Ethical Requirements",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/become-an-ieee-journal-author/publishing-ethics/ethical-requirements/"
+        },
+        {
+          "text": "Author Responsibilities",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/become-an-ieee-journal-author/publishing-ethics/author-responsibilities/"
+        },
+        {
+          "text": "Guidelines and Policies",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/become-an-ieee-journal-author/publishing-ethics/guidelines-and-policies/"
+        },
+        {
+          "text": "Fundamental Publishing Guidelines and Principles",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/become-an-ieee-journal-author/publishing-ethics/guidelines-and-policies/fundamental-publishing-guidelines-and-principles/"
+        },
+        {
+          "text": "Submission and Peer Review Policies",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/become-an-ieee-journal-author/publishing-ethics/guidelines-and-policies/submission-and-peer-review-policies/"
+        },
+        {
+          "text": "Post-Publication Policies",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/become-an-ieee-journal-author/publishing-ethics/guidelines-and-policies/post-publication-policies/"
+        },
+        {
+          "text": "IEEE Author Name Change Policy",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/become-an-ieee-journal-author/publishing-ethics/guidelines-and-policies/ieee-author-name-change-policy/"
+        },
+        {
+          "text": "IEEE Guidelines on Advertising, Accessibility, and Data Privacy",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/become-an-ieee-journal-author/publishing-ethics/guidelines-and-policies/ieee-guidelines-on-advertising-accessibility-data-privacy/"
+        },
+        {
+          "text": "Video Tutorials",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/become-an-ieee-journal-author/video-tutorials/"
+        },
+        {
+          "text": "Create Your IEEE Journal Article",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/create-your-ieee-journal-article/"
+        },
+        {
+          "text": "Authoring Tools and Templates",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/create-your-ieee-journal-article/authoring-tools-and-templates/"
+        },
+        {
+          "text": "Checklist for Creating Your Article",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/create-your-ieee-journal-article/authoring-tools-and-templates/checklist-for-creating-your-article/"
+        },
+        {
+          "text": "Tools for IEEE Authors",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/create-your-ieee-journal-article/authoring-tools-and-templates/tools-for-ieee-authors/"
+        },
+        {
+          "text": "Find a Journal",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/create-your-ieee-journal-article/authoring-tools-and-templates/tools-for-ieee-authors/find-a-journal/"
+        },
+        {
+          "text": "IEEE Article Templates",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/create-your-ieee-journal-article/authoring-tools-and-templates/tools-for-ieee-authors/ieee-article-templates/"
+        },
+        {
+          "text": "Create the Text of Your Article",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/create-your-ieee-journal-article/create-the-text-of-your-article/"
+        },
+        {
+          "text": "Structure Your Article",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/create-your-ieee-journal-article/create-the-text-of-your-article/structure-your-article/"
+        },
+        {
+          "text": "IEEE Editorial Style Manual",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/create-your-ieee-journal-article/create-the-text-of-your-article/ieee-editorial-style-manual/"
+        },
+        {
+          "text": "Create Graphics for Your Article",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/create-your-ieee-journal-article/create-graphics-for-your-article/"
+        },
+        {
+          "text": "Resolution and Size",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/create-your-ieee-journal-article/create-graphics-for-your-article/resolution-and-size/"
+        },
+        {
+          "text": "File Formatting",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/create-your-ieee-journal-article/create-graphics-for-your-article/file-formatting/"
+        },
+        {
+          "text": "Prepare Supplementary Materials",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/create-your-ieee-journal-article/prepare-supplementary-materials/"
+        },
+        {
+          "text": "Research Reproducibility",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/create-your-ieee-journal-article/research-reproducibility/"
+        },
+        {
+          "text": "Submit Your Article for Peer Review",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/submit-your-article-for-peer-review/"
+        },
+        {
+          "text": "The IEEE Article Submission Process",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/submit-your-article-for-peer-review/the-ieee-article-submission-process/"
+        },
+        {
+          "text": "IEEE Publishing Portal",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/submit-your-article-for-peer-review/ieee-publishing-portal/"
+        },
+        {
+          "text": "About the Peer Review Process",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/submit-your-article-for-peer-review/about-the-peer-review-process/"
+        },
+        {
+          "text": "Understanding the Decision Process",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/submit-your-article-for-peer-review/understanding-the-decision-process/"
+        },
+        {
+          "text": "Checklist for Submitting Your Article for Peer Review",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/submit-your-article-for-peer-review/checklist-for-submitting-your-article-for-peer-review/"
+        },
+        {
+          "text": "Ethics in Peer Review",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/submit-your-article-for-peer-review/ethics-in-peer-review/"
+        },
+        {
+          "text": "Become an IEEE Reviewer",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/submit-your-article-for-peer-review/become-an-ieee-reviewer/"
+        },
+        {
+          "text": "Choose a Publishing Agreement",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/choose-a-publishing-agreement/"
+        },
+        {
+          "text": "About the IEEE Copyright Form",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/choose-a-publishing-agreement/about-the-ieee-copyright-form/"
+        },
+        {
+          "text": "Open Access Rights Management",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/choose-a-publishing-agreement/open-access-rights-management/"
+        },
+        {
+          "text": "Avoid Infringement upon IEEE Copyright",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/choose-a-publishing-agreement/avoid-infringement-upon-ieee-copyright/"
+        },
+        {
+          "text": "Checklist for Choosing Your Publishing Agreement",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/choose-a-publishing-agreement/checklist-for-choosing-your-publishing-agreement/"
+        },
+        {
+          "text": "Your Role in Article Production",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/your-role-in-article-production/"
+        },
+        {
+          "text": "Use the IEEE Author Gateway",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/your-role-in-article-production/use-the-ieee-author-gateway/"
+        },
+        {
+          "text": "How to Review Your Article Proof",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/your-role-in-article-production/how-to-review-your-article-proof/"
+        },
+        {
+          "text": "About Potential Article Processing Charges",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/your-role-in-article-production/about-potential-article-processing-charges/"
+        },
+        {
+          "text": "IEEE Editorial Style Manual",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/your-role-in-article-production/ieee-editorial-style-manual/"
+        },
+        {
+          "text": "Checklist for Article Production",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/your-role-in-article-production/checklist-for-article-production/"
+        },
+        {
+          "text": "When Your Article Is Published",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/when-your-article-is-published/"
+        },
+        {
+          "text": "About the IEEE Xplore® Digital Library",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/when-your-article-is-published/about-the-ieee-xplore-digital-library/"
+        },
+        {
+          "text": "IEEE Xplore® Author Profiles",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/when-your-article-is-published/ieee-xplore-author-profiles/"
+        },
+        {
+          "text": "Create Citation Alerts in the IEEE Xplore Digital Library",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/when-your-article-is-published/create-citation-alerts-in-the-ieee-xplore-digital-library/"
+        },
+        {
+          "text": "View Your Article Metrics in the IEEE Xplore Digital Library",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/when-your-article-is-published/view-your-article-metrics-in-the-ieee-xplore-digital-library/"
+        },
+        {
+          "text": "Promote Your Article",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/when-your-article-is-published/promote-your-article/"
+        },
+        {
+          "text": "Abstracting & Indexing (A&I) Databases",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/when-your-article-is-published/abstracting-indexing-ai-databases/"
+        },
+        {
+          "text": "Purchase Print Copies of Your Article",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/when-your-article-is-published/purchase-print-copies-of-your-article/"
+        },
+        {
+          "text": "Checklist for Post-Publication",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/when-your-article-is-published/checklist-for-post-publication/"
+        },
+        {
+          "text": "Home",
+          "href": "https://journals.ieeeauthorcenter.ieee.org"
+        },
+        {
+          "text": "Become an IEEE Journal Author",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/become-an-ieee-journal-author/"
+        },
+        {
+          "text": "Publishing Ethics",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/become-an-ieee-journal-author/publishing-ethics/"
+        },
+        {
+          "text": "fundamental publishing guidelines and principles",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/become-an-ieee-journal-author/publishing-ethics/guidelines-and-policies/fundamental-publishing-guidelines-and-principles/"
+        },
+        {
+          "text": "submission and peer review policies",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/become-an-ieee-journal-author/publishing-ethics/guidelines-and-policies/submission-and-peer-review-policies/"
+        },
+        {
+          "text": "post-publication policies",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/become-an-ieee-journal-author/publishing-ethics/guidelines-and-policies/post-publication-policies/"
+        },
+        {
+          "text": "IEEE author name change policy",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/become-an-ieee-journal-author/publishing-ethics/guidelines-and-policies/ieee-author-name-change-policy/"
+        },
+        {
+          "text": "guidelines on advertising, accessibility, and data privacy",
+          "href": "https://journals.ieeeauthorcenter.ieee.org/become-an-ieee-journal-author/publishing-ethics/guidelines-and-policies/ieee-guidelines-on-advertising-accessibility-data-privacy/"
+        },
+        {
+          "text": "Subscribe to our newsletter",
+          "href": "https://engage.ieee.org/Author-Center-Authors-Newsletter-Opt-in.html"
+        },
+        {
+          "text": "Home",
+          "href": "http://ieeeauthorcenter.ieee.org"
+        },
+        {
+          "text": "New Authors",
+          "href": "https://newauthors.ieeeauthorcenter.ieee.org/"
+        },
+        {
+          "text": "Journal Authors",
+          "href": "https://journals.ieeeauthorcenter.ieee.org"
+        },
+        {
+          "text": "Conference Authors",
+          "href": "http://conferences.ieeeauthorcenter.ieee.org"
+        },
+        {
+          "text": "Book Authors",
+          "href": "http://books.ieeeauthorcenter.ieee.org"
+        },
+        {
+          "text": "Magazine Authors",
+          "href": "http://magazines.ieeeauthorcenter.ieee.org"
+        },
+        {
+          "text": "IEEE Author Center Home",
+          "href": "https://ieeeauthorcenter.ieee.org"
+        },
+        {
+          "text": "Contact IEEE Author Center",
+          "href": "https://ieeeauthorcenter.ieee.org/contact-us/"
+        }
+      ],
+      "text": "Guidelines and Policies - IEEE Author Center Journals\nSkip to main content\nIEEE Publishing Portal\nSubmit to TechRxiv\nJoin IEEE\nSearch\nHome\n»\nBecome an IEEE Journal Author\n»\nPublishing Ethics\n»\nGuidelines and Policies\nGuidelines and Policies\nThis section contains a\nfull overview of IEEE publishing guidelines and policies. They are designed to help authors understand and navigate the publishing process successfully.  Learn more about IEEE’s\nfundamental publishing guidelines and principles\n,\nsubmission and peer review policies\n,\npost-publication policies\n,\nIEEE author name change policy\n, and\nguidelines on advertising, accessibility, and data privacy\n.\nSubscribe to our newsletter"
+    },
+    {
+      "key": "ifaamas",
+      "url": "https://www.ifaamas.org/",
+      "status": 200,
+      "final_url": "https://www.ifaamas.org/",
+      "sha256": "9196f777d533a77a539f8d4f675a12895d6a42f09b360d66e74bfd72a4633a4c",
+      "title": "IFAAMAS",
+      "links": [
+        {
+          "text": "Call for Nominations",
+          "href": "electionproceedings.html"
+        }
+      ],
+      "text": "IFAAMAS\nInternational Foundation for Autonomous Agents and Multiagent Systems\ninfo@ifaamas.org\nMain Page\nAwards\nAAMAS 2026\nPrevious AAMAS Conferences\nAAMAS Proceedings\nRelated Conferences and Schools\nIFAAMAS Committees\nIFAAMAS Board of Directors\nElections for Board of Directors\nIFAAMAS Charter\nIFAAMAS By-Laws\nPublication Ethics and Professional Conduct\nIn Memoriam\nThe International Foundation for Autonomous Agents and Multiagent Systems (IFAAMAS)\n  is a non-profit organization whose purpose is to promote science and technology\n  in the areas of artificial intelligence, autonomous agents and multiagent systems.\nIFAAMAS\nsponsors the annual International Conference on Autonomous Agents and Multiagent Systems (AAMAS).\nThe AAMAS conference series was initiated in 2002 as a merger of three highly respected individual conferences:\n  AGENTS (International Conference on Autonomous Agents), ICMAS (International Conference on Multi-Agent Systems),\n  and ATAL (International Workshop on Agent Theories, Architectures, and Languages).\n  The aim of the joint conference is to provide a single, high-profile, internationally renowned forum for\n  research in the theory and practice of autonomous agents and multiagent systems.\nNominations for Board of Directors\nWe are currently soliciting nominations to serve on the Board of Directors from 2026 through 2032.\nSee the\nCall for Nominations\nfor more details.\nIn pursuit of its purposes, IFAAMAS engages in activities including but not limited to\nCoordinating and arranging seminars on artificial intelligence, autonomous agents and multiagent systems;\nServing as a representative forum for experts within the fields of artificial intelligence,\n  autonomous agents and multiagent systems;\nDistributing, and making available, knowledge about autonomous agents and multiagent system technology\n  through publications, organizational seminars, courses, and conferences;\nCollaborating with scientific and other institutions, organizations and societies, including industrial\n  companies, governments, and international bodies with similar or related purposes.\nIFAAMAS. All Rights Reserved.\nOriginal site by Curve Design Group\nHosted by University of Liverpool Computer Science"
+    },
+    {
+      "key": "ieee-ai-principles",
+      "url": "https://journals.ieeeauthorcenter.ieee.org/become-an-ieee-journal-author/publishing-ethics/guidelines-and-policies/fundamental-publishing-guidelines-and-principles/",
+      "status": 200,
+      "final_url": "https://journals.ieeeauthorcenter.ieee.org/become-an-ieee-journal-author/publishing-ethics/guidelines-and-policies/fundamental-publishing-guidelines-and-principles/",
+      "sha256": "1f09d34481418a1f3e1d58bf50de7cdc318de05c206ca5a25ecb0c4a5d39033b",
+      "text": "Fundamental Publishing Guidelines and Principles - IEEE Author Center Journals\nSkip to main content\nIEEE Publishing Portal\nSubmit to TechRxiv\nJoin IEEE\nSearch\nHome\n»\nBecome an IEEE Journal Author\n»\nPublishing Ethics\n»\nGuidelines and Policies\n»\nFundamental Publishing Guidelines and Principles\nFundamental Publishing Guidelines and Principles\nFor comprehensive guidelines based on every aspect related to publishing with IEEE, use the IEEE Publication Services and Products Board Operations Manual. Read more about IEEE’s core values, principles, and position on the appropriate use of bibliometric indicators.\nIEEE Publication Services and Products Board Operations Manual\nThe\nIEEE Publication Services and Products Board (PSPB) Operations Manual\noutlines all operations and guidelines for IEEE publication services and products. Areas of interest include:\nDefinition of authorship, section 8.2.1.A\nThe article review process, section 8.2.2\nReferencing guidelines, section 8.2.10\nPrinciples of Scholarly Publishing\nThe\nIEEE Principles of Scholarly Publishing\noutline the IEEE core values and principles in an ever-changing publishing landscape.\nAppropriate Use of Bibliometrics\nIEEE recognizes the increasing importance of bibliometric indicators as independent measures of quality or impact of any scientific publication and therefore explicitly and firmly condemns any practice aimed at influencing the number of citations to a specific journal with the sole purpose of artificially influencing the corresponding indices.\nAssessing quality\nIEEE recognizes the recent concerns expressed by the scientific community about the inappropriate application of bibliometrics to the evaluation of both scientists and research proposals. More specifically, IEEE endorses the following tenets in conducting proper assessment in the areas of engineering, computer science, and information technology.\nThe use of multiple complementary bibliometric indicators is fundamentally important to offer an appropriate, comprehensive, and balanced view of each journal in the space of scholarly publications. IEEE has recently adopted the Eigenfactor and the Article Influence in addition to the Impact Factor for the internal and competitive assessment of its publications and welcomes the adoption of other appropriate complementary measures at the article level, such as those recently introduced in the framework of the so-called altmetrics, once they have been appropriately validated and recognized by the scientific community.\nAny journal-based metric is not designed to capture qualities of individual papers, and must therefore not be used as a proxy for single-article quality or to evaluate individual scientists. All journals’ bibliometric indices are obtained by averaging over many papers, and it cannot be assumed that every single article published in a high-impact journal, as determined by any particular journal metric, will be highly cited.\nWhile bibliometrics may be employed as a source of additional information for quality assessment within a specific area of research, the primary manner for assessment of either the scientific quality of a research project or of an individual scientist should be peer review, which will consider the scientific content as the most important aspect in addition to the publication expectations in the area, as well as the size and practice of the research community.\nRead the\nfull IEEE statement\non the appropriate use of bibliometric indicators, as adopted by the IEEE Board of Directors in September 2013.\nIEEE and DORA\nIEEE is a signatory of the San Francisco Declaration on Research Assessment (DORA). DORA is a set of recommendations and principles aimed at improving the way research outputs are evaluated, emphasizing the need to evaluate research based on its content, merits, and broader impacts rather than relying solely on journal-level metrics.\nIEEE provides a range of metrics to encourage a shift toward assessment based on the scientific content of an article rather than publication metrics of the journal in which it was published.\nSee\nhttps://sfdora.org/read/\nfor more information.\nSubscribe to our newsletter"
+    }
+  ],
+  "note": "Snapshots for requirements comparison; recheck official pages before submission. HTTP success alone does not verify bibliographic content."
+}

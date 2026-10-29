@@ -13,3 +13,8 @@
 *.fls
 *.fdb_latexmk
 *.synctex.gz
+*.log
+!/results/validation/**/*.log
+/.env
+/.env.*
+/.git-credentials

@@ -1,0 +1,22 @@
+{
+  "before": {
+    "reproduced": true,
+    "error": "Task success must be available for all tasks",
+    "task_keys": [
+      "new-a",
+      "new-b",
+      "old-a"
+    ]
+  },
+  "after": {
+    "task_keys": [
+      "new-a",
+      "new-b"
+    ],
+    "probabilities": [
+      0.5,
+      0.5
+    ]
+  },
+  "changed_source_sha256": "414c395554a5402a2c66ecfb7fc0b36f8dd285641876d481f27558dc13de2e11"
+}

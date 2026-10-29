@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-29",
+  "archive_directory": "deep-ltl-paper-archive-20261029-submission",
+  "archive_manifest_sha256": "7aa6113fc4505071a65db86f34e16548c40a0da008e7292c534ea4ef75cd4a2c",
+  "moved_roots": [
+    "docs",
+    "overleaf/TLT",
+    "overleaf/HiLTL-new",
+    "results/light-validation-20261025",
+    "results/review-20261025",
+    "results/reference/previous-campaign.json",
+    "results/reference/previous-small-probe.json",
+    "experiments",
+    "cache"
+  ],
+  "file_count": 1156,
+  "bytes": 224468452,
+  "note": "Archive is a sibling of the repository, excluded from this publication. Historical paths in immutable reports refer to that archive. No Git history was rewritten."
+}
